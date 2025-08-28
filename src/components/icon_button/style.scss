@@ -1,0 +1,88 @@
+@use "./_generated/token.scss" as *;
+
+[data-md="icon-button"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &[data-size="xs"] {
+    height: $container-height-xsmall;
+
+    &[data-width="default"] {
+      padding-left: $trailing-space-xsmall-default;
+      padding-right: $leading-space-xsmall-default;
+    }
+    &[data-width="narrow"] {
+      padding-left: $trailing-space-xsmall-narrow;
+      padding-right: $leading-space-xsmall-narrow;
+    }
+    &[data-width="wide"] {
+      padding-left: $trailing-space-xsmall-wide;
+      padding-right: $leading-space-xsmall-wide;
+    }
+  }
+  &[data-size="sm"] {
+    height: $container-height-small;
+
+    &[data-width="default"] {
+      padding-left: $trailing-space-small-default;
+      padding-right: $leading-space-small-default;
+    }
+    &[data-width="narrow"] {
+      padding-left: $trailing-space-small-narrow;
+      padding-right: $leading-space-small-narrow;
+    }
+    &[data-width="wide"] {
+      padding-left: $trailing-space-small-wide;
+      padding-right: $leading-space-small-wide;
+    }
+  }
+  &[data-size="md"] {
+    height: $container-height-medium;
+
+    &[data-width="default"] {
+      padding-left: $trailing-space-medium-default;
+      padding-right: $leading-space-medium-default;
+    }
+    &[data-width="narrow"] {
+      padding-left: $trailing-space-medium-narrow;
+      padding-right: $leading-space-medium-narrow;
+    }
+    &[data-width="wide"] {
+      padding-left: $trailing-space-medium-wide;
+      padding-right: $leading-space-medium-wide;
+    }
+  }
+  &[data-size="lg"] {
+    height: $container-height-large;
+
+    &[data-width="default"] {
+      padding-left: $trailing-space-large-default;
+      padding-right: $leading-space-large-default;
+    }
+    &[data-width="narrow"] {
+      padding-left: $trailing-space-large-narrow;
+      padding-right: $leading-space-large-narrow;
+    }
+    &[data-width="wide"] {
+      padding-left: $trailing-space-large-wide;
+      padding-right: $leading-space-large-wide;
+    }
+  }
+  &[data-size="xl"] {
+    height: $container-height-xlarge;
+
+    &[data-width="default"] {
+      padding-left: $trailing-space-xlarge-default;
+      padding-right: $leading-space-xlarge-default;
+    }
+    &[data-width="narrow"] {
+      padding-left: $trailing-space-xlarge-narrow;
+      padding-right: $leading-space-xlarge-narrow;
+    }
+    &[data-width="wide"] {
+      padding-left: $trailing-space-xlarge-wide;
+      padding-right: $leading-space-xlarge-wide;
+    }
+  }
+}
