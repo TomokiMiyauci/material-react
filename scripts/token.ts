@@ -26,17 +26,17 @@ for await (const entry of iter) {
 
 function defineConfig(path: string): Config {
   const { dir, name } = parse(path);
-  const destination = join(dir, "_generated", `${name}.scss`);
+  const destination = join(dir, "_generated", `${name}.css`);
 
   return {
     source: [path],
     platforms: {
-      scss: {
-        transformGroup: transformGroups.scss,
+      css: {
+        transformGroup: transformGroups.css,
         files: [
           {
             destination,
-            "format": "scss/variables",
+            "format": "css/variables",
           },
         ],
         transforms: [tokenTransformName, dimenstionName],

@@ -1,18 +1,32 @@
 import { ensureDir, expandGlob } from "@std/fs";
 import { join, parse } from "@std/path";
+import postcss from "postcss";
+import atImport from "postcss-import";
+import autoprefixer from "autoprefixer";
+import cssnano from "cssnano";
 
-const iter = expandGlob("src/**/_generated/*.css");
+const iter = expandGlob("src/**/*.css", {
+  exclude: ["src/**/_generated"],
+});
+
+const processor = postcss([
+  atImport as any,
+  autoprefixer,
+  cssnano,
+]);
 
 for await (const entry of iter) {
   if (entry.isFile) {
     const path = entry.path;
 
     const css = await Deno.readTextFile(path);
-    const content = `export default \`${css}\`;`;
-    const { dir, name } = parse(path);
-    const filePath = join(dir, name + ".ts");
+
+    const result = await processor.process(css, { from: path }).async();
+    const { dir, base } = parse(path);
+    const generatedDir = join(dir, "_generated");
+    const filePath = join(generatedDir, base);
 
     await ensureDir(dir);
-    await Deno.writeTextFile(filePath, content);
+    await Deno.writeTextFile(filePath, result.css);
   }
 }
