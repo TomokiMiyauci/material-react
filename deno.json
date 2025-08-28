@@ -1,0 +1,33 @@
+{
+  "name": "@miyauci/rmd",
+  "exports": {
+    ".": "./src/mod.ts",
+    "./icon-button": "./src/components/icon_button/mod.ts"
+  },
+  "imports": {
+    "@std/fs": "jsr:@std/fs@^1.0.19",
+    "@std/path": "jsr:@std/path@^1.1.2",
+    "@terrazzo/cli": "npm:@terrazzo/cli@^0.10.2",
+    "@terrazzo/plugin-css": "npm:@terrazzo/plugin-css@^0.10.2",
+    "@types/react": "npm:@types/react@^19.1.11",
+    "autoprefixer": "npm:autoprefixer@^10.4.21",
+    "cssnano": "npm:cssnano@^7.1.1",
+    "postcss": "npm:postcss@^8.5.6",
+    "postcss-import": "npm:postcss-import@^16.1.1",
+    "react": "npm:react@^19.1.1",
+    "@internal/": "./src/components/_internal/",
+    "style-dictionary": "npm:style-dictionary@^5.0.2"
+  },
+  "compilerOptions": {
+    "jsx": "react-jsx"
+  },
+  "version": "0.1.0",
+  "tasks": {
+    "generate:token": "deno run --allow-read --allow-sys --allow-env --allow-write=src src/scripts/token.ts",
+    "generate:css": "deno run --allow-read --allow-sys --allow-env --allow-write=src src/scripts/scss.ts",
+    "generate:ts": "deno run --allow-read --allow-write=src src/scripts/css.ts",
+    "generate": {
+      "dependencies": ["generate:token", "generate:css", "generate:ts"]
+    }
+  }
+}
