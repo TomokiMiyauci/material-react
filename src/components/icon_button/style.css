@@ -1,0 +1,232 @@
+@import url(./_generated/token.css);
+
+[data-md="icon-button"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+
+  &[data-color="filled"] {
+    &[data-state="default"] {
+      background-color: var(--container-color-filled-default);
+    }
+
+    &:hover {
+      background-color: color-mix(in srgb, var(--state-layer-filled-hovered-color) calc(var(--state-layer-filled-hovered-opacity) * 100%), transparent);
+    }
+
+    &[data-state="toggle"] {
+      background-color: var(--container-color-filled-toggle-unselected);
+
+      &:active {
+        background-color: var(--container-color-filled-toggle-selected);
+      }
+    }
+  }
+
+  &[data-color="tonal"] {
+    &[data-state="default"] {
+      background-color: var(--container-color-tonal-default);
+    }
+
+    &:hover {
+      background-color: color-mix(in srgb, var(--state-layer-tonal-hovered-color) calc(var(--state-layer-tonal-hovered-opacity) * 100%), transparent);
+    }
+
+    &[data-state="toggle"] {
+      background-color: var(--container-color-tonal-toggle-unselected);
+
+      &:active {
+        background-color: var(--container-color-tonal-toggle-selected);
+      }
+    }
+  }
+
+  &[data-color="outlined"] {
+    &[data-state="default"] {
+      background-color: var(--container-color-outlined-default);
+    }
+
+    &:hover {
+      background-color: color-mix(in srgb, var(--state-layer-outlined-hovered-color) calc(var(--state-layer-outlined-hovered-opacity) * 100%), transparent);
+    }
+
+    &[data-state="toggle"] {
+      background-color: var(--container-color-outlined-toggle-unselected);
+
+      &:active {
+        background-color: var(--container-color-outlined-toggle-selected);
+      }
+    }
+  }
+
+  &[data-color="standard"] {
+    background-color: transparent;
+
+    &:hover {
+      background-color: color-mix(in srgb, var(--state-layer-standard-hovered-color) calc(var(--state-layer-standard-hovered-opacity) * 100%), transparent);
+    }
+  }
+
+  &[data-size="xs"] {
+    height: var(--container-height-xsmall);
+
+    &[data-shape="round"] {
+      border-radius: var(--container-shape-xsmall-round);
+    }
+
+    &[data-shape="square"] {
+      border-radius: var(--container-shape-xsmall-square);
+    }
+
+    &[data-width="default"] {
+      padding-left: var(--trailing-space-xsmall-default);
+      padding-right: var(--leading-space-xsmall-default);
+    }
+
+    &[data-width="narrow"] {
+      padding-left: var(--trailing-space-xsmall-narrow);
+      padding-right: var(--leading-space-xsmall-narrow);
+    }
+
+    &[data-width="wide"] {
+      padding-left: var(--trailing-space-xsmall-wide);
+      padding-right: var(--leading-space-xsmall-wide);
+    }
+  }
+
+  &[data-size="sm"] {
+    height: var(--container-height-small);
+
+    &[data-shape="round"] {
+      border-radius: var(--container-shape-small-round);
+    }
+
+    &[data-shape="square"] {
+      border-radius: var(--container-shape-small-square);
+    }
+
+    &[data-width="default"] {
+      padding-left: var(--trailing-space-small-default);
+      padding-right: var(--leading-space-small-default);
+    }
+
+    &[data-width="narrow"] {
+      padding-left: var(--trailing-space-small-narrow);
+      padding-right: var(--leading-space-small-narrow);
+    }
+
+    &[data-width="wide"] {
+      padding-left: var(--trailing-space-small-wide);
+      padding-right: var(--leading-space-small-wide);
+    }
+  }
+
+  &[data-size="md"] {
+    height: var(--container-height-medium);
+
+    &[data-shape="round"] {
+      border-radius: var(--container-shape-medium-round);
+    }
+
+    &[data-shape="square"] {
+      border-radius: var(--container-shape-medium-square);
+    }
+
+    &[data-width="default"] {
+      padding-left: var(--trailing-space-medium-default);
+      padding-right: var(--leading-space-medium-default);
+    }
+
+    &[data-width="narrow"] {
+      padding-left: var(--trailing-space-medium-narrow);
+      padding-right: var(--leading-space-medium-narrow);
+    }
+
+    &[data-width="wide"] {
+      padding-left: var(--trailing-space-medium-wide);
+      padding-right: var(--leading-space-medium-wide);
+    }
+  }
+
+  &[data-size="lg"] {
+    height: var(--container-height-large);
+
+    &[data-shape="round"] {
+      border-radius: var(--container-shape-large-round);
+    }
+
+    &[data-shape="square"] {
+      border-radius: var(--container-shape-large-square);
+    }
+
+    &[data-width="default"] {
+      padding-left: var(--trailing-space-large-default);
+      padding-right: var(--leading-space-large-default);
+    }
+
+    &[data-width="narrow"] {
+      padding-left: var(--trailing-space-large-narrow);
+      padding-right: var(--leading-space-large-narrow);
+    }
+
+    &[data-width="wide"] {
+      padding-left: var(--trailing-space-large-wide);
+      padding-right: var(--leading-space-large-wide);
+    }
+  }
+
+  &[data-size="xl"] {
+    height: var(--container-height-xlarge);
+
+    &[data-shape="round"] {
+      border-radius: var(--container-shape-xlarge-round);
+    }
+
+    &[data-shape="square"] {
+      border-radius: var(--container-shape-xlarge-square);
+    }
+
+    &[data-width="default"] {
+      padding-left: var(--trailing-space-xlarge-default);
+      padding-right: var(--leading-space-xlarge-default);
+    }
+
+    &[data-width="narrow"] {
+      padding-left: var(--trailing-space-xlarge-narrow);
+      padding-right: var(--leading-space-xlarge-narrow);
+    }
+
+    &[data-width="wide"] {
+      padding-left: var(--trailing-space-xlarge-wide);
+      padding-right: var(--leading-space-xlarge-wide);
+    }
+  }
+
+  & [data-icon] {
+    [data-size="xs"] & {
+      height: var(--icon-size-xsmall);
+      width: var(--icon-size-xsmall);
+    }
+
+    [data-size="sm"] & {
+      height: var(--icon-size-small);
+      width: var(--icon-size-small);
+    }
+
+    [data-size="md"] & {
+      height: var(--icon-size-medium);
+      width: var(--icon-size-medium);
+    }
+
+    [data-size="lg"] & {
+      height: var(--icon-size-large);
+      width: var(--icon-size-large);
+    }
+
+    [data-size="xl"] & {
+      height: var(--icon-size-xlarge);
+      width: var(--icon-size-xlarge);
+    }
+  }
+}
