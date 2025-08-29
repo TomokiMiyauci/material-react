@@ -43,7 +43,7 @@ function defineConfig(path: string): Config {
             destination,
             "format": formatName,
             options: {
-              rootComment: "@embeded",
+              rootComment: "@embed",
             },
           },
         ],

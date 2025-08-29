@@ -4,6 +4,7 @@ import postcss from "postcss";
 import atImport from "postcss-import";
 import autoprefixer from "autoprefixer";
 import cssnano from "cssnano";
+import inlineToken from "./postcss/inline_token.ts";
 
 const iter = expandGlob("src/**/*.css", {
   exclude: ["src/**/_generated"],
@@ -11,6 +12,7 @@ const iter = expandGlob("src/**/*.css", {
 
 const processor = postcss([
   atImport as any,
+  inlineToken,
   autoprefixer,
   cssnano,
 ]);
