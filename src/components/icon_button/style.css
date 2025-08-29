@@ -218,6 +218,22 @@
   }
 
   & [data-icon] {
+    [data-color="filled"] & {
+      color: var(--icon-color-filled-default);
+    }
+
+    [data-color="tonal"] & {
+      color: var(--icon-color-tonal-default);
+    }
+
+    [data-color="outlined"] & {
+      color: var(--icon-color-outlined-default);
+    }
+
+    [data-color="standard"] & {
+      color: var(--icon-color-standard-default);
+    }
+
     [data-size="xs"] & {
       height: var(--icon-size-xsmall);
       width: var(--icon-size-xsmall);

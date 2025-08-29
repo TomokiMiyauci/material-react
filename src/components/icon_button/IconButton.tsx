@@ -1,10 +1,15 @@
-import type { DetailedHTMLProps, JSX, ReactNode } from "react";
+import type {
+  ButtonHTMLAttributes,
+  DetailedHTMLProps,
+  JSX,
+  ReactNode,
+} from "react";
 import style from "./_generated/style.ts";
 import Style from "../_internal/Style.tsx";
 
 export interface IconButtonProps extends
   DetailedHTMLProps<
-    React.ButtonHTMLAttributes<HTMLButtonElement>,
+    ButtonHTMLAttributes<HTMLButtonElement>,
     HTMLButtonElement
   > {
   /**
