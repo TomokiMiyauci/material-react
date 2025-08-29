@@ -13,6 +13,14 @@
     content: '';
     position: absolute;
     inset: 0;
+    border-radius: inherit;
+  }
+
+  &:focus-visible {
+    outline-offset: var(--focus-indicator-offset);
+    outline-width: var(--focus-indicator-thickness);
+    outline-color: var(--focus-indicator-color);
+    outline-style: solid;
   }
 
   &[data-color="filled"] {

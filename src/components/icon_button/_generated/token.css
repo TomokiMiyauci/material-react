@@ -116,13 +116,14 @@
   --state-layer-standard-focused-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Icon button focused state layer opacity */
   --state-layer-standard-pressed-color: var(--md-sys-color-on-surface-variant); /** Icon button pressed state layer color */
   --state-layer-standard-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Icon button pressed state layer opacity */
-  --icon-button-xsmall-outline-width: 0.0625rem;
+  --focus-indicator-color: var(--md-sys-color-secondary); /** Icon button focus indicator color */
+  --focus-indicator-thickness: var(--md-sys-state-focus-indicator-thickness); /** Icon button focus indicator thickness */
+  --focus-indicator-offset: var(--md-sys-state-focus-indicator-outer-offset); /** Icon button focus indicator offset */
   --icon-button-xsmall-shape-pressed-morph: var(--md-sys-shape-corner-small);
   --icon-button-xsmall-shape-spring-animation-damping: var(--md-sys-motion-spring-fast-spatial-damping);
   --icon-button-xsmall-shape-spring-animation-stiffness: var(--md-sys-motion-spring-fast-spatial-stiffness);
   --icon-button-xsmall-selected-container-shape-round: var(--md-sys-shape-corner-medium);
   --icon-button-xsmall-selected-container-shape-square: var(--md-sys-shape-corner-full);
-  --icon-button-small-outline-width: 0.0625rem;
   --icon-button-small-shape-pressed-morph: var(--md-sys-shape-corner-small);
   --icon-button-small-shape-spring-animation-damping: var(--md-sys-motion-spring-fast-spatial-damping);
   --icon-button-small-shape-spring-animation-stiffness: var(--md-sys-motion-spring-fast-spatial-stiffness);
