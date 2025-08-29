@@ -43,8 +43,6 @@ export type ButtonColor = "filled" | "tonal" | "outlined" | "standard";
 
 export type ButtonWidth = "default" | "narrow" | "wide";
 
-export type ButtonState = "default" | "toggle";
-
 const NAME = "icon-button";
 
 const DEFAULT_PROPS = {
