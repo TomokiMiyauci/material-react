@@ -27,11 +27,6 @@ export interface IconButtonProps extends
    */
   color?: ButtonColor;
 
-  /**
-   * @default "default"
-   */
-  state?: ButtonState;
-
   icon?: ReactNode;
 }
 
@@ -52,7 +47,6 @@ const DEFAULT_PROPS = {
   shape: "round",
   width: "default",
   color: "filled",
-  state: "default",
 } satisfies IconButtonProps;
 
 /**
@@ -64,7 +58,6 @@ export default function IconButton(props: IconButtonProps): JSX.Element {
     shape = DEFAULT_PROPS.shape,
     width = DEFAULT_PROPS.width,
     color = DEFAULT_PROPS.color,
-    state = DEFAULT_PROPS.state,
     icon,
     ...rest
   } = props;
@@ -77,7 +70,6 @@ export default function IconButton(props: IconButtonProps): JSX.Element {
         data-shape={shape}
         data-width={width}
         data-color={color}
-        data-state={state}
         {...rest}
       >
         <span data-icon="">{icon}</span>

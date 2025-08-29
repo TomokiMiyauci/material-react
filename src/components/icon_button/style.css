@@ -7,56 +7,26 @@
   border: 0;
 
   &[data-color="filled"] {
-    &[data-state="default"] {
-      background-color: var(--container-color-filled-default);
-    }
+    background-color: var(--container-color-filled);
 
     &:hover {
       background-color: color-mix(in srgb, var(--state-layer-filled-hovered-color) calc(var(--state-layer-filled-hovered-opacity) * 100%), transparent);
     }
-
-    &[data-state="toggle"] {
-      background-color: var(--container-color-filled-toggle-unselected);
-
-      &:active {
-        background-color: var(--container-color-filled-toggle-selected);
-      }
-    }
   }
 
   &[data-color="tonal"] {
-    &[data-state="default"] {
-      background-color: var(--container-color-tonal-default);
-    }
+    background-color: var(--container-color-tonal);
 
     &:hover {
       background-color: color-mix(in srgb, var(--state-layer-tonal-hovered-color) calc(var(--state-layer-tonal-hovered-opacity) * 100%), transparent);
     }
-
-    &[data-state="toggle"] {
-      background-color: var(--container-color-tonal-toggle-unselected);
-
-      &:active {
-        background-color: var(--container-color-tonal-toggle-selected);
-      }
-    }
   }
 
   &[data-color="outlined"] {
-    &[data-state="default"] {
-      background-color: var(--container-color-outlined-default);
-    }
+    background-color: var(--container-color-outlined);
 
     &:hover {
       background-color: color-mix(in srgb, var(--state-layer-outlined-hovered-color) calc(var(--state-layer-outlined-hovered-opacity) * 100%), transparent);
-    }
-
-    &[data-state="toggle"] {
-      background-color: var(--container-color-outlined-toggle-unselected);
-
-      &:active {
-        background-color: var(--container-color-outlined-toggle-selected);
-      }
     }
   }
 
