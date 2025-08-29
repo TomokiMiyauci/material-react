@@ -1,83 +1,93 @@
 @import url(./_generated/token.css);
 
+/* container */
 [data-md="icon-button"] {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border: 0;
+  position: relative;
+
+  /* state layer */
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+  }
 
   &[data-color="filled"] {
     background-color: var(--container-color-filled);
 
-    &:hover {
+    &:hover::before {
       background-color: color-mix(in srgb, var(--state-layer-filled-hovered-color) calc(var(--state-layer-filled-hovered-opacity) * 100%), transparent);
     }
 
-    &:active {
+    &:active::before {
       background-color: color-mix(in srgb, var(--state-layer-filled-pressed-color) calc(var(--state-layer-filled-pressed-opacity) * 100%), transparent);
     }
 
-    &:focus {
+    &:focus::before {
       background-color: color-mix(in srgb, var(--state-layer-filled-focused-color) calc(var(--state-layer-filled-focused-opacity) * 100%), transparent);
     }
 
     &:disabled {
-      background-color: color-mix(in srgb, var(--state-layer-filled-disabled-color) calc(var(--state-layer-filled-disabled-opacity) * 100%), transparent);
+      background-color: color-mix(in srgb, var(--container-filled-disabled-color) calc(var(--container-filled-disabled-opacity) * 100%), transparent);
     }
   }
 
   &[data-color="tonal"] {
     background-color: var(--container-color-tonal);
 
-    &:hover {
+    &:hover::before {
       background-color: color-mix(in srgb, var(--state-layer-tonal-hovered-color) calc(var(--state-layer-tonal-hovered-opacity) * 100%), transparent);
     }
 
-    &:active {
+    &:active::before {
       background-color: color-mix(in srgb, var(--state-layer-tonal-pressed-color) calc(var(--state-layer-tonal-pressed-opacity) * 100%), transparent);
     }
 
-    &:focus {
+    &:focus::before {
       background-color: color-mix(in srgb, var(--state-layer-tonal-focused-color) calc(var(--state-layer-tonal-focused-opacity) * 100%), transparent);
     }
 
     &:disabled {
-      background-color: color-mix(in srgb, var(--state-layer-tonal-disabled-color) calc(var(--state-layer-tonal-disabled-opacity) * 100%), transparent);
+      background-color: color-mix(in srgb, var(--container-tonal-disabled-color) calc(var(--container-tonal-disabled-opacity) * 100%), transparent);
     }
   }
 
   &[data-color="outlined"] {
     background-color: var(--container-color-outlined);
 
-    &:hover {
+    &:hover::before {
       background-color: color-mix(in srgb, var(--state-layer-outlined-hovered-color) calc(var(--state-layer-outlined-hovered-opacity) * 100%), transparent);
     }
 
-    &:active {
+    &:active::before {
       background-color: color-mix(in srgb, var(--state-layer-outlined-pressed-color) calc(var(--state-layer-outlined-pressed-opacity) * 100%), transparent);
     }
 
-    &:focus {
+    &:focus::before {
       background-color: color-mix(in srgb, var(--state-layer-outlined-focused-color) calc(var(--state-layer-outlined-focused-opacity) * 100%), transparent);
     }
 
     &:disabled {
-      background-color: var(--state-layer-outlined-disabled-color);
+      background-color: var(--container-outlined-disabled-color);
     }
   }
 
   &[data-color="standard"] {
     background-color: transparent;
 
-    &:hover {
+    &:hover::before {
       background-color: color-mix(in srgb, var(--state-layer-standard-hovered-color) calc(var(--state-layer-standard-hovered-opacity) * 100%), transparent);
     }
 
-    &:active {
+    &:active::before {
       background-color: color-mix(in srgb, var(--state-layer-standard-pressed-color) calc(var(--state-layer-standard-pressed-opacity) * 100%), transparent);
     }
 
-    &:focus {
+    &:focus::before {
       background-color: color-mix(in srgb, var(--state-layer-standard-focused-color) calc(var(--state-layer-standard-focused-opacity) * 100%), transparent);
     }
   }
@@ -217,9 +227,26 @@
     }
   }
 
+  /* icon */
   & [data-icon] {
     [data-color="filled"] & {
-      color: var(--icon-color-filled-default);
+      color: var(--icon-color-filled-color);
+    }
+
+    [data-color="filled"]:active & {
+      color: var(--icon-color-filled-pressed-color);
+    }
+
+    [data-color="filled"]:hover & {
+      color: var(--icon-color-filled-hovered-color);
+    }
+
+    [data-color="filled"]:focus & {
+      color: var(--icon-color-filled-focused-color);
+    }
+
+    [data-color="filled"]:disabled & {
+      color: color-mix(in srgb, var(--icon-color-filled-disabled-color) calc(var(--icon-color-filled-disabled-opacity) * 100%), transparent);
     }
 
     [data-color="tonal"] & {
