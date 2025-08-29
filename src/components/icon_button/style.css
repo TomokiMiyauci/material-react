@@ -250,15 +250,63 @@
     }
 
     [data-color="tonal"] & {
-      color: var(--icon-color-tonal-default);
+      color: var(--icon-color-tonal-color);
+    }
+
+    [data-color="tonal"]:active & {
+      color: var(--icon-color-tonal-pressed-color);
+    }
+
+    [data-color="tonal"]:hover & {
+      color: var(--icon-color-tonal-hovered-color);
+    }
+
+    [data-color="tonal"]:focus & {
+      color: var(--icon-color-tonal-focused-color);
+    }
+
+    [data-color="tonal"]:disabled & {
+      color: color-mix(in srgb, var(--icon-color-tonal-disabled-color) calc(var(--icon-color-tonal-disabled-opacity) * 100%), transparent);
     }
 
     [data-color="outlined"] & {
-      color: var(--icon-color-outlined-default);
+      color: var(--icon-color-outlined-color);
+    }
+
+    [data-color="outlined"]:active & {
+      color: var(--icon-color-outlined-pressed-color);
+    }
+
+    [data-color="outlined"]:hover & {
+      color: var(--icon-color-outlined-hovered-color);
+    }
+
+    [data-color="outlined"]:focus & {
+      color: var(--icon-color-outlined-focused-color);
+    }
+
+    [data-color="outlined"]:disabled & {
+      color: color-mix(in srgb, var(--icon-color-outlined-disabled-color) calc(var(--icon-color-outlined-disabled-opacity) * 100%), transparent);
     }
 
     [data-color="standard"] & {
-      color: var(--icon-color-standard-default);
+      color: var(--icon-color-standard-color);
+    }
+
+    [data-color="standard"]:active & {
+      color: var(--icon-color-standard-pressed-color);
+    }
+
+    [data-color="standard"]:hover & {
+      color: var(--icon-color-standard-hovered-color);
+    }
+
+    [data-color="standard"]:focus & {
+      color: var(--icon-color-standard-focused-color);
+    }
+
+    [data-color="standard"]:disabled & {
+      color: color-mix(in srgb, var(--icon-color-standard-disabled-color) calc(var(--icon-color-standard-disabled-opacity) * 100%), transparent);
     }
 
     [data-size="xs"] & {
