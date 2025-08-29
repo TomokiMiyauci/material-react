@@ -12,6 +12,10 @@
     &:hover {
       background-color: color-mix(in srgb, var(--state-layer-filled-hovered-color) calc(var(--state-layer-filled-hovered-opacity) * 100%), transparent);
     }
+
+    &:focus {
+      background-color: color-mix(in srgb, var(--state-layer-filled-focused-color) calc(var(--state-layer-filled-focused-opacity) * 100%), transparent);
+    }
   }
 
   &[data-color="tonal"] {
@@ -19,6 +23,10 @@
 
     &:hover {
       background-color: color-mix(in srgb, var(--state-layer-tonal-hovered-color) calc(var(--state-layer-tonal-hovered-opacity) * 100%), transparent);
+    }
+
+    &:focus {
+      background-color: color-mix(in srgb, var(--state-layer-tonal-focused-color) calc(var(--state-layer-tonal-focused-opacity) * 100%), transparent);
     }
   }
 
@@ -28,6 +36,10 @@
     &:hover {
       background-color: color-mix(in srgb, var(--state-layer-outlined-hovered-color) calc(var(--state-layer-outlined-hovered-opacity) * 100%), transparent);
     }
+
+    &:focus {
+      background-color: color-mix(in srgb, var(--state-layer-outlined-focused-color) calc(var(--state-layer-outlined-focused-opacity) * 100%), transparent);
+    }
   }
 
   &[data-color="standard"] {
@@ -35,6 +47,10 @@
 
     &:hover {
       background-color: color-mix(in srgb, var(--state-layer-standard-hovered-color) calc(var(--state-layer-standard-hovered-opacity) * 100%), transparent);
+    }
+
+    &:focus {
+      background-color: color-mix(in srgb, var(--state-layer-standard-focused-color) calc(var(--state-layer-standard-focused-opacity) * 100%), transparent);
     }
   }
 
