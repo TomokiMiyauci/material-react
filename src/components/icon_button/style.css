@@ -5,15 +5,14 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border: 0;
   position: relative;
+  border: none;
 
   /* state layer */
   &::before {
     content: '';
     position: absolute;
     inset: 0;
-    border-radius: inherit;
   }
 
   &[data-color="filled"] {
@@ -57,9 +56,12 @@
   }
 
   &[data-color="outlined"] {
-    outline-style: solid;
     background-color: transparent;
-    outline-color: var(--container-outlined-color);
+
+    &::before {
+      border-style: solid;
+      border-color: var(--container-outlined-color);
+    }
 
     &:hover::before {
       background-color: color-mix(in srgb, var(--state-layer-outlined-hovered-color) calc(var(--state-layer-outlined-hovered-opacity) * 100%), transparent);
@@ -96,7 +98,10 @@
 
   &[data-size="xs"] {
     height: var(--container-height-xsmall);
-    outline-width: var(--container-xsmall-outline-width);
+
+    &::before {
+      border-width: var(--container-xsmall-outline-width);
+    }
 
     &[data-shape="round"] {
       border-radius: var(--container-shape-xsmall-round);
@@ -124,7 +129,10 @@
 
   &[data-size="sm"] {
     height: var(--container-height-small);
-    outline-width: var(--container-small-outline-width);
+
+    &::before {
+      border-width: var(--container-small-outline-width);
+    }
 
     &[data-shape="round"] {
       border-radius: var(--container-shape-small-round);
@@ -152,7 +160,10 @@
 
   &[data-size="md"] {
     height: var(--container-height-medium);
-    outline-width: var(--container-medium-outline-width);
+
+    &::before {
+      border-width: var(--container-medium-outline-width);
+    }
 
     &[data-shape="round"] {
       border-radius: var(--container-shape-medium-round);
@@ -180,7 +191,10 @@
 
   &[data-size="lg"] {
     height: var(--container-height-large);
-    outline-width: var(--container-large-outline-width);
+
+    &::before {
+      border-width: var(--container-large-outline-width);
+    }
 
     &[data-shape="round"] {
       border-radius: var(--container-shape-large-round);
@@ -208,7 +222,10 @@
 
   &[data-size="xl"] {
     height: var(--container-height-xlarge);
-    outline-width: var(--container-xlarge-outline-width);
+
+    &::before {
+      border-width: var(--container-xlarge-outline-width);
+    }
 
     &[data-shape="round"] {
       border-radius: var(--container-shape-xlarge-round);
