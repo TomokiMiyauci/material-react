@@ -11,12 +11,15 @@ export default {
     "name": "@storybook/react-vite",
     "options": {},
   },
-  viteFinal(config) {
+  async viteFinal(config) {
+    /** @see https://github.com/tailwindlabs/tailwindcss/issues/13216 */
+    const { default: tailwindcss } = await import("@tailwindcss/vite");
     return mergeConfig(config, {
       plugins: [
         react({
           jsxRuntime: "automatic",
         }),
+        tailwindcss(),
       ],
     });
   },

@@ -1,0 +1,13 @@
+@layer theme, base, components, utilities;
+@import "tailwindcss/utilities.css" layer(utilities);
+@source "src/**/*.stories.tsx";
+
+@plugin "@iconify/tailwind4" {
+  scale: 0;
+}
+
+:root {
+  --md-sys-state-hover-state-layer-opacity: 0.08;
+  --md-sys-state-focus-state-layer-opacity: 0.1;
+  --md-sys-state-pressed-state-layer-opacity: 0.1;
+}
