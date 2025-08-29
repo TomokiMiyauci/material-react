@@ -20,6 +20,10 @@
     &:focus {
       background-color: color-mix(in srgb, var(--state-layer-filled-focused-color) calc(var(--state-layer-filled-focused-opacity) * 100%), transparent);
     }
+
+    &:disabled {
+      background-color: color-mix(in srgb, var(--state-layer-filled-disabled-color) calc(var(--state-layer-filled-disabled-opacity) * 100%), transparent);
+    }
   }
 
   &[data-color="tonal"] {
@@ -36,6 +40,10 @@
     &:focus {
       background-color: color-mix(in srgb, var(--state-layer-tonal-focused-color) calc(var(--state-layer-tonal-focused-opacity) * 100%), transparent);
     }
+
+    &:disabled {
+      background-color: color-mix(in srgb, var(--state-layer-tonal-disabled-color) calc(var(--state-layer-tonal-disabled-opacity) * 100%), transparent);
+    }
   }
 
   &[data-color="outlined"] {
@@ -51,6 +59,10 @@
 
     &:focus {
       background-color: color-mix(in srgb, var(--state-layer-outlined-focused-color) calc(var(--state-layer-outlined-focused-opacity) * 100%), transparent);
+    }
+
+    &:disabled {
+      background-color: var(--state-layer-outlined-disabled-color);
     }
   }
 

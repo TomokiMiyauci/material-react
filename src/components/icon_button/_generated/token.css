@@ -70,18 +70,23 @@
   --trailing-space-xlarge-default: 3rem; /** Icon button xlarge default trailing space */
   --trailing-space-xlarge-narrow: 2rem; /** Icon button xlarge narrow trailing space */
   --trailing-space-xlarge-wide: 4.5rem; /** Icon button xlarge wide trailing space */
+  --state-layer-filled-disabled-color: var(--md-sys-color-on-surface); /** Icon button filled disabled container color */
+  --state-layer-filled-disabled-opacity: 0.1; /** Icon button filled disabled container opacity */
   --state-layer-filled-hovered-color: var(--md-sys-color-on-primary); /** Icon button filled hovered state layer color */
   --state-layer-filled-hovered-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Icon button filled hovered state layer opacity */
   --state-layer-filled-focused-color: var(--md-sys-color-on-primary); /** Icon button filled focused state layer color */
   --state-layer-filled-focused-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Icon button filled focused state layer opacity */
   --state-layer-filled-pressed-color: var(--md-sys-color-on-primary); /** Icon button filled pressed state layer color */
   --state-layer-filled-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Icon button filled pressed state layer opacity */
+  --state-layer-tonal-disabled-color: var(--md-sys-color-on-surface); /** Icon button tonal disabled container color */
+  --state-layer-tonal-disabled-opacity: 0.1; /** Icon button tonal disabled container opacity */
   --state-layer-tonal-hovered-color: var(--md-sys-color-on-secondary-container); /** Icon button tonal hovered state layer color */
   --state-layer-tonal-hovered-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Icon button tonal hovered state layer opacity */
   --state-layer-tonal-focused-color: var(--md-sys-color-on-secondary-container); /** Icon button tonal focused state layer color */
   --state-layer-tonal-focused-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Icon button tonal focused state layer opacity */
   --state-layer-tonal-pressed-color: var(--md-sys-color-on-secondary-container); /** Icon button tonal pressed state layer color */
   --state-layer-tonal-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Icon button tonal pressed state layer opacity */
+  --state-layer-outlined-disabled-color: var(--md-sys-color-outline-variant); /** Icon button outlined disabled outline color */
   --state-layer-outlined-hovered-color: var(--md-sys-color-on-surface-variant); /** Icon button outlined hovered state layer color */
   --state-layer-outlined-hovered-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Icon button outlined hovered state layer opacity */
   --state-layer-outlined-focused-color: var(--md-sys-color-on-surface-variant); /** Icon button outlined focused state layer color */
