@@ -7,6 +7,7 @@
   justify-content: center;
   position: relative;
   border: none;
+  cursor: pointer;
 
   /* state layer */
   &::before {
@@ -14,6 +15,10 @@
     position: absolute;
     inset: 0;
     border-radius: inherit;
+  }
+
+  &:disabled {
+    cursor: auto;
   }
 
   &:focus-visible {
