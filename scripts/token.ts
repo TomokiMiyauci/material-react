@@ -8,6 +8,9 @@ import tokenTransform, {
 import dimensitonTransform, {
   NAME as dimenstionName,
 } from "./transforms/dimension.ts";
+import cssVariableWithComment, {
+  NAME as formatName,
+} from "./fomatters/css_variables_comment.ts";
 
 const iter = expandGlob("src/**/token.json", {
   exclude: ["src/**/_generated"],
@@ -20,6 +23,8 @@ for await (const entry of iter) {
     const sd = new StyleDictionary(config);
     sd.registerTransform(tokenTransform);
     sd.registerTransform(dimensitonTransform);
+    sd.registerFormat(cssVariableWithComment);
+
     await sd.buildAllPlatforms();
   }
 }
@@ -36,7 +41,10 @@ function defineConfig(path: string): Config {
         files: [
           {
             destination,
-            "format": "css/variables",
+            "format": formatName,
+            options: {
+              rootComment: "@embeded",
+            },
           },
         ],
         transforms: [tokenTransformName, dimenstionName],
