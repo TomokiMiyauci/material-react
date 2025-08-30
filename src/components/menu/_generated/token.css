@@ -1,0 +1,14 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+/* @embed */
+:root {
+  --container-color: var(--md-sys-color-surface-container); /** Menu container color */
+  --container-elevation: var(--md-sys-elevation-level2); /** Menu container elevation */
+  --container-shadow-color: var(--md-sys-color-shadow); /** Menu container shadow color */
+  --container-shape: var(--md-sys-shape-corner-extra-small); /** Menu container shape */
+  --focus-indicator-color: var(--md-sys-color-secondary); /** Menu focus indicator color */
+  --focus-indicator-thickness: var(--md-sys-state-focus-indicator-thickness); /** Menu focus indicator thickness */
+  --focus-indicator-offset: var(--md-sys-state-focus-indicator-inner-offset); /** Menu focus indicator offset */
+}
