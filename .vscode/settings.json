@@ -26,6 +26,6 @@
   "deno.codeLens.implementations": true,
   "deno.codeLens.referencesAllFunctions": true,
   "json.schemas": [
-    { "fileMatch": ["tokens.json"], "url": "./dt.schema.json" }
+    { "fileMatch": ["token.json"], "url": "./schemas/dtfm.schema.json" }
   ]
 }

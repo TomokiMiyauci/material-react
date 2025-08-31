@@ -1,0 +1,80 @@
+{
+  "oneOf": [
+    { "$ref": "#/$defs/number" },
+    { "$ref": "#/$defs/token" },
+    { "$ref": "#/$defs/dimension" },
+    { "$ref": "#/$defs/typography" },
+    {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": { "$ref": "#" }
+    }
+  ],
+
+  "$defs": {
+    "number": {
+      "type": "object",
+      "properties": {
+        "$type": { "const": "number" },
+        "$value": { "type": "number" },
+        "$description": { "type": "string" }
+      },
+      "required": ["$type", "$value"],
+      "additionalProperties": false
+    },
+    "token": {
+      "type": "object",
+      "properties": {
+        "$type": { "const": "token" },
+        "$value": { "type": "string" },
+        "$description": { "type": "string" }
+      },
+      "required": ["$type", "$value"],
+      "additionalProperties": false
+    },
+    "dimension": {
+      "type": "object",
+      "properties": {
+        "$type": { "const": "dimension" },
+        "$value": { "$ref": "#/$defs/dimension-value" },
+        "$description": { "type": "string" }
+      },
+      "required": ["$type", "$value"],
+      "additionalProperties": false
+    },
+    "typography": {
+      "type": "object",
+      "properties": {
+        "$type": { "const": "typography" },
+        "$value": {
+          "type": "object",
+          "properties": {
+            "fontFamily": { "type": "string" },
+            "fontSize": { "type": "string" },
+            "fontWeight": { "type": "string" },
+            "letterSpacing": { "type": "string" },
+            "lineHeight": { "type": "string" }
+          },
+          "required": [
+            "fontFamily",
+            "fontSize",
+            "fontWeight",
+            "letterSpacing",
+            "lineHeight"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": ["$type", "$value"],
+      "additionalProperties": false
+    },
+    "dimension-value": {
+      "type": "object",
+      "properties": {
+        "value": { "type": "number" },
+        "unit": { "enum": ["px", "rem", "dp"] }
+      },
+      "required": ["value", "unit"]
+    }
+  }
+}
