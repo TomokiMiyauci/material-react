@@ -20,7 +20,18 @@ const meta = {
     },
     "headline": "Headline",
     "supporingText": "Supporing text",
+    "trailing": {
+      "type": "text",
+      children: "100+",
+    },
   },
+  decorators: [
+    (Story) => (
+      <div className="w-[300px]">
+        <Story />
+      </div>
+    ),
+  ],
 } satisfies Meta<typeof ListItem>;
 export default meta;
 
@@ -39,5 +50,16 @@ export const ThreeLines = {
     size: "three-lines",
     supporingText:
       "Supporting text that is long enough to fill up multiple lines",
+  },
+} satisfies Story;
+
+export const TrailingIcon = {
+  args: {
+    trailing: {
+      "type": "icon",
+      children: (
+        <span className="icon-[material-symbols--arrow-right] h-full w-full" />
+      ),
+    },
   },
 } satisfies Story;

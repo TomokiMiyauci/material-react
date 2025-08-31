@@ -67,6 +67,6 @@ interface LeadingListItem {
 }
 
 interface TrailingListItem {
-  type: "icon" | "supportingText";
+  type: "icon" | "text";
   children: ReactNode;
 }
