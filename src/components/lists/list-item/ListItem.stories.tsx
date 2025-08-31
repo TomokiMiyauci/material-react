@@ -53,6 +53,44 @@ export const ThreeLines = {
   },
 } satisfies Story;
 
+export const LeadingIcon = {
+  args: {
+    "leading": {
+      "type": "icon",
+      "children": (
+        <span className="icon-[material-symbols--person-outline] h-full w-full" />
+      ),
+    },
+  },
+} satisfies Story;
+
+export const LeadingAvatar = {
+  args: {
+    "leading": {
+      "type": "avatar",
+      "children": "AB",
+    },
+  },
+} satisfies Story;
+
+export const LeadingImage = {
+  args: {
+    "leading": {
+      "type": "image",
+      "children": <img src="https://placehold.co/200x200" />,
+    },
+  },
+} satisfies Story;
+
+export const LeadingVideo = {
+  args: {
+    "leading": {
+      "type": "video",
+      "children": <img src="https://placehold.co/200x200" />,
+    },
+  },
+} satisfies Story;
+
 export const TrailingIcon = {
   args: {
     trailing: {
@@ -60,6 +98,15 @@ export const TrailingIcon = {
       children: (
         <span className="icon-[material-symbols--arrow-right] h-full w-full" />
       ),
+    },
+  },
+} satisfies Story;
+
+export const TrailingText = {
+  args: {
+    trailing: {
+      "type": "text",
+      children: "10",
     },
   },
 } satisfies Story;

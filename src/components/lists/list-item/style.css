@@ -80,6 +80,16 @@
     border-radius: var(--leading-image-shape);
   }
 
+  & [data-leading=video] {
+    width: var(--leading-video-width);
+    height: var(--leading-video-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-inline-start: calc(-1 * var(--container-leading-space));
+  }
+
   & [data-leading=icon] {
     display: inline-flex;
     align-items: center;

@@ -25,9 +25,6 @@
   --leading-icon-color: var(--md-sys-color-on-surface-variant); /** List list item leading-icon color */
   --leading-icon-selected-color: var(--md-sys-color-on-surface); /** List list item selected leading-icon color */
   --leading-icon-size: 1.5rem; /** List list item leading-icon size */
-  --leading-icon-width: 6.25rem; /** List list item leading-icon width */
-  --leading-icon-small-height: 3.5rem; /** List list item small leading-icon height */
-  --leading-icon-large-height: 4.3125rem; /** List list item large leading-icon color */
   --leading-icon-shape: var(--md-sys-shape-corner-none); /** List list item leading-icon shape */
   --leading-avatar-color: var(--md-sys-color-primary-container); /** List list item leading-avatar color */
   --leading-avatar-shape: var(--md-sys-shape-corner-full); /** List list item leading-avatar shape */
@@ -41,6 +38,8 @@
   --leading-image-width: 3.5rem; /** List list item leading-image width */
   --leading-image-height: 3.5rem; /** List list item leading-image height */
   --leading-image-shape: var(--md-sys-shape-corner-none); /** List list item leading-image shape */
+  --leading-video-height: 4rem; /** List list item large leading-icon color. There is a typo in the specifications. 69dp -> 64dp */
+  --leading-video-width: 6.25rem; /** List list item leading-icon width */
   --trailing-icon-color: var(--md-sys-color-on-surface-variant); /** List list item trailing icon color */
   --trailing-icon-size: 1.5rem; /** List list item trailing icon size */
   --trailing-icon-selected-color: var(--md-sys-color-primary); /** List list item selected trailing icon color */
