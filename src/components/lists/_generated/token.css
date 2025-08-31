@@ -1,0 +1,71 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+/* @embed */
+:root {
+  --container-color: var(--md-sys-color-surface); /** List list item container color */
+  --container-selected-color: var(--md-sys-color-secondary-container); /** List list item selected container color */
+  --container-shape: var(--md-sys-shape-corner-none); /** List list item container shape */
+  --container-elevation: var(--md-sys-elevation-level0); /** List list item container elevation */
+  --container-three-lines-height: 5.5rem; /** Three lines list item container height */
+  --container-three-lines-y-padding: 0.75rem; /** Leading icon top padding when height is 88dp or taller */
+  --container-y-padding: 0.5rem; /** Leading icon top padding */
+  --container-two-lines-height: 4.5rem; /** Two lines list item container height */
+  --container-one-line-height: 3.5rem; /** One line list item container height */
+  --container-leading-space: 1rem; /** List list item leading space */
+  --container-trailing-space: 1rem; /** List list item trailing space */
+  --label-text-color: var(--md-sys-color-on-surface); /** List list item label text color */
+  --label-text-selected-color: var(--md-sys-color-on-secondary-container); /** List list item selected label text color */
+  --label-text-font: var(--md-sys-typescale-body-large-font); /** List list item label text font */
+  --label-text-line-height: var(--md-sys-typescale-body-large-line-height); /** List list item label text line height */
+  --label-text-size: var(--md-sys-typescale-body-large-size); /** List list item label text size */
+  --label-text-tracking: var(--md-sys-typescale-body-large-tracking); /** List list item label text tracking */
+  --label-text-weight: var(--md-sys-typescale-body-large-weight); /** List list item label text weight */
+  --leading-icon-color: var(--md-sys-color-on-surface-variant); /** List list item leading-icon color */
+  --leading-icon-selected-color: var(--md-sys-color-on-surface); /** List list item selected leading-icon color */
+  --leading-icon-size: 1.5rem; /** List list item leading-icon size */
+  --leading-icon-width: 6.25rem; /** List list item leading-icon width */
+  --leading-icon-small-height: 3.5rem; /** List list item small leading-icon height */
+  --leading-icon-large-height: 4.3125rem; /** List list item large leading-icon color */
+  --leading-icon-shape: var(--md-sys-shape-corner-none); /** List list item leading-icon shape */
+  --leading-avatar-color: var(--md-sys-color-primary-container); /** List list item leading-avatar color */
+  --leading-avatar-shape: var(--md-sys-shape-corner-full); /** List list item leading-avatar shape */
+  --leading-avatar-size: 2.5rem; /** List list item leading-avatar size */
+  --leading-avatar-label-color: var(--md-sys-color-on-primary-container); /** List list item leading avatar label color */
+  --leading-avatar-label-font: var(--md-sys-typescale-title-medium-font); /** List list item leading avatar label font */
+  --leading-avatar-label-line-height: var(--md-sys-typescale-title-medium-line-height); /** List list item leadingavatar label line height */
+  --leading-avatar-label-size: var(--md-sys-typescale-title-medium-size); /** List list item leadingavatar label size */
+  --leading-avatar-label-tracking: var(--md-sys-typescale-title-medium-tracking); /** List list item leading avatar label tracking */
+  --leading-avatar-label-weight: var(--md-sys-typescale-title-medium-weight); /** List list item leading avatar label weight */
+  --leading-image-width: 3.5rem; /** List list item leading-image width */
+  --leading-image-height: 3.5rem; /** List list item leading-image height */
+  --leading-image-shape: var(--md-sys-shape-corner-none); /** List list item leading-image shape */
+  --trailing-icon-color: var(--md-sys-color-on-surface-variant); /** List list item trailing icon color */
+  --trailing-icon-size: 1.5rem; /** List list item trailing icon size */
+  --trailing-icon-selected-color: var(--md-sys-color-primary); /** List list item selected trailing icon color */
+  --trailing-icon-unselected-color: var(--md-sys-color-on-surface); /** List list item unselected trailing icon color */
+  --trailing-supporting-text-color: var(--md-sys-color-on-surface-variant); /** List list item trailing supporting text color */
+  --trailing-supporting-text-selected-color: var(--md-sys-color-on-surface); /** List list item selected trailing supporting text color */
+  --trailing-supporting-text-font: var(--md-sys-typescale-label-small-font); /** List list item trailing supporting text font */
+  --trailing-supporting-text-line-height: var(--md-sys-typescale-label-small-line-height); /** List list item trailing supporting text line height */
+  --trailing-supporting-text-size: var(--md-sys-typescale-label-small-size); /** List list item trailing supporting text size */
+  --trailing-supporting-text-tracking: var(--md-sys-typescale-label-small-tracking); /** List list item trailing supporting text tracking */
+  --trailing-supporting-text-weight: var(--md-sys-typescale-label-small-weight); /** List list item trailing supporting text weight */
+  --divider-leading-space: 1rem; /** List list item divider leading space */
+  --divider-trailing-space: 1rem; /** List list item divider trailing space */
+  --supporting-text-color: var(--md-sys-color-on-surface-variant); /** List list item supporting text color */
+  --supporting-text-selected-color: var(--md-sys-color-on-surface); /** List list item selected supporting text color */
+  --supporting-text-font: var(--md-sys-typescale-body-medium-font); /** List list item supporting text font */
+  --supporting-text-line-height: var(--md-sys-typescale-body-medium-line-height); /** List list item supporting text line height */
+  --supporting-text-size: var(--md-sys-typescale-body-medium-size); /** List list item supporting text size */
+  --supporting-text-tracking: var(--md-sys-typescale-body-medium-tracking); /** List list item supporting text tracking */
+  --supporting-text-weight: var(--md-sys-typescale-body-medium-weight); /** List list item supporting text weight */
+  --overline-color: var(--md-sys-color-on-surface-variant); /** List list item overline color */
+  --overline-selected-color: var(--md-sys-color-on-surface); /** List list item selected overline color */
+  --overline-font: var(--md-sys-typescale-label-small-font); /** List list item overline font */
+  --overline-line-height: var(--md-sys-typescale-label-small-line-height); /** List list item overline line height */
+  --overline-size: var(--md-sys-typescale-label-small-size); /** List list item overline size */
+  --overline-tracking: var(--md-sys-typescale-label-small-tracking); /** List list item overline tracking */
+  --overline-weight: var(--md-sys-typescale-label-small-weight); /** List list item overline weight */
+}
