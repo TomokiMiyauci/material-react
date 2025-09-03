@@ -30,7 +30,7 @@ export default function NavigationBarItem(
         </span>
       </div>
 
-      <Style href="navigation-bar-item" precedence="md">{style}</Style>
+      <Style href="navigation-bar-item">{style}</Style>
     </>
   );
 }
