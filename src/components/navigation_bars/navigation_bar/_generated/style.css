@@ -1,0 +1,1 @@
+[data-md=navigation-bar]{all:unset;background-color:var(--md-sys-color-surface-container);border-radius:var(--md-sys-shape-corner-none);-moz-column-gap:0;column-gap:0;display:flex;height:4rem;&>*{flex:1}&[data-variant=vertical]{--variant:vertical}&[data-variant=horizontal]{--variant:horizontal}}

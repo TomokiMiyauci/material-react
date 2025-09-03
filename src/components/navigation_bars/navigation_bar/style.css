@@ -1,0 +1,22 @@
+@import url(../_generated/token.css);
+
+[data-md="navigation-bar"] {
+  all: unset;
+  background-color: var(--container-color);
+  height: var(--container-height);
+  border-radius: var(--container-shape);
+  display: flex;
+  column-gap: var(--container-items-space);
+
+  &>* {
+    flex: 1;
+  }
+
+  &[data-variant=vertical] {
+    --variant: vertical;
+  }
+
+  &[data-variant=horizontal] {
+    --variant: horizontal;
+  }
+}
