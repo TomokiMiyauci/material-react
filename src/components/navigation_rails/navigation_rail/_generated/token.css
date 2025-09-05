@@ -1,0 +1,24 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+/* @embed */
+:root {
+  --container-minimum-header-space: 2.5rem; /** Nav rail item header space minimum */
+  --collapsed-width: 6rem; /** Nav rail collapsed container width */
+  --collapsed-narrow-width: 5rem; /** Nav rail collapsed narrow container width */
+  --collapsed-elevation: var(--md-sys-elevation-level0); /** Nav rail collapsed container elevation */
+  --collapsed-shape: var(--md-sys-shape-corner-none); /** Nav rail collapsed container shape */
+  --collapsed-color: var(--md-sys-color-surface); /** Nav rail collapsed container color */
+  --collapsed-item-vertical-space: 0.25rem; /** Nav rail collapsed item vertical space */
+  --collapsed-item-top-space: 2.75rem; /** Nav rail collapsed item top space */
+  --extended-minimum-width: 13.75rem; /** Nav rail expanded container width minimum */
+  --extended-maximum-width: 22.5rem; /** Nav rail expanded container width maximum */
+  --extended-top-space: 2.75rem; /** Nav rail expanded top space */
+  --extended-elevation: var(--md-sys-elevation-level0); /** Nav rail expanded container elevation */
+  --extended-modal-elevation: var(--md-sys-elevation-level2); /** Nav rail expanded modal container elevation */
+  --extended-modal-color: var(--md-sys-color-surface-container); /** Nav rail expanded modal container color */
+  --extended-modal-shape: var(--md-sys-shape-corner-large); /** Nav rail expanded modal container shape */
+  --extended-color: var(--md-sys-color-surface); /** Nav rail expanded container color */
+  --extended-shape: var(--md-sys-shape-corner-none); /** Nav rail expanded container shape */
+}

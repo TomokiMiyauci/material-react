@@ -1,0 +1,41 @@
+@import url(./_generated/token.css);
+
+@scope([data-md=navigation-rail]) {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &[data-variant=collapsed] {
+    width: var(--collapsed-width);
+    /* TODO: elevation */
+    border-radius: var(--collapsed-shape);
+    background-color: var(--collapsed-color);
+    --variant: collapsed;
+  }
+
+  &[data-variant=extended] {
+    min-width: var(--extended-minimum-width);
+    max-width: var(--extended-maximum-width);
+    padding-block-start: var(--extended-top-space);
+    /* TODO: elevation */
+    background-color: var(--extended-color);
+    border-radius: var(--extended-shape);
+
+    &[data-variant=modal] {
+      /* TODO: elevation */
+      background-color: var(--extended-modal-color);
+      border-radius: var(--extended-modal-shape);
+    }
+
+    --variant: horizontal;
+  }
+
+  & [data-navigation-items] {
+    all: unset;
+
+    :scope[data-variant=collapsed] & {
+      margin-block-start: var(--collapsed-item-top-space);
+    }
+  }
+}

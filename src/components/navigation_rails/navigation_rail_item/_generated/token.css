@@ -1,0 +1,30 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+/* @embed */
+:root {
+  --container-height: 4rem; /** Nav rail item container height */
+  --container-short-height: 3.5rem; /** Nav rail item short container height */
+  --container-shape: var(--md-sys-shape-corner-none); /** Nav rail item container shape */
+  --container-vertical-space: 0.375rem; /** Nav rail item container vertical space */
+  --container-header-minimum-space: 2.5rem; /** Nav rail item header space minimum */
+  --icon-size: 1.5rem; /** Nav rail item icon size */
+  --indicator-active-shape: var(--md-sys-shape-corner-full); /** Nav rail item active indicator shape */
+  --indicator-active-leading-space: 1rem; /** Nav rail item active indicator leading space */
+  --indicator-active-trailing-space: 1rem; /** Nav rail item active indicator trailing space */
+  --indicator-active-color: var(--md-sys-color-secondary-container); /** Nav rail item active indicator color */
+  --indicator-vertical-active-height: 2rem; /** Nav rail item vertical active indicator height */
+  --indicator-vertical-active-width: 3.5rem; /** Nav rail item vertical active indicator width */
+  --item-between-indicator-and-icon-space: 0.5rem; /** Nav rail item active indicator icon label space */
+  --item-vertical-between-indicator-and-icon-space: 0.25rem; /** Nav rail item vertical icon label space */
+  --label-text-active-color: var(--md-sys-color-secondary); /** Nav rail item active label text color */
+  --label-text-inactive-color: var(--md-sys-color-on-surface-variant); /** Nav rail item inactive label text color */
+  --label-text-vertical-font-name: var(--md-ref-typeface-plain); /** Nav rail item vertical label text */
+  --label-text-vertical-font-weight: var(--md-ref-typeface-weight-medium); /** Nav rail item vertical label text */
+  --label-text-vertical-font-size: 0.75rem; /** Nav rail item vertical label text */
+  --label-text-vertical-font-tracking: 0.03125rem; /** Nav rail item vertical label text */
+  --label-text-vertical-line-height: 1rem; /** Nav rail item vertical label text */
+  --placeholder-token: var(--);
+  --placeholder-dimension: [object Object];
+}

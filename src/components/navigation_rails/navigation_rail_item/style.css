@@ -1,0 +1,83 @@
+@import url(./_generated/token.css);
+
+@scope([data-md=navigation-rail-item]) {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-height: var(--container-height);
+  min-height: var(--container-short-height);
+  border-radius: var(--container-shape);
+  padding-block-end: var(--container-vertical-space);
+
+  & [data-container] {
+    all: unset;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: var(--item-between-indicator-and-icon-space);
+  }
+
+  & [data-icon] {
+    all: unset;
+    display: inline-flex;
+    width: var(--icon-size);
+    height: var(--icon-size);
+    color: var(--item-icon-inactive-color);
+
+    :scope[data-active] & {
+      color: var(--item-icon-active-color);
+    }
+  }
+
+  & [data-label-text] {
+    all: unset;
+    color: var(--label-text-inactive-color);
+
+    :scope[data-active] & {
+      color: var(--label-text-active-color);
+    }
+  }
+
+  & [data-indicator] {
+    all: unset;
+    display: inline-flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+
+    :scope[data-active] & {
+      border-radius: var(--indicator-active-shape);
+      padding-inline-start: var(--indicator-active-leading-space);
+      padding-inline-end: var(--indicator-active-trailing-space);
+      background-color: var(--indicator-active-color);
+    }
+
+    /*
+
+    :scope:hover & {
+      --per-opacity: calc(var(--state-layer-hovered-active-opacity) * 100%);
+      background-color: color-mix(in srgb, var(--state-layer-hovered-inactive-color) var(--per-opacity), transparent);
+    }
+
+    :scope[data-active]:hover & {
+      background-color: color-mix(in srgb, var(--indicator-color), var(--state-layer-hovered-active-color) var(--per-opacity));
+    } */
+  }
+
+  @container style(--variant: collapsed) {
+    & [data-label-text] {
+      font-family: var(--label-text-vertical-font-name);
+      font-size: var(--label-text-vertical-font-size);
+      font-weight: var(--label-text-vertical-font-weight);
+      letter-spacing: var(--label-text-vertical-font-tracking);
+      line-height: var(--label-text-vertical-line-height);
+    }
+
+    & [data-indicator] {
+      width: var(--indicator-vertical-active-width);
+      height: var(--indicator-vertical-active-height);
+    }
+  }
+}
