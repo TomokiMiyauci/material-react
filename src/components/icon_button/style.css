@@ -1,7 +1,7 @@
 @import url(./_generated/token.css);
 
 /* container */
-[data-md="icon-button"] {
+@scope ([data-md="icon-button"]) {
   all: unset;
   display: inline-flex;
   align-items: center;
@@ -267,6 +267,8 @@
 
   /* icon */
   & [data-icon] {
+    all: unset;
+
     [data-color="filled"] & {
       color: var(--icon-color-filled-color);
     }
