@@ -1,8 +1,8 @@
 import IconButton from "./IconButton.tsx";
-import type { Meta } from "@storybook/react-vite";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
-export default {
+const meta = {
   title: "Example/IconButton",
   component: IconButton,
   parameters: {
@@ -21,16 +21,32 @@ export default {
   },
 } satisfies Meta<typeof IconButton>;
 
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Default = {};
+export const Enabled = {} satisfies Story;
 export const Disabled = {
   args: {
     disabled: true,
   },
-};
+} satisfies Story;
 
-export const Large = {
-  args: {
-    size: "lg",
+export const Pressed = {
+  parameters: {
+    pseudo: { active: true },
   },
-};
+} satisfies Story;
+
+export const Focused = {
+  parameters: {
+    pseudo: { focusVisible: true },
+  },
+} satisfies Story;
+
+export const Hovered = {
+  parameters: {
+    pseudo: { hover: true },
+  },
+} satisfies Story;
