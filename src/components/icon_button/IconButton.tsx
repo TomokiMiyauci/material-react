@@ -1,17 +1,8 @@
-import type {
-  ButtonHTMLAttributes,
-  DetailedHTMLProps,
-  JSX,
-  ReactNode,
-} from "react";
+import type { JSX, ReactNode } from "react";
 import style from "./_generated/style.ts";
-import Style from "../_internal/Style.tsx";
+import Style from "@internal/Style.tsx";
 
-export interface IconButtonProps extends
-  DetailedHTMLProps<
-    ButtonHTMLAttributes<HTMLButtonElement>,
-    HTMLButtonElement
-  > {
+export interface IconButtonProps {
   /**
    * @default "sm"
    */
@@ -55,7 +46,11 @@ const DEFAULT_PROPS = {
 /**
  * Icon buttons help people take minor actions with one tap.
  */
-export default function IconButton(props: IconButtonProps): JSX.Element {
+export default function IconButton(
+  props:
+    & IconButtonProps
+    & JSX.IntrinsicElements["button"],
+): JSX.Element {
   const {
     size = DEFAULT_PROPS.size,
     shape = DEFAULT_PROPS.shape,
