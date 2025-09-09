@@ -1,9 +1,8 @@
 import NavigationBar from "./NavigationBar.tsx";
-import NavigationBarItem from "../navigation_bar_item/NavigationBarItem.tsx";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
-  title: "Example/NavigationBar",
+  title: "Example/NavigationBars/NavigationBar",
   component: NavigationBar,
   parameters: {
     layout: "centered",
@@ -22,30 +21,6 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Default = {
-  "args": {
-    children: (
-      <>
-        <NavigationBarItem
-          label="Home"
-          icon={
-            <span className="icon-[material-symbols--home-outline-rounded] w-full h-full" />
-          }
-          active
-        />
-        <NavigationBarItem
-          label="Home"
-          icon={
-            <span className="icon-[material-symbols--home-outline-rounded] w-full h-full" />
-          }
-        />
-        <NavigationBarItem
-          label="Home"
-          icon={
-            <span className="icon-[material-symbols--home-outline-rounded] w-full h-full" />
-          }
-        />
-      </>
-    ),
-  },
+export const Enabled = {
+  "args": {},
 } satisfies Story;
