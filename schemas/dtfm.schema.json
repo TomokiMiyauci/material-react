@@ -45,7 +45,7 @@
     "typography": {
       "type": "object",
       "properties": {
-        "$type": { "const": "typography" },
+        "$type": { "const": "typography/token" },
         "$value": {
           "type": "object",
           "properties": {
