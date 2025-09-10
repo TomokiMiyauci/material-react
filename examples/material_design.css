@@ -1,10 +1,38 @@
 :root {
   --md-ref-typeface-brand: Roboto; /** Brand typeface */
-  --md-ref-typeface-a: [object Object];
   --md-ref-typeface-plain: Roboto; /** Plain typeface */
   --md-ref-typeface-weight-regular: 400; /** Regular weight */
   --md-ref-typeface-weight-medium: 500; /** Medium weight */
   --md-ref-typeface-weight-bold: 700; /** Bold weight */
+  --md-ref-palette-primary30: color(srgb 0.31 0.216 0.545);
+  --md-ref-palette-primary40: color(srgb 0.404 0.314 0.643);
+  --md-ref-palette-primary90: color(srgb 0.918 0.867 1);
+  --md-ref-palette-primary100: color(srgb 1 1 1);
+  --md-ref-palette-secondary30: color(srgb 0.29 0.267 0.345); /** Secondary 30 */
+  --md-ref-palette-secondary40: color(srgb 0.384 0.357 0.443);
+  --md-ref-palette-secondary90: color(srgb 0.91 0.871 0.973);
+  --md-ref-palette-secondary100: color(srgb 1 1 1);
+  --md-ref-palette-tertiary30: color(srgb 0.388 0.231 0.282); /** Tertiary 30 */
+  --md-ref-palette-tertiary40: color(srgb 0.49 0.322 0.376);
+  --md-ref-palette-tertiary90: color(srgb 1 0.847 0.894);
+  --md-ref-palette-tertiary100: color(srgb 1 1 1);
+  --md-ref-palette-error30: color(srgb 0.549 0.114 0.09); /** Error 30 */
+  --md-ref-palette-error40: color(srgb 0.702 0.149 0.118);
+  --md-ref-palette-error90: color(srgb 0.976 0.871 0.863);
+  --md-ref-palette-error100: color(srgb 1 1 1);
+  --md-ref-palette-neutral10: color(srgb 0.114 0.106 0.125);
+  --md-ref-palette-neutral20: color(srgb 0.196 0.184 0.208);
+  --md-ref-palette-neutral90: color(srgb 0.902 0.878 0.914);
+  --md-ref-palette-neutral92: color(srgb 0.925 0.902 0.941);
+  --md-ref-palette-neutral94: color(srgb 0.953 0.929 0.969);
+  --md-ref-palette-neutral95: color(srgb 0.961 0.937 0.969);
+  --md-ref-palette-neutral96: color(srgb 0.969 0.949 0.98);
+  --md-ref-palette-neutral98: color(srgb 0.996 0.969 1);
+  --md-ref-palette-neutral100: color(srgb 1 1 1);
+  --md-ref-palette-neutral-variant30: color(srgb 0.286 0.271 0.31);
+  --md-ref-palette-neutral-variant50: color(srgb 0.475 0.451 0.494);
+  --md-ref-palette-neutral-variant80: color(srgb 0.792 0.769 0.816);
+  --md-ref-palette-neutral-variant90: color(srgb 0.906 0.878 0.925);
   --md-sys-shape-corner-full: 9999px; /** Fully rounded */
   --md-sys-shape-corner-extra-large: 1.75rem; /** Extra large rounding */
   --md-sys-shape-corner-large: 1rem; /** Large rounding */
@@ -15,10 +43,109 @@
   --md-sys-typescale-display-large-size: 3.5625rem; /** Display Large font size */
   --md-sys-typescale-display-large-tracking: -0.015625rem; /** Display Large font tracking */
   --md-sys-typescale-display-large-line-height: 4rem; /** Display Large line height */
+  --md-sys-typescale-display-medium-size: 2.8125rem; /** Display Medium font size */
+  --md-sys-typescale-display-medium-tracking: 0rem; /** Display Medium font tracking */
+  --md-sys-typescale-display-medium-line-height: 3.25rem; /** Display Medium line height */
+  --md-sys-typescale-display-small-size: 2.25rem; /** Display Small font size */
+  --md-sys-typescale-display-small-tracking: 0rem; /** Display Small font tracking */
+  --md-sys-typescale-display-small-line-height: 2.75rem; /** Display Small line height */
+  --md-sys-typescale-headline-large-size: 2rem; /** Headline Large font size */
+  --md-sys-typescale-headline-large-tracking: 0rem; /** Headline Large font tracking */
+  --md-sys-typescale-headline-large-line-height: 2.5rem; /** Headline Large line height */
+  --md-sys-typescale-headline-medium-size: 1.75rem; /** Headline Medium font size */
+  --md-sys-typescale-headline-medium-tracking: 0rem; /** Headline Medium font tracking */
+  --md-sys-typescale-headline-medium-line-height: 2.25rem; /** Headline Medium line height */
+  --md-sys-typescale-headline-small-size: 1.5rem; /** Headline Small font size */
+  --md-sys-typescale-headline-small-tracking: 0rem; /** Headline Small font tracking */
+  --md-sys-typescale-headline-small-line-height: 2rem; /** Headline Small line height */
+  --md-sys-typescale-title-large-size: 1.375rem; /** Title Large font size */
+  --md-sys-typescale-title-large-tracking: 0rem; /** Title Large font tracking */
+  --md-sys-typescale-title-large-line-height: 1.75rem; /** Title Large line height */
+  --md-sys-typescale-title-medium-size: 1rem; /** Title Medium font size */
+  --md-sys-typescale-title-medium-tracking: 0.009375rem; /** Title Medium font tracking */
+  --md-sys-typescale-title-medium-line-height: 1.5rem; /** Title Medium line height */
+  --md-sys-typescale-title-small-size: 0.875rem; /** Title Small font size */
+  --md-sys-typescale-title-small-tracking: 0.00625rem; /** Title Small font tracking */
+  --md-sys-typescale-title-small-line-height: 1.25rem; /** Title Small line height */
+  --md-sys-typescale-body-large-size: 1rem; /** Body Large font size */
+  --md-sys-typescale-body-large-tracking: 0.03125rem; /** Body Large font tracking */
+  --md-sys-typescale-body-large-line-height: 1.5rem; /** Body Large line height */
+  --md-sys-typescale-body-medium-size: 0.875rem; /** Body Medium font size */
+  --md-sys-typescale-body-medium-tracking: 0.015625rem; /** Body Medium font tracking */
+  --md-sys-typescale-body-medium-line-height: 1.25rem; /** Body Medium line height */
+  --md-sys-typescale-body-small-size: 0.75rem; /** Body Small font size */
+  --md-sys-typescale-body-small-tracking: 0.025rem; /** Body Small font tracking */
+  --md-sys-typescale-body-small-line-height: 1rem; /** Body Small line height */
+  --md-sys-typescale-label-large-size: 0.875rem; /** Label Large font size */
+  --md-sys-typescale-label-large-tracking: 0.00625rem; /** Label Large font tracking */
+  --md-sys-typescale-label-large-line-height: 1.25rem; /** Label Large line height */
+  --md-sys-typescale-label-medium-size: 0.75rem; /** Label Medium font size */
+  --md-sys-typescale-label-medium-tracking: 0.03125rem; /** Label Medium font tracking */
+  --md-sys-typescale-label-medium-line-height: 1rem; /** Label Medium line height */
+  --md-sys-typescale-label-small-size: 0.6875rem; /** Label Small font size */
+  --md-sys-typescale-label-small-tracking: 0.03125rem; /** Label Small font tracking */
+  --md-sys-typescale-label-small-line-height: 1rem; /** Label Small line height */
   --md-sys-state-dragged-state-layer-opacity: 0.16; /** Dragged state layer opacity */
   --md-sys-state-pressed-state-layer-opacity: 0.1; /** Pressed state layer opacity */
   --md-sys-state-focus-state-layer-opacity: 0.1; /** Focus state layer opacity */
   --md-sys-state-hover-state-layer-opacity: 0.08; /** Hover state layer opacity */
+  --md-sys-color-primary: var(--md-ref-palette-primary40); /** Primary */
+  --md-sys-color-on-primary: var(--md-ref-palette-primary100); /** On primary */
+  --md-sys-color-primary-container: var(--md-ref-palette-primary90); /** Primary container */
+  --md-sys-color-on-primary-container: var(--md-ref-palette-primary30); /** On primary container */
+  --md-sys-color-secondary: var(--md-ref-palette-secondary40); /** Secondary */
+  --md-sys-color-on-secondary: var(--md-ref-palette-secondary100); /** On secondary */
+  --md-sys-color-secondary-container: var(--md-ref-palette-secondary90); /** Secondary container */
+  --md-sys-color-on-secondary-container: var(--md-ref-palette-secondary30); /** On secondary container */
+  --md-sys-color-tertiary: var(--md-ref-palette-tertiary40); /** Tertiary */
+  --md-sys-color-on-tertiary: var(--md-ref-palette-tertiary100); /** On tertiary */
+  --md-sys-color-tertiary-container: var(--md-ref-palette-tertiary90); /** Tertiary container */
+  --md-sys-color-on-tertiary-container: var(--md-ref-palette-tertiary30); /** On tertiary container */
+  --md-sys-color-error: var(--md-ref-palette-error40); /** Error */
+  --md-sys-color-on-error: var(--md-ref-palette-error100); /** On error */
+  --md-sys-color-error-container: var(--md-ref-palette-error90); /** Error container */
+  --md-sys-color-on-error-container: var(--md-ref-palette-error30); /** On error container */
+  --md-sys-color-surface: var(--md-ref-palette-neutral98); /** Surface */
+  --md-sys-color-on-surface: var(--md-ref-palette-neutral10); /** On surface */
+  --md-sys-color-surface-variant: var(--md-ref-palette-neutral-variant90); /** Surface Variant */
+  --md-sys-color-on-surface-variant: var(--md-ref-palette-neutral-variant30); /** On surface variant */
+  --md-sys-color-surface-container-highest: var(--md-ref-palette-neutral90); /** Surface Container Highest */
+  --md-sys-color-surface-container-high: var(--md-ref-palette-neutral92); /** Surface Container High */
+  --md-sys-color-surface-container: var(--md-ref-palette-neutral94); /** Surface Container */
+  --md-sys-color-surface-container-low: var(--md-ref-palette-neutral96); /** Surface Container Low */
+  --md-sys-color-surface-container-lowest: var(--md-ref-palette-neutral100); /** Surface Container Lowest */
+  --md-sys-color-inverse-surface: var(--md-ref-palette-neutral20); /** Inverse surface */
+  --md-sys-color-inverse-on-surface: var(--md-ref-palette-neutral95); /** Inverse on surface */
+  --md-sys-color-outline: var(--md-ref-palette-neutral-variant50); /** Outline */
+  --md-sys-color-outline-variant: var(--md-ref-palette-neutral-variant80); /** Outline Variant */
   --md-sys-typescale-display-large-font: var(--md-ref-typeface-brand); /** Display Large font name */
   --md-sys-typescale-display-large-weight: var(--md-ref-typeface-weight-regular); /** Display Large font weight */
+  --md-sys-typescale-display-medium-font: var(--md-ref-typeface-brand); /** Display Medium font name */
+  --md-sys-typescale-display-medium-weight: var(--md-ref-typeface-weight-regular); /** Display Medium font weight */
+  --md-sys-typescale-display-small-font: var(--md-ref-typeface-brand); /** Display Small font name */
+  --md-sys-typescale-display-small-weight: var(--md-ref-typeface-weight-regular); /** Display Small font weight */
+  --md-sys-typescale-headline-large-font: var(--md-ref-typeface-brand); /** Headline Large font name */
+  --md-sys-typescale-headline-large-weight: var(--md-ref-typeface-weight-regular); /** Headline Large font weight */
+  --md-sys-typescale-headline-medium-font: var(--md-ref-typeface-brand); /** Headline Medium font name */
+  --md-sys-typescale-headline-medium-weight: var(--md-ref-typeface-weight-regular); /** Headline Medium font weight */
+  --md-sys-typescale-headline-small-font: var(--md-ref-typeface-brand); /** Headline Small font name */
+  --md-sys-typescale-headline-small-weight: var(--md-ref-typeface-weight-regular); /** Headline Small font weight */
+  --md-sys-typescale-title-large-font: var(--md-ref-typeface-brand); /** Title Large font name */
+  --md-sys-typescale-title-large-weight: var(--md-ref-typeface-weight-regular); /** Title Large font weight */
+  --md-sys-typescale-title-medium-font: var(--md-ref-typeface-plain); /** Title Medium font name */
+  --md-sys-typescale-title-medium-weight: var(--md-ref-typeface-weight-medium); /** Title Medium font weight */
+  --md-sys-typescale-title-small-font: var(--md-ref-typeface-plain); /** Title Small font name */
+  --md-sys-typescale-title-small-weight: var(--md-ref-typeface-weight-medium); /** Title Small font weight */
+  --md-sys-typescale-body-large-font: var(--md-ref-typeface-plain); /** Body Large font name */
+  --md-sys-typescale-body-large-weight: var(--md-ref-typeface-weight-regular); /** Body Large font weight */
+  --md-sys-typescale-body-medium-font: var(--md-ref-typeface-plain); /** Body Medium font name */
+  --md-sys-typescale-body-medium-weight: var(--md-ref-typeface-weight-regular); /** Body Medium font weight */
+  --md-sys-typescale-body-small-font: var(--md-ref-typeface-plain); /** Body Small font name */
+  --md-sys-typescale-body-small-weight: var(--md-ref-typeface-weight-regular); /** Body Small font weight */
+  --md-sys-typescale-label-large-font: var(--md-ref-typeface-plain); /** Label Large font name */
+  --md-sys-typescale-label-large-weight: var(--md-ref-typeface-weight-medium); /** Label Large font weight */
+  --md-sys-typescale-label-medium-font: var(--md-ref-typeface-plain); /** Label Medium font name */
+  --md-sys-typescale-label-medium-weight: var(--md-ref-typeface-weight-medium); /** Label Medium font weight */
+  --md-sys-typescale-label-small-font: var(--md-ref-typeface-plain); /** Label Small font name */
+  --md-sys-typescale-label-small-weight: var(--md-ref-typeface-weight-medium); /** Label Small font weight */
 }
