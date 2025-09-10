@@ -4,6 +4,10 @@
     { "$ref": "#/$defs/token" },
     { "$ref": "#/$defs/dimension" },
     { "$ref": "#/$defs/typography" },
+    { "$ref": "#/$defs/fontFamily" },
+    { "$ref": "#/$defs/fontWeight" },
+    { "$ref": "./dtcm.schema.json" },
+    { "$ref": "#/$defs/reference" },
     {
       "type": "object",
       "minProperties": 1,
@@ -75,6 +79,39 @@
         "unit": { "enum": ["px", "rem", "dp"] }
       },
       "required": ["value", "unit"]
+    },
+    "fontFamily": {
+      "type": "object",
+      "properties": {
+        "$type": { "const": "fontFamily" },
+        "$value": { "type": "string" },
+        "$description": { "type": "string" }
+      },
+      "required": ["$type", "$value"],
+      "additionalProperties": false
+    },
+    "fontWeight": {
+      "type": "object",
+      "properties": {
+        "$type": { "const": "fontWeight" },
+        "$value": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 1000
+        },
+        "$description": { "type": "string" }
+      },
+      "required": ["$type", "$value"],
+      "additionalProperties": false
+    },
+    "reference": {
+      "type": "object",
+      "properties": {
+        "$value": { "type": "string", "pattern": "^{.*}$" },
+        "$description": { "type": "string" }
+      },
+      "required": ["$value"],
+      "additionalProperties": false
     }
   }
 }
