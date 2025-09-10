@@ -1,0 +1,26 @@
+@import url(./_generated/token.css);
+
+@scope([data-md=badge]) {
+  all: unset;
+  display: inline-flex;
+  min-height: var(--container-size);
+  min-width: var(--container-size);
+  background-color: var(--container-color);
+  border-radius: var(--container-shape);
+  box-sizing: border-box;
+
+  &[data-size=large] {
+    min-height: var(--container-large-size);
+    min-width: var(--container-large-size);
+    background-color: var(--container-large-color);
+    border-radius: var(--container-large-shape);
+    color: var(--label-text-large-color);
+    font-family: var(--label-text-large-font);
+    font-size: var(--label-text-large-size);
+    font-weight: var(--label-text-large-weight);
+    line-height: var(--label-text-large-line-height);
+    letter-spacing: var(--label-text-large-tracking);
+    padding-inline-start: 4px;
+    padding-inline-end: 4px;
+  }
+}

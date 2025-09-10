@@ -1,0 +1,19 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+/* @embed */
+:root {
+  --container-color: var(--md-sys-color-error); /** Badge color */
+  --container-shape: var(--md-sys-shape-corner-full); /** Badge shape */
+  --container-size: 0.375rem; /** Badge size */
+  --container-large-color: var(--md-sys-color-error); /** Badge large color */
+  --container-large-shape: var(--md-sys-shape-corner-full); /** Badge large shape */
+  --container-large-size: 1rem; /** Badge size */
+  --label-text-large-color: var(--md-sys-color-on-error); /** Badge large label text color */
+  --label-text-large-font: var(--md-sys-typescale-label-small-font); /** Badge large label text font */
+  --label-text-large-line-height: var(--md-sys-typescale-label-small-line-height); /** Badge large label text line height */
+  --label-text-large-size: var(--md-sys-typescale-label-small-size); /** Badge large label text size */
+  --label-text-large-tracking: var(--md-sys-typescale-label-small-tracking); /** Badge large label text tracking */
+  --label-text-large-weight: var(--md-sys-typescale-label-small-weight); /** Badge large label text weight */
+}
