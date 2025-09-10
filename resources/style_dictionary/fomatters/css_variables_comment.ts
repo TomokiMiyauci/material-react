@@ -1,9 +1,8 @@
 import type { Format } from "style-dictionary/types";
 import { fileHeader, formattedVariables } from "style-dictionary/utils";
 
-export const NAME = "css/variables+comment";
 export default {
-  name: NAME,
+  name: "css/variables+comment",
   format: async ({ dictionary, file, options }) => {
     const headerStatement = await fileHeader({ file, options });
 

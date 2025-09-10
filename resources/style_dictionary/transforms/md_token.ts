@@ -10,10 +10,8 @@ export function tokenToCssVarriable(token: string): `var(${string})` {
   return `var(${variable})`;
 }
 
-export const NAME = "md/token";
-
 export default {
-  name: NAME,
+  name: "md/token",
   type: "value",
   filter: (token) => {
     return !!token.$type && token.$type === "token";
