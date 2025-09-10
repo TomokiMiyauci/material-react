@@ -32,7 +32,6 @@ export default function inlineTokens(): Plugin {
         parsed.walk((node) => {
           if (node.type === "function" && node.value === "var") {
             const varName = node.nodes[0]?.value;
-            console.log(varName);
 
             if (varName && tokens.has(varName)) {
               const value = tokens.get(varName)!;

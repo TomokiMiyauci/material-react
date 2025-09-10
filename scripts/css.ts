@@ -11,6 +11,7 @@ const iter = expandGlob("src/**/*.css", {
 });
 
 const processor = postcss([
+  // deno-lint-ignore no-explicit-any
   atImport as any,
   inlineToken,
   autoprefixer,
@@ -28,7 +29,7 @@ for await (const entry of iter) {
     const generatedDir = join(dir, "_generated");
     const filePath = join(generatedDir, base);
 
-    await ensureDir(dir);
+    await ensureDir(generatedDir);
     await Deno.writeTextFile(filePath, result.css);
   }
 }

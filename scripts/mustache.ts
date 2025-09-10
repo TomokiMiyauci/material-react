@@ -49,7 +49,9 @@ if (import.meta.main) {
       });
 
       const allTokens = await Promise.all(promises);
-      const tokens = new Set(allTokens.flat()).values().toArray().toSorted();
+      const tokens = new Set(allTokens.flat()).values().toArray().filter(
+        isMdToken,
+      ).toSorted();
 
       const fileName = basename(name, EXT);
       const contents = mustashe.render(template, { tokens });
@@ -58,4 +60,8 @@ if (import.meta.main) {
       await Deno.writeTextFile(outPath, contents);
     }
   }
+}
+
+function isMdToken(value: string): value is `--md.${string}` {
+  return value.startsWith("--md-");
 }
