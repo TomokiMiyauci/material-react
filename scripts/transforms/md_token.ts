@@ -1,10 +1,10 @@
 import type { Transform } from "style-dictionary/types";
 
-function dotToHyphen(input: string): string {
+export function dotToHyphen(input: string): string {
   return input.replace(/\./g, "-");
 }
 
-function tokenToCssVarriable(token: string): `var(${string})` {
+export function tokenToCssVarriable(token: string): `var(${string})` {
   const hypened = dotToHyphen(token);
   const variable = `--${hypened}`;
   return `var(${variable})`;

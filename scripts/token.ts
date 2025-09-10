@@ -11,6 +11,7 @@ import dimensitonTransform, {
 import cssVariableWithComment, {
   NAME as formatName,
 } from "./fomatters/css_variables_comment.ts";
+import typographyTransform from "./transforms/typography.ts";
 
 const iter = expandGlob("src/**/token.json", {
   exclude: ["src/**/_generated"],
@@ -23,6 +24,7 @@ for await (const entry of iter) {
     const sd = new StyleDictionary(config);
     sd.registerTransform(tokenTransform);
     sd.registerTransform(dimensitonTransform);
+    sd.registerTransform(typographyTransform);
     sd.registerFormat(cssVariableWithComment);
 
     await sd.buildAllPlatforms();
@@ -47,7 +49,11 @@ function defineConfig(path: string): Config {
             },
           },
         ],
-        transforms: [tokenTransformName, dimenstionName],
+        transforms: [
+          typographyTransform.name,
+          tokenTransformName,
+          dimenstionName,
+        ],
       },
     },
   };
