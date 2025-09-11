@@ -1,17 +1,20 @@
 import type { JSX, ReactNode } from "react";
 import style from "./_generated/style.ts";
 import Style from "@internal/Style.tsx";
+import BadgePositioner from "@internal/badge_positioner/BadgePositioner.tsx";
 
 export type NavigationBarItemProps = {
   label?: ReactNode;
   active?: boolean;
   icon?: ReactNode;
+  badge?: ReactNode;
 };
 
 export default function NavigationBarItem(
   props: NavigationBarItemProps & JSX.IntrinsicElements["div"],
 ): JSX.Element {
-  const { label, active, icon, ...rest } = props;
+  const { label, active, icon, badge, ...rest } = props;
+
   return (
     <>
       <div
@@ -22,6 +25,7 @@ export default function NavigationBarItem(
         <div data-indicator="">
           <span data-icon="">
             {icon}
+            {badge && <BadgePositioner>{badge}</BadgePositioner>}
           </span>
         </div>
 
