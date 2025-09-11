@@ -8,6 +8,8 @@ export default {
     "../src/**/*.stories.tsx",
   ],
   "addons": [
+    "@storybook/addon-docs",
+    "@storybook/addon-a11y",
     "storybook-addon-pseudo-states",
   ],
   "framework": {
