@@ -17,6 +17,7 @@
 
     :scope[data-active] & {
       color: var(--item-icon-active-color);
+      font-variation-settings: "FILL" 1;
     }
   }
 

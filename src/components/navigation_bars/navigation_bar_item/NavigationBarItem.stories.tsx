@@ -13,7 +13,9 @@ const meta = {
   argTypes: {},
   args: {
     icon: (
-      <span className="icon-[material-symbols--home-outline-rounded] w-full h-full" />
+      <span className="material-symbols-outlined">
+        home
+      </span>
     ),
     label: "Home",
   },
@@ -24,6 +26,23 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Enabled = {} satisfies Story;
+export const Hoverd = {
+  parameters: {
+    pseudo: { hover: true },
+  },
+} satisfies Story;
+
+export const Pressed = {
+  parameters: {
+    pseudo: { active: true },
+  },
+} satisfies Story;
+export const Active = {
+  args: {
+    active: true,
+  },
+} satisfies Story;
+
 export const WithBadge = {
   args: {
     badge: <Badge />,
