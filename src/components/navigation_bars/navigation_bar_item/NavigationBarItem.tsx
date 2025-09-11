@@ -2,6 +2,7 @@ import type { JSX, ReactNode } from "react";
 import style from "./_generated/style.ts";
 import Style from "@internal/Style.tsx";
 import BadgePositioner from "@internal/badge_positioner/BadgePositioner.tsx";
+import { bool } from "@/utils/convert.ts";
 
 export type NavigationBarItemProps = {
   label?: ReactNode;
@@ -19,7 +20,7 @@ export default function NavigationBarItem(
     <>
       <div
         data-md="navigation-bar-item"
-        data-active={active}
+        data-active={bool(active)}
         {...rest}
       >
         <div data-indicator="">
