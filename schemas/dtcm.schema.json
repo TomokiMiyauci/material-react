@@ -28,8 +28,10 @@
         }
       },
       "required": ["colorSpace", "components"]
-    }
+    },
+    "$description": { "type": "string" }
   },
+  "required": ["$type", "$value"],
   "additionalProperties": false,
 
   "$defs": {

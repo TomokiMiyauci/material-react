@@ -25,6 +25,7 @@ const config = {
         transformers.typography,
         transformers.token,
         transformers.dimension,
+        transformers.color,
       ],
     },
   },
