@@ -5,9 +5,3 @@
 @plugin "@iconify/tailwind4" {
   scale: 0;
 }
-
-:root {
-  --md-sys-state-focus-indicator-thickness: 3px;
-  --md-sys-state-focus-indicator-outer-offset: 2px;
-  --md-sys-state-focus-indicator-inner-offset: -3px;
-}
