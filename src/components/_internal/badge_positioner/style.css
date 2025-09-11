@@ -1,0 +1,14 @@
+@scope([data-md=badge-positioner]) {
+  all: unset;
+  position: absolute;
+  display: inherit;
+  top: 0;
+  right: 0;
+
+  :scope:has([data-size=large]) {
+    inset: auto;
+    bottom: 100%;
+    left: 100%;
+    transform: translate(-12px, 14px);
+  }
+}
