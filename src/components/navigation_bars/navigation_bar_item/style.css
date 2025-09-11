@@ -13,6 +13,7 @@
     width: var(--item-icon-size);
     height: var(--item-icon-size);
     color: var(--item-icon-inactive-color);
+    position: relative;
 
     :scope[data-active] & {
       color: var(--item-icon-active-color);
@@ -38,7 +39,6 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    position: relative;
     border-radius: var(--item-shape);
 
     :scope[data-active] & {
@@ -53,6 +53,15 @@
     :scope[data-active]:hover & {
       background-color: color-mix(in srgb, var(--indicator-color), var(--state-layer-hovered-active-color) var(--per-opacity));
     }
+  }
+}
+
+@scope([data-md=navigation-bar-item]) {
+  row-gap: var(--item-vertical-space);
+
+  & [data-indicator] {
+    width: var(--indicator-vertical-active-width);
+    height: var(--indicator-vertical-active-height);
   }
 }
 

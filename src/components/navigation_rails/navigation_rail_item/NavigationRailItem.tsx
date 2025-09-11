@@ -20,9 +20,11 @@ export default function NavigationRailItem(
         {...rest}
       >
         <div data-container="">
-          <span data-icon="">
-            {icon}
-          </span>
+          <div data-indicator="">
+            <span data-icon="">
+              {icon}
+            </span>
+          </div>
 
           <span data-label-text="">
             {label}

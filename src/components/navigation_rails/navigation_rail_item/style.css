@@ -46,6 +46,7 @@
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
     :scope[data-active] & {
       border-radius: var(--indicator-active-shape);
@@ -54,8 +55,6 @@
       background-color: var(--indicator-active-color);
     }
 
-    /*
-
     :scope:hover & {
       --per-opacity: calc(var(--state-layer-hovered-active-opacity) * 100%);
       background-color: color-mix(in srgb, var(--state-layer-hovered-inactive-color) var(--per-opacity), transparent);
@@ -63,7 +62,7 @@
 
     :scope[data-active]:hover & {
       background-color: color-mix(in srgb, var(--indicator-color), var(--state-layer-hovered-active-color) var(--per-opacity));
-    } */
+    }
   }
 
   @container style(--variant: collapsed) {
