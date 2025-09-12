@@ -1,0 +1,8 @@
+@import url(./base.css);
+@import url(./light.css);
+@import url(./light.css) (prefers-color-scheme: light);
+@import url(./dark.css) (prefers-color-scheme: dark);
+@import url(./light_hc.css) (prefers-color-scheme: light) and (prefers-contrast: more);
+@import url(./dark_hc.css) (prefers-color-scheme: dark) and (prefers-contrast: more);
+@import url(./light_mc.css) (prefers-color-scheme: light) and (prefers-contrast: less);
+@import url(./dark_mc.css) (prefers-color-scheme: dark) and (prefers-contrast: less);
