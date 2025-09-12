@@ -1,0 +1,31 @@
+:root {
+  --md-sys-color-primary: var(--md-ref-palette-primary80); /** Primary */
+  --md-sys-color-on-primary: var(--md-ref-palette-primary20); /** On primary */
+  --md-sys-color-primary-container: var(--md-ref-palette-primary30); /** Primary container */
+  --md-sys-color-on-primary-container: var(--md-ref-palette-primary90); /** On primary container */
+  --md-sys-color-secondary: var(--md-ref-palette-secondary80); /** Secondary */
+  --md-sys-color-on-secondary: var(--md-ref-palette-secondary20); /** On secondary */
+  --md-sys-color-secondary-container: var(--md-ref-palette-secondary30); /** Secondary container */
+  --md-sys-color-on-secondary-container: var(--md-ref-palette-secondary90); /** On secondary container */
+  --md-sys-color-tertiary: var(--md-ref-palette-tertiary80); /** Tertiary */
+  --md-sys-color-on-tertiary: var(--md-ref-palette-tertiary20); /** On tertiary */
+  --md-sys-color-tertiary-container: var(--md-ref-palette-tertiary30); /** Tertiary container */
+  --md-sys-color-on-tertiary-container: var(--md-ref-palette-tertiary90); /** On tertiary container */
+  --md-sys-color-error: var(--md-ref-palette-error80); /** Error */
+  --md-sys-color-on-error: var(--md-ref-palette-error20); /** On error */
+  --md-sys-color-error-container: var(--md-ref-palette-error30); /** Error container */
+  --md-sys-color-on-error-container: var(--md-ref-palette-error90); /** On error container */
+  --md-sys-color-surface: var(--md-ref-palette-neutral6); /** Surface */
+  --md-sys-color-on-surface: var(--md-ref-palette-neutral90); /** On surface */
+  --md-sys-color-surface-variant: var(--md-ref-palette-neutral-variant30); /** Surface Variant */
+  --md-sys-color-on-surface-variant: var(--md-ref-palette-neutral-variant80); /** On surface variant */
+  --md-sys-color-surface-container-highest: var(--md-ref-palette-neutral22); /** Surface Container Highest */
+  --md-sys-color-surface-container-high: var(--md-ref-palette-neutral17); /** Surface Container High */
+  --md-sys-color-surface-container: var(--md-ref-palette-neutral12); /** Surface Container */
+  --md-sys-color-surface-container-low: var(--md-ref-palette-neutral10); /** Surface Container Low */
+  --md-sys-color-surface-container-lowest: var(--md-ref-palette-neutral4); /** Surface Container Lowest */
+  --md-sys-color-inverse-surface: var(--md-ref-palette-neutral90); /** Inverse surface */
+  --md-sys-color-inverse-on-surface: var(--md-ref-palette-neutral20); /** Inverse on surface */
+  --md-sys-color-outline: var(--md-ref-palette-neutral-variant60); /** Outline */
+  --md-sys-color-outline-variant: var(--md-ref-palette-neutral-variant30); /** Outline Variant */
+}
