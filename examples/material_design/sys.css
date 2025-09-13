@@ -1,0 +1,353 @@
+@property --md-sys-shape-corner-full {
+  syntax: "*";
+  inherits: true;
+  initial-value: 9999px;
+}
+
+@property --md-sys-shape-corner-extra-large {
+  syntax: "*";
+  inherits: true;
+  initial-value: 1.75rem;
+}
+
+@property --md-sys-shape-corner-large {
+  syntax: "*";
+  inherits: true;
+  initial-value: 1rem;
+}
+
+@property --md-sys-shape-corner-medium {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0.75rem;
+}
+
+@property --md-sys-shape-corner-small {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0.5rem;
+}
+
+@property --md-sys-shape-corner-extra-small {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0.25rem;
+}
+
+@property --md-sys-shape-corner-none {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --md-sys-typescale-display-large-size {
+  syntax: "*";
+  inherits: true;
+  initial-value: 3.5625rem;
+}
+
+@property --md-sys-typescale-display-large-tracking {
+  syntax: "*";
+  inherits: true;
+  initial-value: -0.015625rem;
+}
+
+@property --md-sys-typescale-display-large-line-height {
+  syntax: "*";
+  inherits: true;
+  initial-value: 4rem;
+}
+
+@property --md-sys-typescale-display-medium-size {
+  syntax: "*";
+  inherits: true;
+  initial-value: 2.8125rem;
+}
+
+@property --md-sys-typescale-display-medium-tracking {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0rem;
+}
+
+@property --md-sys-typescale-display-medium-line-height {
+  syntax: "*";
+  inherits: true;
+  initial-value: 3.25rem;
+}
+
+@property --md-sys-typescale-display-small-size {
+  syntax: "*";
+  inherits: true;
+  initial-value: 2.25rem;
+}
+
+@property --md-sys-typescale-display-small-tracking {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0rem;
+}
+
+@property --md-sys-typescale-display-small-line-height {
+  syntax: "*";
+  inherits: true;
+  initial-value: 2.75rem;
+}
+
+@property --md-sys-typescale-headline-large-size {
+  syntax: "*";
+  inherits: true;
+  initial-value: 2rem;
+}
+
+@property --md-sys-typescale-headline-large-tracking {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0rem;
+}
+
+@property --md-sys-typescale-headline-large-line-height {
+  syntax: "*";
+  inherits: true;
+  initial-value: 2.5rem;
+}
+
+@property --md-sys-typescale-headline-medium-size {
+  syntax: "*";
+  inherits: true;
+  initial-value: 1.75rem;
+}
+
+@property --md-sys-typescale-headline-medium-tracking {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0rem;
+}
+
+@property --md-sys-typescale-headline-medium-line-height {
+  syntax: "*";
+  inherits: true;
+  initial-value: 2.25rem;
+}
+
+@property --md-sys-typescale-headline-small-size {
+  syntax: "*";
+  inherits: true;
+  initial-value: 1.5rem;
+}
+
+@property --md-sys-typescale-headline-small-tracking {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0rem;
+}
+
+@property --md-sys-typescale-headline-small-line-height {
+  syntax: "*";
+  inherits: true;
+  initial-value: 2rem;
+}
+
+@property --md-sys-typescale-title-large-size {
+  syntax: "*";
+  inherits: true;
+  initial-value: 1.375rem;
+}
+
+@property --md-sys-typescale-title-large-tracking {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0rem;
+}
+
+@property --md-sys-typescale-title-large-line-height {
+  syntax: "*";
+  inherits: true;
+  initial-value: 1.75rem;
+}
+
+@property --md-sys-typescale-title-medium-size {
+  syntax: "*";
+  inherits: true;
+  initial-value: 1rem;
+}
+
+@property --md-sys-typescale-title-medium-tracking {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0.009375rem;
+}
+
+@property --md-sys-typescale-title-medium-line-height {
+  syntax: "*";
+  inherits: true;
+  initial-value: 1.5rem;
+}
+
+@property --md-sys-typescale-title-small-size {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0.875rem;
+}
+
+@property --md-sys-typescale-title-small-tracking {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0.00625rem;
+}
+
+@property --md-sys-typescale-title-small-line-height {
+  syntax: "*";
+  inherits: true;
+  initial-value: 1.25rem;
+}
+
+@property --md-sys-typescale-body-large-size {
+  syntax: "*";
+  inherits: true;
+  initial-value: 1rem;
+}
+
+@property --md-sys-typescale-body-large-tracking {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0.03125rem;
+}
+
+@property --md-sys-typescale-body-large-line-height {
+  syntax: "*";
+  inherits: true;
+  initial-value: 1.5rem;
+}
+
+@property --md-sys-typescale-body-medium-size {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0.875rem;
+}
+
+@property --md-sys-typescale-body-medium-tracking {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0.015625rem;
+}
+
+@property --md-sys-typescale-body-medium-line-height {
+  syntax: "*";
+  inherits: true;
+  initial-value: 1.25rem;
+}
+
+@property --md-sys-typescale-body-small-size {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0.75rem;
+}
+
+@property --md-sys-typescale-body-small-tracking {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0.025rem;
+}
+
+@property --md-sys-typescale-body-small-line-height {
+  syntax: "*";
+  inherits: true;
+  initial-value: 1rem;
+}
+
+@property --md-sys-typescale-label-large-size {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0.875rem;
+}
+
+@property --md-sys-typescale-label-large-tracking {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0.00625rem;
+}
+
+@property --md-sys-typescale-label-large-line-height {
+  syntax: "*";
+  inherits: true;
+  initial-value: 1.25rem;
+}
+
+@property --md-sys-typescale-label-medium-size {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0.75rem;
+}
+
+@property --md-sys-typescale-label-medium-tracking {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0.03125rem;
+}
+
+@property --md-sys-typescale-label-medium-line-height {
+  syntax: "*";
+  inherits: true;
+  initial-value: 1rem;
+}
+
+@property --md-sys-typescale-label-small-size {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0.6875rem;
+}
+
+@property --md-sys-typescale-label-small-tracking {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0.03125rem;
+}
+
+@property --md-sys-typescale-label-small-line-height {
+  syntax: "*";
+  inherits: true;
+  initial-value: 1rem;
+}
+
+@property --md-sys-state-dragged-state-layer-opacity {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0.16;
+}
+
+@property --md-sys-state-pressed-state-layer-opacity {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0.1;
+}
+
+@property --md-sys-state-focus-state-layer-opacity {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0.1;
+}
+
+@property --md-sys-state-focus-indicator-thickness {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0.1875rem;
+}
+
+@property --md-sys-state-focus-indicator-outer-offset {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0.125rem;
+}
+
+@property --md-sys-state-focus-indicator-inner-offset {
+  syntax: "*";
+  inherits: true;
+  initial-value: -0.1875rem;
+}
+
+@property --md-sys-state-hover-state-layer-opacity {
+  syntax: "*";
+  inherits: true;
+  initial-value: 0.08;
+}
