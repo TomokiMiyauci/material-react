@@ -2,7 +2,10 @@
   "name": "@miyauci/rmd",
   "exports": {
     ".": "./src/mod.ts",
-    "./icon-button": "./src/components/icon_button/mod.ts"
+    "./icon-button": "./src/components/icon_button/mod.ts",
+    "./navigation-bar": "./src/components/navigation_bars/navigation_bar/mod.ts",
+    "./navigation-bar-item": "./src/components/navigation_bars/navigation_bar_item/mod.ts",
+    "./badge": "./src/components/badge/mod.ts"
   },
   "imports": {
     "@std/fs": "jsr:@std/fs@^1.0.19",
@@ -16,18 +19,26 @@
     "postcss-import": "npm:postcss-import@^16.1.1",
     "react": "npm:react@^19.1.1",
     "@internal/": "./src/components/_internal/",
-    "style-dictionary": "npm:style-dictionary@^5.0.2"
+    "style-dictionary": "npm:style-dictionary@^5.0.2",
+    "@/": "./src/",
+    "~/": "./"
   },
   "compilerOptions": {
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedIndexedAccess": true
   },
   "version": "0.1.0",
   "tasks": {
-    "generate:token": "deno run --allow-read --allow-sys --allow-env --allow-write=src src/scripts/token.ts",
-    "generate:css": "deno run --allow-read --allow-sys --allow-env --allow-write=src src/scripts/scss.ts",
-    "generate:ts": "deno run --allow-read --allow-write=src src/scripts/css.ts",
-    "generate": {
-      "dependencies": ["generate:token", "generate:css", "generate:ts"]
-    }
-  }
+    "generate:token": "deno run --allow-read --allow-sys --allow-env --allow-write=src scripts/token.ts",
+    "generate:css": "deno run --allow-read --allow-sys --allow-env --allow-write=src scripts/css.ts",
+    "generate:ts": "deno run --allow-read --allow-write=src scripts/ts.ts",
+    "generate:md": "deno run --allow-env --allow-read --allow-write=src scripts/mustache.ts",
+    "generate": "deno task generate:token && deno task generate:css && deno task generate:ts && deno task generate:md"
+  },
+  "nodeModulesDir": "auto"
 }
