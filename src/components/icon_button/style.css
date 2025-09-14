@@ -33,19 +33,19 @@
     background-color: var(--container-color-filled);
 
     &:hover::before {
-      background-color: color-mix(in srgb, var(--state-layer-filled-hovered-color) calc(var(--state-layer-filled-hovered-opacity) * 100%), transparent);
+      background-color: color-mix(in srgb, var(--state-layer-filled-hovered-color) var(--state-layer-filled-hovered-opacity), transparent);
     }
 
     &:active::before {
-      background-color: color-mix(in srgb, var(--state-layer-filled-pressed-color) calc(var(--state-layer-filled-pressed-opacity) * 100%), transparent);
+      background-color: color-mix(in srgb, var(--state-layer-filled-pressed-color) var(--state-layer-filled-pressed-opacity), transparent);
     }
 
     &:focus::before {
-      background-color: color-mix(in srgb, var(--state-layer-filled-focused-color) calc(var(--state-layer-filled-focused-opacity) * 100%), transparent);
+      background-color: color-mix(in srgb, var(--state-layer-filled-focused-color) var(--state-layer-filled-focused-opacity), transparent);
     }
 
     &:disabled {
-      background-color: color-mix(in srgb, var(--container-filled-disabled-color) calc(var(--container-filled-disabled-opacity) * 100%), transparent);
+      background-color: color-mix(in srgb, var(--container-filled-disabled-color) var(--container-filled-disabled-opacity), transparent);
     }
   }
 
@@ -53,19 +53,19 @@
     background-color: var(--container-color-tonal);
 
     &:hover::before {
-      background-color: color-mix(in srgb, var(--state-layer-tonal-hovered-color) calc(var(--state-layer-tonal-hovered-opacity) * 100%), transparent);
+      background-color: color-mix(in srgb, var(--state-layer-tonal-hovered-color) var(--state-layer-tonal-hovered-opacity), transparent);
     }
 
     &:active::before {
-      background-color: color-mix(in srgb, var(--state-layer-tonal-pressed-color) calc(var(--state-layer-tonal-pressed-opacity) * 100%), transparent);
+      background-color: color-mix(in srgb, var(--state-layer-tonal-pressed-color) var(--state-layer-tonal-pressed-opacity), transparent);
     }
 
     &:focus::before {
-      background-color: color-mix(in srgb, var(--state-layer-tonal-focused-color) calc(var(--state-layer-tonal-focused-opacity) * 100%), transparent);
+      background-color: color-mix(in srgb, var(--state-layer-tonal-focused-color) var(--state-layer-tonal-focused-opacity), transparent);
     }
 
     &:disabled {
-      background-color: color-mix(in srgb, var(--container-tonal-disabled-color) calc(var(--container-tonal-disabled-opacity) * 100%), transparent);
+      background-color: color-mix(in srgb, var(--container-tonal-disabled-color) var(--container-tonal-disabled-opacity), transparent);
     }
   }
 
@@ -78,15 +78,15 @@
     }
 
     &:hover::before {
-      background-color: color-mix(in srgb, var(--state-layer-outlined-hovered-color) calc(var(--state-layer-outlined-hovered-opacity) * 100%), transparent);
+      background-color: color-mix(in srgb, var(--state-layer-outlined-hovered-color) var(--state-layer-outlined-hovered-opacity), transparent);
     }
 
     &:active::before {
-      background-color: color-mix(in srgb, var(--state-layer-outlined-pressed-color) calc(var(--state-layer-outlined-pressed-opacity) * 100%), transparent);
+      background-color: color-mix(in srgb, var(--state-layer-outlined-pressed-color) var(--state-layer-outlined-pressed-opacity), transparent);
     }
 
     &:focus::before {
-      background-color: color-mix(in srgb, var(--state-layer-outlined-focused-color) calc(var(--state-layer-outlined-focused-opacity) * 100%), transparent);
+      background-color: color-mix(in srgb, var(--state-layer-outlined-focused-color) var(--state-layer-outlined-focused-opacity), transparent);
     }
 
     &:disabled {
@@ -98,15 +98,15 @@
     background-color: transparent;
 
     &:hover::before {
-      background-color: color-mix(in srgb, var(--state-layer-standard-hovered-color) calc(var(--state-layer-standard-hovered-opacity) * 100%), transparent);
+      background-color: color-mix(in srgb, var(--state-layer-standard-hovered-color) var(--state-layer-standard-hovered-opacity), transparent);
     }
 
     &:active::before {
-      background-color: color-mix(in srgb, var(--state-layer-standard-pressed-color) calc(var(--state-layer-standard-pressed-opacity) * 100%), transparent);
+      background-color: color-mix(in srgb, var(--state-layer-standard-pressed-color) var(--state-layer-standard-pressed-opacity), transparent);
     }
 
     &:focus::before {
-      background-color: color-mix(in srgb, var(--state-layer-standard-focused-color) calc(var(--state-layer-standard-focused-opacity) * 100%), transparent);
+      background-color: color-mix(in srgb, var(--state-layer-standard-focused-color) var(--state-layer-standard-focused-opacity), transparent);
     }
   }
 
@@ -286,7 +286,7 @@
     }
 
     [data-color="filled"]:disabled & {
-      color: color-mix(in srgb, var(--icon-color-filled-disabled-color) calc(var(--icon-color-filled-disabled-opacity) * 100%), transparent);
+      color: color-mix(in srgb, var(--icon-color-filled-disabled-color) var(--icon-color-filled-disabled-opacity), transparent);
     }
 
     [data-color="tonal"] & {
@@ -306,7 +306,7 @@
     }
 
     [data-color="tonal"]:disabled & {
-      color: color-mix(in srgb, var(--icon-color-tonal-disabled-color) calc(var(--icon-color-tonal-disabled-opacity) * 100%), transparent);
+      color: color-mix(in srgb, var(--icon-color-tonal-disabled-color) var(--icon-color-tonal-disabled-opacity), transparent);
     }
 
     [data-color="outlined"] & {
@@ -326,7 +326,7 @@
     }
 
     [data-color="outlined"]:disabled & {
-      color: color-mix(in srgb, var(--icon-color-outlined-disabled-color) calc(var(--icon-color-outlined-disabled-opacity) * 100%), transparent);
+      color: color-mix(in srgb, var(--icon-color-outlined-disabled-color) var(--icon-color-outlined-disabled-opacity), transparent);
     }
 
     [data-color="standard"] & {
@@ -346,7 +346,7 @@
     }
 
     [data-color="standard"]:disabled & {
-      color: color-mix(in srgb, var(--icon-color-standard-disabled-color) calc(var(--icon-color-standard-disabled-opacity) * 100%), transparent);
+      color: color-mix(in srgb, var(--icon-color-standard-disabled-color) var(--icon-color-standard-disabled-opacity), transparent);
     }
 
     [data-size="xs"] & {

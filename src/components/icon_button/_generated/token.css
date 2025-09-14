@@ -22,9 +22,9 @@
   --container-color-filled: var(--md-sys-color-primary); /** Icon button filled container color */
   --container-color-tonal: var(--md-sys-color-secondary-container); /** Icon button tonal container color */
   --container-filled-disabled-color: var(--md-sys-color-on-surface); /** Icon button filled disabled container color */
-  --container-filled-disabled-opacity: 0.1; /** Icon button filled disabled container opacity */
+  --container-filled-disabled-opacity: 10%; /** Icon button filled disabled container opacity */
   --container-tonal-disabled-color: var(--md-sys-color-on-surface); /** Icon button tonal disabled container color */
-  --container-tonal-disabled-opacity: 0.1; /** Icon button tonal disabled container opacity */
+  --container-tonal-disabled-opacity: 10%; /** Icon button tonal disabled container opacity */
   --container-outlined-color: var(--md-sys-color-outline-variant); /** Icon button outlined color */
   --container-outlined-disabled-color: var(--md-sys-color-outline-variant); /** Icon button outlined disabled outline color */
   --container-xsmall-outline-width: 0.0625rem; /** Icon button xsmall outline width */
@@ -42,22 +42,22 @@
   --icon-color-filled-focused-color: var(--md-sys-color-on-primary); /** Icon button filled focused icon color */
   --icon-color-filled-pressed-color: var(--md-sys-color-on-primary); /** Icon button filled pressed icon color */
   --icon-color-filled-disabled-color: var(--md-sys-color-on-surface); /** Icon button filled disabled icon color */
-  --icon-color-filled-disabled-opacity: 0.38; /** Icon button filled disabled icon opacity */
+  --icon-color-filled-disabled-opacity: 38%; /** Icon button filled disabled icon opacity */
   --icon-color-tonal-color: var(--md-sys-color-on-secondary-container); /** Icon button tonal icon color */
   --icon-color-tonal-disabled-color: var(--md-sys-color-on-surface); /** Icon button tonal disabled icon color */
-  --icon-color-tonal-disabled-opacity: 0.38; /** Icon button tonal disabled icon opacity */
+  --icon-color-tonal-disabled-opacity: 38%; /** Icon button tonal disabled icon opacity */
   --icon-color-tonal-hovered-color: var(--md-sys-color-on-secondary-container); /** Icon button tonal hovered icon color */
   --icon-color-tonal-focused-color: var(--md-sys-color-on-secondary-container); /** Icon button tonal focused icon color */
   --icon-color-tonal-pressed-color: var(--md-sys-color-on-secondary-container); /** Icon button tonal pressed icon color */
   --icon-color-outlined-color: var(--md-sys-color-on-surface-variant); /** Icon button outlined icon color */
   --icon-color-outlined-disabled-color: var(--md-sys-color-on-surface); /** Icon button outlined disabled icon color */
-  --icon-color-outlined-disabled-opacity: 0.38; /** Icon button outlined disabled icon opacity */
+  --icon-color-outlined-disabled-opacity: 38%; /** Icon button outlined disabled icon opacity */
   --icon-color-outlined-hovered-color: var(--md-sys-color-on-surface-variant); /** Icon button outlined hovered icon color */
   --icon-color-outlined-focused-color: var(--md-sys-color-on-surface-variant); /** Icon button outlined focused icon color */
   --icon-color-outlined-pressed-color: var(--md-sys-color-on-surface-variant); /** Icon button outlined pressed icon color */
   --icon-color-standard-color: var(--md-sys-color-on-surface-variant); /** Icon button icon color */
   --icon-color-standard-disabled-color: var(--md-sys-color-on-surface); /** Icon button disabled icon color */
-  --icon-color-standard-disabled-opacity: 0.38; /** Icon button disabled opacity */
+  --icon-color-standard-disabled-opacity: 38%; /** Icon button disabled opacity */
   --icon-color-standard-hovered-color: var(--md-sys-color-on-surface-variant); /** Icon button hovered icon color */
   --icon-color-standard-focused-color: var(--md-sys-color-on-surface-variant); /** Icon button focused icon color */
   --icon-color-standard-pressed-color: var(--md-sys-color-on-surface-variant); /** Icon button pressed icon color */
