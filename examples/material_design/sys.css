@@ -35,7 +35,7 @@
 }
 
 @property --md-sys-shape-corner-none {
-  syntax: "*";
+  syntax: "<number>";
   inherits: true;
   initial-value: 0;
 }
@@ -311,21 +311,21 @@
 }
 
 @property --md-sys-state-dragged-state-layer-opacity {
-  syntax: "*";
+  syntax: "<percentage>";
   inherits: true;
-  initial-value: 0.16;
+  initial-value: 16%;
 }
 
 @property --md-sys-state-pressed-state-layer-opacity {
-  syntax: "*";
+  syntax: "<percentage>";
   inherits: true;
-  initial-value: 0.1;
+  initial-value: 10%;
 }
 
 @property --md-sys-state-focus-state-layer-opacity {
-  syntax: "*";
+  syntax: "<percentage>";
   inherits: true;
-  initial-value: 0.1;
+  initial-value: 10%;
 }
 
 @property --md-sys-state-focus-indicator-thickness {
@@ -347,7 +347,7 @@
 }
 
 @property --md-sys-state-hover-state-layer-opacity {
-  syntax: "*";
+  syntax: "<percentage>";
   inherits: true;
-  initial-value: 0.08;
+  initial-value: 8%;
 }

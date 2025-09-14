@@ -1,7 +1,7 @@
 import type { Transform } from "style-dictionary/types";
 
 export default {
-  name: "dtcm/attribute/syntax",
+  name: "dtfm/attribute/syntax",
   type: "attribute",
   transform: (token) => {
     const type = token.$type;
@@ -21,6 +21,7 @@ const dtcmTypes = [
   "dimension",
   "fontFamily",
   "fontWeight",
+  "number",
 ] satisfies $type[];
 
 function isDtcmType(type: string): type is $type {
@@ -32,13 +33,15 @@ const syntaxMap = {
   dimension: "*",
   fontFamily: "*",
   fontWeight: "<integer>",
+  number: "<number>",
 } satisfies Record<$type, string>;
 
 type DtfmToken =
   | ColorToken
   | DimensionToken
   | FontFamilyToken
-  | FontWeightToken;
+  | FontWeightToken
+  | NumberToken;
 
 type $type = DtfmToken["$type"];
 
@@ -56,4 +59,8 @@ interface FontFamilyToken {
 
 interface FontWeightToken {
   "$type": "fontWeight";
+}
+
+interface NumberToken {
+  "$type": "number";
 }
