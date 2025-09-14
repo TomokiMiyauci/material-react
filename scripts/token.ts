@@ -40,6 +40,7 @@ function defineConfig(path: string): Config {
           },
         ],
         transforms: [
+          transformers.dtfmNumberAsRadio,
           transformers.typography,
           transformers.token,
           transformers.dimension,

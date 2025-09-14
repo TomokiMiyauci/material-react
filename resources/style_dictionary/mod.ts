@@ -2,7 +2,9 @@ import StyleDictionary from "style-dictionary";
 import {
   colorTransform,
   dimensitonTransform,
-  dtcmAttributeSyntax,
+  dtfmAttributeSyntax,
+  dtfmExtensionsAttributeSyntax,
+  dtfmNumberAsRadio,
   flattenKababTransform,
   tokenTransform,
   typographyTransform,
@@ -17,7 +19,9 @@ sd.registerTransform(dimensitonTransform);
 sd.registerTransform(typographyTransform);
 sd.registerTransform(colorTransform);
 sd.registerTransform(flattenKababTransform);
-sd.registerTransform(dtcmAttributeSyntax);
+sd.registerTransform(dtfmAttributeSyntax);
+sd.registerTransform(dtfmNumberAsRadio);
+sd.registerTransform(dtfmExtensionsAttributeSyntax);
 sd.registerFormat(cssVariableWithComment);
 sd.registerFormat(cssPropertyFormat);
 
@@ -27,7 +31,9 @@ export enum transformers {
   dimension = "dcgc/dimension",
   color = "dtfm/color",
   nameKebabFlat = "name/kebab+flatten",
-  dtcmAttributeSyntax = "dtcm/attribute/syntax",
+  dtfmAttributeSyntax = "dtfm/attribute/syntax",
+  dtfmExtensionsAttributeSyntax = "dtfm/extensions/attribute/syntax",
+  dtfmNumberAsRadio = "dtfm/number+ratio",
 }
 
 export enum formats {
