@@ -1,5 +1,5 @@
 {
-  "name": "@miyauci/rmd",
+  "name": "@miyauci/material-react",
   "exports": {
     ".": "./src/mod.ts",
     "./icon-button": "./src/components/icon_button/mod.ts",
