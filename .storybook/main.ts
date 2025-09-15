@@ -29,6 +29,8 @@ export default {
       "resolve": {
         "alias": {
           "@internal": join(__dirname, "..", "src", "components", "_internal"),
+          "@": join(__dirname, "..", "src"),
+          "@miyauci/material-react": join(__dirname, "..", "src", "mod.ts"),
         },
       },
     } satisfies InlineConfig;
