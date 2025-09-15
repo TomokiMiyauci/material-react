@@ -4,7 +4,7 @@ import type { Preview } from "@storybook/react-vite";
 import { themes } from "@storybook/theming";
 
 import "./global.css";
-import "../examples/material_design/style.css";
+import "../examples/material_themes/style.css";
 
 const isDark = globalThis.matchMedia("(prefers-color-scheme: dark)").matches;
 
