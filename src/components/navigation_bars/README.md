@@ -10,7 +10,7 @@ Navigation bars contain the following components.
 ## Example
 
 ```tsx
-import { NavigationBar, NavigationBarItem } from "@miyauci/rmd";
+import { NavigationBar, NavigationBarItem } from "@miyauci/material-react";
 
 <NavigationBar>
   <NavigationBarItem label="Home" />

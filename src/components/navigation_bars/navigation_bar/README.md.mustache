@@ -5,7 +5,7 @@ Navigation bars let people switch between UI views on smaller devices.
 ## Example
 
 ```tsx
-import { NavigationBar } from "@miyauci/rmd";
+import { NavigationBar } from "@miyauci/material-react";
 
 <NavigationBar variant="horizontal" />;
 ```

@@ -3,7 +3,7 @@
 ## Example
 
 ```tsx
-import { NavigationBarItem } from "@miyauci/rmd";
+import { NavigationBarItem } from "@miyauci/material-react";
 
 <NavigationBarItem label="Icon" active icon={<span className="my-icon" />} />;
 ```

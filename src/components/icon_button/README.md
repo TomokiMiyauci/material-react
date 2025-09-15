@@ -5,7 +5,7 @@ Icon buttons help people take minor actions with one tap.
 ## Example
 
 ```tsx
-import { IconButton } from "@miyauci/rmd";
+import { IconButton } from "@miyauci/material-react";
 
 <IconButton icon={<span>Your icon</span>}>
 ```

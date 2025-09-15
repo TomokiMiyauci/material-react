@@ -1,6 +1,6 @@
 import NavigationBarItem from "./NavigationBarItem.tsx";
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { Badge } from "@miyauci/rmd";
+import { Badge } from "@miyauci/material-react";
 
 const meta = {
   title: "Example/NavigationBars/NavigationBarItem",
