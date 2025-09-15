@@ -22,30 +22,26 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
+const icon = <span className="material-symbols-outlined">stars</span>;
+
 export const Enabled = {
   "args": {
     children: (
-      <NavigationBar>
+      <>
         <NavigationBarItem
-          label="Home"
-          icon={
-            <span className="icon-[material-symbols--home-outline-rounded] w-full h-full" />
-          }
+          label="Label"
+          icon={icon}
           active
         />
         <NavigationBarItem
-          label="Home"
-          icon={
-            <span className="icon-[material-symbols--home-outline-rounded] w-full h-full" />
-          }
+          label="Label"
+          icon={icon}
         />
         <NavigationBarItem
-          label="Home"
-          icon={
-            <span className="icon-[material-symbols--home-outline-rounded] w-full h-full" />
-          }
+          label="Label"
+          icon={icon}
         />
-      </NavigationBar>
+      </>
     ),
   },
 } satisfies Story;
