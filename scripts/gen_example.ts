@@ -15,7 +15,7 @@ const config = {
     css: {
       transformGroup: transformGroups.css,
       buildPath: fromFileUrl(
-        import.meta.resolve("~/examples/material_design/"),
+        import.meta.resolve("~/examples/material_themes/"),
       ),
       files: [
         {

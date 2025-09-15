@@ -37,4 +37,4 @@ Syntax:
 
 ## Example
 
-- [Material Design3 Default Token](/examples/material_design/style.css)
+- [Material Design3 default theme](/examples/material_themes/style.css)
