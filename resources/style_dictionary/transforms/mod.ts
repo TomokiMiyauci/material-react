@@ -6,3 +6,4 @@ export { default as flattenKababTransform } from "./flatten_kebab.ts";
 export { default as dtfmAttributeSyntax } from "./dtfm_attribute_syntax.ts";
 export { default as dtfmNumberAsRadio } from "./ratio.ts";
 export { default as dtfmExtensionsAttributeSyntax } from "./dtfm_extensions_attribute_syntax.ts";
+export { default as dtfmNumberUnit } from "./dtfm_number_unit.ts";

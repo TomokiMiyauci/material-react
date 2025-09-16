@@ -10,7 +10,7 @@ import instance, {
 } from "~/resources/style_dictionary/mod.ts";
 
 const config = {
-  source: [fromFileUrl(import.meta.resolve("~/resources/token.json"))],
+  source: [fromFileUrl(import.meta.resolve("~/resources/tokens.json"))],
   platforms: {
     css: {
       transformGroup: transformGroups.css,
@@ -130,6 +130,7 @@ const config = {
         transformers.dtfmAttributeSyntax,
         transformers.dtfmNumberAsRadio,
         transformers.dtfmExtensionsAttributeSyntax,
+        transformers.dtfmNumberUnit,
       ],
     },
   },

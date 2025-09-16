@@ -5,33 +5,33 @@
 }
 
 @property --md-sys-shape-corner-extra-large {
-  syntax: "*";
+  syntax: "<length>";
   inherits: true;
-  initial-value: 1.75rem;
+  initial-value: 28px;
 }
 
 @property --md-sys-shape-corner-large {
-  syntax: "*";
+  syntax: "<length>";
   inherits: true;
-  initial-value: 1rem;
+  initial-value: 16px;
 }
 
 @property --md-sys-shape-corner-medium {
-  syntax: "*";
+  syntax: "<length>";
   inherits: true;
-  initial-value: 0.75rem;
+  initial-value: 12px;
 }
 
 @property --md-sys-shape-corner-small {
-  syntax: "*";
+  syntax: "<length>";
   inherits: true;
-  initial-value: 0.5rem;
+  initial-value: 8px;
 }
 
 @property --md-sys-shape-corner-extra-small {
-  syntax: "*";
+  syntax: "<length>";
   inherits: true;
-  initial-value: 0.25rem;
+  initial-value: 4px;
 }
 
 @property --md-sys-shape-corner-none {
@@ -329,21 +329,21 @@
 }
 
 @property --md-sys-state-focus-indicator-thickness {
-  syntax: "*";
+  syntax: "<length>";
   inherits: true;
-  initial-value: 0.1875rem;
+  initial-value: 3px;
 }
 
 @property --md-sys-state-focus-indicator-outer-offset {
-  syntax: "*";
+  syntax: "<length>";
   inherits: true;
-  initial-value: 0.125rem;
+  initial-value: 2px;
 }
 
 @property --md-sys-state-focus-indicator-inner-offset {
-  syntax: "*";
+  syntax: "<length>";
   inherits: true;
-  initial-value: -0.1875rem;
+  initial-value: -3px;
 }
 
 @property --md-sys-state-hover-state-layer-opacity {

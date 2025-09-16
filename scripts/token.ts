@@ -44,6 +44,7 @@ function defineConfig(path: string): Config {
           transformers.typography,
           transformers.token,
           transformers.dimension,
+          transformers.dtfmNumberUnit,
         ],
       },
     },

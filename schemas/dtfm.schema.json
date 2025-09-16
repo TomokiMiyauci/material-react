@@ -81,7 +81,7 @@
       "type": "object",
       "properties": {
         "value": { "type": "number" },
-        "unit": { "enum": ["px", "rem", "dp"] }
+        "unit": { "enum": ["px", "rem"] }
       },
       "required": ["value", "unit"]
     },

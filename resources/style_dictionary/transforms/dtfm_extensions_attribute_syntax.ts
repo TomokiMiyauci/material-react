@@ -15,6 +15,28 @@ export default {
       };
     }
 
+    if (
+      "$extensions" in token &&
+      typeof token["$extensions"] === "object" &&
+      "unit" in token["$extensions"]
+    ) {
+      const unit = token["$extensions"].unit;
+
+      switch (unit) {
+        case "pt": {
+          return {
+            syntax: "*",
+          };
+        }
+
+        case "dp": {
+          return {
+            syntax: "<length>",
+          };
+        }
+      }
+    }
+
     return {};
   },
 } satisfies Transform;
