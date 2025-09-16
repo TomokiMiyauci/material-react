@@ -3,7 +3,7 @@
   "type": "object",
   "oneOf": [
     { "$ref": "#/definitions/number" },
-    { "$ref": "#/definitions/token" },
+    { "$ref": "#/definitions/string" },
     { "$ref": "#/definitions/dimension" },
     { "$ref": "#/definitions/typography" },
     { "$ref": "#/definitions/fontFamily" },
@@ -29,10 +29,10 @@
       "required": ["$type", "$value"],
       "additionalProperties": false
     },
-    "token": {
+    "string": {
       "type": "object",
       "properties": {
-        "$type": { "const": "token" },
+        "$type": { "const": "string" },
         "$value": { "type": "string" },
         "$description": { "type": "string" },
         "$extensions": { "type": "object" }

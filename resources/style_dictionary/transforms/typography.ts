@@ -1,7 +1,7 @@
 import StyleDictionary from "style-dictionary";
 import type { Transform } from "style-dictionary/types";
 import { transforms } from "style-dictionary/enums";
-import { tokenToCssVarriable } from "./md_token.ts";
+import { tokenToCssVarriable } from "./string.ts";
 
 const { nameKebab } = transforms;
 const seperator = "\n  ";

@@ -11,16 +11,23 @@ export function tokenToCssVarriable(token: string): `var(${string})` {
 }
 
 export default {
-  name: "md/token",
+  name: "token/string",
   type: "value",
   filter: (token) => {
-    return !!token.$type && token.$type === "token";
+    return !!token.$type && token.$type === "string";
   },
   transform: (token) => {
     const { $value } = token;
 
     if (typeof $value !== "string") throw new Error();
 
-    return tokenToCssVarriable($value);
+    if (
+      typeof token["$extensions"] === "object" &&
+      token["$extensions"].type === "token"
+    ) {
+      return tokenToCssVarriable($value);
+    }
+
+    return $value;
   },
 } satisfies Transform;

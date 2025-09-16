@@ -28,7 +28,7 @@ sd.registerFormat(cssVariableWithComment);
 sd.registerFormat(cssPropertyFormat);
 
 export enum transformers {
-  token = "md/token",
+  token = "token/string",
   typography = "typography/token",
   dimension = "dcgc/dimension",
   color = "dtfm/color",
