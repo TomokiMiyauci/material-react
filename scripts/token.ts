@@ -8,7 +8,7 @@ import instance, {
 } from "~/resources/style_dictionary/mod.ts";
 
 if (import.meta.main) {
-  const iter = expandGlob("src/**/token.json", {
+  const iter = expandGlob("src/**/tokens.json", {
     exclude: ["src/**/_generated"],
   });
 

@@ -39,7 +39,7 @@ if (import.meta.main) {
 
       const generatedCssGlob = join(dir, "_generated", "*.css");
       const generatedCssEntries = await Array.fromAsync(
-        expandGlob(generatedCssGlob, { exclude: ["**/*/token.css"] }),
+        expandGlob(generatedCssGlob, { exclude: ["**/*/tokens.css"] }),
       );
 
       const promises = generatedCssEntries.map(async (entry) => {
