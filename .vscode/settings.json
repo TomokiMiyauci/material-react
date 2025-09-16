@@ -18,6 +18,9 @@
     "editor.tabSize": 2,
     "editor.defaultFormatter": "vscode.css-language-features"
   },
+  "files.associations": {
+    "*.md.mustache": "markdown"
+  },
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit"
