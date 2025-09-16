@@ -1,0 +1,87 @@
+@import url(./_generated/tokens.css);
+
+@scope([data-md=radio]) {
+  all: unset;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  appearance: none;
+  border-radius: 50%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: var(--icon-unselected-color);
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: var(--state-layer-size);
+    height: var(--state-layer-size);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: inherit;
+  }
+
+  &:checked {
+    border-color: var(--icon-selected-color);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: inherit;
+      width: calc(var(--icon-size) / 2);
+      height: calc(var(--icon-size) / 2);
+      background-color: var(--icon-selected-color);
+    }
+  }
+
+  &:hover {
+    border-color: var(--icon-hovered-unselected-color);
+
+    :scope:checked & {
+      border-color: var(--icon-hovered-selected-color);
+    }
+
+    &::after {
+      background-color: color-mix(in srgb, var(--state-layer-hovered-unselected-color) var(--state-layer-hovered-unselected-opacity), transparent);
+    }
+  }
+
+  &:focus-visible {
+    border-color: var(--icon-focused-unselected-color);
+
+    &::after {
+      background-color: color-mix(in srgb, var(--state-layer-focused-unselected-color) var(--state-layer-focused-unselected-opacity), transparent);
+    }
+
+    :scope:checked::after & {
+      background-color: color-mix(in srgb, var(--state-layer-focused-selected-color) var(--state-layer-focused-selected-opacity), transparent);
+    }
+
+    :scope:checked & {
+      border-color: var(--icon-focused-selected-color);
+    }
+  }
+
+  &:disabled {
+    cursor: auto;
+    border-color: color-mix(in srgb, var(--icon-disabled-unselected-color) var(--icon-disabled-unselected-opacity), transparent);
+
+    &::before {
+      background-color: color-mix(in srgb, var(--icon-disabled-unselected-color) var(--icon-disabled-unselected-opacity), transparent);
+    }
+
+    :scope:checked & {
+      border-color: color-mix(in srgb, var(--icon-disabled-selected-color) var(--icon-disabled-selected-opacity), transparent);
+    }
+
+    :scope:checked::before {
+      background-color: color-mix(in srgb, var(--icon-disabled-selected-color) var(--icon-disabled-selected-opacity), transparent);
+    }
+  }
+}
