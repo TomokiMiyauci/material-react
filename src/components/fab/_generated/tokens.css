@@ -1,0 +1,43 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+/* @embed */
+:root {
+  --container-height: 56px; /** FAB container height */
+  --container-width: 56px; /** FAB container width */
+  --container-shape: var(--md-sys-shape-corner-large); /** FAB container shape */
+  --container-medium-height: 80px; /** FAB medium container height */
+  --container-medium-width: 80px; /** FAB medium container width */
+  --container-medium-shape: var(--md-sys-shape-corner-large-increased); /** FAB medium container shape */
+  --container-large-height: 96px; /** FAB large container height */
+  --container-large-width: 96px; /** FAB large container width */
+  --container-large-shape: var(--md-sys-shape-corner-extra-large); /** FAB large container shape */
+  --container-primary-color: var(--md-sys-color-primary); /** FAB primary container color */
+  --container-primary-shadow-color: var(--md-sys-color-shadow); /** FAB primary container shadow color */
+  --container-primary-elevation: var(--md-sys-elevation-level3); /** FAB primary container elevation */
+  --container-tonal-primary-color: var(--md-sys-color-primary-container); /** FAB tonal primary container color */
+  --container-tonal-primary-shadow-color: var(--md-sys-color-shadow); /** FAB tonal primary container shadow color */
+  --container-tonal-primary-elevation: var(--md-sys-elevation-level3); /** FAB tonal primary container elevation */
+  --container-tonal-secondary-color: var(--md-sys-color-secondary-container); /** FAB tonal secondary container color */
+  --container-tonal-secondary-shadow-color: var(--md-sys-color-shadow); /** FAB tonal secondary container shadow color */
+  --container-tonal-secondary-elevation: var(--md-sys-elevation-level3); /** FAB tonal secondary container elevation */
+  --container-tonal-tertiary-color: var(--md-sys-color-tertiary-container); /** FAB tonal tertiary container color */
+  --container-tonal-tertiary-shadow-color: var(--md-sys-color-shadow); /** FAB tonal tertiary container shadow color */
+  --container-tonal-tertiary-elevation: var(--md-sys-elevation-level3); /** FAB tonal tertiary container elevation */
+  --container-secondary-color: var(--md-sys-color-secondary); /** FAB secondary container color */
+  --container-secondary-shadow-color: var(--md-sys-color-shadow); /** FAB secondary container shadow color */
+  --container-secondary-elevation: var(--md-sys-elevation-level3); /** FAB secondary container elevation */
+  --container-tertiary-color: var(--md-sys-color-tertiary); /** FAB tertiary container color */
+  --container-tertiary-shadow-color: var(--md-sys-color-shadow); /** FAB tertiary container shadow color */
+  --container-tertiary-elevation: var(--md-sys-elevation-level3); /** FAB tertiary container elevation */
+  --icon-size: 24px; /** FAB icon size */
+  --icon-medium-size: 28px; /** FAB medium icon size */
+  --icon-large-size: 36px; /** FAB large icon size */
+  --icon-primary-color: var(--md-sys-color-on-primary); /** FAB primary icon color */
+  --icon-tonal-primary-color: var(--md-sys-color-on-primary-container); /** FAB tonal primary icon color */
+  --icon-tonal-secondary-color: var(--md-sys-color-on-secondary-container); /** FAB tonal secondary icon color */
+  --icon-tonal-tertiary-color: var(--md-sys-color-on-tertiary-container); /** FAB tonal tertiary icon color */
+  --icon-secondary-color: var(--md-sys-color-on-secondary); /** FAB secondary icon color */
+  --icon-tertiary-color: var(--md-sys-color-on-tertiary); /** FAB tertiary icon color */
+}

@@ -1,0 +1,97 @@
+@import url(./_generated/tokens.css);
+
+@scope([data-md=fab]) {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--container-width);
+  height: var(--container-height);
+  border-radius: var(--container-shape);
+  background-color: var(--container-tonal-primary-color);
+
+  box-shadow: 0 calc(1px * (clamp(0, var(--container-tonal-primary-elevation), 1) + clamp(0, var(--container-tonal-primary-elevation) - 3, 1) + 2 * clamp(0, var(--container-tonal-primary-elevation) - 4, 1))) calc(1px * (2 * clamp(0, var(--container-tonal-primary-elevation), 1) + clamp(0, var(--container-tonal-primary-elevation) - 2, 1) + clamp(0, var(--container-tonal-primary-elevation) - 4, 1))) 0px color-mix(in srgb, var(--container-tonal-primary-shadow-color) 30%, transparent), 0px calc(1px * (clamp(0, var(--container-tonal-primary-elevation), 1) + clamp(0, var(--container-tonal-primary-elevation) - 1, 1) + 2 * clamp(0, var(--container-tonal-primary-elevation) - 2, 3))) calc(1px * (3 * clamp(0, var(--container-tonal-primary-elevation), 2) + 2 * clamp(0, var(--container-tonal-primary-elevation) - 2, 3))) calc(1px * (clamp(0, var(--container-tonal-primary-elevation), 4) + 2 * clamp(0, var(--container-tonal-primary-elevation) - 4, 1))) color-mix(in srgb, var(--container-tonal-primary-shadow-color) 15%, transparent);
+
+  &[data-tone=primary] {
+    background-color: var(--container-primary-color);
+  }
+
+  &[data-tone=primary-container] {
+    background-color: var(--container-tonal-primary-color);
+  }
+
+  &[data-tone=secondary] {
+    background-color: var(--container-secondary-color);
+  }
+
+  &[data-tone=secondary-container] {
+    background-color: var(--container-tonal-secondary-color);
+  }
+
+  &[data-tone=tertiary] {
+    background-color: var(--container-tertiary-color);
+  }
+
+  &[data-tone=tertiary-container] {
+    background-color: var(--container-tonal-tertiary-color);
+  }
+
+  &[data-size=medium] {
+    width: var(--container-medium-width);
+    height: var(--container-medium-height);
+    border-radius: var(--container-medium-shape);
+  }
+
+  &[data-size=large] {
+    width: var(--container-large-width);
+    height: var(--container-large-height);
+    border-radius: var(--container-large-shape);
+  }
+
+  [data-icon] {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--icon-size);
+    width: var(--icon-size);
+    font-size: var(--icon-size);
+    color: var(--icon-tonal-primary-color);
+
+    :scope[data-tone=primary] & {
+      color: var(--icon-primary-color);
+    }
+
+    :scope[data-tone=primary-container] & {
+      color: var(--icon-tonal-primary-color);
+    }
+
+    :scope[data-tone=secondary] & {
+      color: var(--icon-secondary-color);
+    }
+
+    :scope[data-tone=secondary-container] & {
+      color: var(--icon-tonal-secondary-color);
+    }
+
+    :scope[data-tone=tertiary] & {
+      color: var(--icon-tertiary-color);
+    }
+
+    :scope[data-tone=tertiary-container] & {
+      color: var(--icon-tonal-tertiary-color);
+    }
+
+    :scope[data-size=medium] & {
+      height: var(--icon-medium-size);
+      width: var(--icon-medium-size);
+      font-size: var(--icon-medium-size)
+    }
+
+    :scope[data-size=large] & {
+      height: var(--icon-large-size);
+      width: var(--icon-large-size);
+      font-size: var(--icon-large-size);
+    }
+  }
+}
