@@ -10,7 +10,20 @@
   border-radius: var(--container-shape);
   background-color: var(--container-tonal-primary-color);
 
-  box-shadow: 0 calc(1px * (clamp(0, var(--container-tonal-primary-elevation), 1) + clamp(0, var(--container-tonal-primary-elevation) - 3, 1) + 2 * clamp(0, var(--container-tonal-primary-elevation) - 4, 1))) calc(1px * (2 * clamp(0, var(--container-tonal-primary-elevation), 1) + clamp(0, var(--container-tonal-primary-elevation) - 2, 1) + clamp(0, var(--container-tonal-primary-elevation) - 4, 1))) 0px color-mix(in srgb, var(--container-tonal-primary-shadow-color) 30%, transparent), 0px calc(1px * (clamp(0, var(--container-tonal-primary-elevation), 1) + clamp(0, var(--container-tonal-primary-elevation) - 1, 1) + 2 * clamp(0, var(--container-tonal-primary-elevation) - 2, 3))) calc(1px * (3 * clamp(0, var(--container-tonal-primary-elevation), 2) + 2 * clamp(0, var(--container-tonal-primary-elevation) - 2, 3))) calc(1px * (clamp(0, var(--container-tonal-primary-elevation), 4) + 2 * clamp(0, var(--container-tonal-primary-elevation) - 4, 1))) color-mix(in srgb, var(--container-tonal-primary-shadow-color) 15%, transparent);
+  --elevation: var(--md-sys-elevation-level3);
+
+  --key-offset-y: calc(1px * (clamp(0, var(--elevation), 1) + clamp(0, var(--elevation) - 3, 1) + 2 * clamp(0, var(--elevation) - 4, 1)));
+  --key-blur-radius: calc(1px * (2 * clamp(0, var(--elevation), 1) + clamp(0, var(--elevation) - 2, 1) + clamp(0, var(--elevation) - 4, 1)));
+  --key-color: color-mix(in srgb, var(--md-sys-color-shadow) 30%, transparent);
+  --key-shadow: 0 var(--key-offset-y) var(--key-blur-radius) 0 var(--key-color);
+
+  --amb-offest-y: calc(1px * (clamp(0, var(--elevation), 1) + clamp(0, var(--elevation) - 1, 1) + 2 * clamp(0, var(--elevation) - 2, 3)));
+  --amb-blur-radius: calc(1px * (3 * clamp(0, var(--elevation), 2) + 2 * clamp(0, var(--elevation) - 2, 3)));
+  --amb-spread-radius: calc(1px * (clamp(0, var(--elevation), 4) + 2 * clamp(0, var(--elevation) - 4, 1)));
+  --amb-color: color-mix(in srgb, var(--md-sys-color-shadow) 15%, transparent);
+  --ambient-shadow: 0 var(--amb-offest-y) var(--amb-blur-radius) var(--amb-spread-radius) var(--amb-color);
+
+  box-shadow: var(--key-shadow), var(--ambient-shadow);
 
   &[data-tone=primary] {
     background-color: var(--container-primary-color);
