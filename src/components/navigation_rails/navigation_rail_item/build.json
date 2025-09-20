@@ -1,0 +1,23 @@
+{
+  "steps": [
+    {
+      "use": "tokens2css",
+      "input": "./tokens.json",
+      "output": "./_generated/tokens.css"
+    },
+    {
+      "use": "css",
+      "input": "./style.css",
+      "output": "./_generated/style.css",
+      "options": {
+        "minify": true,
+        "embed": true
+      }
+    },
+    {
+      "use": "css2ts",
+      "input": "./_generated/style.css",
+      "output": "./_generated/style.ts"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "steps": [
+    {
+      "use": "tokens2css",
+      "input": "./tokens.json",
+      "output": "./_generated/tokens.css"
+    },
+    {
+      "use": "css",
+      "input": "./navigation_bar/style.css",
+      "output": "./navigation_bar/_generated/style.css",
+      "options": {
+        "minify": true,
+        "embed": true
+      }
+    },
+    {
+      "use": "css",
+      "input": "./navigation_bar_item/style.css",
+      "output": "./navigation_bar_item/_generated/style.css",
+      "options": {
+        "minify": true,
+        "embed": true
+      }
+    },
+    {
+      "use": "css2ts",
+      "input": "./navigation_bar/_generated/style.css",
+      "output": "./navigation_bar/_generated/style.ts"
+    },
+    {
+      "use": "css2ts",
+      "input": "./navigation_bar_item/_generated/style.css",
+      "output": "./navigation_bar_item/_generated/style.ts"
+    }
+  ]
+}
