@@ -8,7 +8,7 @@ import postcss from "postcss";
 import atImport from "postcss-import";
 import autoprefixer from "autoprefixer";
 import cssnano from "cssnano";
-import inlineToken from "~/scripts/postcss/inline_token.ts";
+import inlineToken from "~/resources/postcss/inline_token.ts";
 
 export class Items2Toekns implements Transformer {
   name: string = "items2tokens";
