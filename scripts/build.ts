@@ -6,6 +6,7 @@ import {
   CssTransformer,
   DenoIO,
   Items2Toekns,
+  MustacheTransformer,
   parseBuildConfig,
   Tokens2Css,
 } from "~/resources/builder/mod.ts";
@@ -27,6 +28,7 @@ if (import.meta.main) {
           new Tokens2Css(),
           new CssTransformer(),
           new Css2TsTransformer(),
+          new MustacheTransformer(),
         ],
       });
 

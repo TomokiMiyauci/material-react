@@ -32,6 +32,27 @@
       "use": "css2ts",
       "input": "./navigation_bar_item/_generated/style.css",
       "output": "./navigation_bar_item/_generated/style.ts"
+    },
+    {
+      "use": "mustache",
+      "input": "./README.md.mustache",
+      "output": "./README.md"
+    },
+    {
+      "use": "mustache",
+      "input": "./navigation_bar/README.md.mustache",
+      "output": "./navigation_bar/README.md",
+      "options": {
+        "tokenSource": "./navigation_bar/_generated/style.css"
+      }
+    },
+    {
+      "use": "mustache",
+      "input": "./navigation_bar_item/README.md.mustache",
+      "output": "./navigation_bar_item/README.md",
+      "options": {
+        "tokenSource": "./navigation_bar_item/_generated/style.css"
+      }
     }
   ]
 }

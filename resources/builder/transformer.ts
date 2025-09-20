@@ -9,6 +9,8 @@ import atImport from "postcss-import";
 import autoprefixer from "autoprefixer";
 import cssnano from "cssnano";
 import inlineToken from "~/resources/postcss/inline_token.ts";
+import mustashe from "mustache";
+import valueParser from "postcss-value-parser";
 
 export class Items2Toekns implements Transformer {
   name: string = "items2tokens";
@@ -80,4 +82,50 @@ export class Css2TsTransformer implements Transformer {
   ): string {
     return `export default \`${contents}\`;`;
   }
+}
+
+export class MustacheTransformer implements Transformer {
+  name: string = "mustache";
+  async transform(
+    template: string,
+    ctx: TransformContexts,
+  ): Promise<string> {
+    if (ctx.options && "tokenSource" in ctx.options) {
+      const source = ctx.options["tokenSource"];
+      if (typeof source !== "string") throw new Error("invalid tokenSource");
+
+      const url = new URL(source, ctx.base);
+      const tokenSource = await ctx.io.read(url);
+      const tokens = extractCssVariables(tokenSource).filter(isMdToken)
+        .toSorted();
+      return mustashe.render(template, { tokens });
+    }
+
+    return mustashe.render(template, {});
+  }
+}
+
+function extractCssVariables(value: string): string[] {
+  const root = postcss.parse(value);
+  const variables = new Set<string>();
+
+  root.walkDecls((decl) => {
+    const parsed = valueParser(decl.value);
+
+    parsed.walk((node) => {
+      if (node.type === "function" && node.value === "var") {
+        node.nodes.forEach((arg) => {
+          if (arg.type === "word") {
+            variables.add(arg.value);
+          }
+        });
+      }
+    });
+  });
+
+  return variables.values().toArray();
+}
+
+function isMdToken(value: string): value is `--md.${string}` {
+  return value.startsWith("--md-");
 }

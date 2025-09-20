@@ -23,6 +23,8 @@ export class Builder {
       const transformed = await transformer.transform(contents, {
         from: inURL,
         to: outURL,
+        base: this.config.base,
+        io: this.config.io,
         options: step.options,
       });
 
@@ -40,6 +42,7 @@ export {
   Css2TsTransformer,
   CssTransformer,
   Items2Toekns,
+  MustacheTransformer,
   Tokens2Css,
 } from "./transformer.ts";
 export { DenoIO } from "./io.ts";

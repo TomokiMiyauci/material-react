@@ -2,14 +2,16 @@ export interface Transformer {
   name: string;
   transform(
     contents: string,
-    options: TransformContexts,
+    ctx: TransformContexts,
   ): Promise<string> | string;
 }
 
 export interface TransformContexts {
   from: URL;
   to: URL;
-  options: Record<string, unknown>;
+  io: IO;
+  base: URL;
+  options?: Record<string, unknown>;
 }
 
 export interface IO {
