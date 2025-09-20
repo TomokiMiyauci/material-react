@@ -5,9 +5,11 @@ import {
   Css2TsTransformer,
   CssTransformer,
   DenoIO,
+  HttpFetcher,
   Items2Toekns,
   MustacheTransformer,
   parseBuildConfig,
+  Spec2Tokens,
   Tokens2Css,
 } from "~/resources/builder/mod.ts";
 
@@ -29,7 +31,9 @@ if (import.meta.main) {
           new CssTransformer(),
           new Css2TsTransformer(),
           new MustacheTransformer(),
+          new Spec2Tokens(),
         ],
+        fetchers: [new HttpFetcher()],
       });
 
       await builder.build();

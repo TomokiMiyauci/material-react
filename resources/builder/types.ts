@@ -19,6 +19,10 @@ export interface IO {
   write(url: URL, contents: string): Promise<void>;
 }
 
+export interface Fetcher {
+  fetch(url: URL): Promise<string | undefined> | string | undefined;
+}
+
 export interface BuildConfig {
   steps: Step[];
 }
@@ -27,5 +31,10 @@ export interface Step {
   use: string;
   input: string;
   output: string;
-  options: Record<string, unknown>;
+  options?: Record<string, unknown>;
+  run?: Run;
+}
+
+interface Run {
+  skipIfExists?: boolean;
 }

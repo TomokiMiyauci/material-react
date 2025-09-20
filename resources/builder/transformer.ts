@@ -11,6 +11,7 @@ import cssnano from "cssnano";
 import inlineToken from "~/resources/postcss/inline_token.ts";
 import mustashe from "mustache";
 import valueParser from "postcss-value-parser";
+import puppeteer from "puppeteer-core";
 
 export class Items2Toekns implements Transformer {
   name: string = "items2tokens";
@@ -128,4 +129,100 @@ function extractCssVariables(value: string): string[] {
 
 function isMdToken(value: string): value is `--md.${string}` {
   return value.startsWith("--md-");
+}
+
+export class Spec2Tokens implements Transformer {
+  name: string = "spec2tokens";
+  async transform(
+    _: string,
+    ctx: TransformContexts,
+  ): Promise<string> {
+    const browser = await puppeteer.launch({
+      headless: true,
+      executablePath:
+        "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    });
+    const page = await browser.newPage();
+    await page.goto(ctx.from.toString(), { waitUntil: "networkidle0" });
+    const result = await page.evaluate(pageFunction);
+
+    await browser.close();
+
+    return JSON.stringify(result, undefined, 2);
+  }
+}
+
+function pageFunction(): Item[] {
+  function cleanText(text: string): string {
+    return text.replace("\n", "").trim();
+  }
+
+  function getItems(el: ParentNode): Item[] {
+    const items: Item[] = [];
+    const tokenClasses = el.querySelectorAll(
+      ".token-list > .token:not(.composite)",
+    );
+
+    tokenClasses.forEach((tokenEl) => {
+      const nameEl = tokenEl.querySelector(".display-name");
+      const TokenValueEl = tokenEl.querySelector(".token-value-text");
+
+      if (!nameEl) throw new Error("displaynmae");
+      if (!TokenValueEl) throw new Error("resolutions");
+
+      const name = cleanText(nameEl.textContent);
+      const value = cleanText(TokenValueEl.textContent);
+
+      items.push({ name, value });
+    });
+
+    return items;
+  }
+  const root = document.getElementsByTagName("mio-root")[0];
+
+  if (root) {
+    const mioCarbon = root.querySelector(
+      "mio-article-page mio-carbon-component",
+    );
+
+    if (mioCarbon) {
+      const root = mioCarbon.shadowRoot;
+
+      if (root) {
+        const tokenViewer = root.querySelector("token-viewer");
+
+        if (!tokenViewer) throw new Error("unknown token-viewer");
+
+        const shadowRoot = tokenViewer.shadowRoot;
+
+        if (!shadowRoot) throw new Error("unknown shadow root");
+
+        const selectEl = shadowRoot.querySelector<HTMLSelectElement>(
+          ".nav select",
+        );
+        const items: Item[] = [];
+
+        if (selectEl) {
+          const optionEl = selectEl.querySelectorAll("option");
+          const values = Array.from(optionEl).map((el) => el.value);
+
+          values.forEach((value) => {
+            selectEl.value = value;
+            selectEl.dispatchEvent(new Event("change", { bubbles: true }));
+
+            items.push(...getItems(shadowRoot));
+          });
+        } else {
+          items.push(...getItems(shadowRoot));
+        }
+
+        return items;
+      }
+    }
+
+    console.error("mio-root not found");
+  }
+
+  console.error("root not found");
+  return [];
 }
