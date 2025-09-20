@@ -1,6 +1,6 @@
 import { fromFileUrl } from "@std/path/from-file-url";
 import type { TransformContexts, Transformer } from "./types.ts";
-import { type Item, Spec } from "~/resources/spec/mod.ts";
+import { type Item, ItemToken } from "~/resources/item_token/mod.ts";
 import instance from "~/resources/style_dictionary/mod.ts";
 import config from "~/resources/style_dictionary/style.config.ts";
 import memfs from "@bundled-es-modules/memfs";
@@ -16,20 +16,12 @@ import puppeteer from "puppeteer-core";
 export class Items2Toekns implements Transformer {
   name: string = "items2tokens";
   transform(contents: string, ctx: TransformContexts): string {
-    const spec = new Spec(ctx.options);
+    const itemToken = new ItemToken(ctx.options);
 
     const items = this.parseItems(contents);
-    const tokens = spec.toTokens(items);
+    const tokens = itemToken.toTokens(items);
 
-    const t = tokens.reduce((acc, cur) => {
-      const key = cur.path.join(" ");
-
-      acc[key] = cur.value;
-
-      return acc;
-    }, {});
-
-    return JSON.stringify(t, undefined, 2);
+    return JSON.stringify(tokens, undefined, 2);
   }
 
   parseItems(contents: string): Item[] {
