@@ -155,6 +155,16 @@ function pageFunction(): Item[] {
     return text.replace("\n", "").trim();
   }
 
+  function sniffTextTypeFromClass(tokenList: DOMTokenList): string {
+    if (tokenList.contains("font_name")) return "font";
+    if (tokenList.contains("font_weight")) return "weight";
+    if (tokenList.contains("font_size")) return "size";
+    if (tokenList.contains("line_height")) return "line height";
+    if (tokenList.contains("font_tracking")) return "tracking";
+
+    throw new Error("typeface class does not exists");
+  }
+
   function getItems(el: ParentNode): Item[] {
     const items: Item[] = [];
     const tokenClasses = el.querySelectorAll(
@@ -172,6 +182,33 @@ function pageFunction(): Item[] {
       const value = cleanText(TokenValueEl.textContent);
 
       items.push({ name, value });
+    });
+
+    const typographyList = el.querySelectorAll(".token.composite.typography");
+
+    typographyList.forEach((el) => {
+      const nameEl = el.querySelector(".display-name");
+      if (!nameEl) throw new Error(".displaynmae does not exists");
+
+      const baseName = cleanText(nameEl.textContent);
+      const tokenList = el.querySelectorAll(".composite-resolutions .token");
+
+      tokenList.forEach((el) => {
+        const suffix = sniffTextTypeFromClass(el.classList);
+        const tokenValueTextEl = el.querySelector(
+          ".resolutions .token-value .token-value-text",
+        );
+
+        if (!tokenValueTextEl) {
+          throw new Error(".token-value-text does not exists");
+        }
+
+        const text = cleanText(tokenValueTextEl.textContent);
+
+        const name = baseName + " " + suffix;
+
+        items.push({ name, value: text });
+      });
     });
 
     return items;
