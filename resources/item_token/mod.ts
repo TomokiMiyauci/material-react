@@ -3,6 +3,7 @@ import {
   ExcludesPipeline,
   HeadsPipeline,
   type Pipeline,
+  TailsPipeline,
 } from "./path.ts";
 import {
   NumberDpTransformer,
@@ -25,11 +26,19 @@ export class ItemToken {
       new PtTransformer(),
       new RatioTransformer(),
     ];
-    this.pipelines = [new ExcludesPipeline(), new HeadsPipeline()];
+    this.pipelines = [
+      new ExcludesPipeline(),
+      new HeadsPipeline(),
+      new TailsPipeline(),
+    ];
   }
 
   toTokens(items: Item[]): Record<string, unknown> {
-    const array = items.map((item) => {
+    const array = items.filter(({ name }) => {
+      if (!this.config.filter?.matches) return true;
+
+      return !this.config.filter.matches.some((match) => name.includes(match));
+    }).map((item) => {
       const path = buildPath(item.name, this.config.segments ?? []);
       const transformedPath = this.pipelines.reduce((acc, pipeline) => {
         return pipeline.pipe(acc, { config: this.config.path ?? {} });
@@ -43,13 +52,16 @@ export class ItemToken {
       };
     });
 
-    return array.reduce((acc, cur) => {
-      const key = cur.path.join(" ");
+    return array.map(({ path, value }) => ({ path: path.join(" "), value }))
+      .toSorted(({ path: a }, { path: b }) => a.localeCompare(b))
+      .reduce(
+        (acc, cur) => {
+          acc[cur.path] = cur.value;
 
-      acc[key] = cur.value;
-
-      return acc;
-    }, {});
+          return acc;
+        },
+        {},
+      );
   }
 
   transform(name: string, value: string) {
@@ -62,4 +74,4 @@ export class ItemToken {
     throw new Error(`name ${name}, value: ${value}`);
   }
 }
-export type { Item } from "./types.ts";
+export type { Item, ItemTokenConfig } from "./types.ts";

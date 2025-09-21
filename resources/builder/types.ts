@@ -11,7 +11,7 @@ export interface TransformContexts {
   to: URL;
   io: IO;
   base: URL;
-  options?: Record<string, unknown>;
+  options?: object;
 }
 
 export interface IO {

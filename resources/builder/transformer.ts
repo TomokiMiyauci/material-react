@@ -12,11 +12,14 @@ import inlineToken from "~/resources/postcss/inline_token.ts";
 import mustashe from "mustache";
 import valueParser from "postcss-value-parser";
 import puppeteer from "puppeteer-core";
+import type { ItemTokenConfig } from "~/resources/item_token/mod.ts";
 
 export class Items2Toekns implements Transformer {
   name: string = "items2tokens";
   transform(contents: string, ctx: TransformContexts): string {
-    const itemToken = new ItemToken(ctx.options);
+    const options = ctx.options ?? {};
+    this.assertOptions(options);
+    const itemToken = new ItemToken(options);
 
     const items = this.parseItems(contents);
     const tokens = itemToken.toTokens(items);
@@ -26,6 +29,9 @@ export class Items2Toekns implements Transformer {
 
   parseItems(contents: string): Item[] {
     return JSON.parse(contents);
+  }
+
+  assertOptions(_: object): asserts _ is ItemTokenConfig {
   }
 }
 
@@ -152,7 +158,7 @@ function pageFunction(): Item[] {
   function getItems(el: ParentNode): Item[] {
     const items: Item[] = [];
     const tokenClasses = el.querySelectorAll(
-      ".token-list > .token:not(.composite)",
+      ".token-list > .token:not(.composite):not(:has(.deprecated-icon))",
     );
 
     tokenClasses.forEach((tokenEl) => {

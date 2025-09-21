@@ -94,3 +94,17 @@ export class HeadsPipeline implements Pipeline {
     });
   }
 }
+
+export class TailsPipeline implements Pipeline {
+  pipe(path: Path, ctx: PathContext): Path {
+    const tails = ctx.config.tails ?? [];
+
+    const order = new Map(tails.map((val, i) => [val, i]));
+
+    return path.toSorted((a, b) => {
+      const ai = order.has(a) ? order.get(a)! : Infinity;
+      const bi = order.has(b) ? order.get(b)! : Infinity;
+      return bi - ai;
+    });
+  }
+}
