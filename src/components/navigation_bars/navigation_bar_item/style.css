@@ -1,4 +1,4 @@
-@import url(../_generated/tokens.css);
+@import url(./_generated/tokens.css);
 
 @scope([data-md=navigation-bar-item]) {
   all: unset;
@@ -10,28 +10,28 @@
   & [data-icon] {
     all: unset;
     display: inline-flex;
-    width: var(--item-icon-size);
-    height: var(--item-icon-size);
-    color: var(--item-icon-inactive-color);
+    width: var(--icon-size);
+    height: var(--icon-size);
+    color: var(--icon-inactive-color);
     position: relative;
 
     :scope[data-active] & {
-      color: var(--item-icon-active-color);
+      color: var(--icon-active-color);
       font-variation-settings: "FILL" 1;
     }
   }
 
   & [data-label-text] {
     all: unset;
-    color: var(--item-label-text-inactive-color);
-    font-family: var(--item-label-text-vertical-font);
-    font-weight: var(--item-label-text-vertical-weight);
-    font-size: var(--item-label-text-vertical-size);
-    line-height: var(--item-label-text-vertical-line-height);
-    letter-spacing: var(--item-label-text-vertical-tracking);
+    color: var(--label-text-inactive-color);
+    font-family: var(--label-text-vertical-font);
+    font-weight: var(--label-text-vertical-weight);
+    font-size: var(--label-text-vertical-size);
+    line-height: var(--label-text-vertical-line-height);
+    letter-spacing: var(--label-text-vertical-tracking);
 
     :scope[data-active] & {
-      color: var(--item-label-text-active-color);
+      color: var(--label-text-active-color);
     }
   }
 
@@ -40,38 +40,39 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: var(--item-shape);
+    border-radius: var(--shape);
 
     :scope[data-active] & {
       background-color: var(--indicator-color);
     }
 
     :scope:hover & {
-      background-color: color-mix(in srgb, var(--state-layer-hovered-inactive-color) var(--state-layer-hovered-active-opacity), transparent);
+      /* TODO:(miyauci) state layer opacity does not specifier. */
+      background-color: color-mix(in srgb, var(--state-layer-inactive-hovered-color) var(--state-layer-active-hovered-opacity), transparent);
     }
 
     :scope[data-active]:hover & {
-      background-color: color-mix(in srgb, var(--indicator-color), var(--state-layer-hovered-active-color) var(--state-layer-hovered-active-opacity));
+      background-color: color-mix(in srgb, var(--indicator-color), var(--state-layer-active-hovered-color) var(--state-layer-active-hovered-opacity));
     }
   }
 }
 
 @scope([data-md=navigation-bar-item]) {
-  row-gap: var(--item-vertical-space);
+  row-gap: var(--active-indicator-icon-label-vertical-space);
 
   & [data-indicator] {
-    width: var(--indicator-vertical-active-width);
-    height: var(--indicator-vertical-active-height);
+    width: var(--active-indicator-vertical-width);
+    height: var(--active-indicator-vertical-height);
   }
 }
 
 @container style(--variant: vertical) {
   @scope([data-md=navigation-bar-item]) {
-    row-gap: var(--item-vertical-space);
+    row-gap: var(--active-indicator-icon-label-vertical-space);
 
     & [data-indicator] {
-      width: var(--indicator-vertical-active-width);
-      height: var(--indicator-vertical-active-height);
+      width: var(--active-indicator-vertical-width);
+      height: var(--active-indicator-vertical-height);
     }
   }
 }

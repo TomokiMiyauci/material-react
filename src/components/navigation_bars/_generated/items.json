@@ -108,6 +108,26 @@
     "value": "4dp"
   },
   {
+    "name": "Nav bar item vertical label text font",
+    "value": "md.ref.typeface.plain"
+  },
+  {
+    "name": "Nav bar item vertical label text weight",
+    "value": "md.ref.typeface.weight-medium"
+  },
+  {
+    "name": "Nav bar item vertical label text size",
+    "value": "12pt"
+  },
+  {
+    "name": "Nav bar item vertical label text line height",
+    "value": "16pt"
+  },
+  {
+    "name": "Nav bar item vertical label text tracking",
+    "value": "0.5pt"
+  },
+  {
     "name": "Nav bar item horizontal active indicator height",
     "value": "40dp"
   },
@@ -122,5 +142,25 @@
   {
     "name": "Nav bar item horizontal active indicator icon label space",
     "value": "4dp"
+  },
+  {
+    "name": "Nav bar item horizontal label text text font",
+    "value": "md.ref.typeface.plain"
+  },
+  {
+    "name": "Nav bar item horizontal label text text weight",
+    "value": "md.ref.typeface.weight-medium"
+  },
+  {
+    "name": "Nav bar item horizontal label text text size",
+    "value": "12pt"
+  },
+  {
+    "name": "Nav bar item horizontal label text text line height",
+    "value": "16pt"
+  },
+  {
+    "name": "Nav bar item horizontal label text text tracking",
+    "value": "0.5pt"
   }
 ]

@@ -1,58 +1,10 @@
 {
   "steps": [
     {
-      "use": "tokens2css",
-      "input": "./tokens.json",
-      "output": "./_generated/tokens.css"
-    },
-    {
-      "use": "css",
-      "input": "./navigation_bar/style.css",
-      "output": "./navigation_bar/_generated/style.css",
-      "options": {
-        "minify": true,
-        "embed": true
-      }
-    },
-    {
-      "use": "css",
-      "input": "./navigation_bar_item/style.css",
-      "output": "./navigation_bar_item/_generated/style.css",
-      "options": {
-        "minify": true,
-        "embed": true
-      }
-    },
-    {
-      "use": "css2ts",
-      "input": "./navigation_bar/_generated/style.css",
-      "output": "./navigation_bar/_generated/style.ts"
-    },
-    {
-      "use": "css2ts",
-      "input": "./navigation_bar_item/_generated/style.css",
-      "output": "./navigation_bar_item/_generated/style.ts"
-    },
-    {
-      "use": "mustache",
-      "input": "./README.md.mustache",
-      "output": "./README.md"
-    },
-    {
-      "use": "mustache",
-      "input": "./navigation_bar/README.md.mustache",
-      "output": "./navigation_bar/README.md",
-      "options": {
-        "tokenSource": "./navigation_bar/_generated/style.css"
-      }
-    },
-    {
-      "use": "mustache",
-      "input": "./navigation_bar_item/README.md.mustache",
-      "output": "./navigation_bar_item/README.md",
-      "options": {
-        "tokenSource": "./navigation_bar_item/_generated/style.css"
-      }
+      "use": "spec2tokens",
+      "input": "https://m3.material.io/components/navigation-bar/specs",
+      "output": "./_generated/items.json",
+      "run": { "skipIfExists": true }
     }
   ]
 }
