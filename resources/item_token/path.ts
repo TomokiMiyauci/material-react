@@ -73,9 +73,9 @@ interface PathContext {
   config: PathConfig;
 }
 
-export class ExcludesPipeline implements Pipeline {
+export class ExcludePipeline implements Pipeline {
   pipe(path: Path, ctx: PathContext): Path {
-    const set = new Set(ctx.config.excludes);
+    const set = new Set(ctx.config.exclude?.matches);
 
     return path.filter((segment) => !set.has(segment));
   }

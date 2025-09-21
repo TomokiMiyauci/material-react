@@ -13,7 +13,9 @@
       "options": {
         "segments": ["label text"],
         "path": {
-          "excludes": ["Badge"],
+          "exclude": {
+            "matches": ["Badge"]
+          },
           "heads": ["label text"]
         }
       },

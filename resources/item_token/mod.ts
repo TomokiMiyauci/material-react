@@ -1,6 +1,6 @@
 import {
   buildPath,
-  ExcludesPipeline,
+  ExcludePipeline,
   HeadsPipeline,
   type Pipeline,
   TailsPipeline,
@@ -27,7 +27,7 @@ export class ItemToken {
       new RatioTransformer(),
     ];
     this.pipelines = [
-      new ExcludesPipeline(),
+      new ExcludePipeline(),
       new HeadsPipeline(),
       new TailsPipeline(),
     ];
@@ -35,9 +35,9 @@ export class ItemToken {
 
   toTokens(items: Item[]): Record<string, unknown> {
     const array = items.filter(({ name }) => {
-      if (!this.config.filter?.matches) return true;
+      if (!this.config.exclude?.matches) return true;
 
-      return !this.config.filter.matches.some((match) => name.includes(match));
+      return !this.config.exclude.matches.some((match) => name.includes(match));
     }).map((item) => {
       const path = buildPath(item.name, this.config.segments ?? []);
       const transformedPath = this.pipelines.reduce((acc, pipeline) => {
@@ -54,7 +54,7 @@ export class ItemToken {
 
     return array.map(({ path, value }) => ({ path: path.join(" "), value }))
       .toSorted(({ path: a }, { path: b }) => a.localeCompare(b))
-      .reduce(
+      .reduce<Record<string, unknown>>(
         (acc, cur) => {
           acc[cur.path] = cur.value;
 

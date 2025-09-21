@@ -1,15 +1,15 @@
 export interface ItemTokenConfig {
   segments?: string[];
-  filter?: Filter;
+  exclude?: Exclude;
   path?: PathConfig;
 }
 
-export interface Filter {
+export interface Exclude {
   matches?: string[];
 }
 
 export interface PathConfig {
-  excludes?: string[];
+  exclude?: Exclude;
   heads?: string[];
   tails?: string[];
 }
