@@ -12,6 +12,7 @@ import {
   RatioTransformer,
   TokenTransformer,
   type Transformer,
+  ZeroTransformer,
 } from "./value.ts";
 import type { Item, ItemTokenConfig } from "./types.ts";
 
@@ -25,6 +26,7 @@ export class ItemToken {
       new NumberPercentTransformer(),
       new PtTransformer(),
       new RatioTransformer(),
+      new ZeroTransformer(),
     ];
     this.pipelines = [
       new ExcludePipeline(),
@@ -34,10 +36,23 @@ export class ItemToken {
   }
 
   toTokens(items: Item[]): Record<string, unknown> {
-    const array = items.filter(({ name }) => {
-      if (!this.config.exclude?.matches) return true;
+    const { exclude, include } = this.config;
+    if (exclude && include) {
+      throw new Error("only specify either exclude or include.");
+    }
 
-      return !this.config.exclude.matches.some((match) => name.includes(match));
+    const array = items.filter(({ name }) => {
+      if (exclude && exclude.matches) {
+        return !exclude.matches.some((match) => name.includes(match));
+      }
+
+      if (include) {
+        if (include.matches) {
+          return include.matches.some((match) => name.includes(match));
+        }
+      }
+
+      return true;
     }).map((item) => {
       const path = buildPath(item.name, this.config.segments ?? []);
       const transformedPath = this.pipelines.reduce((acc, pipeline) => {
