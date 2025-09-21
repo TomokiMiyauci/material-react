@@ -28,7 +28,7 @@ export class NumberDpTransformer implements Transformer {
     if (value.endsWith("dp")) {
       return {
         "$type": "number",
-        "$value": Number.parseInt(value),
+        "$value": Number.parseFloat(value),
         "$description": ctx.item.name,
         "$extensions": { unit: "dp" },
       };
@@ -56,7 +56,7 @@ export class RatioTransformer implements Transformer {
   transform(value: string, ctx: TransformerContext): unknown {
     const float = Number.parseFloat(value);
 
-    if (!Number.isNaN(float) && float <= 1) {
+    if (!Number.isNaN(float) && 0 < float && float <= 1) {
       return {
         "$type": "number",
         "$value": float,
@@ -68,14 +68,27 @@ export class RatioTransformer implements Transformer {
   }
 }
 
+export class ZeroTransformer implements Transformer {
+  transform(value: string, ctx: TransformerContext): unknown {
+    if (value === "0") {
+      return {
+        "$type": "number",
+        "$value": 0,
+        "$description": ctx.item.name,
+      };
+    }
+    return;
+  }
+}
+
 export class PtTransformer implements Transformer {
   transform(value: string, ctx: TransformerContext): unknown {
     if (value.endsWith("pt")) {
       return {
         "$type": "number",
-        "$value": Number.parseInt(value) / 100,
+        "$value": Number.parseFloat(value),
         "$description": ctx.item.name,
-        "$extensions": { ratio: true },
+        "$extensions": { unit: "pt" },
       };
     }
 
