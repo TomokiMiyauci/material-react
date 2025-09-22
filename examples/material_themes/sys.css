@@ -1,7 +1,37 @@
+@property --md-sys-elevation-level0 {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0;
+}
+
+@property --md-sys-elevation-level1 {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 1;
+}
+
+@property --md-sys-elevation-level2 {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 3;
+}
+
 @property --md-sys-elevation-level3 {
   syntax: "<number>";
   inherits: true;
   initial-value: 6;
+}
+
+@property --md-sys-elevation-level4 {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 8;
+}
+
+@property --md-sys-elevation-level5 {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 12;
 }
 
 @property --md-sys-shape-corner-full {
