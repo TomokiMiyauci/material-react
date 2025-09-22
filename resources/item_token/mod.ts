@@ -3,6 +3,7 @@ import {
   ExcludePipeline,
   HeadsPipeline,
   type Pipeline,
+  RenamesPipeline,
   TailsPipeline,
 } from "./path.ts";
 import {
@@ -30,6 +31,7 @@ export class ItemToken {
     ];
     this.pipelines = [
       new ExcludePipeline(),
+      new RenamesPipeline(),
       new HeadsPipeline(),
       new TailsPipeline(),
     ];

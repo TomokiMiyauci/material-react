@@ -15,6 +15,7 @@ export interface Include {
 
 export interface PathConfig {
   exclude?: Exclude;
+  renames?: Record<string, string>;
   heads?: string[];
   tails?: string[];
 }

@@ -108,3 +108,19 @@ export class TailsPipeline implements Pipeline {
     });
   }
 }
+
+export class RenamesPipeline implements Pipeline {
+  pipe(path: Path, ctx: PathContext): Path {
+    const { renames } = ctx.config;
+
+    if (!renames) return path;
+
+    return path.map((segment) => {
+      const renamedSegment = renames[segment];
+
+      if (typeof renamedSegment === "string") return renamedSegment;
+
+      return segment;
+    });
+  }
+}
