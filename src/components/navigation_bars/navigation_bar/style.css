@@ -1,12 +1,12 @@
-@import url(../_generated/tokens.css);
+@import url(./_generated/tokens.css);
 
 @scope([data-md=navigation-bar]) {
   all: unset;
   background-color: var(--container-color);
-  height: var(--container-height);
-  border-radius: var(--container-shape);
+  height: var(--height);
+  border-radius: var(--shape);
   display: flex;
-  column-gap: var(--container-items-space);
+  column-gap: var(--space-between-items);
 
   :scope>* {
     flex: 1;

@@ -12,13 +12,13 @@ import { IconButton } from "@miyauci/material-react";
 
 ## Props
 
-| Name    | Type                                      |  Default  |
-| ------- | ----------------------------------------- | :-------: |
-| `size`  | `xs`, `sm`, `md`, `lg`, `xl`              |   `sm`    |
-| `shape` | `round`, `square`                         |  `round`  |
-| `color` | `filled`, `tonal`, `outlined`, `standard` | `filled`  |
-| `width` | `default`, `narrow`, `wide`               | `default` |
-| `icon`  | `ReactNode`                               |     -     |
+| Name    | Type                                           |  Default  |
+| ------- | ---------------------------------------------- | :-------: |
+| `size`  | `xsmall`, `small`, `medium`, `large`, `xlarge` |  `small`  |
+| `shape` | `round`, `square`                              |  `round`  |
+| `color` | `filled`, `tonal`, `outlined`, `standard`      | `filled`  |
+| `width` | `default`, `narrow`, `wide`                    | `default` |
+| `icon`  | `ReactNode`                                    |     -     |
 
 And `HTMLButtonElement` arrtibutes.
 
