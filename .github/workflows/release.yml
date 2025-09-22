@@ -54,9 +54,47 @@ jobs:
 #         with:
 #           files: cov_profile.lcov
 #           token: ${{ secrets.CODECOV_TOKEN }}
+  build-storybook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+          cache: true
+
+      - name: Build storybook
+        run: deno task build-storybook
+
+      - uses: actions/cache@v4
+        with:
+          path: storybook-static
+          key: build-dist-${{ github.run_id }}
+
+  chromatic:
+    needs: [build-storybook]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - uses: actions/cache@v4
+        with:
+          path: storybook-static
+          key: build-dist-${{ github.run_id }}
+
+      - name: Run Chromatic
+        uses: chromaui/action@latest
+        with:
+          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          storybookBuildDir: storybook-static
 
   release:
-    # needs: [lint, test]
+    needs: [chromatic]
     runs-on: ${{ matrix.os }}
     permissions:
       contents: write
