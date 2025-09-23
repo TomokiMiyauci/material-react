@@ -39,19 +39,18 @@ export class ItemToken {
 
   toTokens(items: Item[]): Record<string, unknown> {
     const { exclude, include } = this.config;
-    if (exclude && include) {
-      throw new Error("only specify either exclude or include.");
-    }
 
     const array = items.filter(({ name }) => {
-      if (exclude && exclude.matches) {
-        return !exclude.matches.some((match) => name.includes(match));
-      }
-
       if (include) {
         if (include.matches) {
           return include.matches.some((match) => name.includes(match));
         }
+      }
+
+      return true;
+    }).filter(({ name }) => {
+      if (exclude && exclude.matches) {
+        return !exclude.matches.some((match) => name.includes(match));
       }
 
       return true;
