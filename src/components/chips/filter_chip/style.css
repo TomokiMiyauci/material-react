@@ -1,0 +1,260 @@
+@import url(./_generated/tokens.css);
+@import url(../../../_internal/elevation.css);
+
+@scope([data-md=filter-chip]) {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--container-height);
+  border-radius: var(--container-shape);
+  --elevation: var(--container-elevation);
+  box-shadow: var(--box-shadow);
+  border-color: var(--unselected-outline-color);
+  border-width: var(--unselected-outline-width);
+  border-style: solid;
+  box-sizing: border-box;
+  column-gap: 8px;
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
+  position: relative;
+
+  &:has([data-icon=leading]) {
+    padding-inline-start: 8px;
+  }
+
+  &:has([data-icon=trailing]) {
+    padding-inline-end: 8px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    border-radius: inherit;
+  }
+
+  &:active {
+    --elevation: var(--container-unselected-pressed-elevation);
+
+    &::before {
+      background-color: var(--state-layer-unselected-pressed-color);
+      opacity: var(--state-layer-unselected-pressed-opacity);
+    }
+  }
+
+  &:hover {
+    --elevation: var(--container-unselected-hover-elevation);
+
+    &::before {
+      background-color: var(--state-layer-unselected-hover-color);
+      opacity: var(--state-layer-unselected-hover-opacity);
+    }
+  }
+
+  &:focus-visible {
+    --elevation: var(--container-unselected-focus-elevation);
+    outline-offset: var(--focus-indicator-offset);
+    outline-width: var(--focus-indicator-thickness);
+    outline-style: solid;
+    outline-color: var(--focus-indicator-color);
+    border-color: var(--unselected-focus-outline-color);
+
+    &::before {
+      background-color: var(--state-layer-unselected-focus-color);
+      opacity: var(--state-layer-unselected-focus-opacity);
+    }
+  }
+
+  &[data-disabled] {
+    border-color: color-mix(in srgb, var(--unselected-disabled-outline-color) var(--unselected-disabled-outline-opacity), transparent);
+  }
+
+  &[data-elevated] {
+    --elevation: var(--container-elevated-elevation);
+    --shadow-color: var(--container-elevated-shadow-color);
+    background-color: var(--container-unselected-elevated-color);
+
+    &:active {
+      --elevation: var(--container-elevated-pressed-elevation);
+    }
+
+    &:hover {
+      --elevation: var(--container-elevated-hover-elevation);
+    }
+
+    &:focus-visible {
+      --elevation: var(--container-elevated-focus-elevation);
+    }
+
+    &[data-disabled] {
+      --elevation: var(--container-elevated-disabled-elevation);
+      background-color: color-mix(in srgb, var(--container-elevated-disabled-color) var(--container-elevated-disabled-opacity), transparent);
+    }
+  }
+
+  &[data-selected] {
+    border-width: var(--selected-outline-width);
+    border-color: var(--selected-outline-color);
+
+    &:active {
+      --elevation: var(--container-selected-pressed-elevation);
+
+      &::before {
+        background-color: var(--state-layer-selected-pressed-color);
+        opacity: var(--state-layer-selected-pressed-opacity);
+      }
+    }
+
+    &:hover {
+      --elevation: var(--container-selected-hover-elevation);
+
+      &::before {
+        background-color: var(--state-layer-selected-hover-color);
+        opacity: var(--state-layer-selected-hover-opacity);
+      }
+    }
+
+    &:focus-visible {
+      --elevation: var(--container-selected-focus-elevation);
+
+      &::before {
+        background-color: var(--state-layer-selected-focus-color);
+        opacity: var(--state-layer-selected-focus-opacity);
+      }
+    }
+  }
+
+  &[data-selected],
+  &[data-elevated] {
+    background-color: var(--container-selected-elevated-color);
+  }
+
+  [data-label] {
+    all: unset;
+    color: var(--label-text-unselected-color);
+    font-family: var(--label-text-font);
+    font-size: var(--label-text-size);
+    font-weight: var(--label-text-weight);
+    letter-spacing: var(--label-text-tracking);
+    line-height: var(--label-text-line-height);
+
+    :scope:active & {
+      color: var(--label-text-unselected-pressed-color);
+    }
+
+    :scope:hover & {
+      color: var(--label-text-unselected-hover-color);
+    }
+
+    :scope:focus-visible & {
+      color: var(--label-text-unselected-focus-color);
+    }
+
+    :scope[data-disabled] & {
+      color: var(--label-text-disabled-color);
+      opacity: var(--label-text-disabled-opacity);
+    }
+
+    :scope[data-selected] & {
+      color: var(--label-text-selected-color);
+    }
+
+    :scope[data-selected]:active & {
+      color: var(--label-text-selected-pressed-color);
+    }
+
+    :scope[data-selected]:hover & {
+      color: var(--label-text-selected-hover-color);
+    }
+
+    :scope[data-selected]:focus-visible {
+      color: var(--label-text-selected-focus-color);
+    }
+  }
+
+  [data-icon] {
+    all: unset;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--icon-size);
+    width: var(--icon-size);
+    font-size: var(--icon-size);
+  }
+
+  [data-icon=leading] {
+    color: var(--leading-icon-unselected-color);
+
+    :scope:active & {
+      color: var(--leading-icon-unselected-pressed-color);
+    }
+
+    :scope:hover & {
+      color: var(--leading-icon-unselected-hover-color);
+    }
+
+    :scope:focus-visible & {
+      color: var(--leading-icon-unselected-focus-color);
+    }
+
+    :scope[data-disabled] & {
+      color: var(--leading-icon-disabled-color);
+      opacity: var(--leading-icon-disabled-opacity);
+    }
+
+    :scope[data-selected] & {
+      color: var(--leading-icon-selected-color);
+    }
+
+    :scope:active[data-selected] & {
+      color: var(--leading-icon-selected-pressed-color);
+    }
+
+    :scope:hover[data-selected] & {
+      color: var(--leading-icon-selected-hover-color);
+    }
+
+    :scope:focus-visible[data-selected] & {
+      color: var(--leading-icon-selected-focus-color);
+    }
+  }
+
+  [data-icon=trailing] {
+    color: var(--trailing-icon-unselected-color);
+
+    :scope:active & {
+      color: var(--trailing-icon-unselected-pressed-color);
+    }
+
+    :scope:hover & {
+      color: var(--trailing-icon-unselected-hover-color);
+    }
+
+    :scope:focus-visible & {
+      color: var(--trailing-icon-unselected-focus-color);
+    }
+
+    :scope[data-disabled] & {
+      color: var(--trailing-icon-disabled-color);
+      opacity: var(--trailing-icon-disabled-opacity);
+    }
+
+    :scope[data-selected] & {
+      color: var(--trailing-icon-selected-color);
+    }
+
+    :scope:active[data-selected] & {
+      color: var(--trailing-icon-selected-pressed-color);
+    }
+
+    :scope:hover[data-selected] & {
+      color: var(--trailing-icon-selected-hover-color);
+    }
+
+    :scope:focus-visible[data-selected] & {
+      color: var(--trailing-icon-selected-focus-color);
+    }
+  }
+}

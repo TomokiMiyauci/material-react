@@ -1,0 +1,76 @@
+{
+  "steps": [
+    {
+      "use": "items2tokens",
+      "input": "../_generated/items.json",
+      "output": "./_generated/tokens.json",
+      "options": {
+        "include": {
+          "matches": ["Filter chip"]
+        },
+        "exclude": {
+          "matches": ["label text type"]
+        },
+        "segments": [
+          "Filter chip",
+          "label text",
+          "state layer",
+          "(Elevated style)",
+          "with trailing icon",
+          "with leading icon",
+          "with icon",
+          "leading icon",
+          "trailing icon"
+        ],
+
+        "path": {
+          "exclude": {
+            "matches": [
+              "Filter chip",
+              "icon",
+              "leading icon",
+              "trailing icon"
+            ]
+          },
+          "renames": {
+            "(Elevated style)": "elevated",
+            "with icon": "icon",
+            "with leading icon": "leading icon",
+            "with trailing icon": "trailing icon",
+            "(unselected)": "unselected",
+            "(selected)": "selected"
+          },
+          "heads": [
+            "container",
+            "label text",
+            "state layer",
+            "icon",
+            "trailing icon",
+            "leading icon",
+            "selected",
+            "unselected"
+          ]
+        }
+      }
+    },
+    {
+      "use": "tokens2css",
+      "input": "./_generated/tokens.json",
+      "output": "./_generated/tokens.css"
+    },
+    {
+      "use": "css",
+      "input": "./style.css",
+      "output": "./_generated/style.css",
+      "options": {
+        "minify": true,
+        "embed": true
+      }
+    },
+    {
+      "use": "css2ts",
+      "input": "./_generated/style.css",
+      "output": "./_generated/style.ts"
+    }
+  ]
+}
