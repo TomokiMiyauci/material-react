@@ -1,0 +1,147 @@
+@import url(./_generated/tokens.css);
+@import url(../../../_internal/elevation.css);
+
+@scope([data-md=suggestion-chip]) {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--container-height);
+  border-color: var(--container-outline-color);
+  border-width: var(--container-outline-width);
+  border-style: solid;
+  border-radius: var(--container-shape);
+  --elevation: var(--container-elevation);
+  box-shadow: var(--box-shadow);
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
+  gap: 8px;
+  position: relative;
+
+  &:has([data-icon]) {
+    padding-inline-start: 8px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    border-radius: inherit;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus-visible {
+    outline-offset: var(--focus-indicator-offset);
+    outline-width: var(--focus-indicator-thickness);
+    outline-style: solid;
+    outline-color: var(--focus-indicator-color);
+    border-color: var(--focus-outline-color);
+
+    &::before {
+      background-color: var(--state-layer-focus-color);
+      opacity: var(--state-layer-focus-opacity);
+    }
+  }
+
+  &[data-disabled] {
+    border-color: color-mix(in srgb, var(--disabled-outline-color) var(--disabled-outline-opacity), transparent);
+  }
+
+  &[data-elevated] {
+    --elevation: var(--container-elevated-elevation);
+    --shadow-color: var(--container-elevated-shadow-color);
+    background-color: var(--container-elevated-color);
+
+    &:active {
+      --elevation: var(--container-elevated-pressed-elevation);
+
+      &::before {
+        background-color: var(--state-layer-elevated-pressed-color);
+        opacity: var(--state-layer-elevated-pressed-opacity);
+      }
+    }
+
+    &:hover {
+      --elevation: var(--container-elevated-hover-elevation);
+
+      &::before {
+        background-color: var(--state-layer-elevated-hover-color);
+        opacity: var(--state-layer-elevated-hover-opacity);
+      }
+    }
+
+    &:focus-visible {
+      --elevation: var(--container-elevated-focus-elevation);
+    }
+
+    &[data-disabled] {
+      --elevation: var(--container-elevated-disabled-elevation);
+      background-color: var(--container-elevated-disabled-color);
+      opacity: var(--container-elevated-disabled-opacity);
+    }
+  }
+
+  [data-label] {
+    all: unset;
+    color: var(--label-text-color);
+    font-family: var(--label-text-font);
+    font-size: var(--label-text-size);
+    font-weight: var(--label-text-weight);
+    letter-spacing: var(--label-text-tracking);
+    line-height: var(--label-text-line-height);
+
+    :scope:active & {
+      color: var(--label-text-pressed-color);
+    }
+
+    :scope:hover & {
+      color: var(--label-text-hover-color);
+    }
+
+    :scope:focus-visible & {
+      color: var(--label-text-focus-color);
+    }
+
+    :scope[data-disabled] & {
+      color: var(--label-text-disabled-color);
+      opacity: var(--label-text-disabled-opacity);
+    }
+
+    :scope:active[data-elevated] & {
+      color: var(--label-text-elevated-pressed-color);
+    }
+  }
+
+  [data-icon] {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--icon-size);
+    width: var(--icon-size);
+    font-size: var(--icon-size);
+    color: var(--icon-color);
+
+    :scope:active & {
+      color: var(--icon-pressed-color);
+    }
+
+    :scope:hover & {
+      color: var(--icon-hover-color);
+    }
+
+    :scope:focus-visible & {
+      color: var(--icon-focus-color);
+    }
+
+    [data-disabled] & {
+      color: var(--icon-disabled-color);
+      opacity: var(--icon-disabled-opacity);
+    }
+  }
+}
