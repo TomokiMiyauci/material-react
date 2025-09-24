@@ -4,13 +4,17 @@ import style from "./_generated/style.ts";
 
 export interface FabProps {
   size?: FabSize;
-  tone?: FabTone;
+
+  /**
+   * @default "primary-container"
+   */
+  color?: FabColor;
   icon?: ReactNode;
 }
 
 export type FabSize = "baseline" | "medium" | "large";
 
-export type FabTone =
+export type FabColor =
   | "primary"
   | "primary-container"
   | "secondary"
@@ -21,7 +25,7 @@ export type FabTone =
 export default function Fab(
   props: FabProps & JSX.IntrinsicElements["button"],
 ): JSX.Element {
-  const { size, tone, icon, ...rest } = props;
+  const { size, color = "primary-container", icon, ...rest } = props;
 
   return (
     <>
@@ -29,11 +33,12 @@ export default function Fab(
         type="button"
         data-md="fab"
         data-size={size}
-        data-tone={tone}
+        data-color={color}
         {...rest}
       >
         <span data-icon="">{icon}</span>
       </button>
+
       <Style href="fab">{style}</Style>
     </>
   );

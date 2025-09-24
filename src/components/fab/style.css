@@ -9,33 +9,17 @@
   width: var(--container-width);
   height: var(--container-height);
   border-radius: var(--container-shape);
-  background-color: var(--container-tonal-primary-color);
-
   --elevation: var(--md-sys-elevation-level3);
   box-shadow: var(--box-shadow);
+  position: relative;
+  cursor: pointer;
 
-  &[data-tone=primary] {
-    background-color: var(--container-primary-color);
-  }
-
-  &[data-tone=primary-container] {
-    background-color: var(--container-tonal-primary-color);
-  }
-
-  &[data-tone=secondary] {
-    background-color: var(--container-secondary-color);
-  }
-
-  &[data-tone=secondary-container] {
-    background-color: var(--container-tonal-secondary-color);
-  }
-
-  &[data-tone=tertiary] {
-    background-color: var(--container-tertiary-color);
-  }
-
-  &[data-tone=tertiary-container] {
-    background-color: var(--container-tonal-tertiary-color);
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
   }
 
   &[data-size=medium] {
@@ -50,6 +34,204 @@
     border-radius: var(--container-large-shape);
   }
 
+  &[data-color=primary] {
+    --elevation: var(--container-primary-elevation);
+    --shadow-color: var(--container-primary-shadow-color);
+    background-color: var(--container-primary-color);
+
+    &:active {
+      --elevation: var(--container-primary-pressed-elevation);
+
+      &::before {
+        background-color: var(--state-layer-primary-pressed-color);
+        opacity: var(--state-layer-primary-pressed-opacity);
+      }
+    }
+
+    &:hover {
+      --elevation: var(--container-primary-hovered-elevation);
+
+      &::before {
+        background-color: var(--state-layer-primary-hovered-color);
+        opacity: var(--state-layer-primary-hovered-opacity);
+      }
+    }
+
+    &:focus-visible {
+      --elevation: var(--container-primary-focused-elevation);
+
+      &::before {
+        background-color: var(--state-layer-primary-focused-color);
+        opacity: var(--state-layer-primary-focused-opacity);
+      }
+    }
+  }
+
+  &[data-color=primary-container] {
+    --elevation: var(--container-tonal-primary-elevation);
+    --shadow-color: var(--container-tonal-primary-shadow-color);
+    background-color: var(--container-tonal-primary-color);
+
+    &:active {
+      --elevation: var(--container-tonal-primary-pressed-elevation);
+
+      &::before {
+        background-color: var(--state-layer-tonal-primary-pressed-color);
+        opacity: var(--state-layer-tonal-primary-pressed-opacity);
+      }
+    }
+
+    &:hover {
+      --elevation: var(--container-tonal-primary-hovered-elevation);
+
+      &::before {
+        background-color: var(--state-layer-tonal-primary-hovered-color);
+        opacity: var(--state-layer-tonal-primary-hovered-opacity);
+      }
+    }
+
+    &:focus-visible {
+      --elevation: var(--container-tonal-primary-focused-elevation);
+
+      &::before {
+        background-color: var(--state-layer-tonal-primary-focused-color);
+        opacity: var(--state-layer-tonal-primary-focused-opacity);
+      }
+    }
+  }
+
+  &[data-color=secondary] {
+    --elevation: var(--container-secondary-elevation);
+    --shadow-color: var(--container-secondary-shadow-color);
+    background-color: var(--container-secondary-color);
+
+    &:active {
+      --elevation: var(--container-tonal-pressed-elevation);
+
+      &::before {
+        background-color: var(--state-layer-secondary-pressed-color);
+        opacity: var(--state-layer-tonal-pressed-opacity);
+      }
+    }
+
+    &:hover {
+      --elevation: var(--container-tonal-hovered-elevation);
+
+      &::before {
+        background-color: var(--state-layer-tonal-hovered-color);
+        opacity: var(--state-layer-tonal-hovered-opacity);
+      }
+    }
+
+    &:focus-visible {
+      --elevation: var(--container-tonal-focused-elevation);
+
+      &::before {
+        background-color: var(--state-layer-tonal-focused-color);
+        opacity: var(--state-layer-tonal-focused-opacity);
+      }
+    }
+  }
+
+  &[data-color=secondary-container] {
+    --elevation: var(--container-tonal-secondary-elevation);
+    --shadow-color: var(--container-tonal-secondary-shadow-color);
+    background-color: var(--container-tonal-secondary-color);
+
+    &:active {
+      --elevation: var(--container-tonal-secondary-pressed-elevation);
+
+      &::before {
+        background-color: var(--state-layer-tonal-secondary-pressed-color);
+        opacity: var(--state-layer-tonal-secondary-pressed-opacity);
+      }
+    }
+
+    &:hover {
+      --elevation: var(--container-tonal-secondary-hovered-elevation);
+
+      &::before {
+        background-color: var(--state-layer-tonal-secondary-hovered-color);
+        opacity: var(--state-layer-tonal-secondary-hovered-opacity);
+      }
+    }
+
+    &:focus-visible {
+      --elevation: var(--container-tonal-secondary-focused-elevation);
+
+      &::before {
+        background-color: var(--state-layer-tonal-secondary-focused-color);
+        opacity: var(--state-layer-tonal-secondary-focused-opacity);
+      }
+    }
+  }
+
+  &[data-color=tertiary] {
+    --elevation: var(--container-tertiary-elevation);
+    --shadow-color: var(--container-tertiary-shadow-color);
+    background-color: var(--container-tertiary-color);
+
+    &:active {
+      --elevation: var(--container-tertiary-pressed-elevation);
+
+      &::before {
+        background-color: var(--state-layer-tertiary-pressed-color);
+        opacity: var(--state-layer-tertiary-pressed-opacity);
+      }
+    }
+
+    &:hover {
+      --elevation: var(--container-tertiary-hovered-elevation);
+
+      &::before {
+        background-color: var(--state-layer-tertiary-hovered-color);
+        opacity: var(--state-layer-tertiary-hovered-opacity);
+      }
+    }
+
+    &:focus-visible {
+      --elevation: var(--container-tertiary-focused-elevation);
+
+      &::before {
+        background-color: var(--state-layer-tertiary-focused-color);
+        opacity: var(--state-layer-tertiary-focused-opacity);
+      }
+    }
+  }
+
+  &[data-color=tertiary-container] {
+    --elevation: var(--container-tonal-tertiary-elevation);
+    --shadow-color: var(--container-tonal-tertiary-shadow-color);
+    background-color: var(--container-tonal-tertiary-color);
+
+    &:active {
+      --elevation: var(--container-tonal-tertiary-pressed-elevation);
+
+      &::before {
+        background-color: var(--state-layer-tonal-tertiary-focused-color);
+        opacity: var(--state-layer-tonal-tertiary-focused-opacity);
+      }
+    }
+
+    &:hover {
+      --elevation: var(--container-tonal-tertiary-hovered-elevation);
+
+      &::before {
+        background-color: var(--state-layer-tonal-tertiary-hovered-color);
+        opacity: var(--state-layer-tonal-tertiary-focused-opacity);
+      }
+    }
+
+    &:focus-visible {
+      --elevation: var(--container-tonal-tertiary-focused-elevation);
+
+      &::before {
+        background-color: var(--state-layer-tonal-tertiary-focused-color);
+        opacity: var(--state-layer-tonal-tertiary-focused-opacity);
+      }
+    }
+  }
+
   [data-icon] {
     all: unset;
     display: inline-flex;
@@ -59,30 +241,6 @@
     width: var(--icon-size);
     font-size: var(--icon-size);
     color: var(--icon-tonal-primary-color);
-
-    :scope[data-tone=primary] & {
-      color: var(--icon-primary-color);
-    }
-
-    :scope[data-tone=primary-container] & {
-      color: var(--icon-tonal-primary-color);
-    }
-
-    :scope[data-tone=secondary] & {
-      color: var(--icon-secondary-color);
-    }
-
-    :scope[data-tone=secondary-container] & {
-      color: var(--icon-tonal-secondary-color);
-    }
-
-    :scope[data-tone=tertiary] & {
-      color: var(--icon-tertiary-color);
-    }
-
-    :scope[data-tone=tertiary-container] & {
-      color: var(--icon-tonal-tertiary-color);
-    }
 
     :scope[data-size=medium] & {
       height: var(--icon-medium-size);
@@ -94,6 +252,102 @@
       height: var(--icon-large-size);
       width: var(--icon-large-size);
       font-size: var(--icon-large-size);
+    }
+
+    :scope[data-color=primary] & {
+      color: var(--icon-primary-color);
+    }
+
+    :scope:active[data-color=primary] & {
+      color: var(--icon-primary-pressed-color);
+    }
+
+    :scope:hover[data-color=primary] & {
+      color: var(--icon-primary-hovered-color);
+    }
+
+    :scope:focus-visible[data-color=primary] & {
+      color: var(--icon-primary-focused-color);
+    }
+
+    :scope[data-color=primary-container] & {
+      color: var(--icon-tonal-primary-color);
+    }
+
+    :scope:active[data-color=primary-container] & {
+      color: var(--icon-tonal-primary-pressed-color);
+    }
+
+    :scope:hover[data-color=primary-container] & {
+      color: var(--icon-tonal-primary-hovered-color);
+    }
+
+    :scope:focus-visible[data-color=primary-container] & {
+      color: var(--icon-tonal-primary-focused-color);
+    }
+
+    :scope[data-color=secondary] & {
+      color: var(--icon-secondary-color);
+    }
+
+    :scope:active[data-color=secondary] & {
+      color: var(--icon-secondary-pressed-color);
+    }
+
+    :scope:hover[data-color=secondary] & {
+      color: var(--icon-tonal-hovered-color);
+    }
+
+    :scope:focus-visible[data-color=secondary] & {
+      color: var(--icon-tonal-focused-color);
+    }
+
+    :scope[data-color=secondary-container] & {
+      color: var(--icon-tonal-secondary-color);
+    }
+
+    :scope:active[data-color=secondary-container] & {
+      color: var(--icon-tonal-secondary-pressed-color);
+    }
+
+    :scope:hover[data-color=secondary-container] & {
+      color: var(--icon-tonal-secondary-hovered-color);
+    }
+
+    :scope:focus-visible[data-color=secondary-container] & {
+      color: var(--icon-tonal-secondary-focused-color);
+    }
+
+    :scope[data-color=tertiary] & {
+      color: var(--icon-tertiary-color);
+    }
+
+    :scope:active[data-color=tertiary] & {
+      color: var(--icon-tertiary-pressed-color);
+    }
+
+    :scope:hover[data-color=tertiary] & {
+      color: var(--icon-tertiary-hovered-color);
+    }
+
+    :scope:focus-visible[data-color=tertiary] & {
+      color: var(--icon-tertiary-focused-color);
+    }
+
+    :scope[data-color=tertiary-container] & {
+      color: var(--icon-tonal-tertiary-color);
+    }
+
+    :scope:active[data-color=tertiary-container] & {
+      color: var(--icon-tonal-tertiary-pressed-color);
+    }
+
+    :scope:hover[data-color=tertiary-container] & {
+      color: var(--icon-tonal-tertiary-hovered-color);
+    }
+
+    :scope:focus-visible[data-color=tertiary-container] & {
+      color: var(--icon-tonal-tertiary-focused-color);
     }
   }
 }

@@ -25,39 +25,50 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Enabled = {} satisfies Story;
+export const Hovered = {
+  parameters: { pseudo: { hover: true } },
+} satisfies Story;
+
+export const Pressed = {
+  parameters: { pseudo: { active: true } },
+} satisfies Story;
+
+export const Focused = {
+  parameters: { pseudo: { focusVisible: true } },
+} satisfies Story;
 export const Primary = {
   args: {
-    tone: "primary",
+    color: "primary",
   },
 } satisfies Story;
 
 export const PrimaryContainer = {
   args: {
-    tone: "primary-container",
+    color: "primary-container",
   },
 } satisfies Story;
 
 export const Secondary = {
   args: {
-    tone: "secondary",
+    color: "secondary",
   },
 } satisfies Story;
 
 export const SecondaryContainer = {
   args: {
-    tone: "secondary-container",
+    color: "secondary-container",
   },
 } satisfies Story;
 
 export const Tertiary = {
   args: {
-    tone: "tertiary",
+    color: "tertiary",
   },
 } satisfies Story;
 
 export const TertiaryContainer = {
   args: {
-    tone: "tertiary-container",
+    color: "tertiary-container",
   },
 } satisfies Story;
 export const Medium = {
