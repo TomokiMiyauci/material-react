@@ -1,0 +1,85 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+/* @embed */
+:root {
+  --avatar-disabled-opacity: 38%; /** Input chip with avatar disabled avatar opacity */
+  --avatar-shape: var(--md-sys-shape-corner-full); /** Input chip with avatar avatar shape */
+  --avatar-size: 24px; /** Input chip with avatar avatar size */
+  --container-dragged-elevation: var(--md-sys-elevation-level4); /** Input chip dragged container elevation */
+  --container-elevation: var(--md-sys-elevation-level0); /** Input chip container elevation */
+  --container-height: 32px; /** Input chip container height */
+  --container-selected-color: var(--md-sys-color-secondary-container); /** Input chip selected container color */
+  --container-selected-disabled-color: var(--md-sys-color-on-surface); /** Input chip disabled selected container color */
+  --container-selected-disabled-opacity: 12%; /** Input chip disabled selected container opacity */
+  --container-shape: var(--md-sys-shape-corner-small); /** Input chip container shape */
+  --focus-indicator-color: var(--md-sys-color-secondary); /** Input chip focus indicator color */
+  --focus-indicator-offset: var(--md-sys-state-focus-indicator-outer-offset); /** Input chip focus indicator offset */
+  --focus-indicator-thickness: var(--md-sys-state-focus-indicator-thickness); /** Input chip focus indicator thickness */
+  --label-text-disabled-color: var(--md-sys-color-on-surface); /** Input chip disabled label text color */
+  --label-text-disabled-opacity: 38%; /** Input chip disabled label text opacity */
+  --label-text-font: var(--md-sys-typescale-label-large-font); /** Input chip label text font */
+  --label-text-line-height: var(--md-sys-typescale-label-large-line-height); /** Input chip label text line height */
+  --label-text-selected-color: var(--md-sys-color-on-secondary-container); /** Input chip selected label text color */
+  --label-text-selected-dragged-color: var(--md-sys-color-on-secondary-container); /** Input chip selected dragged label text color */
+  --label-text-selected-focus-color: var(--md-sys-color-on-secondary-container); /** Input chip selected focus label text color */
+  --label-text-selected-hover-color: var(--md-sys-color-on-secondary-container); /** Input chip selected hover label text color */
+  --label-text-selected-pressed-color: var(--md-sys-color-on-secondary-container); /** Input chip selected pressed label text color */
+  --label-text-size: var(--md-sys-typescale-label-large-size); /** Input chip label text size */
+  --label-text-tracking: var(--md-sys-typescale-label-large-tracking); /** Input chip label text tracking */
+  --label-text-unselected-color: var(--md-sys-color-on-surface-variant); /** Input chip unselected label text color */
+  --label-text-unselected-dragged-color: var(--md-sys-color-on-surface-variant); /** Input chip unselected dragged label text color */
+  --label-text-unselected-focus-color: var(--md-sys-color-on-surface-variant); /** Input chip unselected focus label text color */
+  --label-text-unselected-hover-color: var(--md-sys-color-on-surface-variant); /** Input chip unselected hover label text color */
+  --label-text-unselected-pressed-color: var(--md-sys-color-on-surface-variant); /** Input chip unselected pressed label text color */
+  --label-text-weight: var(--md-sys-typescale-label-large-weight); /** Input chip label text weight */
+  --leading-icon-disabled-color: var(--md-sys-color-on-surface); /** Input chip with leading icon disabled leading icon color */
+  --leading-icon-disabled-opacity: 38%; /** Input chip with leading icon disabled leading icon opacity */
+  --leading-icon-selected-color: var(--md-sys-color-primary); /** Input chip with leading icon selected leading icon color */
+  --leading-icon-selected-dragged-color: var(--md-sys-color-on-secondary-container); /** Input chip with leading icon selected dragged leading icon color */
+  --leading-icon-selected-focus-color: var(--md-sys-color-primary); /** Input chip with leading icon selected focus leading icon color */
+  --leading-icon-selected-hover-color: var(--md-sys-color-primary); /** Input chip with leading icon selected hover leading icon color */
+  --leading-icon-selected-pressed-color: var(--md-sys-color-primary); /** Input chip with leading icon selected pressed leading icon color */
+  --leading-icon-size: 18px; /** Input chip leading icon size */
+  --leading-icon-unselected-color: var(--md-sys-color-on-surface-variant); /** Input chip with leading icon unselected leading icon color */
+  --leading-icon-unselected-dragged-color: var(--md-sys-color-on-surface-variant); /** Input chip with leading icon unselected dragged leading icon color */
+  --leading-icon-unselected-focus-color: var(--md-sys-color-primary); /** Input chip with leading icon unselected focus leading icon color */
+  --leading-icon-unselected-hover-color: var(--md-sys-color-primary); /** Input chip with leading icon unselected hover leading icon color */
+  --leading-icon-unselected-pressed-color: var(--md-sys-color-primary); /** Input chip with leading icon unselected pressed leading icon color */
+  --selected-outline-width: 0; /** Input chip selected outline width */
+  --state-layer-selected-dragged-color: var(--md-sys-color-on-secondary-container); /** Input chip selected dragged state layer color */
+  --state-layer-selected-dragged-opacity: var(--md-sys-state-dragged-state-layer-opacity); /** Input chip selected dragged state layer opacity */
+  --state-layer-selected-focus-color: var(--md-sys-color-on-secondary-container); /** Input chip selected focus state layer color */
+  --state-layer-selected-focus-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Input chip selected focus state layer opacity */
+  --state-layer-selected-hover-color: var(--md-sys-color-on-secondary-container); /** Input chip selected hover state layer color */
+  --state-layer-selected-hover-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Input chip selected hover state layer opacity */
+  --state-layer-selected-pressed-color: var(--md-sys-color-on-secondary-container); /** Input chip selected pressed state layer color */
+  --state-layer-selected-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Input chip selected pressed state layer opacity */
+  --state-layer-unselected-dragged-color: var(--md-sys-color-on-surface-variant); /** Input chip unselected dragged state layer color */
+  --state-layer-unselected-dragged-opacity: var(--md-sys-state-dragged-state-layer-opacity); /** Input chip unselected dragged state layer opacity */
+  --state-layer-unselected-focus-color: var(--md-sys-color-on-surface-variant); /** Input chip unselected focus state layer color */
+  --state-layer-unselected-focus-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Input chip unselected focus state layer opacity */
+  --state-layer-unselected-hover-color: var(--md-sys-color-on-surface-variant); /** Input chip unselected hover state layer color */
+  --state-layer-unselected-hover-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Input chip unselected hover state layer opacity */
+  --state-layer-unselected-pressed-color: var(--md-sys-color-on-surface-variant); /** Input chip unselected pressed state layer color */
+  --state-layer-unselected-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Input chip unselected pressed state layer opacity */
+  --trailing-icon-disabled-color: var(--md-sys-color-on-surface); /** Input chip with trailing icon disabled trailing icon color */
+  --trailing-icon-disabled-opacity: 38%; /** Input chip with trailing icon disabled trailing icon opacity */
+  --trailing-icon-selected-color: var(--md-sys-color-on-secondary-container); /** Input chip with trailing icon selected trailing icon color */
+  --trailing-icon-selected-dragged-color: var(--md-sys-color-primary); /** Input chip with trailing icon selected dragged trailing icon color */
+  --trailing-icon-selected-focus-color: var(--md-sys-color-on-secondary-container); /** Input chip with trailing icon selected focus trailing icon color */
+  --trailing-icon-selected-hover-color: var(--md-sys-color-on-secondary-container); /** Input chip with trailing icon selected hover trailing icon color */
+  --trailing-icon-selected-pressed-color: var(--md-sys-color-on-secondary-container); /** Input chip with trailing icon selected pressed trailing icon color */
+  --trailing-icon-size: 18px; /** Input chip trailing icon size */
+  --trailing-icon-unselected-color: var(--md-sys-color-on-surface-variant); /** Input chip with trailing icon unselected trailing icon color */
+  --trailing-icon-unselected-dragged-color: var(--md-sys-color-primary); /** Input chip with trailing icon unselected dragged trailing icon color */
+  --trailing-icon-unselected-focus-color: var(--md-sys-color-on-surface-variant); /** Input chip with trailing icon unselected focus trailing icon color */
+  --trailing-icon-unselected-hover-color: var(--md-sys-color-on-surface-variant); /** Input chip with trailing icon unselected hover trailing icon color */
+  --trailing-icon-unselected-pressed-color: var(--md-sys-color-on-surface-variant); /** Input chip with trailing icon unselected pressed trailing icon color */
+  --unselected-disabled-outline-color: var(--md-sys-color-on-surface); /** Input chip disabled unselected outline color */
+  --unselected-disabled-outline-opacity: 12%; /** Input chip disabled unselected outline opacity */
+  --unselected-focus-outline-color: var(--md-sys-color-on-surface-variant); /** Input chip unselected focus outline color */
+  --unselected-outline-color: var(--md-sys-color-outline-variant); /** Input chip unselected outline color */
+  --unselected-outline-width: 1px; /** Input chip unselected outline width */
+}
