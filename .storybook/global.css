@@ -5,3 +5,7 @@
 @plugin "@iconify/tailwind4" {
   scale: 0;
 }
+
+.material-symbols-outlined {
+  font-size: inherit;
+}
