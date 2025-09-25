@@ -1,7 +1,7 @@
 @import url(./_generated/tokens.css);
 @import url(../../../_internal/elevation.css);
 
-@scope([data-md=assist-chip]) {
+[data-md=assist-chip] {
   all: unset;
   box-sizing: border-box;
   display: inline-flex;
@@ -139,6 +139,4 @@
       opacity: var(--icon-disabled-opacity);
     }
   }
-
-  background-color: red;
 }
