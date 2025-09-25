@@ -10,6 +10,9 @@ export interface SuggestionChipProps {
   icon?: ReactNode;
 }
 
+/**
+ * Suggestion chips help narrow a user’s intent by presenting dynamically generated suggestions, such as suggested responses or search filters.
+ */
 export default function SuggestionChipProps(
   props: SuggestionChipProps & JSX.IntrinsicElements["span"],
 ): JSX.Element {

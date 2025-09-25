@@ -1,0 +1,33 @@
+# SuggestionChip
+
+Suggestion chips help narrow a user’s intent by presenting dynamically generated
+suggestions, such as suggested responses or search filters.
+
+## Example
+
+```tsx
+import { SuggestionChip } from "@miyauci/material-react";
+
+<SuggestionChip label="Suggestion chip" />;
+```
+
+## Props
+
+| Name       | Type        |
+| ---------- | ----------- |
+| `elevated` | `boolean`   |
+| `disabled` | `boolean`   |
+| `label`    | `ReactNode` |
+| `icon`     | `ReactNode` |
+
+And `HTMLSpanElement` arrtibutes.
+
+## Tokens
+
+Depends on the following CSS variables.
+
+<!-- deno-fmt-ignore-start -->
+{{#tokens}}
+- {{.}}
+{{/tokens}}
+<!-- deno-fmt-ignore-end -->
