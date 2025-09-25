@@ -14,6 +14,9 @@ export interface InputChipProps {
 
 export type LeadingType = "avatar" | "icon";
 
+/**
+ * Input chips represent discrete pieces of information entered by a user, such as Gmail contacts or filter options within a search field.
+ */
 export default function InputChip(
   props: InputChipProps & JSX.IntrinsicElements["span"],
 ): JSX.Element {
