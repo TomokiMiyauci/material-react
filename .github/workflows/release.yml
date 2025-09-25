@@ -92,7 +92,6 @@ jobs:
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           storybookBuildDir: storybook-static
-          exitOnceUploaded: true
           exitZeroOnChanges: false
 
   release:
