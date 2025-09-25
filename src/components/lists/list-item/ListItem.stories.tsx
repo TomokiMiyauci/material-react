@@ -1,0 +1,112 @@
+import ListItem from "./ListItem.tsx";
+import type { Meta, StoryObj } from "@storybook/react-vite";
+
+const meta = {
+  title: "Example/ListItem",
+  component: ListItem,
+  parameters: {
+    // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout
+    layout: "centered",
+  },
+  // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/writing-docs/autodocs
+  tags: ["autodocs"],
+  // More on argTypes: https://storybook.js.org/docs/api/argtypes
+  argTypes: {},
+  // Use `fn` to spy on the onClick arg, which will appear in the actions panel once invoked: https://storybook.js.org/docs/essentials/actions#action-args
+  args: {
+    "leading": {
+      type: "avatar",
+      children: "A",
+    },
+    "headline": "Headline",
+    "supporingText": "Supporing text",
+    "trailing": {
+      "type": "text",
+      children: "100+",
+    },
+  },
+  decorators: [
+    (Story) => (
+      <div className="w-[300px]">
+        <Story />
+      </div>
+    ),
+  ],
+} satisfies Meta<typeof ListItem>;
+export default meta;
+
+type Story = StoryObj<typeof meta>;
+
+// More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
+export const OneLine = {
+  args: {
+    size: "one-line",
+  },
+} satisfies Story;
+
+export const TwoLines = {} satisfies Story;
+export const ThreeLines = {
+  args: {
+    size: "three-lines",
+    supporingText:
+      "Supporting text that is long enough to fill up multiple lines",
+  },
+} satisfies Story;
+
+export const LeadingIcon = {
+  args: {
+    "leading": {
+      "type": "icon",
+      "children": (
+        <span className="icon-[material-symbols--person-outline] h-full w-full" />
+      ),
+    },
+  },
+} satisfies Story;
+
+export const LeadingAvatar = {
+  args: {
+    "leading": {
+      "type": "avatar",
+      "children": "AB",
+    },
+  },
+} satisfies Story;
+
+export const LeadingImage = {
+  args: {
+    "leading": {
+      "type": "image",
+      "children": <img src="https://placehold.co/200x200" />,
+    },
+  },
+} satisfies Story;
+
+export const LeadingVideo = {
+  args: {
+    "leading": {
+      "type": "video",
+      "children": <img src="https://placehold.co/200x200" />,
+    },
+  },
+} satisfies Story;
+
+export const TrailingIcon = {
+  args: {
+    trailing: {
+      "type": "icon",
+      children: (
+        <span className="icon-[material-symbols--arrow-right] h-full w-full" />
+      ),
+    },
+  },
+} satisfies Story;
+
+export const TrailingText = {
+  args: {
+    trailing: {
+      "type": "text",
+      children: "10",
+    },
+  },
+} satisfies Story;
