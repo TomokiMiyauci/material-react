@@ -1,0 +1,518 @@
+@import url(./_generated/tokens.css);
+@import url(../../../_internal/elevation.css);
+
+@scope([data-md=button]) {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--container-height);
+  box-sizing: border-box;
+  box-shadow: var(--box-shadow);
+  position: relative;
+  column-gap: var(--container-between-icon-label-space);
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    border-radius: inherit;
+  }
+
+  &[data-size=xsmall] {
+    height: var(--container-xsmall-height);
+    padding-inline-start: var(--container-xsmall-leading-space);
+    padding-inline-end: var(--container-xsmall-trailing-space);
+    border-width: var(--container-xsmall-outline-width);
+    column-gap: var(--container-xsmall-between-icon-label-space);
+
+    &[data-shape=round] {
+      border-radius: var(--container-xsmall-round-shape);
+    }
+
+    &[data-shape=square] {
+      border-radius: var(--container-xsmall-square-shape);
+    }
+  }
+
+  &[data-size=small] {
+    height: var(--container-small-height);
+    padding-inline-start: var(--container-small-leading-space);
+    padding-inline-end: var(--container-small-trailing-space);
+    border-width: var(--container-small-outline-width);
+    column-gap: var(--container-small-between-icon-label-space);
+
+    &[data-shape=round] {
+      border-radius: var(--container-small-round-shape);
+    }
+
+    &[data-shape=square] {
+      border-radius: var(--container-small-square-shape);
+    }
+  }
+
+  &[data-size=medium] {
+    height: var(--container-medium-height);
+    padding-inline-start: var(--container-medium-leading-space);
+    padding-inline-end: var(--container-medium-trailing-space);
+    border-width: var(--container-medium-outline-width);
+    column-gap: var(--container-medium-between-icon-label-space);
+
+    &[data-shape=round] {
+      border-radius: var(--container-medium-round-shape);
+    }
+
+    &[data-shape=square] {
+      border-radius: var(--container-medium-square-shape);
+    }
+  }
+
+  &[data-size=large] {
+    height: var(--container-large-height);
+    padding-inline-start: var(--container-large-leading-space);
+    padding-inline-end: var(--container-large-trailing-space);
+    border-width: var(--container-large-outline-width);
+    column-gap: var(--container-large-between-icon-label-space);
+
+    &[data-shape=round] {
+      border-radius: var(--container-large-round-shape);
+    }
+
+    &[data-shape=square] {
+      border-radius: var(--container-large-square-shape);
+    }
+  }
+
+  &[data-size=xlarge] {
+    height: var(--container-xlarge-height);
+    padding-inline-start: var(--container-xlarge-leading-space);
+    padding-inline-end: var(--container-xlarge-trailing-space);
+    border-width: var(--container-xlarge-outline-width);
+    column-gap: var(--container-xlarge-between-icon-label-space);
+
+    &[data-shape=round] {
+      border-radius: var(--container-xlarge-round-shape);
+    }
+
+    &[data-shape=square] {
+      border-radius: var(--container-xlarge-square-shape);
+    }
+  }
+
+  &[data-color=filled] {
+    background-color: var(--container-filled-color);
+
+    &:hover::before {
+      background-color: var(--state-layer-filled-hovered-color);
+      opacity: var(--state-layer-filled-hovered-opacity);
+    }
+
+    &:active::before {
+      background-color: var(--state-layer-filled-pressed-color);
+      opacity: var(--state-layer-filled-pressed-opacity);
+    }
+
+    &:focus-visible::before {
+      background-color: var(--state-layer-filled-focused-color);
+      opacity: var(--state-layer-filled-focused-opacity);
+    }
+
+    &[data-disabled] {
+      --elevation: var(--container-filled-disabled-elevation);
+      background-color: color-mix(in srgb, var(--container-filled-disabled-color) var(--container-filled-disabled-opacity), transparent);
+    }
+  }
+
+  &[data-color=elevated] {
+    --elevation: var(--container-elevated-elevation);
+    --shadow-color: var(--container-elevated-shadow-color);
+    background-color: var(--container-elevated-color);
+
+    &:hover::before {
+      background-color: var(--state-layer-elevated-hovered-color);
+      opacity: var(--state-layer-elevated-hovered-opacity);
+    }
+
+    &:active::before {
+      background-color: var(--state-layer-elevated-pressed-color);
+      opacity: var(--state-layer-elevated-pressed-opacity);
+    }
+
+    &:focus-visible::before {
+      background-color: var(--state-layer-elevated-focused-color);
+      opacity: var(--state-layer-elevated-focused-opacity);
+    }
+
+    &[data-disabled] {
+      --elevation: var(--container-elevated-disabled-color);
+      background-color: color-mix(in srgb, var(--container-elevated-disabled-color) var(--container-elevated-disabled-opacity), transparent);
+    }
+  }
+
+  &[data-color=tonal] {
+    background-color: var(--container-tonal-color);
+
+    &:hover::before {
+      background-color: var(--state-layer-tonal-hovered-color);
+      opacity: var(--state-layer-tonal-hovered-opacity);
+    }
+
+    &:active::before {
+      background-color: var(--state-layer-tonal-pressed-color);
+      opacity: var(--state-layer-tonal-pressed-opacity);
+    }
+
+    &:focus-visible::before {
+      background-color: var(--state-layer-tonal-focused-color);
+      opacity: var(--state-layer-tonal-focused-opacity);
+    }
+
+    &[data-disabled] {
+      --elevation: var(--container-tonal-disabled-elevation);
+      background-color: color-mix(in srgb, var(--container-tonal-disabled-color) var(--container-tonal-disabled-opacity), transparent);
+    }
+  }
+
+  &[data-color=outlined] {
+    border-color: var(--container-outlined-outline-color);
+    border-style: solid;
+
+    &:hover::before {
+      background-color: var(--state-layer-outlined-hovered-color);
+      opacity: var(--state-layer-outlined-hovered-opacity);
+    }
+
+    &:active::before {
+      background-color: var(--state-layer-outlined-pressed-color);
+      opacity: var(--state-layer-outlined-pressed-opacity);
+    }
+
+    &:focus-visible::before {
+      background-color: var(--state-layer-outlined-focused-color);
+      opacity: var(--state-layer-outlined-focused-opacity);
+    }
+  }
+
+  &[data-color=text] {
+    &:hover::before {
+      background-color: var(--state-layer-text-hovered-color);
+      opacity: var(--state-layer-text-hovered-opacity);
+    }
+
+    &:active::before {
+      background-color: var(--state-layer-text-pressed-color);
+      opacity: var(--state-layer-text-pressed-opacity);
+    }
+
+    &:focus-visible::before {
+      background-color: var(--state-layer-text-focused-color);
+      opacity: var(--state-layer-text-focused-opacity);
+    }
+  }
+
+  &:focus-visible {
+    outline-color: var(--focus-indicator-color);
+    outline-width: var(--focus-indicator-thickness);
+    outline-offset: var(--focus-indicator-offset);
+    outline-style: solid;
+  }
+
+  [data-label] {
+    all: unset;
+    color: var(--label-color);
+    font-size: var(--label-size);
+    font-weight: var(--label-weight);
+    font-family: var(--label-font);
+    line-height: var(--label-line-height);
+    letter-spacing: var(--label-tracking);
+
+    :scope[data-size=xsmall] & {
+      font-size: var(--label-xsmall-size);
+      font-weight: var(--label-xsmall-weight);
+      font-family: var(--label-xsmall-font);
+      line-height: var(--label-xsmall-line-height);
+      letter-spacing: var(--label-xsmall-tracking);
+    }
+
+    :scope[data-size=small] & {
+      font-size: var(--label-small-size);
+      font-weight: var(--label-small-weight);
+      font-family: var(--label-small-font);
+      line-height: var(--label-small-line-height);
+      letter-spacing: var(--label-small-tracking);
+    }
+
+    :scope[data-size=medium] & {
+      font-size: var(--label-medium-size);
+      font-weight: var(--label-medium-weight);
+      font-family: var(--label-medium-font);
+      line-height: var(--label-medium-line-height);
+      letter-spacing: var(--label-medium-tracking);
+    }
+
+    :scope[data-size=large] & {
+      font-size: var(--label-large-size);
+      font-weight: var(--label-large-weight);
+      font-family: var(--label-large-font);
+      line-height: var(--label-large-line-height);
+      letter-spacing: var(--label-large-tracking);
+    }
+
+    :scope[data-size=xlarge] & {
+      font-size: var(--label-xlarge-size);
+      font-weight: var(--label-xlarge-weight);
+      font-family: var(--label-xlarge-font);
+      line-height: var(--label-xlarge-line-height);
+      letter-spacing: var(--label-xlarge-tracking);
+    }
+
+    :scope[data-color=elevated] & {
+      color: var(--label-elevated-color);
+    }
+
+    :scope[data-color=elevated]:hover & {
+      color: var(--label-elevated-hovered-color);
+    }
+
+    :scope[data-color=elevated]:active & {
+      color: var(--label-elevated-pressed-color);
+    }
+
+    :scope[data-color=elevated]:focus-visible & {
+      color: var(--label-elevated-focused-color);
+    }
+
+    :scope[data-color=elevated][data-disabled] & {
+      color: var(--label-elevated-disabled-color);
+      opacity: var(--label-elevated-disabled-opacity);
+    }
+
+    :scope[data-color=filled] & {
+      color: var(--label-filled-color);
+    }
+
+    :scope[data-color=filled]:hover & {
+      color: var(--label-filled-hovered-color);
+    }
+
+    :scope[data-color=filled]:active & {
+      color: var(--label-filled-pressed-color);
+    }
+
+    :scope[data-color=filled]:focus-visible & {
+      color: var(--label-filled-focused-color);
+    }
+
+    :scope[data-color=filled][data-disabled] & {
+      color: var(--label-filled-disabled-color);
+      opacity: var(--label-filled-disabled-opacity);
+    }
+
+    :scope[data-color=tonal] & {
+      color: var(--label-tonal-color);
+    }
+
+    :scope[data-color=tonal]:hover & {
+      color: var(--label-tonal-hovered-color);
+    }
+
+    :scope[data-color=tonal]:active & {
+      color: var(--label-tonal-pressed-color);
+    }
+
+    :scope[data-color=tonal]:focus-visible & {
+      color: var(--label-tonal-focused-color);
+    }
+
+    :scope[data-color=tonal][data-disabled] & {
+      color: var(--label-tonal-disabled-color);
+      opacity: var(--label-tonal-disabled-opacity);
+    }
+
+    :scope[data-color=outlined] & {
+      color: var(--label-outlined-color);
+    }
+
+    :scope[data-color=outlined]:hover & {
+      color: var(--label-outlined-hovered-color);
+    }
+
+    :scope[data-color=outlined]:active & {
+      color: var(--label-outlined-pressed-color);
+    }
+
+    :scope[data-color=outlined]:focus-visible & {
+      color: var(--label-outlined-focused-color);
+    }
+
+    :scope[data-color=outlined][data-disabled] & {
+      color: var(--label-outlined-disabled-color);
+      opacity: var(--label-outlined-disabled-opacity);
+    }
+
+    :scope[data-color=text] & {
+      color: var(--label-text-color);
+    }
+
+    :scope[data-color=text]:hover & {
+      color: var(--label-text-hovered-color);
+    }
+
+    :scope[data-color=text]:active & {
+      color: var(--label-text-pressed-color);
+    }
+
+    :scope[data-color=text]:focus-visible & {
+      color: var(--label-text-focused-color);
+    }
+
+    :scope[data-color=text][data-disabled] & {
+      color: var(--label-text-disabled-color);
+      opacity: var(--label-text-disabled-opacity);
+    }
+  }
+
+  [data-icon] {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--icon-color);
+
+    :scope[data-size=xsmall] & {
+      width: var(--icon-xsmall-size);
+      height: var(--icon-xsmall-size);
+      font-size: var(--icon-xsmall-size);
+    }
+
+    :scope[data-size=small] & {
+      width: var(--icon-small-size);
+      height: var(--icon-small-size);
+      font-size: var(--icon-small-size);
+    }
+
+    :scope[data-size=medium] & {
+      width: var(--icon-medium-size);
+      height: var(--icon-medium-size);
+      font-size: var(--icon-medium-size);
+    }
+
+    :scope[data-size=large] & {
+      width: var(--icon-large-size);
+      height: var(--icon-large-size);
+      font-size: var(--icon-large-size);
+    }
+
+    :scope[data-size=xlarge] & {
+      width: var(--icon-xlarge-size);
+      height: var(--icon-xlarge-size);
+      font-size: var(--icon-xlarge-size);
+    }
+
+    :scope[data-color=filled] & {
+      color: var(--icon-filled-color);
+    }
+
+    :scope[data-color=filled]:hover & {
+      color: var(--icon-filled-hovered-color);
+    }
+
+    :scope[data-color=filled]:active & {
+      color: var(--icon-filled-pressed-color);
+    }
+
+    :scope[data-color=filled]:focus-visible & {
+      color: var(--icon-filled-focused-color);
+    }
+
+    :scope[data-color=filled][data-disabled] & {
+      color: var(--icon-filled-disabled-color);
+      opacity: var(--icon-filled-disabled-opacity);
+    }
+
+    :scope[data-color=elevated] & {
+      color: var(--icon-elevated-color);
+    }
+
+    :scope[data-color=elevated]:hover & {
+      color: var(--icon-elevated-hovered-color);
+    }
+
+    :scope[data-color=elevated]:active & {
+      color: var(--icon-elevated-pressed-color);
+    }
+
+    :scope[data-color=elevated]:focus-visible & {
+      color: var(--icon-elevated-focused-color);
+    }
+
+    :scope[data-color=elevated][data-disabled] & {
+      color: var(--icon-elevated-disabled-color);
+      opacity: var(--icon-elevated-disabled-opacity);
+    }
+
+    :scope[data-color=tonal] & {
+      color: var(--icon-tonal-color);
+    }
+
+    :scope[data-color=tonal]:hover & {
+      color: var(--icon-tonal-hovered-color);
+    }
+
+    :scope[data-color=tonal]:active & {
+      color: var(--icon-tonal-pressed-color);
+    }
+
+    :scope[data-color=tonal]:focus-visible & {
+      color: var(--icon-tonal-focused-color);
+    }
+
+    :scope[data-color=tonal][data-disabled] & {
+      color: var(--icon-tonal-disabled-color);
+      opacity: var(--icon-tonal-disabled-opacity);
+    }
+
+    :scope[data-color=outlined] & {
+      color: var(--icon-outlined-color);
+    }
+
+    :scope[data-color=outlined]:hover & {
+      color: var(--icon-outlined-hovered-color);
+    }
+
+    :scope[data-color=outlined]:active & {
+      color: var(--icon-outlined-pressed-color);
+    }
+
+    :scope[data-color=outlined]:focus-visible & {
+      color: var(--icon-outlined-focused-color);
+    }
+
+    :scope[data-color=outlined][data-disabled] & {
+      color: var(--icon-outlined-disabled-color);
+      opacity: var(--icon-outlined-disabled-opacity);
+    }
+
+    :scope[data-color=text] & {
+      color: var(--icon-text-color);
+    }
+
+    :scope[data-color=text]:hover & {
+      color: var(--icon-text-hovered-color);
+    }
+
+    :scope[data-color=text]:active & {
+      color: var(--icon-text-pressed-color);
+    }
+
+    :scope[data-color=text]:focus-visible & {
+      color: var(--icon-text-focused-color);
+    }
+
+    :scope[data-color=text][data-disabled] & {
+      color: var(--icon-text-disabled-color);
+      opacity: var(--icon-text-disabled-opacity);
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "steps": [
+    {
+      "use": "items2tokens",
+      "input": "../_generated/items.json",
+      "output": "./_generated/tokens.json",
+      "options": {
+        "exclude": {
+          "matches": ["toggle", "(selected)"]
+        },
+        "segments": [
+          "container state layer",
+          "focus ring outline",
+          "focus ring indicator",
+          "between icon label",
+          "label size",
+          "state layer",
+          "spring animation damping",
+          "spring animation stiffness"
+        ],
+        "renames": {
+          "Button xsmall shape round": "Button xsmall container shape round",
+          "Button xsmall shape square": "Button xsmall container shape square",
+          "Button small shape round": "Button small container shape round",
+          "Button small shape square": "Button small container shape square",
+          "Button medium shape round": "Button medium container shape round",
+          "Button medium shape square": "Button medium container shape square",
+          "Button xlarge shape round": "Button xlarge container shape round",
+          "Button xlarge shape square": "Button xlarge container shape square",
+          "Button shape square": "Button container shape square",
+          "Button shape round": "Button container shape round",
+          "Button large shape round": "Button large container shape round",
+          "Button large shape square": "Button large container shape square",
+          "Button leading space": "Button container leading space",
+          "Button xsmall leading space": "Button xsmall container leading space",
+          "Button small leading space": "Button small container leading space",
+          "Button medium leading space": "Button medium container leading space",
+          "Button large leading space": "Button large container leading space",
+          "Button xlarge leading space": "Button xlarge container leading space",
+          "Button trailing space": "Button container trailing space",
+          "Button xsmall trailing space": "Button xsmall container trailing space",
+          "Button small trailing space": "Button small container trailing space",
+          "Button medium trailing space": "Button medium container trailing space",
+          "Button large trailing space": "Button large container trailing space",
+          "Button xlarge trailing space": "Button xlarge container trailing space",
+          "Button xsmall outline width": "Button xsmall container outline width",
+          "Button small outline width": "Button small container outline width",
+          "Button medium outline width": "Button medium container outline width",
+          "Button large outline width": "Button large container outline width",
+          "Button xlarge outline width": "Button xlarge container outline width",
+          "Button outlined outline color": "Button outlined container outline color",
+          "Button elevated elevation": "Button elevated container elevation",
+          "Button elevated shadow color": "Button elevated container shadow color",
+          "Button elevation": "Button container elevation",
+          "Button between icon label space": "Button container between icon label space",
+          "Button xsmall between icon label space": "Button xsmall container between icon label space",
+          "Button xlarge between icon label space": "Button xlarge container between icon label space",
+          "Button small between icon label space": "Button small container between icon label space",
+          "Button large between icon label space": "Button large container between icon label space",
+          "Button medium between icon label space": "Button medium container between icon label space"
+        },
+        "path": {
+          "exclude": {
+            "matches": ["Button"]
+          },
+          "renames": {
+            "container state layer": "state layer",
+            "focus ring outline": "focus indicator",
+            "focus ring indicator": "focus indicator",
+            "label size": "label"
+          },
+          "heads": [
+            "container",
+            "state layer",
+            "icon",
+            "label",
+            "xsmall",
+            "small",
+            "medium",
+            "large",
+            "xlarge",
+            "round",
+            "square",
+            "morph",
+            "spring animation damping",
+            "spring animation stiffness"
+          ],
+          "tails": ["shape"]
+        }
+      }
+    },
+    {
+      "use": "tokens2css",
+      "input": "./_generated/tokens.json",
+      "output": "./_generated/tokens.css"
+    },
+    {
+      "use": "css",
+      "input": "./style.css",
+      "output": "./_generated/style.css",
+      "options": {
+        "minify": true,
+        "embed": true
+      }
+    },
+    {
+      "use": "css2ts",
+      "input": "./_generated/style.css",
+      "output": "./_generated/style.ts"
+    }
+  ]
+}
