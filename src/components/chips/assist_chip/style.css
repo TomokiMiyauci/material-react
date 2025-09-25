@@ -1,22 +1,24 @@
 @import url(./_generated/tokens.css);
 @import url(../../../_internal/elevation.css);
 
-[data-md=assist-chip] {
-  box-sizing: border-box;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--container-height);
-  border-color: var(--container-outline-color);
-  border-width: var(--container-outline-width);
-  border-style: solid;
-  border-radius: var(--container-shape);
-  --elevation: var(--container-elevation);
-  box-shadow: var(--box-shadow);
-  padding-inline-start: 16px;
-  padding-inline-end: 16px;
-  gap: 8px;
-  position: relative;
+@scope ([data-md=assist-chip]) {
+  :scope {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--container-height);
+    border-color: var(--container-outline-color);
+    border-width: var(--container-outline-width);
+    border-style: solid;
+    border-radius: var(--container-shape);
+    --elevation: var(--container-elevation);
+    box-shadow: var(--box-shadow);
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    gap: 8px;
+    position: relative;
+  }
 
   &:has([data-icon]) {
     padding-inline-start: 8px;
