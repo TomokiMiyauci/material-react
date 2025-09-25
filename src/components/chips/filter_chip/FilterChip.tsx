@@ -12,6 +12,10 @@ export interface FilterChipProps {
   trailingIcon?: ReactNode;
 }
 
+/**
+ * Filter chips use tags or descriptive words to filter content. They can be a good
+ * alternative to toggle buttons or checkboxes.
+ */
 export default function FilterChip(
   props: FilterChipProps & JSX.IntrinsicElements["span"],
 ): JSX.Element {

@@ -1,0 +1,35 @@
+# FilterChip
+
+Filter chips use tags or descriptive words to filter content. They can be a good
+alternative to toggle buttons or checkboxes.
+
+## Example
+
+```tsx
+import { FilterChip } from "@miyauci/material-react";
+
+<FilterChip label="Assist chip" />;
+```
+
+## Props
+
+| Name           | Type        |
+| -------------- | ----------- |
+| `selected`     | `boolean`   |
+| `elevated`     | `boolean`   |
+| `disabled`     | `boolean`   |
+| `label`        | `ReactNode` |
+| `leadingIcon`  | `ReactNode` |
+| `trailingIcon` | `ReactNode` |
+
+And `HTMLSpanElement` arrtibutes.
+
+## Tokens
+
+Depends on the following CSS variables.
+
+<!-- deno-fmt-ignore-start -->
+{{#tokens}}
+- {{.}}
+{{/tokens}}
+<!-- deno-fmt-ignore-end -->
