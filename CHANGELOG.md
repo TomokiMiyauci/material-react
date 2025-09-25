@@ -1,3 +1,10 @@
+# [1.0.0-beta.2](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.1...1.0.0-beta.2) (2025-09-25)
+
+
+### Features
+
+* **icon-button:** change size props values ([d2f56ea](https://github.com/TomokiMiyauci/material-react/commit/d2f56ea61c6cc2f2f3a7c4f9950532f791e85a62))
+
 # 1.0.0-beta.1 (2025-09-16)
 
 
