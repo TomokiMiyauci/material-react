@@ -139,4 +139,6 @@
       opacity: var(--icon-disabled-opacity);
     }
   }
+
+  background-color: red;
 }
