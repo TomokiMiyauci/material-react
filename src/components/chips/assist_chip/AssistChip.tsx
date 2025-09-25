@@ -10,6 +10,10 @@ export interface AssitChipProps {
   icon?: ReactNode;
 }
 
+/**
+ * Assist chips represent smart or automated actions that can span multiple apps,
+ * such as opening a calendar event from the home screen.
+ */
 export default function AssistChip(
   props: AssitChipProps & JSX.IntrinsicElements["span"],
 ): JSX.Element {

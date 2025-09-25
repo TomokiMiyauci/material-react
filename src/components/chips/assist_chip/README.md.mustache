@@ -1,0 +1,33 @@
+# AssistChip
+
+Assist chips represent smart or automated actions that can span multiple apps,
+such as opening a calendar event from the home screen.
+
+## Example
+
+```tsx
+import { AssistChip } from "@miyauci/material-react";
+
+<AssistChip label="Assist chip" />;
+```
+
+## Props
+
+| Name       | Type        |
+| ---------- | ----------- |
+| `elevated` | `boolean`   |
+| `disabled` | `boolean`   |
+| `label`    | `ReactNode` |
+| `icon`     | `ReactNode` |
+
+And `HTMLSpanElement` arrtibutes.
+
+## Tokens
+
+Depends on the following CSS variables.
+
+<!-- deno-fmt-ignore-start -->
+{{#tokens}}
+- {{.}}
+{{/tokens}}
+<!-- deno-fmt-ignore-end -->
