@@ -9,3 +9,7 @@
 .material-symbols-outlined {
   font-size: inherit;
 }
+
+@scope ([data-md=assist-chip]) {
+  background-color: blue;
+}

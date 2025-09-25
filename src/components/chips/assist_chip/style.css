@@ -2,7 +2,6 @@
 @import url(../../../_internal/elevation.css);
 
 [data-md=assist-chip] {
-  all: unset;
   box-sizing: border-box;
   display: inline-flex;
   align-items: center;
