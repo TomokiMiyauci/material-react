@@ -6,6 +6,9 @@ import { join } from "node:path";
 export default {
   "stories": [
     "../src/**/*.stories.tsx",
+    "!../src/components/list-item/**/*.stories.tsx",
+    "!../src/components/menu/**/*.stories.tsx",
+    "!../src/components/navigation_rails/**/*.stories.tsx",
   ],
   "addons": [
     "@storybook/addon-docs",
