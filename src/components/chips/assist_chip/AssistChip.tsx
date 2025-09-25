@@ -30,6 +30,11 @@ export default function AssistChip(
         <span data-label="">{label}</span>
       </span>
 
+      <style>
+        {`[data-md=assist-chip] {
+      background-color: blue;
+      }`}
+      </style>
       <Style>{style}</Style>
     </>
   );
