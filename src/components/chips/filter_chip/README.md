@@ -8,7 +8,7 @@ alternative to toggle buttons or checkboxes.
 ```tsx
 import { FilterChip } from "@miyauci/material-react";
 
-<FilterChip label="Assist chip" />;
+<FilterChip label="Filter chip" />;
 ```
 
 ## Props
