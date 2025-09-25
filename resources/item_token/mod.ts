@@ -38,9 +38,16 @@ export class ItemToken {
   }
 
   toTokens(items: Item[]): Record<string, unknown> {
-    const { exclude, include } = this.config;
+    const { exclude, include, renames } = this.config;
 
-    const array = items.filter(({ name }) => {
+    const array = items.map(({ name, value }) => {
+      if (renames) {
+        const renamed = renames[name];
+
+        return { name: renamed ?? name, value };
+      }
+      return { name, value };
+    }).filter(({ name }) => {
       if (include) {
         if (include.matches) {
           return include.matches.some((match) => name.includes(match));
