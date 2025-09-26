@@ -2,7 +2,7 @@
 @import url(../../../_internal/elevation.css);
 
 @scope([data-md=filter-chip]) {
-  :scope {
+  & {
     all: unset;
     display: inline-flex;
     align-items: center;
