@@ -57,7 +57,9 @@
     outline-width: var(--focus-indicator-thickness);
     outline-style: solid;
     outline-color: var(--focus-indicator-color);
-    border-color: var(--focus-outline-color);
+    /* TODO:(miyauci) The token may be incorrect.
+     * border-color: var(--focus-outline-color);
+     */
 
     &::before {
       background-color: var(--state-layer-focus-color);
