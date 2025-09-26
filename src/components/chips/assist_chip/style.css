@@ -9,9 +9,6 @@
     align-items: center;
     justify-content: center;
     height: var(--container-height);
-    border-color: var(--container-outline-color);
-    border-width: var(--container-outline-width);
-    border-style: solid;
     border-radius: var(--container-shape);
     --elevation: var(--container-elevation);
     box-shadow: var(--box-shadow);
@@ -19,6 +16,16 @@
     padding-inline-end: 16px;
     gap: 8px;
     position: relative;
+  }
+
+  &:not([data-disabled]) {
+    cursor: pointer;
+  }
+
+  &:not([data-elevated]) {
+    border-color: var(--container-outline-color);
+    border-width: var(--container-outline-width);
+    border-style: solid;
   }
 
   &:has([data-icon]) {
@@ -33,18 +40,16 @@
     border-radius: inherit;
   }
 
-  &:active::before {
-    background-color: var(--state-layer-pressed-color);
-    opacity: var(--state-layer-pressed-opacity);
-  }
-
   &:hover {
-    cursor: pointer;
-
     &::before {
       background-color: var(--state-layer-hover-color);
       opacity: var(--state-layer-hover-opacity);
     }
+  }
+
+  &:active::before {
+    background-color: var(--state-layer-pressed-color);
+    opacity: var(--state-layer-pressed-opacity);
   }
 
   &:focus-visible {
@@ -65,12 +70,12 @@
     --elevation: var(--container-elevated-elevation);
     --shadow-color: var(--container-elevated-shadow-color);
 
-    &:active {
-      --elevation: var(--container-elevated-pressed-elevation);
-    }
-
     &:hover {
       --elevation: var(--container-elevated-hover-elevation);
+    }
+
+    &:active {
+      --elevation: var(--container-elevated-pressed-elevation);
     }
 
     &:focus-visible {
@@ -96,12 +101,13 @@
     letter-spacing: var(--label-text-tracking);
     line-height: var(--label-text-line-height);
 
-    :scope:active & {
-      color: var(--label-text-pressed-color);
-    }
 
     :scope:hover & {
       color: var(--label-text-hover-color);
+    }
+
+    :scope:active & {
+      color: var(--label-text-pressed-color);
     }
 
     :scope:focus-visible & {
@@ -124,12 +130,12 @@
     font-size: var(--icon-size);
     color: var(--icon-color);
 
-    :scope:active & {
-      color: var(--icon-pressed-color);
-    }
-
     :scope:hover & {
       color: var(--icon-hover-color);
+    }
+
+    :scope:active & {
+      color: var(--icon-pressed-color);
     }
 
     :scope:focus-visible & {
