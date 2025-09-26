@@ -2,15 +2,15 @@ import SuggestionChip from "./SuggestionChip.tsx";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
-  title: "Example/SuggestionChip",
+  title: "Example/SuggestionChip/Elevated",
   component: SuggestionChip,
   parameters: {
     layout: "centered",
   },
-  tags: ["autodocs"],
   argTypes: {},
   args: {
     label: "Suggestion chip",
+    elevated: true,
   },
 } satisfies Meta<typeof SuggestionChip>;
 
@@ -53,11 +53,5 @@ export const Pressed = {
   },
   args: {
     label: "Pressed",
-  },
-} satisfies Story;
-
-export const WithIcon = {
-  args: {
-    icon: <span className="material-symbols-outlined">directions_car</span>,
   },
 } satisfies Story;
