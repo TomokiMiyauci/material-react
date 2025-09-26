@@ -30,7 +30,7 @@ export default function AssistChip(
         <span data-label="">{label}</span>
       </span>
 
-      <Style>{style}</Style>
+      <Style href="assist-chip">{style}</Style>
     </>
   );
 }

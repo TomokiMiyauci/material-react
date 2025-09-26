@@ -2,22 +2,24 @@
 @import url(../../../_internal/elevation.css);
 
 @scope([data-md=filter-chip]) {
-  all: unset;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--container-height);
-  border-radius: var(--container-shape);
-  --elevation: var(--container-elevation);
-  box-shadow: var(--box-shadow);
-  border-color: var(--unselected-outline-color);
-  border-width: var(--unselected-outline-width);
-  border-style: solid;
-  box-sizing: border-box;
-  column-gap: 8px;
-  padding-inline-start: 16px;
-  padding-inline-end: 16px;
-  position: relative;
+  :scope {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--container-height);
+    border-radius: var(--container-shape);
+    --elevation: var(--container-elevation);
+    box-shadow: var(--box-shadow);
+    border-color: var(--unselected-outline-color);
+    border-width: var(--unselected-outline-width);
+    border-style: solid;
+    box-sizing: border-box;
+    column-gap: 8px;
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    position: relative;
+  }
 
   &:has([data-icon=leading]) {
     padding-inline-start: 8px;
