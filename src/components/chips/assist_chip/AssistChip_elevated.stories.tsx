@@ -9,7 +9,6 @@ const meta = {
   },
   argTypes: {},
   args: {
-    label: "Assist chip",
     elevated: true,
   },
 } satisfies Meta<typeof AssistChip>;
@@ -18,25 +17,39 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Enabled = {} satisfies Story;
+export const Enabled = {
+  args: {
+    label: "Enabled",
+  },
+} satisfies Story;
 export const Disabled = {
   args: {
+    label: "Disabled",
     disabled: true,
   },
 } satisfies Story;
 export const Hovered = {
+  args: {
+    label: "Hovered",
+  },
   parameters: {
     pseudo: { hover: true },
   },
 } satisfies Story;
 
 export const Focused = {
+  args: {
+    label: "Focused",
+  },
   parameters: {
     pseudo: { focusVisible: true },
   },
 } satisfies Story;
 
 export const Pressed = {
+  args: {
+    label: "Pressed",
+  },
   parameters: {
     pseudo: { active: true },
   },
