@@ -10,7 +10,7 @@ const meta = {
   tags: ["autodocs"],
   argTypes: {},
   args: {
-    label: "Filter chip",
+    label: "Input chip",
   },
 } satisfies Meta<typeof InputChip>;
 
