@@ -11,9 +11,6 @@
     border-radius: var(--container-shape);
     --elevation: var(--container-elevation);
     box-shadow: var(--box-shadow);
-    border-color: var(--unselected-outline-color);
-    border-width: var(--unselected-outline-width);
-    border-style: solid;
     box-sizing: border-box;
     column-gap: 8px;
     padding-inline-start: 16px;
@@ -29,21 +26,22 @@
     padding-inline-end: 8px;
   }
 
+  &:not([data-elevated]) {
+    border-color: var(--unselected-outline-color);
+    border-width: var(--unselected-outline-width);
+    border-style: solid;
+  }
+
+  &:not([data-disabled]) {
+    cursor: pointer;
+  }
+
   &::before {
     content: "";
     position: absolute;
     inset: 0;
     pointer-events: none;
     border-radius: inherit;
-  }
-
-  &:active {
-    --elevation: var(--container-unselected-pressed-elevation);
-
-    &::before {
-      background-color: var(--state-layer-unselected-pressed-color);
-      opacity: var(--state-layer-unselected-pressed-opacity);
-    }
   }
 
   &:hover {
@@ -55,13 +53,22 @@
     }
   }
 
+  &:active {
+    --elevation: var(--container-unselected-pressed-elevation);
+
+    &::before {
+      background-color: var(--state-layer-unselected-pressed-color);
+      opacity: var(--state-layer-unselected-pressed-opacity);
+    }
+  }
+
   &:focus-visible {
     --elevation: var(--container-unselected-focus-elevation);
     outline-offset: var(--focus-indicator-offset);
     outline-width: var(--focus-indicator-thickness);
     outline-style: solid;
     outline-color: var(--focus-indicator-color);
-    border-color: var(--unselected-focus-outline-color);
+    /* border-color: var(--unselected-focus-outline-color); */
 
     &::before {
       background-color: var(--state-layer-unselected-focus-color);
@@ -71,6 +78,9 @@
 
   &[data-disabled] {
     border-color: color-mix(in srgb, var(--unselected-disabled-outline-color) var(--unselected-disabled-outline-opacity), transparent);
+
+    --elevation: var(--container-elevated-disabled-elevation);
+    background-color: color-mix(in srgb, var(--container-elevated-disabled-color) var(--container-elevated-disabled-opacity), transparent);
   }
 
   &[data-elevated] {
@@ -78,12 +88,12 @@
     --shadow-color: var(--container-elevated-shadow-color);
     background-color: var(--container-unselected-elevated-color);
 
-    &:active {
-      --elevation: var(--container-elevated-pressed-elevation);
-    }
-
     &:hover {
       --elevation: var(--container-elevated-hover-elevation);
+    }
+
+    &:active {
+      --elevation: var(--container-elevated-pressed-elevation);
     }
 
     &:focus-visible {
@@ -100,21 +110,21 @@
     border-width: var(--selected-outline-width);
     border-color: var(--selected-outline-color);
 
-    &:active {
-      --elevation: var(--container-selected-pressed-elevation);
-
-      &::before {
-        background-color: var(--state-layer-selected-pressed-color);
-        opacity: var(--state-layer-selected-pressed-opacity);
-      }
-    }
-
     &:hover {
       --elevation: var(--container-selected-hover-elevation);
 
       &::before {
         background-color: var(--state-layer-selected-hover-color);
         opacity: var(--state-layer-selected-hover-opacity);
+      }
+    }
+
+    &:active {
+      --elevation: var(--container-selected-pressed-elevation);
+
+      &::before {
+        background-color: var(--state-layer-selected-pressed-color);
+        opacity: var(--state-layer-selected-pressed-opacity);
       }
     }
 
@@ -126,10 +136,13 @@
         opacity: var(--state-layer-selected-focus-opacity);
       }
     }
+
+    &[data-disabled] {
+      background-color: color-mix(in srgb, var(--container-selected-disabled-color) var(--container-selected-disabled-opacity), transparent);
+    }
   }
 
-  &[data-selected],
-  &[data-elevated] {
+  &[data-selected] {
     background-color: var(--container-selected-elevated-color);
   }
 
@@ -142,12 +155,12 @@
     letter-spacing: var(--label-text-tracking);
     line-height: var(--label-text-line-height);
 
-    :scope:active & {
-      color: var(--label-text-unselected-pressed-color);
-    }
-
     :scope:hover & {
       color: var(--label-text-unselected-hover-color);
+    }
+
+    :scope:active & {
+      color: var(--label-text-unselected-pressed-color);
     }
 
     :scope:focus-visible & {
@@ -163,12 +176,12 @@
       color: var(--label-text-selected-color);
     }
 
-    :scope[data-selected]:active & {
-      color: var(--label-text-selected-pressed-color);
-    }
-
     :scope[data-selected]:hover & {
       color: var(--label-text-selected-hover-color);
+    }
+
+    :scope[data-selected]:active & {
+      color: var(--label-text-selected-pressed-color);
     }
 
     :scope[data-selected]:focus-visible {
@@ -189,12 +202,12 @@
   [data-icon=leading] {
     color: var(--leading-icon-unselected-color);
 
-    :scope:active & {
-      color: var(--leading-icon-unselected-pressed-color);
-    }
-
     :scope:hover & {
       color: var(--leading-icon-unselected-hover-color);
+    }
+
+    :scope:active & {
+      color: var(--leading-icon-unselected-pressed-color);
     }
 
     :scope:focus-visible & {
@@ -210,12 +223,12 @@
       color: var(--leading-icon-selected-color);
     }
 
-    :scope:active[data-selected] & {
-      color: var(--leading-icon-selected-pressed-color);
-    }
-
     :scope:hover[data-selected] & {
       color: var(--leading-icon-selected-hover-color);
+    }
+
+    :scope:active[data-selected] & {
+      color: var(--leading-icon-selected-pressed-color);
     }
 
     :scope:focus-visible[data-selected] & {
@@ -226,12 +239,12 @@
   [data-icon=trailing] {
     color: var(--trailing-icon-unselected-color);
 
-    :scope:active & {
-      color: var(--trailing-icon-unselected-pressed-color);
-    }
-
     :scope:hover & {
       color: var(--trailing-icon-unselected-hover-color);
+    }
+
+    :scope:active & {
+      color: var(--trailing-icon-unselected-pressed-color);
     }
 
     :scope:focus-visible & {
@@ -247,12 +260,12 @@
       color: var(--trailing-icon-selected-color);
     }
 
-    :scope:active[data-selected] & {
-      color: var(--trailing-icon-selected-pressed-color);
-    }
-
     :scope:hover[data-selected] & {
       color: var(--trailing-icon-selected-hover-color);
+    }
+
+    :scope:active[data-selected] & {
+      color: var(--trailing-icon-selected-pressed-color);
     }
 
     :scope:focus-visible[data-selected] & {
