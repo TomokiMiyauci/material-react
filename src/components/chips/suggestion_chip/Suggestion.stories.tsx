@@ -1,5 +1,6 @@
 import SuggestionChip from "./SuggestionChip.tsx";
 import type { Meta, StoryObj } from "@storybook/react-vite";
+import { md } from "~/.storybook/utils.ts";
 
 const meta = {
   title: "Example/SuggestionChip",
@@ -10,7 +11,7 @@ const meta = {
   tags: ["autodocs"],
   argTypes: {},
   args: {
-    label: "Suggestion chip",
+    label: "Label",
   },
 } satisfies Meta<typeof SuggestionChip>;
 
@@ -19,45 +20,50 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Enabled = {
-  args: {
-    label: "Enabled",
+  parameters: {
+    design: {
+      type: "figma",
+      url: md.figmaURL("suggestion-chip", { state: "enabled" }),
+    },
   },
 } satisfies Story;
 export const Disabled = {
   args: {
     disabled: true,
-    label: "Disabled",
+  },
+  parameters: {
+    design: {
+      type: "figma",
+      url: md.figmaURL("suggestion-chip", { state: "disabled" }),
+    },
   },
 } satisfies Story;
 export const Hovered = {
   parameters: {
     pseudo: { hover: true },
-  },
-  args: {
-    label: "Hovered",
+    design: {
+      type: "figma",
+      url: md.figmaURL("suggestion-chip", { state: "hovered" }),
+    },
   },
 } satisfies Story;
 
 export const Focused = {
   parameters: {
     pseudo: { focusVisible: true },
-  },
-  args: {
-    label: "Focused",
+    design: {
+      type: "figma",
+      url: md.figmaURL("suggestion-chip", { state: "hovered" }),
+    },
   },
 } satisfies Story;
 
 export const Pressed = {
   parameters: {
     pseudo: { active: true },
-  },
-  args: {
-    label: "Pressed",
-  },
-} satisfies Story;
-
-export const WithIcon = {
-  args: {
-    icon: <span className="material-symbols-outlined">directions_car</span>,
+    design: {
+      type: "figma",
+      url: md.figmaURL("suggestion-chip", { state: "pressed" }),
+    },
   },
 } satisfies Story;

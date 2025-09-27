@@ -11,11 +11,15 @@ class MaterialDesignBuilder {
     options: { state: State; elevated?: boolean; icon?: boolean },
   ): string;
   figmaURL(
+    component: "suggestion-chip",
+    options: { state: State; elevated?: boolean; icon?: boolean },
+  ): string;
+  figmaURL(
     component: "filter-chip",
     options?: { state?: State; elevated?: boolean; selected?: boolean },
   ): string;
   figmaURL(
-    component: "filter-chip" | "assist-chip",
+    component: "filter-chip" | "assist-chip" | "suggestion-chip",
     options?: { state?: State; elevated?: boolean; selected?: boolean },
   ): string {
     const id = getNodeId(component, options);
@@ -36,7 +40,7 @@ type State =
   | "pressed";
 
 function getNodeId(
-  component: "filter-chip" | "assist-chip",
+  component: "filter-chip" | "assist-chip" | "suggestion-chip",
   options: {
     state?: State;
     elevated?: boolean;
@@ -81,6 +85,27 @@ function getNodeId(
       if (state) {
         return assistChip.outlined[state];
       }
+
+      break;
+    }
+
+    case "suggestion-chip": {
+      const suggestionChip = nodeIdJson.map["suggestion-chip"];
+      const { state, elevated, icon } = options;
+
+      if (icon && (state === "enabled" || state === "disabled")) {
+        return suggestionChip.icon[state];
+      }
+
+      if (elevated && state) {
+        return suggestionChip.elevated[state];
+      }
+
+      if (state) {
+        return suggestionChip.outlined[state];
+      }
+
+      break;
     }
   }
 
