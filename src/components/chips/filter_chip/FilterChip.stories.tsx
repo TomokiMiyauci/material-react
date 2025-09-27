@@ -1,5 +1,6 @@
 import FilterChip from "./FilterChip.tsx";
 import type { Meta, StoryObj } from "@storybook/react-vite";
+import { md } from "~/.storybook/utils.ts";
 
 const meta = {
   title: "Example/FilterChip",
@@ -10,7 +11,7 @@ const meta = {
   tags: ["autodocs"],
   argTypes: {},
   args: {
-    label: "Filter chip",
+    label: "Label",
   },
 } satisfies Meta<typeof FilterChip>;
 
@@ -19,39 +20,51 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Enabled = {
-  args: {
-    label: "Enabled",
+  parameters: {
+    design: {
+      type: "figma",
+      url: md.figmaURL("filter-chip", { state: "enabled" }),
+    },
   },
 } satisfies Story;
 
 export const Disabled = {
-  args: { disabled: true, label: "Disabled" },
+  args: { disabled: true },
+  parameters: {
+    design: {
+      type: "figma",
+      url: md.figmaURL("filter-chip", { state: "disabled" }),
+    },
+  },
 } satisfies Story;
 
 export const Hovered = {
   parameters: {
     pseudo: { hover: true },
-  },
-  args: {
-    label: "Hovered",
+    design: {
+      type: "figma",
+      url: md.figmaURL("filter-chip", { state: "hovered" }),
+    },
   },
 } satisfies Story;
 
 export const Focused = {
   parameters: {
     pseudo: { focusVisible: true },
-  },
-  args: {
-    label: "Focused",
+    design: {
+      type: "figma",
+      url: md.figmaURL("filter-chip", { state: "focused" }),
+    },
   },
 } satisfies Story;
 
 export const Pressed = {
   parameters: {
     pseudo: { active: true },
-  },
-  args: {
-    label: "Pressed",
+    design: {
+      type: "figma",
+      url: md.figmaURL("filter-chip", { state: "pressed" }),
+    },
   },
 } satisfies Story;
 
