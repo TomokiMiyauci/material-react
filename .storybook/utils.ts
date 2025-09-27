@@ -7,7 +7,7 @@ class MaterialDesignBuilder {
   }
   figmaURL(
     component: "filter-chip",
-    options: { state?: State },
+    options: { state?: State; elevated?: boolean; selected?: boolean },
   ): string {
     const id = getNodeId(component, options);
 
@@ -28,30 +28,26 @@ type State =
 
 function getNodeId(
   component: "filter-chip",
-  options: { state?: State },
+  options: { state?: State; elevated?: boolean; selected?: boolean },
 ): string {
   switch (component) {
     case "filter-chip": {
-      const outlined = nodeIdJson.map["filter-chip"].outlined;
-      switch (options.state) {
-        case "enabled":
-          return outlined.enabled;
+      const filterChip = nodeIdJson.map["filter-chip"];
+      const { elevated, selected, state } = options;
 
-        case "hovered":
-          return outlined.hovered;
-
-        case "pressed":
-          return outlined.pressed;
-
-        case "focused":
-          return outlined.focused;
-
-        case "dragged":
-          return outlined.disabled;
-
-        case "disabled":
-          return outlined.disabled;
+      if (selected && elevated && state) {
+        return filterChip.selected_elevated[state];
       }
+
+      if (elevated && state) {
+        return filterChip.elevated[state];
+      }
+
+      if (selected && state) {
+        return filterChip.selected[state];
+      }
+
+      if (state) return filterChip.outlined[state];
 
       break;
     }
@@ -66,3 +62,22 @@ const BASE_URL =
 export const md = new MaterialDesignBuilder(
   BASE_URL,
 );
+
+export function overrideFigma<
+  T extends { parameters: { design: { url: string } } },
+>(
+  value: T,
+  url: string,
+): T {
+  const { parameters, ...rest } = value;
+  const { design, ...restParameters } = parameters;
+  const { url: _, ...restDesing } = design;
+
+  return {
+    parameters: {
+      design: { url, ...restDesing },
+      ...restParameters,
+    },
+    ...rest,
+  } as T;
+}
