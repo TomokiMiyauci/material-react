@@ -11,6 +11,7 @@ export default {
     "@storybook/addon-docs",
     "@storybook/addon-a11y",
     "storybook-addon-pseudo-states",
+    "@storybook/addon-designs",
   ],
   "framework": {
     "name": "@storybook/react-vite",
