@@ -34,6 +34,28 @@
         "dragged": "53923-28335",
         "disabled": "53923-28299"
       }
+    },
+    "assist-chip": {
+      "outlined": {
+        "enabled": "53923-28267",
+        "hovered": "53923-28237",
+        "focused": "53923-28207",
+        "pressed": "53923-28177",
+        "dragged": "53923-28147",
+        "disabled": "53923-28117"
+      },
+      "elevated": {
+        "enabled": "53923-28264",
+        "hovered": "53923-28234",
+        "focused": "53923-28204",
+        "pressed": "53923-28174",
+        "dragged": "53923-28144",
+        "disabled": "53923-28114"
+      },
+      "icon": {
+        "enabled": "53923-28260",
+        "disabled": "53923-28110"
+      }
     }
   }
 }

@@ -5,9 +5,18 @@ class MaterialDesignBuilder {
   constructor(baseURL: string) {
     this.#url = new URL(baseURL);
   }
+
+  figmaURL(
+    component: "assist-chip",
+    options: { state: State; elevated?: boolean; icon?: boolean },
+  ): string;
   figmaURL(
     component: "filter-chip",
-    options: { state?: State; elevated?: boolean; selected?: boolean },
+    options?: { state?: State; elevated?: boolean; selected?: boolean },
+  ): string;
+  figmaURL(
+    component: "filter-chip" | "assist-chip",
+    options?: { state?: State; elevated?: boolean; selected?: boolean },
   ): string {
     const id = getNodeId(component, options);
 
@@ -27,8 +36,13 @@ type State =
   | "pressed";
 
 function getNodeId(
-  component: "filter-chip",
-  options: { state?: State; elevated?: boolean; selected?: boolean },
+  component: "filter-chip" | "assist-chip",
+  options: {
+    state?: State;
+    elevated?: boolean;
+    selected?: boolean;
+    icon?: boolean;
+  } = {},
 ): string {
   switch (component) {
     case "filter-chip": {
@@ -50,6 +64,23 @@ function getNodeId(
       if (state) return filterChip.outlined[state];
 
       break;
+    }
+
+    case "assist-chip": {
+      const assistChip = nodeIdJson.map["assist-chip"];
+      const { state, elevated, icon } = options;
+
+      if (icon && (state === "enabled" || state === "disabled")) {
+        return assistChip.icon[state];
+      }
+
+      if (elevated && state) {
+        return assistChip.elevated[state];
+      }
+
+      if (state) {
+        return assistChip.outlined[state];
+      }
     }
   }
 
