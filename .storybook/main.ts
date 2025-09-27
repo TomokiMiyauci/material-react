@@ -32,6 +32,7 @@ export default {
           "@internal": join(__dirname, "..", "src", "components", "_internal"),
           "@": join(__dirname, "..", "src"),
           "@miyauci/material-react": join(__dirname, "..", "src", "mod.ts"),
+          "~": join(__dirname, ".."),
         },
       },
     } satisfies InlineConfig;
