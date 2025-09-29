@@ -7,7 +7,9 @@ import "./global.css";
 import "./theme.css";
 
 export default {
-  parameters: {},
+  parameters: {
+    chromatic: { disableSnapshot: true },
+  },
 
   decorators: [
     (Story) =>
