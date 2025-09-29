@@ -23,6 +23,8 @@ export default function Switch(
         data-md="switch"
         data-selected={bool(selected)}
         data-disabled={bool(disabled)}
+        role="switch"
+        aria-checked={selected}
         {...rest}
       >
         <span data-handle-container="">
