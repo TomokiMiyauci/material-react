@@ -96,6 +96,7 @@ export const Gallary = {
     () => {
       return (
         <Matrix<Item>
+          className="w-full border-collapse table-fixed"
           renderData={(item) => {
             if (item) {
               const props = getProps(item);
@@ -108,41 +109,22 @@ export const Gallary = {
           data={materix}
           xAxis={xAxis}
           yAxis={yAxis}
-          renderXAxisHeader={(x) => (
-            <th
-              style={{
-                border: "1px solid #ccc",
-                padding: "1rem",
-                background: "#f0f0f0",
-              }}
-            >
-              {x}
+          renderXAxisHeader={({ children }) => (
+            <th className="p-[1rem] border-1 border-solid bg-neutral-100 border-neutral-300">
+              {children}
             </th>
           )}
-          renderYAxisHeader={(y) => {
+          renderYAxisHeader={({ children }) => {
             return (
-              <th
-                style={{
-                  border: "1px solid #ccc",
-                  padding: "1rem",
-                  background: "#f0f0f0",
-                }}
-              >
-                {y}
+              <th className="p-[1rem] border-1 border-solid bg-neutral-100 border-neutral-300">
+                {children}
               </th>
             );
           }}
-          renderCell={(node) => {
+          renderCell={({ children }) => {
             return (
-              <td
-                style={{
-                  border: "1px solid #ccc",
-                  padding: "1rem",
-                  background: "#fafafa",
-                  textAlign: "center",
-                }}
-              >
-                {node}
+              <td className="text-center p-[1rem] border-1 border-solid border-neutral-300">
+                {children}
               </td>
             );
           }}
@@ -156,7 +138,11 @@ export const Gallary = {
       focusVisible: ["[data-focus-visible]"],
       active: ["[data-active]"],
     },
+    chromatic: {
+      chromatic: { disableSnapshot: false },
+    },
   },
+  tags: ["!autodocs"],
 } satisfies Story;
 
 export const Enabled = {} satisfies Story;
