@@ -138,9 +138,7 @@ export const Gallary = {
       focusVisible: ["[data-focus-visible]"],
       active: ["[data-active]"],
     },
-    chromatic: {
-      chromatic: { disableSnapshot: false },
-    },
+    chromatic: { disableSnapshot: false },
   },
   tags: ["!autodocs"],
 } satisfies Story;
