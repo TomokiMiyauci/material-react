@@ -96,7 +96,7 @@ export const Gallary = {
     () => {
       return (
         <Matrix<Item>
-          className="w-full border-collapse table-fixed"
+          className="w-full border-collapse table-fixed font-roboto text-zinc-900"
           renderData={(item) => {
             if (item) {
               const props = getProps(item);
