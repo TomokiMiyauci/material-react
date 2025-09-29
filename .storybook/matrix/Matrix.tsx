@@ -1,70 +1,59 @@
-import type { JSX, ReactNode } from "react";
+import type { JSX, PropsWithChildren, ReactNode } from "react";
 
-export interface MatrixProps<V = unknown> {
-  data: V[][];
+export interface MatrixProps<T> {
+  data: T[][];
   xAxis: string[];
   yAxis: string[];
-  renderCell?: (node: ReactNode) => ReactNode;
-  renderData?: (value?: V) => ReactNode;
-  renderXAxisHeader?: (x: string) => ReactNode;
-  renderYAxisHeader?: (y: string) => ReactNode;
+  renderCell?(props: PropsWithChildren): ReactNode;
+  renderData?(value?: T): ReactNode;
+  renderXAxisHeader?(props: PropsWithChildren): ReactNode;
+  renderYAxisHeader?(props: PropsWithChildren): ReactNode;
 }
 
-function defaultValueRender(value: ReactNode): JSX.Element {
-  return <td>{value}</td>;
+function defaultRenderCell(props: PropsWithChildren): JSX.Element {
+  return <td>{props.children}</td>;
 }
 
 function defaultRenderData(value: unknown): ReactNode {
   return String(value);
 }
 
-function defaultXAxisHeader(x: string): JSX.Element {
-  return <th>{x}</th>;
+function defaultAxisHeader(props: PropsWithChildren): JSX.Element {
+  return <th>{props.children}</th>;
 }
 
-function defaultYAxisHeader(x: string): JSX.Element {
-  return <th>{x}</th>;
-}
-
-export default function Matrix<V = unknown>(
-  props: MatrixProps<V>,
+export default function Matrix<T>(
+  props: MatrixProps<T> & JSX.IntrinsicElements["table"],
 ): JSX.Element {
   const {
     data,
     xAxis,
     yAxis,
-    renderCell = defaultValueRender,
+    renderCell = defaultRenderCell,
     renderData = defaultRenderData,
-    renderXAxisHeader = defaultXAxisHeader,
-    renderYAxisHeader = defaultYAxisHeader,
+    renderXAxisHeader = defaultAxisHeader,
+    renderYAxisHeader = defaultAxisHeader,
+    ...rest
   } = props;
 
   return (
-    <table
-      style={{
-        borderCollapse: "collapse",
-        width: "100%",
-        tableLayout: "fixed",
-      }}
-    >
+    <table {...rest}>
       <thead>
         <tr>
           <th></th>
-          {xAxis.map((x) => (
-            renderXAxisHeader(x)
-          ))}
+          {xAxis.map((children) => renderXAxisHeader({ children }))}
         </tr>
       </thead>
       <tbody>
-        {yAxis.map((y, yIndex) => (
-          <tr key={y}>
-            {renderYAxisHeader(y)}
+        {yAxis.map((children, yIndex) => (
+          <tr key={children}>
+            {renderYAxisHeader({ children })}
 
             {xAxis.map((_, xIndex) => {
               const item = data[yIndex]?.[xIndex];
-              const node = renderData(item);
+              const children = renderData(item);
 
-              return renderCell(node);
+              return renderCell({ children });
             })}
           </tr>
         ))}
@@ -72,3 +61,9 @@ export default function Matrix<V = unknown>(
     </table>
   );
 }
+
+// style={{
+//   borderCollapse: "collapse",
+//   width: "100%",
+//   tableLayout: "fixed",
+// }}
