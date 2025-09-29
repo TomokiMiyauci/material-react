@@ -2,9 +2,37 @@ import nodeIdJson from "~/resources/node_id.json" with { type: "json" };
 
 interface IdConfigMap {
   "filter-chip": { state: State };
+  switch: {
+    state: WithoutDraggedState;
+    selected?: boolean;
+    icon?: boolean;
+  } | "all";
 }
 
+type WithoutDraggedState = Exclude<State, "dragged">;
+
 const idBuilders = {
+  switch: (options) => {
+    const switchMap = nodeIdJson.map["switch"];
+
+    if (options === "all") return switchMap.all;
+
+    const { state, selected, icon } = options;
+
+    if (icon && selected) {
+      return switchMap.icon.selected[state];
+    }
+
+    if (selected) {
+      return switchMap.selected[state];
+    }
+
+    if (icon) {
+      return switchMap.icon.unselected[state];
+    }
+
+    return switchMap.unselected[state];
+  },
   "filter-chip": ({ state }) => {
     const outlined = nodeIdJson.map["filter-chip"].outlined;
     switch (state) {
