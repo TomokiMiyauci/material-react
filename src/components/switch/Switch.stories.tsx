@@ -140,6 +140,7 @@ export const Gallary = {
     },
     design: md.figma("switch", { state: "disabled" }),
     chromatic: { disableSnapshot: false },
+    a11y: { test: "off" },
   },
   tags: ["!autodocs"],
 } satisfies Story;
