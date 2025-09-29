@@ -36,8 +36,36 @@
       }
     },
     "switch": {
+      "all": "54446-25289",
       "unselected": {
+        "enabled": "54446-25355",
+        "hovered": "54446-25361",
+        "focused": "54446-25367",
+        "pressed": "54446-25373",
         "disabled": "54446-25379"
+      },
+      "selected": {
+        "enabled": "54446-25290",
+        "hovered": "54446-25296",
+        "focused": "54446-25302",
+        "pressed": "54446-25308",
+        "disabled": "54446-25314"
+      },
+      "icon": {
+        "unselected": {
+          "enabled": "54446-25385",
+          "hovered": "54446-25392",
+          "focused": "54446-25399",
+          "pressed": "54446-25406",
+          "disabled": "54446-25413"
+        },
+        "selected": {
+          "enabled": "54446-25320",
+          "hovered": "54446-25327",
+          "focused": "54446-25334",
+          "pressed": "54446-25341",
+          "disabled": "54446-25348"
+        }
       }
     }
   }

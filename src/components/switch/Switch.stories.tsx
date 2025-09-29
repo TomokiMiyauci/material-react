@@ -138,30 +138,29 @@ export const Gallary = {
       focusVisible: ["[data-focus-visible]"],
       active: ["[data-active]"],
     },
+    design: md.figma("switch", { state: "disabled" }),
     chromatic: { disableSnapshot: false },
   },
   tags: ["!autodocs"],
 } satisfies Story;
 
-export const Enabled = {} satisfies Story;
+export const Enabled = {
+  parameters: {
+    design: md.figma("switch", "all"),
+  },
+} satisfies Story;
 export const Disabled = {
   args: {
     disabled: true,
   },
   parameters: {
-    design: {
-      type: "figma",
-      url: md.figmaURL("switch", { state: "disabled" }),
-    },
+    design: md.figma("switch", { state: "disabled" }),
   },
 } satisfies Story;
 
 export const Hovered = {
   parameters: {
-    design: {
-      type: "figma",
-      url: md.figmaURL("switch", { state: "disabled" }),
-    },
+    design: md.figma("switch", { state: "hovered" }),
     pseudo: {
       hover: true,
     },
@@ -173,6 +172,7 @@ export const Focused = {
     pseudo: {
       focusVisible: true,
     },
+    design: md.figma("switch", { state: "focused" }),
   },
 } satisfies Story;
 
@@ -181,5 +181,6 @@ export const Pressed = {
     pseudo: {
       active: true,
     },
+    design: md.figma("switch", { state: "pressed" }),
   },
 } satisfies Story;

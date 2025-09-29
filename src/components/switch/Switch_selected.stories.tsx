@@ -1,5 +1,6 @@
 import Switch from "./Switch.tsx";
 import type { Meta, StoryObj } from "@storybook/react-vite";
+import { md } from "~/.storybook/utils.ts";
 
 const meta = {
   title: "Example/Switch/Selected",
@@ -16,10 +17,17 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Enabled = {} satisfies Story;
+export const Enabled = {
+  parameters: {
+    design: md.figma("switch", { state: "enabled", selected: true }),
+  },
+} satisfies Story;
 export const Disabled = {
   args: {
     disabled: true,
+  },
+  parameters: {
+    design: md.figma("switch", { state: "disabled", selected: true }),
   },
 } satisfies Story;
 
@@ -28,6 +36,7 @@ export const Hovered = {
     pseudo: {
       hover: true,
     },
+    design: md.figma("switch", { state: "hovered", selected: true }),
   },
 } satisfies Story;
 
@@ -36,6 +45,7 @@ export const Focused = {
     pseudo: {
       focusVisible: true,
     },
+    design: md.figma("switch", { state: "focused", selected: true }),
   },
 } satisfies Story;
 
@@ -44,5 +54,6 @@ export const Pressed = {
     pseudo: {
       active: true,
     },
+    design: md.figma("switch", { state: "pressed", selected: true }),
   },
 } satisfies Story;
