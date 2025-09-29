@@ -34,6 +34,11 @@
         "dragged": "53923-28335",
         "disabled": "53923-28299"
       }
+    },
+    "switch": {
+      "unselected": {
+        "disabled": "54446-25379"
+      }
     }
   }
 }

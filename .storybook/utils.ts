@@ -5,8 +5,17 @@ class MaterialDesignBuilder {
   constructor(baseURL: string) {
     this.#url = new URL(baseURL);
   }
+
   figmaURL(
     component: "filter-chip",
+    options: { state?: State },
+  ): string;
+  figmaURL(
+    component: "switch",
+    options: { state?: State },
+  ): string;
+  figmaURL(
+    component: "filter-chip" | "switch",
     options: { state?: State },
   ): string {
     const id = getNodeId(component, options);
@@ -27,7 +36,7 @@ type State =
   | "pressed";
 
 function getNodeId(
-  component: "filter-chip",
+  component: "filter-chip" | "switch",
   options: { state?: State },
 ): string {
   switch (component) {
@@ -51,6 +60,16 @@ function getNodeId(
 
         case "disabled":
           return outlined.disabled;
+      }
+
+      break;
+    }
+
+    case "switch": {
+      const switc = nodeIdJson.map["switch"];
+
+      if (options.state) {
+        return switc.unselected["disabled"];
       }
 
       break;
