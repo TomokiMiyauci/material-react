@@ -9,6 +9,9 @@ export interface SwitchProps {
   icon?: ReactNode;
 }
 
+/**
+ * Switches toggle the selection of an item on or off.
+ */
 export default function Switch(
   props: SwitchProps & JSX.IntrinsicElements["button"],
 ): JSX.Element {
