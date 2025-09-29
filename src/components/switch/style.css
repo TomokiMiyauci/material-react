@@ -11,6 +11,10 @@
     box-sizing: border-box;
   }
 
+  &:not([data-disabled]) {
+    cursor: pointer;
+  }
+
   &:not([data-selected]) {
     border-width: var(--track-outline-width);
     border-color: var(--track-outline-color);
