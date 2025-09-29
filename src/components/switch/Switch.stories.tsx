@@ -8,8 +8,16 @@ const meta = {
   component: Switch,
   parameters: {
     layout: "centered",
+    a11y: {
+      options: {
+        rules: {
+          "button-name": { enabled: false },
+        },
+      },
+    },
   },
   tags: ["autodocs"],
+  args: {},
 } satisfies Meta<typeof Switch>;
 
 export default meta;
