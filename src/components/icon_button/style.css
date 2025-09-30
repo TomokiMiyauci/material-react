@@ -9,7 +9,6 @@
     justify-content: center;
     position: relative;
     border: none;
-    cursor: pointer;
   }
 
   /* state layer */
@@ -20,8 +19,8 @@
     border-radius: inherit;
   }
 
-  &:disabled {
-    cursor: auto;
+  &:not(:disabled) {
+    cursor: pointer;
   }
 
   &:focus-visible {
