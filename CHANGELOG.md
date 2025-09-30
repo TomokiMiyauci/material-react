@@ -1,3 +1,18 @@
+# [1.0.0-beta.3](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.2...1.0.0-beta.3) (2025-09-30)
+
+
+### Bug Fixes
+
+* **switch:** add aria role and aria attributes ([970ded1](https://github.com/TomokiMiyauci/material-react/commit/970ded15fb3307af67865209692173e01e9889be))
+* **switch:** add cursor pointer style ([6336231](https://github.com/TomokiMiyauci/material-react/commit/633623138c6172ee9836c2fa1bb5500d1fa6db19))
+* **switch:** always render the aria-checked attribute ([93e9419](https://github.com/TomokiMiyauci/material-react/commit/93e94195287337e811afbaf307fda2646a981f7d))
+
+
+### Features
+
+* export switch component ([d422270](https://github.com/TomokiMiyauci/material-react/commit/d422270f8c0f7765d188a821e3e44c6be70efe62))
+* **switch:** add switch component ([9570c43](https://github.com/TomokiMiyauci/material-react/commit/9570c43fb456cb77ea5bbf34cf2280b3f902cc28))
+
 # [1.0.0-beta.2](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.1...1.0.0-beta.2) (2025-09-25)
 
 
