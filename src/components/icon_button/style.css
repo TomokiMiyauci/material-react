@@ -2,13 +2,15 @@
 
 /* container */
 @scope ([data-md="icon-button"]) {
-  all: unset;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  border: none;
-  cursor: pointer;
+  & {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: none;
+    cursor: pointer;
+  }
 
   /* state layer */
   &::before {
