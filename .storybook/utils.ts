@@ -7,6 +7,7 @@ interface IdConfigMap {
     selected?: boolean;
     icon?: boolean;
   } | "all";
+  badge: { size: "small" | "large" };
 }
 
 type WithoutDraggedState = Exclude<State, "dragged">;
@@ -54,6 +55,9 @@ const idBuilders = {
       case "disabled":
         return outlined.disabled;
     }
+  },
+  badge: ({ size }) => {
+    return nodeIdJson.map.badge[size];
   },
 } satisfies {
   [K in keyof IdConfigMap]: (options: IdConfigMap[K]) => string;
