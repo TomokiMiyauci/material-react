@@ -11,6 +11,7 @@ export default {
     "@storybook/addon-docs",
     "@storybook/addon-a11y",
     "storybook-addon-pseudo-states",
+    "@storybook/addon-designs",
   ],
   "framework": {
     "name": "@storybook/react-vite",
@@ -31,6 +32,7 @@ export default {
           "@internal": join(__dirname, "..", "src", "components", "_internal"),
           "@": join(__dirname, "..", "src"),
           "@miyauci/material-react": join(__dirname, "..", "src", "mod.ts"),
+          "~": join(__dirname, ".."),
         },
       },
     } satisfies InlineConfig;
