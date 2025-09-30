@@ -219,6 +219,7 @@ export const Gallary = {
       focusVisible: ["[data-focus-visible]"],
       active: ["[data-active]"],
     },
+    chromatic: { disableSnapshot: false },
   },
 } satisfies Story;
 
