@@ -11,7 +11,6 @@ const meta = {
   parameters: {
     layout: "centered",
   },
-
   tags: ["autodocs"],
   argTypes: {},
   args: {
@@ -55,6 +54,32 @@ const xAxis = [
       },
     ],
   },
+  {
+    label: "Horizontal",
+    children: [
+      { label: "Default" },
+      { label: "Active" },
+      {
+        label: "Badge",
+        children: [
+          {
+            label: "Small",
+            children: [
+              { label: "Inactive" },
+              { label: "Active" },
+            ],
+          },
+          {
+            label: "Large",
+            children: [
+              { label: "Inactive" },
+              { label: "Active" },
+            ],
+          },
+        ],
+      },
+    ],
+  },
 ] satisfies AxisNode[];
 
 const yAxis = [
@@ -72,6 +97,22 @@ const matrix: Item[][] = [
     { state: "enabled", active: true, badge: { size: "small" } },
     { state: "enabled", badge: { size: "large" } },
     { state: "enabled", active: true, badge: { size: "large" } },
+    { state: "enabled", variant: "horizontal" },
+    { state: "enabled", variant: "horizontal", active: true },
+    { state: "enabled", variant: "horizontal", badge: { size: "small" } },
+    {
+      state: "enabled",
+      variant: "horizontal",
+      active: true,
+      badge: { size: "small" },
+    },
+    { state: "enabled", variant: "horizontal", badge: { size: "large" } },
+    {
+      state: "enabled",
+      active: true,
+      variant: "horizontal",
+      badge: { size: "large" },
+    },
   ],
   [
     { state: "hovered" },
@@ -80,6 +121,22 @@ const matrix: Item[][] = [
     { state: "hovered", active: true, badge: { size: "small" } },
     { state: "hovered", badge: { size: "large" } },
     { state: "hovered", active: true, badge: { size: "large" } },
+    { state: "hovered", variant: "horizontal" },
+    { state: "hovered", variant: "horizontal", active: true },
+    { state: "hovered", variant: "horizontal", badge: { size: "small" } },
+    {
+      state: "hovered",
+      variant: "horizontal",
+      active: true,
+      badge: { size: "small" },
+    },
+    { state: "hovered", variant: "horizontal", badge: { size: "large" } },
+    {
+      state: "hovered",
+      active: true,
+      variant: "horizontal",
+      badge: { size: "large" },
+    },
   ],
   [
     { state: "focused" },
@@ -88,6 +145,22 @@ const matrix: Item[][] = [
     { state: "focused", active: true, badge: { size: "small" } },
     { state: "focused", badge: { size: "large" } },
     { state: "focused", active: true, badge: { size: "large" } },
+    { state: "focused", variant: "horizontal" },
+    { state: "focused", variant: "horizontal", active: true },
+    { state: "focused", variant: "horizontal", badge: { size: "small" } },
+    {
+      state: "focused",
+      variant: "horizontal",
+      active: true,
+      badge: { size: "small" },
+    },
+    { state: "focused", variant: "horizontal", badge: { size: "large" } },
+    {
+      state: "focused",
+      active: true,
+      variant: "horizontal",
+      badge: { size: "large" },
+    },
   ],
   [
     { state: "pressed" },
@@ -96,6 +169,22 @@ const matrix: Item[][] = [
     { state: "pressed", active: true, badge: { size: "small" } },
     { state: "pressed", badge: { size: "large" } },
     { state: "pressed", active: true, badge: { size: "large" } },
+    { state: "pressed", variant: "horizontal" },
+    { state: "pressed", variant: "horizontal", active: true },
+    { state: "pressed", variant: "horizontal", badge: { size: "small" } },
+    {
+      state: "pressed",
+      variant: "horizontal",
+      active: true,
+      badge: { size: "small" },
+    },
+    { state: "pressed", variant: "horizontal", badge: { size: "large" } },
+    {
+      state: "pressed",
+      active: true,
+      variant: "horizontal",
+      badge: { size: "large" },
+    },
   ],
 ];
 
@@ -107,6 +196,7 @@ interface Item {
   badge?: {
     size?: "large" | "small";
   };
+  variant?: "horizontal" | "vertical";
 }
 
 interface StateProps {
@@ -127,6 +217,7 @@ function getProps(item: Item): NavigationBarItemProps & StateProps {
     badge: item.badge
       ? item.badge.size === "small" ? <Badge /> : <Badge size="large">3</Badge>
       : undefined,
+    variant: item.variant,
   } satisfies NavigationBarItemProps;
 
   switch (item.state) {
@@ -162,6 +253,7 @@ export const Gallary = {
       active: ["[data-press]"],
       focusVisible: ["data-focus"],
     },
+    chromatic: { disableSnapshot: false },
   },
 } satisfies Story;
 
