@@ -251,7 +251,7 @@ export const Gallary = {
     pseudo: {
       hover: ["[data-hover]"],
       active: ["[data-press]"],
-      focusVisible: ["data-focus"],
+      focusVisible: ["[data-focus]"],
     },
     chromatic: { disableSnapshot: false },
   },
