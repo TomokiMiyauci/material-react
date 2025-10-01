@@ -6,7 +6,7 @@ import IconButton, {
   type IconButtonWidth,
 } from "./IconButton.tsx";
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import type { JSX, Key, PropsWithChildren, ReactNode } from "react";
+import { type AxisNode, renderGallary } from "~/.storybook/gallary/mod.ts";
 
 const meta = {
   title: "Example/IconButton",
@@ -31,79 +31,52 @@ interface DataStates {
 
 type Story = StoryObj<typeof meta>;
 
-const children = [
+const colorNodes = [
+  { label: "Filled" },
+  { label: "Tonal" },
+  { label: "Outlined" },
+  { label: "Standard" },
+] satisfies AxisNode[];
+
+const widthNodes = [
+  {
+    label: "Default",
+    children: colorNodes,
+  },
+  {
+    label: "Narrow",
+    children: colorNodes,
+  },
+  {
+    label: "Wide",
+    children: colorNodes,
+  },
+] satisfies AxisNode[];
+const shapeNodes = [
   {
     label: "Round",
-    children: [
-      {
-        label: "Default",
-        children: [
-          { label: "Filled" },
-          { label: "Tonal" },
-          { label: "Outlined" },
-          { label: "Standard" },
-        ],
-      },
-      {
-        label: "Narrow",
-        children: [
-          { label: "Filled" },
-          { label: "Tonal" },
-          { label: "Outlined" },
-          { label: "Standard" },
-        ],
-      },
-      {
-        label: "Wide",
-        children: [
-          { label: "Filled" },
-          { label: "Tonal" },
-          { label: "Outlined" },
-          { label: "Standard" },
-        ],
-      },
-    ],
+    children: widthNodes,
   },
   {
     label: "Square",
-    children: [
-      {
-        label: "Default",
-        children: [
-          { label: "Filled" },
-          { label: "Tonal" },
-          { label: "Outlined" },
-          { label: "Standard" },
-        ],
-      },
-      {
-        label: "Narrow",
-        children: [
-          { label: "Filled" },
-          { label: "Tonal" },
-          { label: "Outlined" },
-          { label: "Standard" },
-        ],
-      },
-      {
-        label: "Wide",
-        children: [
-          { label: "Filled" },
-          { label: "Tonal" },
-          { label: "Outlined" },
-          { label: "Standard" },
-        ],
-      },
-    ],
+    children: widthNodes,
   },
-];
+] satisfies AxisNode[];
 
 const xAxis = [
-  { label: "XSmall", children },
-  { label: "Small", children },
-  { label: "Medium", children },
-  { label: "Large", children },
-  { label: "XLarge", children },
+  { label: "XSmall", children: shapeNodes },
+  { label: "Small", children: shapeNodes },
+  { label: "Medium", children: shapeNodes },
+  { label: "Large", children: shapeNodes },
+  { label: "XLarge", children: shapeNodes },
+] satisfies AxisNode[];
+
+const yAxis = [
+  { label: "Enabled" },
+  { label: "Disabled" },
+  { label: "Hovered" },
+  { label: "Focused" },
+  { label: "Pressed" },
 ] satisfies AxisNode[];
 
 const states = [
@@ -158,54 +131,6 @@ interface Item {
   icon?: boolean;
 }
 
-function withGallary<T>(
-  xAxis: AxisNode[],
-  matrix: T[][],
-  renderData: (item: T | undefined) => ReactNode,
-) {
-  return () => (
-    <MatrixTable<T>
-      className="w-full border-collapse font-roboto text-zinc-900 whitespace-nowrap"
-      renderData={renderData}
-      data={matrix}
-      xAxis={xAxis}
-      yAxis={[
-        { label: "Enabled" },
-        { label: "Disabled" },
-        { label: "Hovered" },
-        { label: "Focused" },
-        { label: "Pressed" },
-      ]}
-      renderXAxisHeader={({ key, ...props }) => (
-        <th
-          key={key}
-          {...props}
-          className="p-[1rem] border-1 border-solid bg-neutral-100 border-neutral-300"
-        />
-      )}
-      renderYAxisHeader={({ key, ...props }) => {
-        return (
-          <th
-            key={key}
-            {...props}
-            className="p-[1rem] border-1 border-solid bg-neutral-100 border-neutral-300"
-          />
-        );
-      }}
-      renderCell={({ key, children }) => {
-        return (
-          <td
-            key={key}
-            className="text-center p-[1rem] border-1 border-solid border-neutral-300"
-          >
-            {children}
-          </td>
-        );
-      }}
-    />
-  );
-}
-
 function getProps(item: Item): IconButtonProps & DataStates {
   const base = {
     icon: <span className="material-symbols-outlined">settings</span>,
@@ -234,15 +159,18 @@ function getProps(item: Item): IconButtonProps & DataStates {
 }
 
 export const Gallary = {
-  decorators: [withGallary<Item>(xAxis, matrix, (item) => {
-    if (item) {
-      const props = getProps(item);
+  render: () =>
+    renderGallary({ matrix, xAxis, yAxis }, {
+      renderData: (item) => {
+        if (item) {
+          const props = getProps(item);
 
-      return <IconButton {...props} />;
-    }
+          return <IconButton {...props} />;
+        }
 
-    return;
-  })],
+        return;
+      },
+    }),
   tags: ["!autodocs"],
   parameters: {
     pseudo: {
@@ -278,157 +206,3 @@ export const Hovered = {
     pseudo: { hover: true },
   },
 } satisfies Story;
-
-interface MatrixTableProps<T> {
-  xAxis: AxisNode[];
-  yAxis: AxisNode[];
-  data: T[][];
-  renderData?(item: T): ReactNode;
-  renderXAxisHeader?(props: AxisHeaderProps): ReactNode;
-  renderYAxisHeader?(props: AxisHeaderProps): ReactNode;
-  renderCell?(props: PropsWithChildren & Keyed): ReactNode;
-}
-
-interface Keyed {
-  key: Key;
-}
-
-interface AxisHeaderProps extends Keyed {
-  colSpan: number | undefined;
-  rowSpan: number | undefined;
-  children: ReactNode;
-}
-
-interface AxisNode {
-  label: string;
-  children?: AxisNode[];
-}
-
-function defaultRenderData(item: unknown): ReactNode {
-  return String(item);
-}
-
-function defaultAxisHeader(props: PropsWithChildren): JSX.Element {
-  return <th>{props.children}</th>;
-}
-
-function defaultRenderCell(props: PropsWithChildren): JSX.Element {
-  return <td>{props.children}</td>;
-}
-
-function buildRowHeaders(
-  nodes: AxisNode[],
-  depth = 0,
-  prefix: Axis[] = [],
-): Axis[][] {
-  const rows: Axis[][] = [];
-  for (const node of nodes) {
-    if (node.children) {
-      const rowspan = countLeaves(node);
-      const childRows = buildRowHeaders(node.children, depth + 1, [...prefix, {
-        label: node.label,
-        rowspan,
-      }]);
-      rows.push(...childRows);
-    } else {
-      rows.push([...prefix, { label: node.label }]);
-    }
-  }
-  return rows;
-}
-
-function MatrixTable<T>(
-  props: MatrixTableProps<T> & JSX.IntrinsicElements["table"],
-) {
-  const {
-    xAxis,
-    yAxis,
-    data,
-    renderData = defaultRenderData,
-    renderXAxisHeader = defaultAxisHeader,
-    renderYAxisHeader = defaultAxisHeader,
-    renderCell = defaultRenderCell,
-    ...rest
-  } = props;
-  const headerRows = buildHeaderRows(xAxis);
-  const yHeaderDepth = getDepth(yAxis);
-  const rowHeaders = buildRowHeaders(yAxis);
-
-  return (
-    <table {...rest}>
-      <thead>
-        {headerRows.map((row, i) => (
-          <tr key={i}>
-            {i === 0 &&
-              Array.from({ length: yHeaderDepth }).map((_, j) => (
-                <th key={`y-head-${j}`} rowSpan={headerRows.length}></th>
-              ))}
-            {row.map((cell, i) => {
-              return renderXAxisHeader({
-                colSpan: cell.colspan,
-                rowSpan: cell.rowspan,
-                children: cell.label,
-                key: i,
-              });
-            })}
-          </tr>
-        ))}
-      </thead>
-      <tbody>
-        {rowHeaders.map((headerCells, rowIndex) => (
-          <tr key={rowIndex}>
-            {headerCells.map((cell, i) => (
-              renderYAxisHeader({
-                rowSpan: cell.rowspan,
-                children: cell.label,
-                colSpan: undefined,
-                key: i,
-              })
-            ))}
-
-            {data[rowIndex]?.map((value, i) => (
-              renderCell({ children: renderData(value), key: i })
-            ))}
-          </tr>
-        ))}
-      </tbody>
-    </table>
-  );
-}
-
-function countLeaves(node: AxisNode): number {
-  if (!node.children) return 1;
-  return node.children.map(countLeaves).reduce((a, b) => a + b, 0);
-}
-
-function getDepth(nodes: AxisNode[]): number {
-  return 1 +
-    Math.max(0, ...nodes.map((n) => (n.children ? getDepth(n.children) : 0)));
-}
-
-interface Axis extends AxisNode {
-  rowspan?: number;
-  colspan?: number;
-}
-
-function buildHeaderRows(
-  nodes: AxisNode[],
-  depth = 0,
-  maxDepth?: number,
-  rows: Axis[][] = [],
-): Axis[][] {
-  if (!maxDepth) maxDepth = getDepth(nodes);
-  if (!rows[depth]) rows[depth] = [];
-
-  for (const node of nodes) {
-    if (node.children) {
-      const colspan = countLeaves(node);
-      rows[depth].push({ label: node.label, colspan });
-      buildHeaderRows(node.children, depth + 1, maxDepth, rows);
-    } else {
-      const rowspan = maxDepth - depth;
-      rows[depth].push({ label: node.label, rowspan });
-    }
-  }
-  return rows;
-}

@@ -1,7 +1,7 @@
 import Switch, { type SwitchProps } from "./Switch.tsx";
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { Matrix } from "~/.storybook/matrix/mod.ts";
 import { md } from "~/.storybook/utils.ts";
+import { type AxisNode, renderGallary } from "~/.storybook/gallary/mod.ts";
 
 const meta = {
   title: "Example/Switch",
@@ -17,7 +17,6 @@ const meta = {
     },
   },
   tags: ["autodocs"],
-  args: {},
 } satisfies Meta<typeof Switch>;
 
 export default meta;
@@ -32,7 +31,7 @@ interface Item {
   icon?: boolean;
 }
 
-const materix = [
+const matrix: Item[][] = [
   [
     { state: "enabled" },
     { state: "enabled", selected: true },
@@ -63,9 +62,17 @@ const materix = [
     { state: "pressed", icon: true },
     { state: "pressed", icon: true, selected: true },
   ],
-] satisfies Item[][];
-const xAxis = ["Default", "Selected", "Icon", "Icon Selected"];
-const yAxis = ["Enabled", "Disabled", "Hovered", "Focused", "Pressed"];
+];
+const xAxis = [{ label: "Default" }, { label: "Selected" }, { label: "Icon" }, {
+  label: "Icon Selected",
+}] satisfies AxisNode[];
+const yAxis = [
+  { label: "Enabled" },
+  { label: "Disabled" },
+  { label: "Hovered" },
+  { label: "Focused" },
+  { label: "Pressed" },
+] satisfies AxisNode[];
 
 function getProps(item: Item): SwitchProps & DataStates {
   const base = {
@@ -100,46 +107,18 @@ interface DataStates {
 }
 
 export const Gallary = {
-  decorators: [
-    () => {
-      return (
-        <Matrix<Item>
-          className="w-full border-collapse table-fixed font-roboto text-zinc-900"
-          renderData={(item) => {
-            if (item) {
-              const props = getProps(item);
+  render: () =>
+    renderGallary({ xAxis, yAxis, matrix }, {
+      renderData: (item) => {
+        if (item) {
+          const props = getProps(item);
 
-              return <Switch {...props} />;
-            }
+          return <Switch {...props} />;
+        }
 
-            return;
-          }}
-          data={materix}
-          xAxis={xAxis}
-          yAxis={yAxis}
-          renderXAxisHeader={({ children }) => (
-            <th className="p-[1rem] border-1 border-solid bg-neutral-100 border-neutral-300">
-              {children}
-            </th>
-          )}
-          renderYAxisHeader={({ children }) => {
-            return (
-              <th className="p-[1rem] border-1 border-solid bg-neutral-100 border-neutral-300">
-                {children}
-              </th>
-            );
-          }}
-          renderCell={({ children }) => {
-            return (
-              <td className="text-center p-[1rem] border-1 border-solid border-neutral-300">
-                {children}
-              </td>
-            );
-          }}
-        />
-      );
-    },
-  ],
+        return;
+      },
+    }),
   parameters: {
     pseudo: {
       hover: ["[data-hover]"],
