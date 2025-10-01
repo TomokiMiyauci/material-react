@@ -53,9 +53,12 @@
   }
 }
 
-@container style(--variant: vertical) or style(--variant: initial) {
+@container style(--variant: vertical),
+style(--variant: initial) {
   @scope([data-md=navigation-bar-item]) {
-    row-gap: var(--active-indicator-icon-label-vertical-space);
+    & {
+      row-gap: var(--active-indicator-icon-label-vertical-space);
+    }
 
     [data-icon-container] {
       display: inline-flex;
