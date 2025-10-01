@@ -4,11 +4,14 @@
   & {
     all: unset;
     display: inline-flex;
+    justify-content: center;
+    align-items: center;
     min-height: var(--size);
     min-width: var(--size);
     background-color: var(--color);
     border-radius: var(--shape);
     box-sizing: border-box;
+    contain: layout;
   }
 
   &[data-size=large] {

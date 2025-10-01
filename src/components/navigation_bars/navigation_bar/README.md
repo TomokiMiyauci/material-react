@@ -23,6 +23,8 @@ And `HTMLDivElement` attributes.
 Depends on the following CSS variables.
 
 <!-- deno-fmt-ignore-start -->
+- --md-sys-color-shadow
 - --md-sys-color-surface-container
+- --md-sys-elevation-level2
 - --md-sys-shape-corner-none
 <!-- deno-fmt-ignore-end -->
