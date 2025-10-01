@@ -1,3 +1,10 @@
+# [1.0.0-beta.4](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.3...1.0.0-beta.4) (2025-10-01)
+
+
+### Bug Fixes
+
+* **icon-button:** add font-size to icon container, fix typo ([2c7d2ea](https://github.com/TomokiMiyauci/material-react/commit/2c7d2ea2c73f7977949b820c1f2d3a3f8e078388))
+
 # [1.0.0-beta.3](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.2...1.0.0-beta.3) (2025-09-30)
 
 
