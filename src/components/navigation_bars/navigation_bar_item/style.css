@@ -53,8 +53,7 @@
   }
 }
 
-@container style(--variant: vertical),
-style(--variant: initial) {
+@container style(--variant: vertical) or style(--variant: initial) {
   @scope([data-md=navigation-bar-item]) {
     & {
       row-gap: var(--active-indicator-icon-label-vertical-space);
