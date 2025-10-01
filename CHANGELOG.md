@@ -1,3 +1,17 @@
+# [1.0.0-beta.5](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.4...1.0.0-beta.5) (2025-10-01)
+
+
+### Bug Fixes
+
+* **badge:** center the text node ([3d3c7ff](https://github.com/TomokiMiyauci/material-react/commit/3d3c7ffa5d8812b000d1d7c09ae336eda1f318f8))
+
+
+### Features
+
+* **navigation-bar-item:** add vertical style, add state layer style ([f46fe09](https://github.com/TomokiMiyauci/material-react/commit/f46fe09f0a80bfe1275a0662adb7c80f6bcc25a8))
+* **navigation-bar:** add variant field to navigation bar item ([4adbc5c](https://github.com/TomokiMiyauci/material-react/commit/4adbc5c0ae5f77c247bf3e01468314bf082590a8))
+* **navigation-bar:** use shadow token in style ([dcddc1f](https://github.com/TomokiMiyauci/material-react/commit/dcddc1fe87132b0ce103f84cd7e267a559dfbde2))
+
 # [1.0.0-beta.4](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.3...1.0.0-beta.4) (2025-10-01)
 
 
