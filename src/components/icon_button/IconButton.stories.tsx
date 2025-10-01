@@ -6,7 +6,7 @@ import IconButton, {
   type IconButtonWidth,
 } from "./IconButton.tsx";
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import type { JSX, PropsWithChildren, ReactNode } from "react";
+import type { JSX, Key, PropsWithChildren, ReactNode } from "react";
 
 const meta = {
   title: "Example/IconButton",
@@ -169,22 +169,35 @@ function withGallary<T>(
       renderData={renderData}
       data={matrix}
       xAxis={xAxis}
-      renderXAxisHeader={(props) => (
+      yAxis={[
+        { label: "Enabled" },
+        { label: "Disabled" },
+        { label: "Hovered" },
+        { label: "Focused" },
+        { label: "Pressed" },
+      ]}
+      renderXAxisHeader={({ key, ...props }) => (
         <th
+          key={key}
           {...props}
           className="p-[1rem] border-1 border-solid bg-neutral-100 border-neutral-300"
         />
       )}
-      renderYAxisHeader={({ children }) => {
+      renderYAxisHeader={({ key, ...props }) => {
         return (
-          <th className="p-[1rem] border-1 border-solid bg-neutral-100 border-neutral-300">
-            {children}
-          </th>
+          <th
+            key={key}
+            {...props}
+            className="p-[1rem] border-1 border-solid bg-neutral-100 border-neutral-300"
+          />
         );
       }}
-      renderCell={({ children }) => {
+      renderCell={({ key, children }) => {
         return (
-          <td className="text-center p-[1rem] border-1 border-solid border-neutral-300">
+          <td
+            key={key}
+            className="text-center p-[1rem] border-1 border-solid border-neutral-300"
+          >
             {children}
           </td>
         );
@@ -268,14 +281,19 @@ export const Hovered = {
 
 interface MatrixTableProps<T> {
   xAxis: AxisNode[];
+  yAxis: AxisNode[];
   data: T[][];
   renderData?(item: T): ReactNode;
   renderXAxisHeader?(props: AxisHeaderProps): ReactNode;
-  renderYAxisHeader?(props: PropsWithChildren): ReactNode;
-  renderCell?(props: PropsWithChildren): ReactNode;
+  renderYAxisHeader?(props: AxisHeaderProps): ReactNode;
+  renderCell?(props: PropsWithChildren & Keyed): ReactNode;
 }
 
-interface AxisHeaderProps {
+interface Keyed {
+  key: Key;
+}
+
+interface AxisHeaderProps extends Keyed {
   colSpan: number | undefined;
   rowSpan: number | undefined;
   children: ReactNode;
@@ -298,39 +316,78 @@ function defaultRenderCell(props: PropsWithChildren): JSX.Element {
   return <td>{props.children}</td>;
 }
 
+function buildRowHeaders(
+  nodes: AxisNode[],
+  depth = 0,
+  prefix: Axis[] = [],
+): Axis[][] {
+  const rows: Axis[][] = [];
+  for (const node of nodes) {
+    if (node.children) {
+      const rowspan = countLeaves(node);
+      const childRows = buildRowHeaders(node.children, depth + 1, [...prefix, {
+        label: node.label,
+        rowspan,
+      }]);
+      rows.push(...childRows);
+    } else {
+      rows.push([...prefix, { label: node.label }]);
+    }
+  }
+  return rows;
+}
+
 function MatrixTable<T>(
   props: MatrixTableProps<T> & JSX.IntrinsicElements["table"],
 ) {
   const {
     xAxis,
+    yAxis,
     data,
     renderData = defaultRenderData,
     renderXAxisHeader = defaultAxisHeader,
+    renderYAxisHeader = defaultAxisHeader,
     renderCell = defaultRenderCell,
     ...rest
   } = props;
   const headerRows = buildHeaderRows(xAxis);
+  const yHeaderDepth = getDepth(yAxis);
+  const rowHeaders = buildRowHeaders(yAxis);
 
   return (
     <table {...rest}>
       <thead>
         {headerRows.map((row, i) => (
           <tr key={i}>
-            {row.map((cell) => {
+            {i === 0 &&
+              Array.from({ length: yHeaderDepth }).map((_, j) => (
+                <th key={`y-head-${j}`} rowSpan={headerRows.length}></th>
+              ))}
+            {row.map((cell, i) => {
               return renderXAxisHeader({
                 colSpan: cell.colspan,
                 rowSpan: cell.rowspan,
                 children: cell.label,
+                key: i,
               });
             })}
           </tr>
         ))}
       </thead>
       <tbody>
-        {data.map((row, rowIndex) => (
+        {rowHeaders.map((headerCells, rowIndex) => (
           <tr key={rowIndex}>
-            {row.map((value) => (
-              renderCell({ children: renderData(value) })
+            {headerCells.map((cell, i) => (
+              renderYAxisHeader({
+                rowSpan: cell.rowspan,
+                children: cell.label,
+                colSpan: undefined,
+                key: i,
+              })
+            ))}
+
+            {data[rowIndex]?.map((value, i) => (
+              renderCell({ children: renderData(value), key: i })
             ))}
           </tr>
         ))}
