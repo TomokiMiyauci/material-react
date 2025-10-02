@@ -3,7 +3,7 @@ import NavigationBarItem, {
 } from "./NavigationBarItem.tsx";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Badge } from "@miyauci/material-react";
-import { type AxisNode, renderGallary } from "~/.storybook/gallary/mod.ts";
+import { type AxisNode, renderGallary } from "~/resources/gallary/mod.ts";
 
 const meta = {
   title: "Example/NavigationBars/NavigationBarItem",

@@ -1,6 +1,6 @@
 import Switch from "./Switch.tsx";
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { md } from "~/.storybook/utils.ts";
+import { md } from "~/resources/figma.ts";
 
 const meta = {
   title: "Example/Switch/Icon",
