@@ -1,7 +1,7 @@
 import Switch, { type SwitchProps } from "./Switch.tsx";
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { md } from "~/.storybook/utils.ts";
-import { type AxisNode, renderGallary } from "~/.storybook/gallary/mod.ts";
+import { md } from "~/resources/figma.ts";
+import { type AxisNode, renderGallary } from "~/resources/gallary/mod.ts";
 
 const meta = {
   title: "Example/Switch",
