@@ -1,0 +1,23 @@
+@property --md-sys-state-dragged-state-layer-opacity {
+  syntax: "<percentage>";
+  inherits: true;
+  initial-value: 16%;
+}
+
+@property --md-sys-state-pressed-state-layer-opacity {
+  syntax: "<percentage>";
+  inherits: true;
+  initial-value: 10%;
+}
+
+@property --md-sys-state-focus-state-layer-opacity {
+  syntax: "<percentage>";
+  inherits: true;
+  initial-value: 10%;
+}
+
+@property --md-sys-state-hover-state-layer-opacity {
+  syntax: "<percentage>";
+  inherits: true;
+  initial-value: 8%;
+}
