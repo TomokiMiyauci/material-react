@@ -8,6 +8,7 @@ interface IdConfigMap {
     icon?: boolean;
   } | "all";
   badge: { size: "small" | "large" };
+  "plain-tooltip": { line: "single" | "multi" };
 }
 
 type WithoutDraggedState = Exclude<State, "dragged">;
@@ -58,6 +59,9 @@ const idBuilders = {
   },
   badge: ({ size }) => {
     return nodeIdJson.map.badge[size];
+  },
+  "plain-tooltip": ({ line }) => {
+    return nodeIdJson.map["plain-tooltip"][line];
   },
 } satisfies {
   [K in keyof IdConfigMap]: (options: IdConfigMap[K]) => string;
