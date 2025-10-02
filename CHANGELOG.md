@@ -1,3 +1,10 @@
+# [1.0.0-beta.7](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.6...1.0.0-beta.7) (2025-10-02)
+
+
+### Bug Fixes
+
+* fix module entrypoint specifier typo ([76629a6](https://github.com/TomokiMiyauci/material-react/commit/76629a6606b45c5422544cc6c3a1e0a85124848a))
+
 # [1.0.0-beta.6](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.5...1.0.0-beta.6) (2025-10-02)
 
 
