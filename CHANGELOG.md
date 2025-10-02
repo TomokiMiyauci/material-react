@@ -1,3 +1,10 @@
+# [1.0.0-beta.6](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.5...1.0.0-beta.6) (2025-10-02)
+
+
+### Features
+
+* **plain-tooltip:** add plain tooltip component ([14fff31](https://github.com/TomokiMiyauci/material-react/commit/14fff312956e4db7896e262704b85cb5dda68a9e))
+
 # [1.0.0-beta.5](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.4...1.0.0-beta.5) (2025-10-01)
 
 
