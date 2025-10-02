@@ -1,6 +1,6 @@
 import PlainTooltip from "./PlainTooltip.tsx";
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { md } from "~/.storybook/utils.ts";
+import { md } from "~/resources/figma.ts";
 
 const meta = {
   title: "Example/PlainTooltip",

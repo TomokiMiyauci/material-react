@@ -6,7 +6,7 @@ import IconButton, {
   type IconButtonWidth,
 } from "./IconButton.tsx";
 import type { Meta, StoryObj } from "@storybook/react-vite";
-import { type AxisNode, renderGallary } from "~/.storybook/gallary/mod.ts";
+import { type AxisNode, renderGallary } from "~/resources/gallary/mod.ts";
 
 const meta = {
   title: "Example/IconButton",
