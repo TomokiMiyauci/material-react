@@ -30,5 +30,7 @@ Depends on the following CSS variables.
 - --md-sys-color-secondary
 - --md-sys-color-secondary-container
 - --md-sys-shape-corner-full
+- --md-sys-state-focus-state-layer-opacity
 - --md-sys-state-hover-state-layer-opacity
+- --md-sys-state-pressed-state-layer-opacity
 <!-- deno-fmt-ignore-end -->

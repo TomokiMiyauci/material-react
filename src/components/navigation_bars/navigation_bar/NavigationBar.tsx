@@ -1,6 +1,7 @@
 import type { JSX } from "react";
 import Style from "@internal/Style.tsx";
 import style from "./_generated/style.ts";
+import type { NavigationBarVariant } from "../types.ts";
 
 export interface NavigationBarProps {
   /**
@@ -8,8 +9,6 @@ export interface NavigationBarProps {
    */
   variant?: NavigationBarVariant;
 }
-
-export type NavigationBarVariant = "vertical" | "horizontal";
 
 export default function NavigationBar(
   props: NavigationBarProps & JSX.IntrinsicElements["div"],
