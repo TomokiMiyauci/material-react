@@ -115,7 +115,14 @@ function getProps(item: Item): ButtonProps & PseudoData {
   const base = {
     ...rest,
     label: "Label",
-    icon: icon && <span className="material-symbols-outlined">stars</span>,
+    icon: icon && (
+      <span
+        style={{ "fontVariationSettings": "'FILL' 1" }}
+        className="material-symbols-outlined"
+      >
+        stars
+      </span>
+    ),
   } satisfies ButtonProps;
 
   switch (state) {
