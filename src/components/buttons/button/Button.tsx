@@ -12,9 +12,9 @@ export interface ButtonProps {
   disabled?: boolean;
 }
 
-type ButtonSize = "xsmall" | "small" | "medium" | "large" | "xlarge";
-type ButtonShape = "round" | "square";
-type ButtonColor = "elevated" | "filled" | "tonal" | "outlined" | "text";
+export type ButtonSize = "xsmall" | "small" | "medium" | "large" | "xlarge";
+export type ButtonShape = "round" | "square";
+export type ButtonColor = "elevated" | "filled" | "tonal" | "outlined" | "text";
 
 export default function Button(
   props: ButtonProps & JSX.IntrinsicElements["button"],
