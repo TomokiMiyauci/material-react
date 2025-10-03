@@ -107,6 +107,14 @@
       "use": "css2ts",
       "input": "./_generated/style.css",
       "output": "./_generated/style.ts"
+    },
+    {
+      "use": "mustache",
+      "input": "./README.md.mustache",
+      "output": "./README.md",
+      "options": {
+        "tokenSource": "./_generated/style.css"
+      }
     }
   ]
 }

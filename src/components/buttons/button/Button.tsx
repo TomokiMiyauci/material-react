@@ -16,6 +16,9 @@ export type ButtonSize = "xsmall" | "small" | "medium" | "large" | "xlarge";
 export type ButtonShape = "round" | "square";
 export type ButtonColor = "elevated" | "filled" | "tonal" | "outlined" | "text";
 
+/**
+ * Buttons prompt most actions in a UI.
+ */
 export default function Button(
   props: ButtonProps & JSX.IntrinsicElements["button"],
 ): JSX.Element {
