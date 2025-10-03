@@ -1,3 +1,12 @@
+# [1.0.0-beta.8](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.7...1.0.0-beta.8) (2025-10-03)
+
+
+### Features
+
+* **button:** add button component ([9100158](https://github.com/TomokiMiyauci/material-react/commit/910015863915656a6c5478d86b2c4f45c52ea3f1))
+* **button:** add cursor style ([32abdcd](https://github.com/TomokiMiyauci/material-react/commit/32abdcdf7d1372b26c5ec9d769350553e5428c5d))
+* **button:** export button component ([3d27d15](https://github.com/TomokiMiyauci/material-react/commit/3d27d1597747b392e3e0d7f20091a363404da3f7))
+
 # [1.0.0-beta.7](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.6...1.0.0-beta.7) (2025-10-02)
 
 
