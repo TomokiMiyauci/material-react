@@ -75,6 +75,18 @@
     "plain-tooltip": {
       "single": "54061-33882",
       "multi": "54877-30904"
+    },
+    "divider": {
+      "horizontal": {
+        "full": "51816-5860",
+        "inset": "51816-5868",
+        "middle-inset": "51816-5870"
+      },
+      "vertical": {
+        "full": "51816-5862",
+        "inset": "51816-5864",
+        "middle-inset": "51816-5866"
+      }
     }
   }
 }

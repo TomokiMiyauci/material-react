@@ -9,6 +9,10 @@ interface IdConfigMap {
   } | "all";
   badge: { size: "small" | "large" };
   "plain-tooltip": { line: "single" | "multi" };
+  "divider": {
+    orientation: "vertical" | "horizontal";
+    variant: "full" | "inset" | "middle-inset";
+  };
 }
 
 type WithoutDraggedState = Exclude<State, "dragged">;
@@ -62,6 +66,9 @@ const idBuilders = {
   },
   "plain-tooltip": ({ line }) => {
     return nodeIdJson.map["plain-tooltip"][line];
+  },
+  "divider": ({ variant, orientation }) => {
+    return nodeIdJson.map.divider[orientation][variant];
   },
 } satisfies {
   [K in keyof IdConfigMap]: (options: IdConfigMap[K]) => string;
