@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Divider thickness",
+    "value": "1dp"
+  },
+  {
+    "name": "Divider color",
+    "value": "md.sys.color.outline-variant"
+  }
+]
