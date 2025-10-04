@@ -1,3 +1,10 @@
+# [1.0.0-beta.9](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.8...1.0.0-beta.9) (2025-10-04)
+
+
+### Features
+
+* **divider:** add divider component ([27bbf55](https://github.com/TomokiMiyauci/material-react/commit/27bbf557bab13f0df0e68e1eb475ea6df29d82a8))
+
 # [1.0.0-beta.8](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.7...1.0.0-beta.8) (2025-10-03)
 
 
