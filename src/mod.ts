@@ -5,3 +5,4 @@ export * from "./components/badge/mod.ts";
 export * from "./components/switch/mod.ts";
 export * from "./components/tooltips/plain_tooltip/mod.ts";
 export * from "./components/buttons/button/mod.ts";
+export * from "./components/divider/mod.ts";
