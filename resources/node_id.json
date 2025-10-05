@@ -87,6 +87,22 @@
         "inset": "51816-5864",
         "middle-inset": "51816-5866"
       }
+    },
+    "radio": {
+      "unchecked": {
+        "enabled": "51739-4621",
+        "hovered": "51739-4629",
+        "focused": "51739-4637",
+        "pressed": "51739-4645",
+        "disabled": "51739-4617"
+      },
+      "checked": {
+        "enabled": "51739-4609",
+        "hovered": "51739-4625",
+        "focused": "51739-4633",
+        "pressed": "51739-4641",
+        "disabled": "51739-4613"
+      }
     }
   }
 }
