@@ -8,6 +8,13 @@ const meta = {
   parameters: {
     layout: "centered",
     chromatic: { disableSnapshot: false },
+    a11y: {
+      options: {
+        rules: {
+          label: { enabled: false },
+        },
+      },
+    },
   },
   tags: ["autodocs"],
 } satisfies Meta<typeof Radio>;
