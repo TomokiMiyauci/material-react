@@ -13,6 +13,10 @@ interface IdConfigMap {
     orientation: "vertical" | "horizontal";
     variant: "full" | "inset" | "middle-inset";
   };
+  "radio": {
+    checked?: boolean;
+    state: WithoutDraggedState;
+  };
 }
 
 type WithoutDraggedState = Exclude<State, "dragged">;
@@ -69,6 +73,13 @@ const idBuilders = {
   },
   "divider": ({ variant, orientation }) => {
     return nodeIdJson.map.divider[orientation][variant];
+  },
+  "radio": ({ checked, state }) => {
+    if (checked) {
+      return nodeIdJson.map.radio.checked[state];
+    }
+
+    return nodeIdJson.map.radio.unchecked[state];
   },
 } satisfies {
   [K in keyof IdConfigMap]: (options: IdConfigMap[K]) => string;
