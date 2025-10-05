@@ -1,0 +1,57 @@
+{
+  "steps": [
+    {
+      "use": "spec2tokens",
+      "input": "https://m3.material.io/components/icon-buttons/specs",
+      "output": "./_generated/items.json",
+      "run": { "skipIfExists": true }
+    },
+    {
+      "use": "items2tokens",
+      "input": "./_generated/items.json",
+      "output": "./_generated/tokens.json",
+      "options": {
+        "exclude": {
+          "matches": ["toggle", "(selected)", "(unselected)"]
+        },
+        "segments": ["Icon button", "state layer"],
+        "path": {
+          "exclude": {
+            "matches": ["Icon button"]
+          },
+          "heads": ["container", "icon", "state layer", "selected"],
+          "tails": ["shape"]
+        }
+      },
+      "run": { "skipIfExists": true }
+    },
+    {
+      "use": "tokens2css",
+      "input": "./_generated/tokens.json",
+      "output": "./_generated/tokens.css",
+      "run": { "skipIfExists": true }
+    },
+    {
+      "use": "css",
+      "input": "./style.css",
+      "output": "./_generated/style.css",
+      "options": {
+        "minify": true,
+        "embed": true
+      }
+    },
+    {
+      "use": "css2ts",
+      "input": "./_generated/style.css",
+      "output": "./_generated/style.ts"
+    },
+    {
+      "use": "mustache",
+      "input": "./README.md.mustache",
+      "output": "./README.md",
+      "options": {
+        "tokenSource": "./_generated/style.css"
+      }
+    }
+  ]
+}

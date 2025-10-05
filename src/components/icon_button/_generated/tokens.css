@@ -4,129 +4,162 @@
 
 /* @embed */
 :root {
-  --container-height-xsmall: 32px; /** Icon button xsmall container height */
-  --container-height-small: 40px; /** Icon button small container height */
-  --container-height-medium: 56px; /** Icon button medium container height */
-  --container-height-large: 96px; /** Icon button large container height */
-  --container-height-xlarge: 136px; /** Icon button xlarge container height */
-  --container-shape-xsmall-round: var(--md-sys-shape-corner-full); /** Icon button xsmall container shape round */
-  --container-shape-xsmall-square: var(--md-sys-shape-corner-medium); /** Icon button xsmall container shape square */
-  --container-shape-small-round: var(--md-sys-shape-corner-full); /** Icon button small container shape round */
-  --container-shape-small-square: var(--md-sys-shape-corner-medium); /** Icon button small container shape square */
-  --container-shape-medium-round: var(--md-sys-shape-corner-full); /** Icon button medium container shape round */
-  --container-shape-medium-square: var(--md-sys-shape-corner-large); /** Icon button medium container shape square */
-  --container-shape-large-round: var(--md-sys-shape-corner-full); /** Icon button large container shape round */
-  --container-shape-large-square: var(--md-sys-shape-corner-extra-large); /** Icon button large container shape square */
-  --container-shape-xlarge-round: var(--md-sys-shape-corner-full); /** Icon button xlarge container shape round */
-  --container-shape-xlarge-square: var(--md-sys-shape-corner-extra-large); /** Icon button xlarge container shape square */
-  --container-color-filled: var(--md-sys-color-primary); /** Icon button filled container color */
-  --container-color-tonal: var(--md-sys-color-secondary-container); /** Icon button tonal container color */
+  --container-color: var(--md-sys-color-primary); /** Icon button container color */
+  --container-disabled-color: var(--md-sys-color-on-surface); /** Icon button disabled container color */
+  --container-disabled-opacity: 10%; /** Icon button disabled container opacity */
+  --container-filled-color: var(--md-sys-color-primary); /** Icon button filled container color */
   --container-filled-disabled-color: var(--md-sys-color-on-surface); /** Icon button filled disabled container color */
   --container-filled-disabled-opacity: 10%; /** Icon button filled disabled container opacity */
+  --container-height: 40px; /** Icon button container height */
+  --container-large-height: 96px; /** Icon button large container height */
+  --container-large-round-shape: var(--md-sys-shape-corner-full); /** Icon button large container shape round */
+  --container-large-square-shape: var(--md-sys-shape-corner-extra-large); /** Icon button large container shape square */
+  --container-medium-height: 56px; /** Icon button medium container height */
+  --container-medium-round-shape: var(--md-sys-shape-corner-full); /** Icon button medium container shape round */
+  --container-medium-square-shape: var(--md-sys-shape-corner-large); /** Icon button medium container shape square */
+  --container-round-shape: var(--md-sys-shape-corner-full); /** Icon button container shape round */
+  --container-selected-large-round-shape: var(--md-sys-shape-corner-extra-large); /** Icon button large selected container shape round */
+  --container-selected-large-square-shape: var(--md-sys-shape-corner-full); /** Icon button large selected container shape square */
+  --container-selected-medium-round-shape: var(--md-sys-shape-corner-large); /** Icon button medium selected container shape round */
+  --container-selected-medium-square-shape: var(--md-sys-shape-corner-full); /** Icon button medium selected container shape square */
+  --container-selected-round-shape: var(--md-sys-shape-corner-medium); /** Icon button selected container shape round */
+  --container-selected-small-round-shape: var(--md-sys-shape-corner-medium); /** Icon button small selected container shape round */
+  --container-selected-small-square-shape: var(--md-sys-shape-corner-full); /** Icon button small selected container shape square */
+  --container-selected-square-shape: var(--md-sys-shape-corner-full); /** Icon button selected container shape square */
+  --container-selected-xlarge-round-shape: var(--md-sys-shape-corner-extra-large); /** Icon button xlarge selected container shape round */
+  --container-selected-xlarge-square-shape: var(--md-sys-shape-corner-full); /** Icon button xlarge selected container shape square */
+  --container-selected-xsmall-round-shape: var(--md-sys-shape-corner-medium); /** Icon button xsmall selected container shape round */
+  --container-selected-xsmall-square-shape: var(--md-sys-shape-corner-full); /** Icon button xsmall selected container shape square */
+  --container-small-height: 40px; /** Icon button small container height */
+  --container-small-round-shape: var(--md-sys-shape-corner-full); /** Icon button small container shape round */
+  --container-small-square-shape: var(--md-sys-shape-corner-medium); /** Icon button small container shape square */
+  --container-square-shape: var(--md-sys-shape-corner-medium); /** Icon button container shape square */
+  --container-tonal-color: var(--md-sys-color-secondary-container); /** Icon button tonal container color */
   --container-tonal-disabled-color: var(--md-sys-color-on-surface); /** Icon button tonal disabled container color */
   --container-tonal-disabled-opacity: 10%; /** Icon button tonal disabled container opacity */
-  --container-outlined-color: var(--md-sys-color-outline-variant); /** Icon button outlined color */
-  --container-outlined-disabled-color: var(--md-sys-color-outline-variant); /** Icon button outlined disabled outline color */
-  --container-xsmall-outline-width: 1px; /** Icon button xsmall outline width */
-  --container-small-outline-width: 1px; /** Icon button small outline width */
-  --container-medium-outline-width: 1px; /** Icon button medium outline width */
-  --container-large-outline-width: 2px; /** Icon button large outline width */
-  --container-xlarge-outline-width: 3px; /** Icon button xlarge outline width */
-  --icon-size-xsmall: 20px; /** Icon button xsmall icon size */
-  --icon-size-small: 24px; /** Icon button small icon size */
-  --icon-size-medium: 24px; /** Icon button medium icon size */
-  --icon-size-large: 32px; /** Icon button large icon size */
-  --icon-size-xlarge: 40px; /** Icon button xlarge icon size */
-  --icon-color-filled-color: var(--md-sys-color-on-primary); /** Icon button filled icon color */
-  --icon-color-filled-hovered-color: var(--md-sys-color-on-primary); /** Icon button filled hovered icon color */
-  --icon-color-filled-focused-color: var(--md-sys-color-on-primary); /** Icon button filled focused icon color */
-  --icon-color-filled-pressed-color: var(--md-sys-color-on-primary); /** Icon button filled pressed icon color */
-  --icon-color-filled-disabled-color: var(--md-sys-color-on-surface); /** Icon button filled disabled icon color */
-  --icon-color-filled-disabled-opacity: 38%; /** Icon button filled disabled icon opacity */
-  --icon-color-tonal-color: var(--md-sys-color-on-secondary-container); /** Icon button tonal icon color */
-  --icon-color-tonal-disabled-color: var(--md-sys-color-on-surface); /** Icon button tonal disabled icon color */
-  --icon-color-tonal-disabled-opacity: 38%; /** Icon button tonal disabled icon opacity */
-  --icon-color-tonal-hovered-color: var(--md-sys-color-on-secondary-container); /** Icon button tonal hovered icon color */
-  --icon-color-tonal-focused-color: var(--md-sys-color-on-secondary-container); /** Icon button tonal focused icon color */
-  --icon-color-tonal-pressed-color: var(--md-sys-color-on-secondary-container); /** Icon button tonal pressed icon color */
-  --icon-color-outlined-color: var(--md-sys-color-on-surface-variant); /** Icon button outlined icon color */
-  --icon-color-outlined-disabled-color: var(--md-sys-color-on-surface); /** Icon button outlined disabled icon color */
-  --icon-color-outlined-disabled-opacity: 38%; /** Icon button outlined disabled icon opacity */
-  --icon-color-outlined-hovered-color: var(--md-sys-color-on-surface-variant); /** Icon button outlined hovered icon color */
-  --icon-color-outlined-focused-color: var(--md-sys-color-on-surface-variant); /** Icon button outlined focused icon color */
-  --icon-color-outlined-pressed-color: var(--md-sys-color-on-surface-variant); /** Icon button outlined pressed icon color */
-  --icon-color-standard-color: var(--md-sys-color-on-surface-variant); /** Icon button icon color */
-  --icon-color-standard-disabled-color: var(--md-sys-color-on-surface); /** Icon button disabled icon color */
-  --icon-color-standard-disabled-opacity: 38%; /** Icon button disabled opacity */
-  --icon-color-standard-hovered-color: var(--md-sys-color-on-surface-variant); /** Icon button hovered icon color */
-  --icon-color-standard-focused-color: var(--md-sys-color-on-surface-variant); /** Icon button focused icon color */
-  --icon-color-standard-pressed-color: var(--md-sys-color-on-surface-variant); /** Icon button pressed icon color */
-  --icon-filled-hovered-color: var(--md-sys-color-on-primary); /** Icon button hovered icon color */
-  --leading-space-xsmall-default: 6px; /** Icon button xsmall default leading space */
-  --leading-space-xsmall-narrow: 4px; /** Icon button xsmall narrow leading space */
-  --leading-space-xsmall-wide: 10px; /** Icon button xsmall wide leading space */
-  --leading-space-small-default: 8px; /** Icon button small default leading space */
-  --leading-space-small-narrow: 4px; /** Icon button small narrow leading space */
-  --leading-space-small-wide: 14px; /** Icon button small wide leading space */
-  --leading-space-medium-default: 16px; /** Icon button medium default leading space */
-  --leading-space-medium-narrow: 12px; /** Icon button medium narrow leading space */
-  --leading-space-medium-wide: 24px; /** Icon button medium wide leading space */
-  --leading-space-large-default: 32px; /** Icon button large default leading space */
-  --leading-space-large-narrow: 16px; /** Icon button large narrow leading space */
-  --leading-space-large-wide: 48px; /** Icon button large wide leading space */
-  --leading-space-xlarge-default: 48px; /** Icon button xlarge default leading space */
-  --leading-space-xlarge-narrow: 32px; /** Icon button xlarge narrow leading space */
-  --leading-space-xlarge-wide: 72px; /** Icon button xlarge wide leading space */
-  --trailing-space-xsmall-default: 6px; /** Icon button xsmall default trailing space */
-  --trailing-space-xsmall-narrow: 4px; /** Icon button xsmall narrow trailing space */
-  --trailing-space-xsmall-wide: 10px; /** Icon button xsmall wide trailing space */
-  --trailing-space-small-default: 8px; /** Icon button small default trailing space */
-  --trailing-space-small-narrow: 4px; /** Icon button small narrow trailing space */
-  --trailing-space-small-wide: 14px; /** Icon button small wide trailing space */
-  --trailing-space-medium-default: 16px; /** Icon button medium default trailing space */
-  --trailing-space-medium-narrow: 12px; /** Icon button medium narrow trailing space */
-  --trailing-space-medium-wide: 24px; /** Icon button medium wide trailing space */
-  --trailing-space-large-default: 32px; /** Icon button large default trailing space */
-  --trailing-space-large-narrow: 16px; /** Icon button large narrow trailing space */
-  --trailing-space-large-wide: 48px; /** Icon button large wide trailing space */
-  --trailing-space-xlarge-default: 48px; /** Icon button xlarge default trailing space */
-  --trailing-space-xlarge-narrow: 32px; /** Icon button xlarge narrow trailing space */
-  --trailing-space-xlarge-wide: 72px; /** Icon button xlarge wide trailing space */
-  --state-layer-filled-hovered-color: var(--md-sys-color-on-primary); /** Icon button filled hovered state layer color */
-  --state-layer-filled-hovered-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Icon button filled hovered state layer opacity */
+  --container-xlarge-height: 136px; /** Icon button xlarge container height */
+  --container-xlarge-round-shape: var(--md-sys-shape-corner-full); /** Icon button xlarge container shape round */
+  --container-xlarge-square-shape: var(--md-sys-shape-corner-extra-large); /** Icon button xlarge container shape square */
+  --container-xsmall-height: 32px; /** Icon button xsmall container height */
+  --container-xsmall-round-shape: var(--md-sys-shape-corner-full); /** Icon button xsmall container shape round */
+  --container-xsmall-square-shape: var(--md-sys-shape-corner-medium); /** Icon button xsmall container shape square */
+  --default-leading-space: 8px; /** Icon button default leading space */
+  --default-trailing-space: 8px; /** Icon button default trailing space */
+  --disabled-opacity: 38%; /** Icon button disabled opacity */
+  --focus-indicator-color: var(--md-sys-color-secondary); /** Icon button focus indicator color */
+  --focus-indicator-offset: var(--md-sys-state-focus-indicator-outer-offset); /** Icon button focus indicator offset */
+  --focus-indicator-thickness: var(--md-sys-state-focus-indicator-thickness); /** Icon button focus indicator thickness */
+  --icon-color: var(--md-sys-color-on-surface-variant); /** Icon button icon color */
+  --icon-disabled-color: var(--md-sys-color-on-surface); /** Icon button disabled icon color */
+  --icon-disabled-opacity: 38%; /** Icon button disabled icon opacity */
+  --icon-filled-color: var(--md-sys-color-on-primary); /** Icon button filled icon color */
+  --icon-filled-disabled-color: var(--md-sys-color-on-surface); /** Icon button filled disabled icon color */
+  --icon-filled-disabled-opacity: 38%; /** Icon button filled disabled icon opacity */
+  --icon-filled-focused-color: var(--md-sys-color-on-primary); /** Icon button filled focused icon color */
+  --icon-filled-hovered-color: var(--md-sys-color-on-primary); /** Icon button filled hovered icon color */
+  --icon-filled-pressed-color: var(--md-sys-color-on-primary); /** Icon button filled pressed icon color */
+  --icon-focused-color: var(--md-sys-color-on-surface-variant); /** Icon button focused icon color */
+  --icon-hovered-color: var(--md-sys-color-on-surface-variant); /** Icon button hovered icon color */
+  --icon-large-size: 32px; /** Icon button large icon size */
+  --icon-medium-size: 24px; /** Icon button medium icon size */
+  --icon-outlined-color: var(--md-sys-color-on-surface-variant); /** Icon button outlined icon color */
+  --icon-outlined-disabled-color: var(--md-sys-color-on-surface); /** Icon button outlined disabled icon color */
+  --icon-outlined-disabled-opacity: 38%; /** Icon button outlined disabled icon opacity */
+  --icon-outlined-focused-color: var(--md-sys-color-on-surface-variant); /** Icon button outlined focused icon color */
+  --icon-outlined-hovered-color: var(--md-sys-color-on-surface-variant); /** Icon button outlined hovered icon color */
+  --icon-outlined-pressed-color: var(--md-sys-color-on-surface-variant); /** Icon button outlined pressed icon color */
+  --icon-pressed-color: var(--md-sys-color-on-surface-variant); /** Icon button pressed icon color */
+  --icon-size: 24px; /** Icon button icon size */
+  --icon-small-size: 24px; /** Icon button small icon size */
+  --icon-tonal-color: var(--md-sys-color-on-secondary-container); /** Icon button tonal icon color */
+  --icon-tonal-disabled-color: var(--md-sys-color-on-surface); /** Icon button tonal disabled icon color */
+  --icon-tonal-disabled-opacity: 38%; /** Icon button tonal disabled icon opacity */
+  --icon-tonal-focused-color: var(--md-sys-color-on-secondary-container); /** Icon button tonal focused icon color */
+  --icon-tonal-hovered-color: var(--md-sys-color-on-secondary-container); /** Icon button tonal hovered icon color */
+  --icon-tonal-pressed-color: var(--md-sys-color-on-secondary-container); /** Icon button tonal pressed icon color */
+  --icon-xlarge-size: 40px; /** Icon button xlarge icon size */
+  --icon-xsmall-size: 20px; /** Icon button xsmall icon size */
+  --large-default-leading-space: 32px; /** Icon button large default leading space */
+  --large-default-trailing-space: 32px; /** Icon button large default trailing space */
+  --large-narrow-leading-space: 16px; /** Icon button large narrow leading space */
+  --large-narrow-trailing-space: 16px; /** Icon button large narrow trailing space */
+  --large-outline-width: 2px; /** Icon button large outline width */
+  --large-pressed-morph-shape: var(--md-sys-shape-corner-large); /** Icon button large shape pressed morph */
+  --large-spring-animation-damping-shape: var(--md-sys-motion-spring-fast-spatial-damping); /** Icon button large shape spring animation damping */
+  --large-spring-animation-stiffness-shape: var(--md-sys-motion-spring-fast-spatial-stiffness); /** Icon button large shape spring animation stiffness */
+  --large-wide-leading-space: 48px; /** Icon button large wide leading space */
+  --large-wide-trailing-space: 48px; /** Icon button large wide trailing space */
+  --medium-default-leading-space: 16px; /** Icon button medium default leading space */
+  --medium-default-trailing-space: 16px; /** Icon button medium default trailing space */
+  --medium-narrow-leading-space: 12px; /** Icon button medium narrow leading space */
+  --medium-narrow-trailing-space: 12px; /** Icon button medium narrow trailing space */
+  --medium-outline-width: 1px; /** Icon button medium outline width */
+  --medium-pressed-morph-shape: var(--md-sys-shape-corner-medium); /** Icon button medium shape pressed morph */
+  --medium-spring-animation-damping-shape: var(--md-sys-motion-spring-fast-spatial-damping); /** Icon button medium shape spring animation damping */
+  --medium-spring-animation-stiffness-shape: var(--md-sys-motion-spring-fast-spatial-stiffness); /** Icon button medium shape spring animation stiffness */
+  --medium-wide-leading-space: 24px; /** Icon button medium wide leading space */
+  --medium-wide-trailing-space: 24px; /** Icon button medium wide trailing space */
+  --narrow-leading-space: 4px; /** Icon button narrow leading space */
+  --narrow-trailing-space: 4px; /** Icon button narrow trailing space */
+  --outlined-color: var(--md-sys-color-outline-variant); /** Icon button outlined color */
+  --outlined-disabled-outline-color: var(--md-sys-color-outline-variant); /** Icon button outlined disabled outline color */
+  --pressed-morph-shape: var(--md-sys-shape-corner-small); /** Icon button shape pressed morph */
+  --small-default-leading-space: 8px; /** Icon button small default leading space */
+  --small-default-trailing-space: 8px; /** Icon button small default trailing space */
+  --small-narrow-leading-space: 4px; /** Icon button small narrow leading space */
+  --small-narrow-trailing-space: 4px; /** Icon button small narrow trailing space */
+  --small-outline-width: 1px; /** Icon button small outline width */
+  --small-pressed-morph-shape: var(--md-sys-shape-corner-small); /** Icon button small shape pressed morph */
+  --small-spring-animation-damping-shape: var(--md-sys-motion-spring-fast-spatial-damping); /** Icon button small shape spring animation damping */
+  --small-spring-animation-stiffness-shape: var(--md-sys-motion-spring-fast-spatial-stiffness); /** Icon button small shape spring animation stiffness */
+  --small-wide-leading-space: 14px; /** Icon button small wide leading space */
+  --small-wide-trailing-space: 14px; /** Icon button small wide trailing space */
+  --spring-animation-damping-shape: var(--md-sys-motion-spring-fast-spatial-damping); /** Icon button shape spring animation damping */
+  --spring-animation-stiffness-shape: var(--md-sys-motion-spring-fast-spatial-stiffness); /** Icon button shape spring animation stiffness */
   --state-layer-filled-focused-color: var(--md-sys-color-on-primary); /** Icon button filled focused state layer color */
   --state-layer-filled-focused-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Icon button filled focused state layer opacity */
+  --state-layer-filled-hovered-color: var(--md-sys-color-on-primary); /** Icon button filled hovered state layer color */
+  --state-layer-filled-hovered-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Icon button filled hovered state layer opacity */
   --state-layer-filled-pressed-color: var(--md-sys-color-on-primary); /** Icon button filled pressed state layer color */
   --state-layer-filled-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Icon button filled pressed state layer opacity */
-  --state-layer-tonal-hovered-color: var(--md-sys-color-on-secondary-container); /** Icon button tonal hovered state layer color */
-  --state-layer-tonal-hovered-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Icon button tonal hovered state layer opacity */
-  --state-layer-tonal-focused-color: var(--md-sys-color-on-secondary-container); /** Icon button tonal focused state layer color */
-  --state-layer-tonal-focused-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Icon button tonal focused state layer opacity */
-  --state-layer-tonal-pressed-color: var(--md-sys-color-on-secondary-container); /** Icon button tonal pressed state layer color */
-  --state-layer-tonal-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Icon button tonal pressed state layer opacity */
-  --state-layer-outlined-hovered-color: var(--md-sys-color-on-surface-variant); /** Icon button outlined hovered state layer color */
-  --state-layer-outlined-hovered-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Icon button outlined hovered state layer opacity */
+  --state-layer-focused-color: var(--md-sys-color-on-surface-variant); /** Icon button focused state layer color */
+  --state-layer-focused-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Icon button focused state layer opacity */
+  --state-layer-hovered-color: var(--md-sys-color-on-surface-variant); /** Icon button hovered state layer color */
+  --state-layer-hovered-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Icon button hovered state layer opacity */
   --state-layer-outlined-focused-color: var(--md-sys-color-on-surface-variant); /** Icon button outlined focused state layer color */
   --state-layer-outlined-focused-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Icon button outlined focused state layer opacity */
+  --state-layer-outlined-hovered-color: var(--md-sys-color-on-surface-variant); /** Icon button outlined hovered state layer color */
+  --state-layer-outlined-hovered-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Icon button outlined hovered state layer opacity */
   --state-layer-outlined-pressed-color: var(--md-sys-color-on-surface-variant); /** Icon button outlined pressed state layer color */
   --state-layer-outlined-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Icon button outlined pressed state layer opacity */
-  --state-layer-standard-hovered-color: var(--md-sys-color-on-surface-variant); /** Icon button hovered state layer color */
-  --state-layer-standard-hovered-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Icon button hovered state layer opacity */
-  --state-layer-standard-focused-color: var(--md-sys-color-on-surface-variant); /** Icon button focused state layer color */
-  --state-layer-standard-focused-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Icon button focused state layer opacity */
-  --state-layer-standard-pressed-color: var(--md-sys-color-on-surface-variant); /** Icon button pressed state layer color */
-  --state-layer-standard-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Icon button pressed state layer opacity */
-  --focus-indicator-color: var(--md-sys-color-secondary); /** Icon button focus indicator color */
-  --focus-indicator-thickness: var(--md-sys-state-focus-indicator-thickness); /** Icon button focus indicator thickness */
-  --focus-indicator-offset: var(--md-sys-state-focus-indicator-outer-offset); /** Icon button focus indicator offset */
-  --icon-button-xsmall-shape-pressed-morph: var(--md-sys-shape-corner-small);
-  --icon-button-xsmall-shape-spring-animation-damping: var(--md-sys-motion-spring-fast-spatial-damping);
-  --icon-button-xsmall-shape-spring-animation-stiffness: var(--md-sys-motion-spring-fast-spatial-stiffness);
-  --icon-button-xsmall-selected-container-shape-round: var(--md-sys-shape-corner-medium);
-  --icon-button-xsmall-selected-container-shape-square: var(--md-sys-shape-corner-full);
-  --icon-button-small-shape-pressed-morph: var(--md-sys-shape-corner-small);
-  --icon-button-small-shape-spring-animation-damping: var(--md-sys-motion-spring-fast-spatial-damping);
-  --icon-button-small-shape-spring-animation-stiffness: var(--md-sys-motion-spring-fast-spatial-stiffness);
-  --icon-button-small-selected-container-shape-round: var(--md-sys-shape-corner-medium);
-  --icon-button-small-selected-container-shape-square: var(--md-sys-shape-corner-full);
+  --state-layer-pressed-color: var(--md-sys-color-on-surface-variant); /** Icon button pressed state layer color */
+  --state-layer-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Icon button pressed state layer opacity */
+  --state-layer-tonal-focused-color: var(--md-sys-color-on-secondary-container); /** Icon button tonal focused state layer color */
+  --state-layer-tonal-focused-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Icon button tonal focused state layer opacity */
+  --state-layer-tonal-hovered-color: var(--md-sys-color-on-secondary-container); /** Icon button tonal hovered state layer color */
+  --state-layer-tonal-hovered-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Icon button tonal hovered state layer opacity */
+  --state-layer-tonal-pressed-color: var(--md-sys-color-on-secondary-container); /** Icon button tonal pressed state layer color */
+  --state-layer-tonal-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Icon button tonal pressed state layer opacity */
+  --wide-leading-space: 14px; /** Icon button wide leading space */
+  --wide-trailing-space: 14px; /** Icon button wide trailing space */
+  --xlarge-default-leading-space: 48px; /** Icon button xlarge default leading space */
+  --xlarge-default-trailing-space: 48px; /** Icon button xlarge default trailing space */
+  --xlarge-narrow-leading-space: 32px; /** Icon button xlarge narrow leading space */
+  --xlarge-narrow-trailing-space: 32px; /** Icon button xlarge narrow trailing space */
+  --xlarge-outline-width: 3px; /** Icon button xlarge outline width */
+  --xlarge-pressed-morph-shape: var(--md-sys-shape-corner-large); /** Icon button xlarge shape pressed morph */
+  --xlarge-spring-animation-damping-shape: var(--md-sys-motion-spring-fast-spatial-damping); /** Icon button xlarge shape spring animation damping */
+  --xlarge-spring-animation-stiffness-shape: var(--md-sys-motion-spring-fast-spatial-stiffness); /** Icon button xlarge shape spring animation stiffness */
+  --xlarge-wide-leading-space: 72px; /** Icon button xlarge wide leading space */
+  --xlarge-wide-trailing-space: 72px; /** Icon button xlarge wide trailing space */
+  --xsmall-default-leading-space: 6px; /** Icon button xsmall default leading space */
+  --xsmall-default-trailing-space: 6px; /** Icon button xsmall default trailing space */
+  --xsmall-narrow-leading-space: 4px; /** Icon button xsmall narrow leading space */
+  --xsmall-narrow-trailing-space: 4px; /** Icon button xsmall narrow trailing space */
+  --xsmall-outline-width: 1px; /** Icon button xsmall outline width */
+  --xsmall-pressed-morph-shape: var(--md-sys-shape-corner-small); /** Icon button xsmall shape pressed morph */
+  --xsmall-spring-animation-damping-shape: var(--md-sys-motion-spring-fast-spatial-damping); /** Icon button xsmall shape spring animation damping */
+  --xsmall-spring-animation-stiffness-shape: var(--md-sys-motion-spring-fast-spatial-stiffness); /** Icon button xsmall shape spring animation stiffness */
+  --xsmall-wide-leading-space: 10px; /** Icon button xsmall wide leading space */
+  --xsmall-wide-trailing-space: 10px; /** Icon button xsmall wide trailing space */
 }

@@ -1,77 +1,203 @@
-@import url(../_generated/tokens.css);
+@import url(./_generated/tokens.css);
 
 @scope([data-md=navigation-bar-item]) {
-  all: unset;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  & [data-icon] {
+  & {
     all: unset;
-    display: inline-flex;
-    width: var(--item-icon-size);
-    height: var(--item-icon-size);
-    color: var(--item-icon-inactive-color);
-    position: relative;
-
-    :scope[data-active] & {
-      color: var(--item-icon-active-color);
-      font-variation-settings: "FILL" 1;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
   }
 
-  & [data-label-text] {
-    all: unset;
-    color: var(--item-label-text-inactive-color);
-    font-family: var(--item-label-text-vertical-font);
-    font-weight: var(--item-label-text-vertical-weight);
-    font-size: var(--item-label-text-vertical-size);
-    line-height: var(--item-label-text-vertical-line-height);
-    letter-spacing: var(--item-label-text-vertical-tracking);
-
-    :scope[data-active] & {
-      color: var(--item-label-text-active-color);
-    }
-  }
-
-  & [data-indicator] {
+  [data-icon] {
     all: unset;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: var(--item-shape);
+    width: var(--icon-size);
+    height: var(--icon-size);
+    font-size: var(--icon-size);
+    color: var(--icon-inactive-color);
+    position: relative;
 
     :scope[data-active] & {
-      background-color: var(--indicator-color);
+      color: var(--icon-active-color);
+      font-variation-settings: "FILL" 1;
     }
+  }
 
-    :scope:hover & {
-      background-color: color-mix(in srgb, var(--state-layer-hovered-inactive-color) var(--state-layer-hovered-active-opacity), transparent);
-    }
+  [data-label-text] {
+    all: unset;
+    color: var(--label-text-inactive-color);
 
-    :scope[data-active]:hover & {
-      background-color: color-mix(in srgb, var(--indicator-color), var(--state-layer-hovered-active-color) var(--state-layer-hovered-active-opacity));
+    :scope[data-active] & {
+      color: var(--label-text-active-color);
     }
+  }
+
+  [data-icon-container] {
+    all: unset;
+  }
+
+  [data-container] {
+    all: unset;
+  }
+
+  &[data-variant=horizontal] {
+    --variant: horizontal;
+  }
+
+  &[data-variant=variant] {
+    --variant: variant;
   }
 }
 
-@scope([data-md=navigation-bar-item]) {
-  row-gap: var(--item-vertical-space);
-
-  & [data-indicator] {
-    width: var(--indicator-vertical-active-width);
-    height: var(--indicator-vertical-active-height);
-  }
-}
-
-@container style(--variant: vertical) {
+@container style(--variant: vertical) or style(--variant: initial) {
   @scope([data-md=navigation-bar-item]) {
-    row-gap: var(--item-vertical-space);
+    & {
+      row-gap: var(--active-indicator-icon-label-vertical-space);
+    }
 
-    & [data-indicator] {
-      width: var(--indicator-vertical-active-width);
-      height: var(--indicator-vertical-active-height);
+    [data-icon-container] {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--shape);
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+      }
+
+      :scope[data-active] & {
+        background-color: var(--indicator-color);
+      }
+
+      :scope:hover &::before {
+        background-color: var(--state-layer-inactive-hovered-color);
+        opacity: var(--state-layer-active-hovered-opacity);
+      }
+
+      :scope:active &::before {
+        background-color: var(--state-layer-inactive-pressed-color);
+        opacity: var(--state-layer-active-pressed-opacity);
+      }
+
+      :scope:focus-visible &::before {
+        background-color: var(--state-layer-inactive-focused-color);
+        opacity: var(--state-layer-active-focused-opacity);
+      }
+
+      :scope[data-active]:hover &::before {
+        background-color: var(--state-layer-active-hovered-color);
+        opacity: var(--state-layer-active-hovered-opacity);
+      }
+
+      :scope[data-active]:active &::before {
+        background-color: var(--state-layer-active-pressed-color);
+        opacity: var(--state-layer-active-pressed-opacity);
+      }
+
+      :scope[data-active]:focus-visible &::before {
+        background-color: var(--state-layer-active-focused-color);
+        opacity: var(--state-layer-active-focused-opacity);
+      }
+    }
+
+    [data-container] {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      row-gap: var(--active-indicator-icon-label-vertical-space);
+    }
+
+    [data-label-text] {
+      font-family: var(--label-text-vertical-font);
+      font-weight: var(--label-text-vertical-weight);
+      font-size: var(--label-text-vertical-size);
+      line-height: var(--label-text-vertical-line-height);
+      letter-spacing: var(--label-text-vertical-tracking);
+    }
+
+    [data-icon-container] {
+      width: var(--active-indicator-vertical-width);
+      height: var(--active-indicator-vertical-height);
+    }
+  }
+}
+
+@container style(--variant: horizontal) {
+  @scope([data-md=navigation-bar-item]) {
+    [data-container] {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      height: var(--active-indicator-horizontal-height);
+      padding-inline-start: var(--active-indicator-horizontal-leading-space);
+      padding-inline-end: var(--active-indicator-horizontal-trailing-space);
+      column-gap: var(--active-indicator-icon-label-horizontal-space);
+      position: relative;
+      border-radius: var(--shape);
+
+      &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+      }
+
+      :scope[data-active] & {
+        background-color: var(--indicator-color);
+      }
+
+      :scope:hover &::before {
+        background-color: var(--state-layer-inactive-hovered-color);
+        opacity: var(--state-layer-active-hovered-opacity);
+      }
+
+      :scope:active &::before {
+        background-color: var(--state-layer-inactive-pressed-color);
+        opacity: var(--state-layer-active-pressed-opacity);
+      }
+
+      :scope:focus-visible &::before {
+        background-color: var(--state-layer-inactive-focused-color);
+        opacity: var(--state-layer-active-focused-opacity);
+      }
+
+      :scope[data-active]:hover &::before {
+        background-color: var(--state-layer-active-hovered-color);
+        opacity: var(--state-layer-active-hovered-opacity);
+      }
+
+      :scope[data-active]:active &::before {
+        background-color: var(--state-layer-active-pressed-color);
+        opacity: var(--state-layer-active-pressed-opacity);
+      }
+
+      :scope[data-active]:focus-visible &::before {
+        background-color: var(--state-layer-active-focused-color);
+        opacity: var(--state-layer-active-focused-opacity);
+      }
+    }
+
+    [data-label-text] {
+      font-family: var(--label-text-horizontal-font);
+      font-weight: var(--label-text-horizontal-weight);
+      font-size: var(--label-text-horizontal-size);
+      line-height: var(--label-text-horizontal-line-height);
+      letter-spacing: var(--label-text-horizontal-tracking);
+    }
+
+    [data-icon-container] {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }

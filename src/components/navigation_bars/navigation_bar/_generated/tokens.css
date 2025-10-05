@@ -1,0 +1,13 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+/* @embed */
+:root {
+  --container-color: var(--md-sys-color-surface-container); /** Nav bar container color */
+  --container-elevation: var(--md-sys-elevation-level2); /** Nav bar container elevation */
+  --container-shadow-color: var(--md-sys-color-shadow); /** Nav bar container shadow color */
+  --height: 64px; /** Nav bar height */
+  --shape: var(--md-sys-shape-corner-none); /** Nav bar shape */
+  --space-between-items: 0; /** Nav bar space between items */
+}

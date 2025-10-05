@@ -1,0 +1,1002 @@
+[
+  {
+    "name": "Icon button container color",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Icon button container color - toggle (unselected)",
+    "value": "md.sys.color.surface-container"
+  },
+  {
+    "name": "Icon button container color - toggle (selected)",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Icon button icon color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Icon button icon color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button icon color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Icon button container height",
+    "value": "40dp"
+  },
+  {
+    "name": "Icon button icon size",
+    "value": "24dp"
+  },
+  {
+    "name": "Icon button narrow leading space",
+    "value": "4dp"
+  },
+  {
+    "name": "Icon button narrow trailing space",
+    "value": "4dp"
+  },
+  {
+    "name": "Icon button default leading space",
+    "value": "8dp"
+  },
+  {
+    "name": "Icon button default trailing space",
+    "value": "8dp"
+  },
+  {
+    "name": "Icon button wide leading space",
+    "value": "14dp"
+  },
+  {
+    "name": "Icon button wide trailing space",
+    "value": "14dp"
+  },
+  {
+    "name": "Icon button container shape round",
+    "value": "md.sys.shape.corner.full"
+  },
+  {
+    "name": "Icon button container shape square",
+    "value": "md.sys.shape.corner.medium"
+  },
+  {
+    "name": "Icon button shape pressed morph",
+    "value": "md.sys.shape.corner.small"
+  },
+  {
+    "name": "Icon button shape spring animation damping",
+    "value": "md.sys.motion.spring.fast.spatial.damping"
+  },
+  {
+    "name": "Icon button shape spring animation stiffness",
+    "value": "md.sys.motion.spring.fast.spatial.stiffness"
+  },
+  {
+    "name": "Icon button selected container shape round",
+    "value": "md.sys.shape.corner.medium"
+  },
+  {
+    "name": "Icon button selected container shape square",
+    "value": "md.sys.shape.corner.full"
+  },
+  {
+    "name": "Icon button focus indicator color",
+    "value": "md.sys.color.secondary"
+  },
+  {
+    "name": "Icon button focus indicator thickness",
+    "value": "md.sys.state.focus-indicator.thickness"
+  },
+  {
+    "name": "Icon button focus indicator offset",
+    "value": "md.sys.state.focus-indicator.outer-offset"
+  },
+  {
+    "name": "Icon button disabled container color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "Icon button disabled container opacity",
+    "value": "0.1"
+  },
+  {
+    "name": "Icon button disabled icon color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "Icon button disabled icon opacity",
+    "value": "0.38"
+  },
+  {
+    "name": "Icon button hovered state layer color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Icon button hovered state layer color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button hovered state layer color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Icon button hovered state layer opacity",
+    "value": "md.sys.state.hover.state-layer-opacity"
+  },
+  {
+    "name": "Icon button hovered icon color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Icon button hovered icon color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button hovered icon color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Icon button focused state layer color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Icon button focused state layer color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button focused state layer color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Icon button focused state layer opacity",
+    "value": "md.sys.state.focus.state-layer-opacity"
+  },
+  {
+    "name": "Icon button focused icon color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Icon button focused icon color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button focused icon color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Icon button pressed state layer color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Icon button pressed state layer color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button pressed state layer color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Icon button pressed state layer opacity",
+    "value": "md.sys.state.pressed.state-layer-opacity"
+  },
+  {
+    "name": "Icon button pressed icon color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Icon button pressed icon color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button pressed icon color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Icon button filled container color",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Icon button filled container color - toggle (unselected)",
+    "value": "md.sys.color.surface-container"
+  },
+  {
+    "name": "Icon button filled container color - toggle (selected)",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Icon button filled icon color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Icon button filled icon color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button filled icon color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Icon button filled disabled container color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "Icon button filled disabled container opacity",
+    "value": "0.1"
+  },
+  {
+    "name": "Icon button filled disabled icon color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "Icon button filled disabled icon opacity",
+    "value": "0.38"
+  },
+  {
+    "name": "Icon button filled hovered state layer color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Icon button filled hovered state layer color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button filled hovered state layer color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Icon button filled hovered state layer opacity",
+    "value": "md.sys.state.hover.state-layer-opacity"
+  },
+  {
+    "name": "Icon button filled hovered icon color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Icon button filled hovered icon color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button filled hovered icon color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Icon button filled focused state layer color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Icon button filled focused state layer color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button filled focused state layer color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Icon button filled focused state layer opacity",
+    "value": "md.sys.state.focus.state-layer-opacity"
+  },
+  {
+    "name": "Icon button filled focused icon color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Icon button filled focused icon color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button filled focused icon color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Icon button filled pressed state layer color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Icon button filled pressed state layer color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button filled pressed state layer color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Icon button filled pressed state layer opacity",
+    "value": "md.sys.state.pressed.state-layer-opacity"
+  },
+  {
+    "name": "Icon button filled pressed icon color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Icon button filled pressed icon color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button filled pressed icon color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Icon button tonal container color",
+    "value": "md.sys.color.secondary-container"
+  },
+  {
+    "name": "Icon button tonal container color - toggle (unselected)",
+    "value": "md.sys.color.secondary-container"
+  },
+  {
+    "name": "Icon button tonal container color - toggle (selected)",
+    "value": "md.sys.color.secondary"
+  },
+  {
+    "name": "Icon button tonal icon color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Icon button tonal icon color - toggle (unselected)",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Icon button tonal icon color - toggle (selected)",
+    "value": "md.sys.color.on-secondary"
+  },
+  {
+    "name": "Icon button tonal disabled container color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "Icon button tonal disabled container opacity",
+    "value": "0.1"
+  },
+  {
+    "name": "Icon button tonal disabled icon color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "Icon button tonal disabled icon opacity",
+    "value": "0.38"
+  },
+  {
+    "name": "Icon button tonal hovered state layer color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Icon button tonal hovered state layer color - toggle (unselected)",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Icon button tonal hovered state layer color - toggle (selected)",
+    "value": "md.sys.color.on-secondary"
+  },
+  {
+    "name": "Icon button tonal hovered state layer opacity",
+    "value": "md.sys.state.hover.state-layer-opacity"
+  },
+  {
+    "name": "Icon button tonal hovered icon color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Icon button tonal hovered icon color - toggle (unselected)",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Icon button tonal hovered icon color - toggle (selected)",
+    "value": "md.sys.color.on-secondary"
+  },
+  {
+    "name": "Icon button tonal focused state layer color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Icon button tonal focused state layer color - toggle (unselected)",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Icon button tonal focused state layer color - toggle (selected)",
+    "value": "md.sys.color.on-secondary"
+  },
+  {
+    "name": "Icon button tonal focused state layer opacity",
+    "value": "md.sys.state.focus.state-layer-opacity"
+  },
+  {
+    "name": "Icon button tonal focused icon color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Icon button tonal focused icon color - toggle (unselected)",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Icon button tonal focused icon color - toggle (selected)",
+    "value": "md.sys.color.on-secondary"
+  },
+  {
+    "name": "Icon button tonal pressed state layer color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Icon button tonal pressed state layer color - toggle (unselected)",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Icon button tonal pressed state layer color - toggle (selected)",
+    "value": "md.sys.color.on-secondary"
+  },
+  {
+    "name": "Icon button tonal pressed state layer opacity",
+    "value": "md.sys.state.pressed.state-layer-opacity"
+  },
+  {
+    "name": "Icon button tonal pressed icon color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Icon button tonal pressed icon color - toggle (unselected)",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Icon button tonal pressed icon color - toggle (selected)",
+    "value": "md.sys.color.on-secondary"
+  },
+  {
+    "name": "Icon button outlined color",
+    "value": "md.sys.color.outline-variant"
+  },
+  {
+    "name": "Icon button outlined color - toggle (unselected)",
+    "value": "md.sys.color.outline-variant"
+  },
+  {
+    "name": "Icon button container color - toggle (selected)",
+    "value": "md.sys.color.inverse-surface"
+  },
+  {
+    "name": "Icon button outlined icon color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button outlined icon color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button outlined icon color - toggle (selected)",
+    "value": "md.sys.color.inverse-on-surface"
+  },
+  {
+    "name": "Icon button outlined disabled outline color",
+    "value": "md.sys.color.outline-variant"
+  },
+  {
+    "name": "Icon button outlined disabled outline color (unselected)",
+    "value": "md.sys.color.outline-variant"
+  },
+  {
+    "name": "Icon button outlined disabled container color (selected)",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "Icon button outlined disabled container opacity (selected)",
+    "value": "0.1"
+  },
+  {
+    "name": "Icon button outlined disabled icon color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "Icon button outlined disabled icon opacity",
+    "value": "0.38"
+  },
+  {
+    "name": "Icon button outlined hovered state layer color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button outlined hovered state layer color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button outlined hovered state layer color - toggle (selected)",
+    "value": "md.sys.color.inverse-on-surface"
+  },
+  {
+    "name": "Icon button outlined hovered state layer opacity",
+    "value": "md.sys.state.hover.state-layer-opacity"
+  },
+  {
+    "name": "Icon button outlined hovered icon color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button outlined hovered icon color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button outlined hovered icon color - toggle (selected)",
+    "value": "md.sys.color.inverse-on-surface"
+  },
+  {
+    "name": "Icon button outlined focused state layer color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button outlined focused state layer color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button outlined focused state layer color - toggle (selected)",
+    "value": "md.sys.color.inverse-on-surface"
+  },
+  {
+    "name": "Icon button outlined focused state layer opacity",
+    "value": "md.sys.state.focus.state-layer-opacity"
+  },
+  {
+    "name": "Icon button outlined focused icon color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button outlined focused icon color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button outlined focused icon color - toggle (selected)",
+    "value": "md.sys.color.inverse-on-surface"
+  },
+  {
+    "name": "Icon button outlined pressed state layer color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button outlined pressed state layer color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button outlined pressed state layer color - toggle (selected)",
+    "value": "md.sys.color.inverse-on-surface"
+  },
+  {
+    "name": "Icon button outlined pressed state layer opacity",
+    "value": "md.sys.state.pressed.state-layer-opacity"
+  },
+  {
+    "name": "Icon button outlined pressed icon color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button outlined pressed icon color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button outlined pressed icon color - toggle (selected)",
+    "value": "md.sys.color.inverse-on-surface"
+  },
+  {
+    "name": "Icon button icon color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button icon color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button icon color - toggle (selected)",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Icon button disabled icon color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "Icon button disabled opacity",
+    "value": "0.38"
+  },
+  {
+    "name": "Icon button hovered state layer color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button hovered state layer color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button hovered state layer color - toggle (selected)",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Icon button hovered state layer opacity",
+    "value": "md.sys.state.hover.state-layer-opacity"
+  },
+  {
+    "name": "Icon button hovered icon color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button hovered icon color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button hovered icon color - toggle (selected)",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Icon button focused state layer color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button focused state layer color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button focused state layer color - toggle (selected)",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Icon button focused state layer opacity",
+    "value": "md.sys.state.focus.state-layer-opacity"
+  },
+  {
+    "name": "Icon button focused icon color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button focused icon color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button focused icon color - toggle (selected)",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Icon button pressed state layer color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button pressed state layer color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button pressed state layer color - toggle (selected)",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Icon button pressed state layer opacity",
+    "value": "md.sys.state.pressed.state-layer-opacity"
+  },
+  {
+    "name": "Icon button pressed icon color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button pressed icon color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Icon button pressed icon color - toggle (selected)",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Icon button xsmall container height",
+    "value": "32dp"
+  },
+  {
+    "name": "Icon button xsmall icon size",
+    "value": "20dp"
+  },
+  {
+    "name": "Icon button xsmall narrow leading space",
+    "value": "4dp"
+  },
+  {
+    "name": "Icon button xsmall narrow trailing space",
+    "value": "4dp"
+  },
+  {
+    "name": "Icon button xsmall default leading space",
+    "value": "6dp"
+  },
+  {
+    "name": "Icon button xsmall default trailing space",
+    "value": "6dp"
+  },
+  {
+    "name": "Icon button xsmall wide leading space",
+    "value": "10dp"
+  },
+  {
+    "name": "Icon button xsmall wide trailing space",
+    "value": "10dp"
+  },
+  {
+    "name": "Icon button xsmall container shape round",
+    "value": "md.sys.shape.corner.full"
+  },
+  {
+    "name": "Icon button xsmall container shape square",
+    "value": "md.sys.shape.corner.medium"
+  },
+  {
+    "name": "Icon button xsmall outline width",
+    "value": "1dp"
+  },
+  {
+    "name": "Icon button xsmall shape pressed morph",
+    "value": "md.sys.shape.corner.small"
+  },
+  {
+    "name": "Icon button xsmall shape spring animation damping",
+    "value": "md.sys.motion.spring.fast.spatial.damping"
+  },
+  {
+    "name": "Icon button xsmall shape spring animation stiffness",
+    "value": "md.sys.motion.spring.fast.spatial.stiffness"
+  },
+  {
+    "name": "Icon button xsmall selected container shape round",
+    "value": "md.sys.shape.corner.medium"
+  },
+  {
+    "name": "Icon button xsmall selected container shape square",
+    "value": "md.sys.shape.corner.full"
+  },
+  {
+    "name": "Icon button small container height",
+    "value": "40dp"
+  },
+  {
+    "name": "Icon button small icon size",
+    "value": "24dp"
+  },
+  {
+    "name": "Icon button small narrow leading space",
+    "value": "4dp"
+  },
+  {
+    "name": "Icon button small narrow trailing space",
+    "value": "4dp"
+  },
+  {
+    "name": "Icon button small default leading space",
+    "value": "8dp"
+  },
+  {
+    "name": "Icon button small default trailing space",
+    "value": "8dp"
+  },
+  {
+    "name": "Icon button small wide leading space",
+    "value": "14dp"
+  },
+  {
+    "name": "Icon button small wide trailing space",
+    "value": "14dp"
+  },
+  {
+    "name": "Icon button small container shape round",
+    "value": "md.sys.shape.corner.full"
+  },
+  {
+    "name": "Icon button small container shape square",
+    "value": "md.sys.shape.corner.medium"
+  },
+  {
+    "name": "Icon button small outline width",
+    "value": "1dp"
+  },
+  {
+    "name": "Icon button small shape pressed morph",
+    "value": "md.sys.shape.corner.small"
+  },
+  {
+    "name": "Icon button small shape spring animation damping",
+    "value": "md.sys.motion.spring.fast.spatial.damping"
+  },
+  {
+    "name": "Icon button small shape spring animation stiffness",
+    "value": "md.sys.motion.spring.fast.spatial.stiffness"
+  },
+  {
+    "name": "Icon button small selected container shape round",
+    "value": "md.sys.shape.corner.medium"
+  },
+  {
+    "name": "Icon button small selected container shape square",
+    "value": "md.sys.shape.corner.full"
+  },
+  {
+    "name": "Icon button medium container height",
+    "value": "56dp"
+  },
+  {
+    "name": "Icon button medium icon size",
+    "value": "24dp"
+  },
+  {
+    "name": "Icon button medium narrow leading space",
+    "value": "12dp"
+  },
+  {
+    "name": "Icon button medium narrow trailing space",
+    "value": "12dp"
+  },
+  {
+    "name": "Icon button medium default leading space",
+    "value": "16dp"
+  },
+  {
+    "name": "Icon button medium default trailing space",
+    "value": "16dp"
+  },
+  {
+    "name": "Icon button medium wide leading space",
+    "value": "24dp"
+  },
+  {
+    "name": "Icon button medium wide trailing space",
+    "value": "24dp"
+  },
+  {
+    "name": "Icon button medium container shape round",
+    "value": "md.sys.shape.corner.full"
+  },
+  {
+    "name": "Icon button medium container shape square",
+    "value": "md.sys.shape.corner.large"
+  },
+  {
+    "name": "Icon button medium outline width",
+    "value": "1dp"
+  },
+  {
+    "name": "Icon button medium shape pressed morph",
+    "value": "md.sys.shape.corner.medium"
+  },
+  {
+    "name": "Icon button medium shape spring animation damping",
+    "value": "md.sys.motion.spring.fast.spatial.damping"
+  },
+  {
+    "name": "Icon button medium shape spring animation stiffness",
+    "value": "md.sys.motion.spring.fast.spatial.stiffness"
+  },
+  {
+    "name": "Icon button medium selected container shape round",
+    "value": "md.sys.shape.corner.large"
+  },
+  {
+    "name": "Icon button medium selected container shape square",
+    "value": "md.sys.shape.corner.full"
+  },
+  {
+    "name": "Icon button large container height",
+    "value": "96dp"
+  },
+  {
+    "name": "Icon button large icon size",
+    "value": "32dp"
+  },
+  {
+    "name": "Icon button large narrow leading space",
+    "value": "16dp"
+  },
+  {
+    "name": "Icon button large narrow trailing space",
+    "value": "16dp"
+  },
+  {
+    "name": "Icon button large default leading space",
+    "value": "32dp"
+  },
+  {
+    "name": "Icon button large default trailing space",
+    "value": "32dp"
+  },
+  {
+    "name": "Icon button large wide leading space",
+    "value": "48dp"
+  },
+  {
+    "name": "Icon button large wide trailing space",
+    "value": "48dp"
+  },
+  {
+    "name": "Icon button large container shape round",
+    "value": "md.sys.shape.corner.full"
+  },
+  {
+    "name": "Icon button large container shape square",
+    "value": "md.sys.shape.corner.extra-large"
+  },
+  {
+    "name": "Icon button large outline width",
+    "value": "2dp"
+  },
+  {
+    "name": "Icon button large shape pressed morph",
+    "value": "md.sys.shape.corner.large"
+  },
+  {
+    "name": "Icon button large shape spring animation damping",
+    "value": "md.sys.motion.spring.fast.spatial.damping"
+  },
+  {
+    "name": "Icon button large shape spring animation stiffness",
+    "value": "md.sys.motion.spring.fast.spatial.stiffness"
+  },
+  {
+    "name": "Icon button large selected container shape round",
+    "value": "md.sys.shape.corner.extra-large"
+  },
+  {
+    "name": "Icon button large selected container shape square",
+    "value": "md.sys.shape.corner.full"
+  },
+  {
+    "name": "Icon button xlarge container height",
+    "value": "136dp"
+  },
+  {
+    "name": "Icon button xlarge icon size",
+    "value": "40dp"
+  },
+  {
+    "name": "Icon button xlarge narrow leading space",
+    "value": "32dp"
+  },
+  {
+    "name": "Icon button xlarge narrow trailing space",
+    "value": "32dp"
+  },
+  {
+    "name": "Icon button xlarge default leading space",
+    "value": "48dp"
+  },
+  {
+    "name": "Icon button xlarge default trailing space",
+    "value": "48dp"
+  },
+  {
+    "name": "Icon button xlarge wide leading space",
+    "value": "72dp"
+  },
+  {
+    "name": "Icon button xlarge wide trailing space",
+    "value": "72dp"
+  },
+  {
+    "name": "Icon button xlarge container shape round",
+    "value": "md.sys.shape.corner.full"
+  },
+  {
+    "name": "Icon button xlarge container shape square",
+    "value": "md.sys.shape.corner.extra-large"
+  },
+  {
+    "name": "Icon button xlarge outline width",
+    "value": "3dp"
+  },
+  {
+    "name": "Icon button xlarge shape pressed morph",
+    "value": "md.sys.shape.corner.large"
+  },
+  {
+    "name": "Icon button xlarge shape spring animation damping",
+    "value": "md.sys.motion.spring.fast.spatial.damping"
+  },
+  {
+    "name": "Icon button xlarge shape spring animation stiffness",
+    "value": "md.sys.motion.spring.fast.spatial.stiffness"
+  },
+  {
+    "name": "Icon button xlarge selected container shape round",
+    "value": "md.sys.shape.corner.extra-large"
+  },
+  {
+    "name": "Icon button xlarge selected container shape square",
+    "value": "md.sys.shape.corner.full"
+  }
+]

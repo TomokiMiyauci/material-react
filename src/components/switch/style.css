@@ -1,0 +1,238 @@
+@import url(./_generated/tokens.css);
+
+@scope([data-md=switch]) {
+  & {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    width: var(--track-width);
+    height: var(--track-height);
+    border-radius: var(--track-shape);
+    box-sizing: border-box;
+  }
+
+  &:not([data-disabled]) {
+    cursor: pointer;
+  }
+
+  &:not([data-selected]) {
+    border-width: var(--track-outline-width);
+    border-color: var(--track-outline-color);
+    border-style: solid;
+    background-color: var(--track-unselected-color);
+
+    &:hover {
+      background-color: var(--track-unselected-hover-color);
+      border-color: var(--track-unselected-hover-outline-color);
+    }
+
+    &:active {
+      background-color: var(--track-unselected-pressed-color);
+      border-color: var(--track-unselected-pressed-outline-color);
+    }
+
+    &:focus-visible {
+      background-color: var(--track-unselected-focus-color);
+      border-color: var(--track-unselected-focus-outline-color);
+    }
+
+    &[data-disabled] {
+      border-color: color-mix(in srgb, var(--track-unselected-disabled-outline-color) var(--track-disabled-opacity), transparent);
+      background-color: color-mix(in srgb, var(--track-unselected-disabled-color) var(--track-disabled-opacity), transparent);
+    }
+  }
+
+  &:focus-visible {
+    outline-width: var(--focus-indicator-thickness);
+    outline-offset: var(--focus-indicator-offset);
+    outline-color: var(--focus-indicator-color);
+    outline-style: solid;
+  }
+
+  &[data-selected] {
+    background-color: var(--track-selected-color);
+
+    &:hover {
+      background-color: var(--track-selected-hover-color);
+    }
+
+    &:active {
+      background-color: var(--track-selected-pressed-color);
+    }
+
+    &:focus-visible {
+      background-color: var(--track-selected-focus-color);
+    }
+
+    &[data-disabled] {
+      background-color: color-mix(in srgb, var(--track-selected-disabled-color) var(--track-disabled-opacity), transparent);
+    }
+  }
+
+  [data-handle] {
+    all: unset;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--handle-unselected-color);
+    border-radius: var(--handle-shape);
+    height: var(--handle-unselected-width);
+    width: var(--handle-unselected-width);
+    position: absolute;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: var(--state-layer-size);
+      width: var(--state-layer-size);
+      border-radius: var(--state-layer-shape);
+    }
+
+    &:has([data-icon]) {
+      height: var(--handle-with-icon-height);
+      width: var(--handle-with-icon-width);
+    }
+
+    :scope:active & {
+      width: var(--handle-pressed-height);
+      height: var(--handle-pressed-height);
+    }
+
+    :scope:not([data-selected]):hover & {
+      background-color: var(--handle-unselected-hover-color);
+    }
+
+    :scope:not([data-selected]):active & {
+      background-color: var(--handle-unselected-pressed-color);
+    }
+
+    :scope:not([data-selected]):focus-visible & {
+      background-color: var(--handle-unselected-focus-color);
+    }
+
+    :scope:not([data-selected])[data-disabled] & {
+      background-color: var(--handle-unselected-disabled-color);
+      opacity: var(--handle-unselected-disabled-opacity);
+    }
+
+    :scope[data-selected] & {
+      height: var(--handle-selected-height);
+      width: var(--handle-selected-width);
+      background-color: var(--handle-selected-color);
+    }
+
+    :scope[data-selected]:hover & {
+      background-color: var(--handle-selected-hover-color);
+    }
+
+    :scope[data-selected]:active & {
+      background-color: var(--handle-selected-pressed-color);
+    }
+
+    :scope[data-selected]:focus-visible & {
+      background-color: var(--handle-selected-focus-color);
+    }
+
+    :scope[data-selected][data-disabled] & {
+      background-color: var(--handle-selected-disabled-color);
+      opacity: var(--handle-selected-disabled-opacity);
+    }
+
+    :scope:not([data-selected]):hover &::before {
+      background-color: var(--state-layer-unselected-hover-color);
+      opacity: var(--state-layer-unselected-hover-opacity);
+    }
+
+    :scope:not([data-selected]):active &::before {
+      background-color: var(--state-layer-unselected-pressed-color);
+      opacity: var(--state-layer-unselected-pressed-opacity);
+    }
+
+    :scope:not([data-selected]):focus-visible &::before {
+      background-color: var(--state-layer-unselected-focus-color);
+      opacity: var(--state-layer-unselected-focus-opacity);
+    }
+
+    :scope[data-selected]:hover &::before {
+      background-color: var(--state-layer-selected-hover-color);
+      opacity: var(--state-layer-selected-hover-opacity);
+    }
+
+    :scope[data-selected]:active &::before {
+      background-color: var(--state-layer-selected-pressed-color);
+      opacity: var(--state-layer-selected-pressed-opacity);
+    }
+
+    :scope[data-selected]:focus-visible &::before {
+      background-color: var(--state-layer-selected-focus-color);
+      opacity: var(--state-layer-selected-focus-opacity);
+    }
+  }
+
+  [data-handle-container] {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--handle-pressed-height);
+    width: var(--handle-pressed-width);
+    position: relative;
+
+    :scope[data-selected] & {
+      margin-left: auto;
+    }
+  }
+
+  [data-icon] {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    :scope:not([data-selected]) & {
+      color: var(--icon-unselected-color);
+      width: var(--icon-unselected-size);
+      height: var(--icon-unselected-size);
+      font-size: var(--icon-unselected-size);
+    }
+
+    :scope:not([data-selected]):hover & {
+      color: var(--icon-unselected-hover-color);
+    }
+
+    :scope:not([data-selected]):active & {
+      color: var(--icon-unselected-pressed-color);
+    }
+
+    :scope:not([data-selected]):focus-visible & {
+      color: var(--icon-unselected-focus-color);
+    }
+
+    :scope:not([data-selected])[data-disabled] & {
+      color: color-mix(in srgb, var(--icon-unselected-disabled-color) var(--icon-unselected-disabled-opacity), transparent);
+    }
+
+    :scope[data-selected] & {
+      color: var(--icon-selected-color);
+      width: var(--icon-selected-size);
+      height: var(--icon-selected-size);
+      font-size: var(--icon-selected-size);
+    }
+
+    :scope[data-selected]:hover & {
+      color: var(--icon-selected-hover-color);
+    }
+
+    :scope[data-selected]:active & {
+      color: var(--icon-selected-pressed-color);
+    }
+
+    :scope[data-selected]:focus-visible & {
+      color: var(--icon-selected-focus-color);
+    }
+
+    :scope[data-selected][data-disabled] & {
+      color: color-mix(in srgb, var(--icon-selected-disabled-color) var(--icon-selected-disabled-opacity), transparent);
+    }
+  }
+}

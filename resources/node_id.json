@@ -1,0 +1,92 @@
+{
+  "description": "Material Design Kit(Figma) node id map",
+  "map": {
+    "filter-chip": {
+      "outlined": {
+        "enabled": "53923-28676",
+        "disabled": "53923-28516",
+        "hovered": "53923-28644",
+        "focused": "53923-28612",
+        "pressed": "53923-28580",
+        "dragged": "53923-28548"
+      },
+      "elevated": {
+        "enabled": "53923-28673",
+        "disabled": "53923-28513",
+        "hovered": "53923-28641",
+        "focused": "53923-28609",
+        "pressed": "53923-28577",
+        "dragged": "53923-28545"
+      },
+      "selected": {
+        "enabled": "53923-28483",
+        "disabled": "53923-28303",
+        "hovered": "53923-28447",
+        "focused": "53923-28411",
+        "pressed": "53923-28375",
+        "dragged": "53923-28339"
+      },
+      "selected_elevated": {
+        "enabled": "53923-28479",
+        "hovered": "53923-28443",
+        "focused": "53923-28407",
+        "pressed": "53923-28371",
+        "dragged": "53923-28335",
+        "disabled": "53923-28299"
+      }
+    },
+    "switch": {
+      "all": "54446-25289",
+      "unselected": {
+        "enabled": "54446-25355",
+        "hovered": "54446-25361",
+        "focused": "54446-25367",
+        "pressed": "54446-25373",
+        "disabled": "54446-25379"
+      },
+      "selected": {
+        "enabled": "54446-25290",
+        "hovered": "54446-25296",
+        "focused": "54446-25302",
+        "pressed": "54446-25308",
+        "disabled": "54446-25314"
+      },
+      "icon": {
+        "unselected": {
+          "enabled": "54446-25385",
+          "hovered": "54446-25392",
+          "focused": "54446-25399",
+          "pressed": "54446-25406",
+          "disabled": "54446-25413"
+        },
+        "selected": {
+          "enabled": "54446-25320",
+          "hovered": "54446-25327",
+          "focused": "54446-25334",
+          "pressed": "54446-25341",
+          "disabled": "54446-25348"
+        }
+      }
+    },
+    "badge": {
+      "small": "51592-4769",
+      "large": "51592-4770"
+    },
+    "plain-tooltip": {
+      "single": "54061-33882",
+      "multi": "54877-30904"
+    },
+    "divider": {
+      "horizontal": {
+        "full": "51816-5860",
+        "inset": "51816-5868",
+        "middle-inset": "51816-5870"
+      },
+      "vertical": {
+        "full": "51816-5862",
+        "inset": "51816-5864",
+        "middle-inset": "51816-5866"
+      }
+    }
+  }
+}

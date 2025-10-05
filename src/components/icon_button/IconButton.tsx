@@ -4,40 +4,40 @@ import Style from "@internal/Style.tsx";
 
 export interface IconButtonProps {
   /**
-   * @default "sm"
+   * @default "small"
    */
-  size?: ButtonSize;
+  size?: IconButtonSize;
 
   /**
    * @default "round"
    */
-  shape?: ButtonShape;
+  shape?: IconButtonShape;
 
   /**
    * @default "default"
    */
-  width?: ButtonWidth;
+  width?: IconButtonWidth;
 
   /**
    * @default "filled"
    */
-  color?: ButtonColor;
+  color?: IconButtonColor;
 
   icon?: ReactNode;
 }
 
-export type ButtonSize = "xs" | "sm" | "md" | "lg" | "xl";
+export type IconButtonSize = "xsmall" | "small" | "medium" | "large" | "xlarge";
 
-export type ButtonShape = "round" | "square";
+export type IconButtonShape = "round" | "square";
 
-export type ButtonColor = "filled" | "tonal" | "outlined" | "standard";
+export type IconButtonColor = "filled" | "tonal" | "outlined" | "standard";
 
-export type ButtonWidth = "default" | "narrow" | "wide";
+export type IconButtonWidth = "default" | "narrow" | "wide";
 
 const NAME = "icon-button";
 
 const DEFAULT_PROPS = {
-  size: "sm",
+  size: "small",
   shape: "round",
   width: "default",
   color: "filled",

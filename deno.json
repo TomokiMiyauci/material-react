@@ -29,12 +29,18 @@
     "noUncheckedIndexedAccess": true
   },
   "tasks": {
-    "generate:token": "deno run --allow-read --allow-sys --allow-env --allow-write=src scripts/token.ts",
-    "generate:css": "deno run --allow-read --allow-sys --allow-env --allow-write=src scripts/css.ts",
-    "generate:ts": "deno run --allow-read --allow-write=src scripts/ts.ts",
-    "generate:md": "deno run --allow-env --allow-read --allow-write=src scripts/mustache.ts",
     "generate:example": "deno run --allow-write=examples --allow-sys --allow-env --allow-read scripts/gen_example.ts",
-    "generate": "deno task generate:token && deno task generate:css && deno task generate:ts && deno task generate:md"
+    "build": "deno run -P=build scripts/build.ts"
   },
-  "nodeModulesDir": "auto"
+  "nodeModulesDir": "auto",
+  "permissions": {
+    "build": {
+      "env": true,
+      "sys": true,
+      "read": true,
+      "write": ["./src"],
+      "net": true,
+      "run": true
+    }
+  }
 }

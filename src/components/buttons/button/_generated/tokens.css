@@ -1,0 +1,266 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+/* @embed */
+:root {
+  --container-between-icon-label-space: 8px; /** Button container between icon label space */
+  --container-color: var(--md-sys-color-primary); /** Button container color */
+  --container-disabled-color: var(--md-sys-color-on-surface); /** Button disabled container color */
+  --container-disabled-elevation: var(--md-sys-elevation-level0); /** Button disabled container elevation */
+  --container-disabled-opacity: 10%; /** Button disabled container opacity */
+  --container-elevated-color: var(--md-sys-color-surface-container-low); /** Button elevated container color */
+  --container-elevated-disabled-color: var(--md-sys-color-on-surface); /** Button elevated disabled container color */
+  --container-elevated-disabled-elevation: var(--md-sys-elevation-level0); /** Button elevated disabled container elevation */
+  --container-elevated-disabled-opacity: 10%; /** Button elevated disabled container opacity */
+  --container-elevated-elevation: var(--md-sys-elevation-level1); /** Button elevated container elevation */
+  --container-elevated-shadow-color: var(--md-sys-color-shadow); /** Button elevated container shadow color */
+  --container-elevation: var(--md-sys-elevation-level0); /** Button container elevation */
+  --container-filled-color: var(--md-sys-color-primary); /** Button filled container color */
+  --container-filled-disabled-color: var(--md-sys-color-on-surface); /** Button filled disabled container color */
+  --container-filled-disabled-elevation: var(--md-sys-elevation-level0); /** Button filled disabled container elevation */
+  --container-filled-disabled-opacity: 10%; /** Button filled disabled container opacity */
+  --container-height: 40px; /** Button container height */
+  --container-large-between-icon-label-space: 12px; /** Button large container between icon label space */
+  --container-large-height: 96px; /** Button large container height */
+  --container-large-leading-space: 48px; /** Button large container leading space */
+  --container-large-outline-width: 2px; /** Button large container outline width */
+  --container-large-round-selected-shape: var(--md-sys-shape-corner-extra-large); /** Button large selected container shape round */
+  --container-large-round-shape: var(--md-sys-shape-corner-full); /** Button large container shape round */
+  --container-large-square-selected-shape: var(--md-sys-shape-corner-full); /** Button large selected container shape square */
+  --container-large-square-shape: var(--md-sys-shape-corner-extra-large); /** Button large container shape square */
+  --container-large-trailing-space: 48px; /** Button large container trailing space */
+  --container-leading-space: 24px; /** Button container leading space */
+  --container-medium-between-icon-label-space: 8px; /** Button medium container between icon label space */
+  --container-medium-height: 56px; /** Button medium container height */
+  --container-medium-leading-space: 24px; /** Button medium container leading space */
+  --container-medium-outline-width: 1px; /** Button medium container outline width */
+  --container-medium-round-selected-shape: var(--md-sys-shape-corner-large); /** Button medium selected container shape round */
+  --container-medium-round-shape: var(--md-sys-shape-corner-full); /** Button medium container shape round */
+  --container-medium-square-selected-shape: var(--md-sys-shape-corner-full); /** Button medium selected container shape square */
+  --container-medium-square-shape: var(--md-sys-shape-corner-large); /** Button medium container shape square */
+  --container-medium-trailing-space: 24px; /** Button medium container trailing space */
+  --container-outlined-disabled-opacity: 10%; /** Button outlined disabled container opacity */
+  --container-outlined-outline-color: var(--md-sys-color-outline-variant); /** Button outlined container outline color */
+  --container-round-selected-shape: var(--md-sys-shape-corner-medium); /** Button selected container shape round */
+  --container-round-shape: var(--md-sys-shape-corner-full); /** Button container shape round */
+  --container-small-between-icon-label-space: 8px; /** Button small container between icon label space */
+  --container-small-height: 40px; /** Button small container height */
+  --container-small-leading-space: 16px; /** Button small container leading space */
+  --container-small-outline-width: 1px; /** Button small container outline width */
+  --container-small-round-selected-shape: var(--md-sys-shape-corner-medium); /** Button small selected container shape round */
+  --container-small-round-shape: var(--md-sys-shape-corner-full); /** Button small container shape round */
+  --container-small-square-selected-shape: var(--md-sys-shape-corner-full); /** Button small selected container shape square */
+  --container-small-square-shape: var(--md-sys-shape-corner-medium); /** Button small container shape square */
+  --container-small-trailing-space: 16px; /** Button small container trailing space */
+  --container-square-selected-shape: var(--md-sys-shape-corner-full); /** Button selected container shape square */
+  --container-square-shape: var(--md-sys-shape-corner-medium); /** Button container shape square */
+  --container-text-disabled-color: var(--md-sys-color-on-surface); /** Button text disabled container color */
+  --container-text-disabled-opacity: 10%; /** Button text disabled container opacity */
+  --container-tonal-color: var(--md-sys-color-secondary-container); /** Button tonal container color */
+  --container-tonal-disabled-color: var(--md-sys-color-on-surface); /** Button tonal disabled container color */
+  --container-tonal-disabled-elevation: var(--md-sys-elevation-level0); /** Button tonal disabled container elevation */
+  --container-tonal-disabled-opacity: 10%; /** Button tonal disabled container opacity */
+  --container-trailing-space: 24px; /** Button container trailing space */
+  --container-xlarge-between-icon-label-space: 16px; /** Button xlarge container between icon label space */
+  --container-xlarge-height: 136px; /** Button xlarge container height */
+  --container-xlarge-leading-space: 64px; /** Button xlarge container leading space */
+  --container-xlarge-outline-width: 3px; /** Button xlarge container outline width */
+  --container-xlarge-round-selected-shape: var(--md-sys-shape-corner-extra-large); /** Button xlarge selected container shape round */
+  --container-xlarge-round-shape: var(--md-sys-shape-corner-full); /** Button xlarge container shape round */
+  --container-xlarge-square-selected-shape: var(--md-sys-shape-corner-full); /** Button xlarge selected container shape square */
+  --container-xlarge-square-shape: var(--md-sys-shape-corner-extra-large); /** Button xlarge container shape square */
+  --container-xlarge-trailing-space: 64px; /** Button xlarge container trailing space */
+  --container-xsmall-between-icon-label-space: 8px; /** Button xsmall container between icon label space */
+  --container-xsmall-height: 32px; /** Button xsmall container height */
+  --container-xsmall-leading-space: 12px; /** Button xsmall container leading space */
+  --container-xsmall-outline-width: 1px; /** Button xsmall container outline width */
+  --container-xsmall-round-selected-shape: var(--md-sys-shape-corner-medium); /** Button xsmall selected container shape round */
+  --container-xsmall-round-shape: var(--md-sys-shape-corner-full); /** Button xsmall container shape round */
+  --container-xsmall-square-selected-shape: var(--md-sys-shape-corner-full); /** Button xsmall selected container shape square */
+  --container-xsmall-square-shape: var(--md-sys-shape-corner-medium); /** Button xsmall container shape square */
+  --container-xsmall-trailing-space: 12px; /** Button xsmall container trailing space */
+  --filled-elevation: var(--md-sys-elevation-level0); /** Button filled elevation */
+  --filled-shadow-color: var(--md-sys-color-shadow); /** Button filled shadow color */
+  --focus-indicator-color: var(--md-sys-color-secondary); /** Button focus ring indicator color */
+  --focus-indicator-offset: var(--md-sys-state-focus-indicator-outer-offset); /** Button focus ring outline offset */
+  --focus-indicator-thickness: var(--md-sys-state-focus-indicator-thickness); /** Button focus ring indicator thickness */
+  --icon-color: var(--md-sys-color-on-primary); /** Button icon color */
+  --icon-disabled-color: var(--md-sys-color-on-surface); /** Button disabled icon color */
+  --icon-disabled-opacity: 38%; /** Button disabled icon opacity */
+  --icon-elevated-color: var(--md-sys-color-primary); /** Button elevated icon color */
+  --icon-elevated-disabled-color: var(--md-sys-color-on-surface); /** Button elevated disabled icon color */
+  --icon-elevated-disabled-opacity: 38%; /** Button elevated disabled icon opacity */
+  --icon-elevated-focused-color: var(--md-sys-color-primary); /** Button elevated focused icon color */
+  --icon-elevated-hovered-color: var(--md-sys-color-primary); /** Button elevated hovered icon color */
+  --icon-elevated-pressed-color: var(--md-sys-color-primary); /** Button elevated pressed icon color */
+  --icon-filled-color: var(--md-sys-color-on-primary); /** Button filled icon color */
+  --icon-filled-disabled-color: var(--md-sys-color-on-surface); /** Button filled disabled icon color */
+  --icon-filled-disabled-opacity: 38%; /** Button filled disabled icon opacity */
+  --icon-filled-focused-color: var(--md-sys-color-on-primary); /** Button filled focused icon color */
+  --icon-filled-hovered-color: var(--md-sys-color-on-primary); /** Button filled hovered icon color */
+  --icon-filled-pressed-color: var(--md-sys-color-on-primary); /** Button filled pressed icon color */
+  --icon-focused-color: var(--md-sys-color-on-primary); /** Button focused icon color */
+  --icon-hovered-color: var(--md-sys-color-on-primary); /** Button hovered icon color */
+  --icon-large-size: 32px; /** Button large icon size */
+  --icon-medium-size: 24px; /** Button medium icon size */
+  --icon-outlined-color: var(--md-sys-color-on-surface-variant); /** Button outlined icon color */
+  --icon-outlined-disabled-color: var(--md-sys-color-on-surface); /** Button outlined disabled icon color */
+  --icon-outlined-disabled-opacity: 38%; /** Button outlined disabled icon opacity */
+  --icon-outlined-focused-color: var(--md-sys-color-on-surface-variant); /** Button outlined focused icon color */
+  --icon-outlined-hovered-color: var(--md-sys-color-on-surface-variant); /** Button outlined hovered icon color */
+  --icon-outlined-pressed-color: var(--md-sys-color-on-surface-variant); /** Button outlined pressed icon color */
+  --icon-pressed-color: var(--md-sys-color-on-primary); /** Button pressed icon color */
+  --icon-size: 20px; /** Button icon size */
+  --icon-small-size: 20px; /** Button small icon size */
+  --icon-text-color: var(--md-sys-color-primary); /** Button text icon color */
+  --icon-text-disabled-color: var(--md-sys-color-on-surface); /** Button text disabled icon color */
+  --icon-text-disabled-opacity: 38%; /** Button text disabled icon opacity */
+  --icon-text-focused-color: var(--md-sys-color-primary); /** Button text focused icon color */
+  --icon-text-hovered-color: var(--md-sys-color-primary); /** Button text hovered icon color */
+  --icon-text-pressed-color: var(--md-sys-color-primary); /** Button text pressed icon color */
+  --icon-tonal-color: var(--md-sys-color-on-secondary-container); /** Button tonal icon color */
+  --icon-tonal-disabled-color: var(--md-sys-color-on-surface); /** Button tonal disabled icon color */
+  --icon-tonal-disabled-opacity: 38%; /** Button tonal disabled icon opacity */
+  --icon-tonal-focused-color: var(--md-sys-color-on-secondary-container); /** Button tonal focused icon color */
+  --icon-tonal-hovered-color: var(--md-sys-color-on-secondary-container); /** Button tonal hovered icon color */
+  --icon-tonal-pressed-color: var(--md-sys-color-on-secondary-container); /** Button tonal pressed icon color */
+  --icon-xlarge-size: 40px; /** Button xlarge icon size */
+  --icon-xsmall-size: 20px; /** Button xsmall icon size */
+  --label-color: var(--md-sys-color-on-primary); /** Button label color */
+  --label-disabled-color: var(--md-sys-color-on-surface); /** Button disabled label color */
+  --label-disabled-opacity: 38%; /** Button disabled label opacity */
+  --label-elevated-color: var(--md-sys-color-primary); /** Button elevated label color */
+  --label-elevated-disabled-color: var(--md-sys-color-on-surface); /** Button elevated disabled label color */
+  --label-elevated-disabled-opacity: 38%; /** Button elevated disabled label opacity */
+  --label-elevated-focused-color: var(--md-sys-color-primary); /** Button elevated focused label color */
+  --label-elevated-hovered-color: var(--md-sys-color-primary); /** Button elevated hovered label color */
+  --label-elevated-pressed-color: var(--md-sys-color-primary); /** Button elevated pressed label color */
+  --label-filled-color: var(--md-sys-color-on-primary); /** Button filled label color */
+  --label-filled-disabled-color: var(--md-sys-color-on-surface); /** Button filled disabled label color */
+  --label-filled-disabled-opacity: 38%; /** Button filled disabled label opacity */
+  --label-filled-focused-color: var(--md-sys-color-on-primary); /** Button filled focused label color */
+  --label-filled-hovered-color: var(--md-sys-color-on-primary); /** Button filled hovered label color */
+  --label-filled-pressed-color: var(--md-sys-color-on-primary); /** Button filled pressed label color */
+  --label-focused-color: var(--md-sys-color-on-primary); /** Button focused label color */
+  --label-font: var(--md-ref-typeface-plain); /** Button label size font */
+  --label-hovered-color: var(--md-sys-color-on-primary); /** Button hovered label color */
+  --label-large-font: var(--md-ref-typeface-brand); /** Button large label size font */
+  --label-large-line-height: 2rem; /** Button large label size line height */
+  --label-large-size: 1.5rem; /** Button large label size size */
+  --label-large-tracking: 0; /** Button large label size tracking */
+  --label-large-weight: var(--md-ref-typeface-weight-regular); /** Button large label size weight */
+  --label-line-height: 1.25rem; /** Button label size line height */
+  --label-medium-font: var(--md-ref-typeface-plain); /** Button medium label size font */
+  --label-medium-line-height: 1.5rem; /** Button medium label size line height */
+  --label-medium-size: 1rem; /** Button medium label size size */
+  --label-medium-tracking: 0.009375rem; /** Button medium label size tracking */
+  --label-medium-weight: var(--md-ref-typeface-weight-medium); /** Button medium label size weight */
+  --label-outlined-color: var(--md-sys-color-on-surface-variant); /** Button outlined label color */
+  --label-outlined-disabled-color: var(--md-sys-color-on-surface); /** Button outlined disabled label color */
+  --label-outlined-disabled-opacity: 38%; /** Button outlined disabled label opacity */
+  --label-outlined-focused-color: var(--md-sys-color-on-surface-variant); /** Button outlined focused label color */
+  --label-outlined-hovered-color: var(--md-sys-color-on-surface-variant); /** Button outlined hovered label color */
+  --label-outlined-pressed-color: var(--md-sys-color-on-surface-variant); /** Button outlined pressed label color */
+  --label-pressed-color: var(--md-sys-color-on-primary); /** Button pressed label color */
+  --label-size: 0.875rem; /** Button label size size */
+  --label-small-font: var(--md-ref-typeface-plain); /** Button small label size font */
+  --label-small-line-height: 1.25rem; /** Button small label size line height */
+  --label-small-size: 0.875rem; /** Button small label size size */
+  --label-small-tracking: 0.00625rem; /** Button small label size tracking */
+  --label-small-weight: var(--md-ref-typeface-weight-medium); /** Button small label size weight */
+  --label-text-color: var(--md-sys-color-primary); /** Button text label color */
+  --label-text-disabled-color: var(--md-sys-color-on-surface); /** Button text disabled label color */
+  --label-text-disabled-opacity: 38%; /** Button text disabled label opacity */
+  --label-text-focused-color: var(--md-sys-color-primary); /** Button text focused label color */
+  --label-text-hovered-color: var(--md-sys-color-primary); /** Button text hovered label color */
+  --label-text-pressed-color: var(--md-sys-color-primary); /** Button text pressed label color */
+  --label-tonal-color: var(--md-sys-color-on-secondary-container); /** Button tonal label color */
+  --label-tonal-disabled-color: var(--md-sys-color-on-surface); /** Button tonal disabled label color */
+  --label-tonal-disabled-opacity: 38%; /** Button tonal disabled label opacity */
+  --label-tonal-focused-color: var(--md-sys-color-on-secondary-container); /** Button tonal focused label color */
+  --label-tonal-hovered-color: var(--md-sys-color-on-secondary-container); /** Button tonal hovered label color */
+  --label-tonal-pressed-color: var(--md-sys-color-on-secondary-container); /** Button tonal pressed label color */
+  --label-tracking: 0.00625rem; /** Button label size tracking */
+  --label-weight: var(--md-ref-typeface-weight-medium); /** Button label size weight */
+  --label-xlarge-font: var(--md-ref-typeface-brand); /** Button xlarge label size font */
+  --label-xlarge-line-height: 2.5rem; /** Button xlarge label size line height */
+  --label-xlarge-size: 2rem; /** Button xlarge label size size */
+  --label-xlarge-tracking: 0; /** Button xlarge label size tracking */
+  --label-xlarge-weight: var(--md-ref-typeface-weight-regular); /** Button xlarge label size weight */
+  --label-xsmall-font: var(--md-ref-typeface-plain); /** Button xsmall label size font */
+  --label-xsmall-line-height: 1.25rem; /** Button xsmall label size line height */
+  --label-xsmall-size: 0.875rem; /** Button xsmall label size size */
+  --label-xsmall-tracking: 0.00625rem; /** Button xsmall label size tracking */
+  --label-xsmall-weight: var(--md-ref-typeface-weight-medium); /** Button xsmall label size weight */
+  --large-morph-pressed-shape: var(--md-sys-shape-corner-large); /** Button large shape pressed morph */
+  --large-spring-animation-damping-shape: var(--md-sys-motion-spring-fast-spatial-damping); /** Button large shape spring animation damping */
+  --large-spring-animation-stiffness-shape: var(--md-sys-motion-spring-fast-spatial-stiffness); /** Button large shape spring animation stiffness */
+  --medium-morph-pressed-shape: var(--md-sys-shape-corner-medium); /** Button medium shape pressed morph */
+  --medium-spring-animation-damping-shape: var(--md-sys-motion-spring-fast-spatial-damping); /** Button medium shape spring animation damping */
+  --medium-spring-animation-stiffness-shape: var(--md-sys-motion-spring-fast-spatial-stiffness); /** Button medium shape spring animation stiffness */
+  --morph-pressed-shape: var(--md-sys-shape-corner-small); /** Button shape pressed morph */
+  --outlined-disabled-outline-color: var(--md-sys-color-outline-variant); /** Button outlined disabled outline color */
+  --outlined-disabled-outline-color-unselected: var(--md-sys-color-outline-variant); /** Button outlined disabled outline color (unselected) */
+  --outlined-focused-outline-color: var(--md-sys-color-outline-variant); /** Button outlined focused outline color */
+  --outlined-hovered-outline-color: var(--md-sys-color-outline-variant); /** Button outlined hovered outline color */
+  --outlined-pressed-outline-color: var(--md-sys-color-outline-variant); /** Button outlined pressed outline color */
+  --shadow-color: var(--md-sys-color-shadow); /** Button shadow color */
+  --small-morph-pressed-shape: var(--md-sys-shape-corner-small); /** Button small shape pressed morph */
+  --small-spring-animation-damping-shape: var(--md-sys-motion-spring-fast-spatial-damping); /** Button small shape spring animation damping */
+  --small-spring-animation-stiffness-shape: var(--md-sys-motion-spring-fast-spatial-stiffness); /** Button small shape spring animation stiffness */
+  --spring-animation-damping-shape: var(--md-sys-motion-spring-fast-spatial-damping); /** Button shape spring animation damping */
+  --spring-animation-stiffness-shape: var(--md-sys-motion-spring-fast-spatial-stiffness); /** Button shape spring animation stiffness */
+  --state-layer-elevated-focused-color: var(--md-sys-color-primary); /** Button elevated focused container state layer color */
+  --state-layer-elevated-focused-elevation: var(--md-sys-elevation-level1); /** Button elevated focused container state layer elevation */
+  --state-layer-elevated-focused-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Button elevated focused container state layer opacity */
+  --state-layer-elevated-hovered-color: var(--md-sys-color-primary); /** Button elevated hovered container state layer color */
+  --state-layer-elevated-hovered-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Button elevated hovered container state layer opacity */
+  --state-layer-elevated-pressed-color: var(--md-sys-color-primary); /** Button elevated pressed container state layer color */
+  --state-layer-elevated-pressed-elevation: var(--md-sys-elevation-level1); /** Button elevated pressed container state layer elevation */
+  --state-layer-elevated-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Button elevated pressed container state layer opacity */
+  --state-layer-filled-focused-color: var(--md-sys-color-on-primary); /** Button filled focused container state layer color */
+  --state-layer-filled-focused-elevation: var(--md-sys-elevation-level0); /** Button filled focused container state layer elevation */
+  --state-layer-filled-focused-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Button filled focused container state layer opacity */
+  --state-layer-filled-hovered-color: var(--md-sys-color-on-primary); /** Button filled hovered container state layer color */
+  --state-layer-filled-hovered-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Button filled hovered container state layer opacity */
+  --state-layer-filled-pressed-color: var(--md-sys-color-on-primary); /** Button filled pressed container state layer color */
+  --state-layer-filled-pressed-elevation: var(--md-sys-elevation-level0); /** Button filled pressed container state layer elevation */
+  --state-layer-filled-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Button filled pressed container state layer opacity */
+  --state-layer-focused-color: var(--md-sys-color-on-primary); /** Button focused container state layer color */
+  --state-layer-focused-elevation: var(--md-sys-elevation-level0); /** Button focused container state layer elevation */
+  --state-layer-focused-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Button focused container state layer opacity */
+  --state-layer-hovered-color: var(--md-sys-color-on-primary); /** Button hovered container state layer color */
+  --state-layer-hovered-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Button hovered container state layer opacity */
+  --state-layer-outlined-focused-color: var(--md-sys-color-on-surface-variant); /** Button outlined focused container state layer color */
+  --state-layer-outlined-focused-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Button outlined focused container state layer opacity */
+  --state-layer-outlined-hovered-color: var(--md-sys-color-on-surface-variant); /** Button outlined hovered state layer color */
+  --state-layer-outlined-hovered-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Button outlined hovered state layer opacity */
+  --state-layer-outlined-pressed-color: var(--md-sys-color-on-surface-variant); /** Button outlined pressed container state layer color */
+  --state-layer-outlined-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Button outlined pressed container state layer opacity */
+  --state-layer-pressed-color: var(--md-sys-color-on-primary); /** Button pressed container state layer color */
+  --state-layer-pressed-elevation: var(--md-sys-elevation-level0); /** Button pressed container state layer elevation */
+  --state-layer-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Button pressed container state layer opacity */
+  --state-layer-text-focused-color: var(--md-sys-color-primary); /** Button text focused state layer color */
+  --state-layer-text-focused-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Button text focused state layer opacity */
+  --state-layer-text-hovered-color: var(--md-sys-color-primary); /** Button text hovered state layer color */
+  --state-layer-text-hovered-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Button text hovered state layer opacity */
+  --state-layer-text-pressed-color: var(--md-sys-color-primary); /** Button text pressed state layer color */
+  --state-layer-text-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Button text pressed state layer opacity */
+  --state-layer-tonal-focused-color: var(--md-sys-color-on-secondary-container); /** Button tonal focused container state layer color */
+  --state-layer-tonal-focused-elevation: var(--md-sys-elevation-level0); /** Button tonal focused container state layer elevation */
+  --state-layer-tonal-focused-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Button tonal focused container state layer opacity */
+  --state-layer-tonal-hovered-color: var(--md-sys-color-on-secondary-container); /** Button tonal hovered container state layer color */
+  --state-layer-tonal-hovered-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Button tonal hovered container state layer opacity */
+  --state-layer-tonal-pressed-color: var(--md-sys-color-on-secondary-container); /** Button tonal pressed container state layer color */
+  --state-layer-tonal-pressed-elevation: var(--md-sys-elevation-level0); /** Button tonal pressed container state layer elevation */
+  --state-layer-tonal-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Button tonal pressed container state layer opacity */
+  --tonal-elevation: var(--md-sys-elevation-level0); /** Button tonal elevation */
+  --tonal-shadow-color: var(--md-sys-color-shadow); /** Button tonal shadow color */
+  --xlarge-morph-pressed-shape: var(--md-sys-shape-corner-large); /** Button xlarge shape pressed morph */
+  --xlarge-spring-animation-damping-shape: var(--md-sys-motion-spring-fast-spatial-damping); /** Button xlarge shape spring animation damping */
+  --xlarge-spring-animation-stiffness-shape: var(--md-sys-motion-spring-fast-spatial-stiffness); /** Button xlarge shape spring animation stiffness */
+  --xsmall-morph-pressed-shape: var(--md-sys-shape-corner-small); /** Button xsmall shape pressed morph */
+  --xsmall-spring-animation-damping-shape: var(--md-sys-motion-spring-fast-spatial-damping); /** Button xsmall shape spring animation damping */
+  --xsmall-spring-animation-stiffness-shape: var(--md-sys-motion-spring-fast-spatial-stiffness); /** Button xsmall shape spring animation stiffness */
+}

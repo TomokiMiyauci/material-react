@@ -8,8 +8,6 @@ const meta = {
     layout: "centered",
   },
   tags: ["autodocs"],
-  argTypes: {},
-  args: {},
   decorators: [(Children) => (
     <div className="w-[300px]">
       <Children />
@@ -21,6 +19,4 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Enabled = {
-  "args": {},
-} satisfies Story;
+export const Enabled = {} satisfies Story;

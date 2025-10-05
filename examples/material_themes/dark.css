@@ -28,4 +28,5 @@
   --md-sys-color-inverse-on-surface: var(--md-ref-palette-neutral20); /** Inverse on surface */
   --md-sys-color-outline: var(--md-ref-palette-neutral-variant60); /** Outline */
   --md-sys-color-outline-variant: var(--md-ref-palette-neutral-variant30); /** Outline Variant */
+  --md-sys-color-shadow: var(--md-ref-palette-neutral0); /** Shadow */
 }

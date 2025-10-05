@@ -1,0 +1,14 @@
+/* @embed */
+:root {
+  --key-offset-y: calc(1px * (clamp(0, var(--elevation), 1) + clamp(0, var(--elevation) - 3, 1) + 2 * clamp(0, var(--elevation) - 4, 1)));
+  --key-blur-radius: calc(1px * (2 * clamp(0, var(--elevation), 1) + clamp(0, var(--elevation) - 2, 1) + clamp(0, var(--elevation) - 4, 1)));
+  --key-color: color-mix(in srgb, var(--shadow-color) 30%, transparent);
+  --key-shadow: 0 var(--key-offset-y) var(--key-blur-radius) 0 var(--key-color);
+
+  --amb-offest-y: calc(1px * (clamp(0, var(--elevation), 1) + clamp(0, var(--elevation) - 1, 1) + 2 * clamp(0, var(--elevation) - 2, 3)));
+  --amb-blur-radius: calc(1px * (3 * clamp(0, var(--elevation), 2) + 2 * clamp(0, var(--elevation) - 2, 3)));
+  --amb-spread-radius: calc(1px * (clamp(0, var(--elevation), 4) + 2 * clamp(0, var(--elevation) - 4, 1)));
+  --amb-color: color-mix(in srgb, var(--shadow-color) 15%, transparent);
+  --ambient-shadow: 0 var(--amb-offest-y) var(--amb-blur-radius) var(--amb-spread-radius) var(--amb-color);
+  --box-shadow: var(--key-shadow), var(--ambient-shadow);
+}
