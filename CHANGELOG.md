@@ -1,3 +1,15 @@
+# [1.0.0-beta.10](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.9...1.0.0-beta.10) (2025-10-05)
+
+
+### Bug Fixes
+
+* **radio:** changed the main element to a state layer and made it occupy 40px ([7c79e75](https://github.com/TomokiMiyauci/material-react/commit/7c79e753bfa8293d3b04119f1e48b62a0852c685))
+
+
+### Features
+
+* **radio:** add radio button component ([9c5e0c5](https://github.com/TomokiMiyauci/material-react/commit/9c5e0c5c1758c4b492268bb47d79c95908f5b338))
+
 # [1.0.0-beta.9](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.8...1.0.0-beta.9) (2025-10-04)
 
 
