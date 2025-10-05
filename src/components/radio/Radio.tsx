@@ -2,6 +2,9 @@ import type { JSX } from "react";
 import Style from "@internal/Style.tsx";
 import style from "./_generated/style.ts";
 
+/**
+ * Radio buttons let people select one option from a set of options.
+ */
 export default function Radio(
   props: JSX.IntrinsicElements["input"],
 ): JSX.Element {
