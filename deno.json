@@ -6,8 +6,6 @@
   "imports": {
     "@std/fs": "jsr:@std/fs@^1.0.19",
     "@std/path": "jsr:@std/path@^1.1.2",
-    "@terrazzo/cli": "npm:@terrazzo/cli@^0.10.2",
-    "@terrazzo/plugin-css": "npm:@terrazzo/plugin-css@^0.10.2",
     "@types/react": "npm:@types/react@^19.1.11",
     "autoprefixer": "npm:autoprefixer@^10.4.21",
     "cssnano": "npm:cssnano@^7.1.1",
