@@ -1,0 +1,574 @@
+[
+  {
+    "name": "List list item container color",
+    "value": "md.sys.color.surface"
+  },
+  {
+    "name": "List list item selected container color",
+    "value": "md.sys.color.secondary-container"
+  },
+  {
+    "name": "List list item container shape",
+    "value": "md.sys.shape.corner.none"
+  },
+  {
+    "name": "List list item container elevation",
+    "value": "md.sys.elevation.level0"
+  },
+  {
+    "name": "One line list item container height",
+    "value": "56dp"
+  },
+  {
+    "name": "Two lines list item container height",
+    "value": "72dp"
+  },
+  {
+    "name": "Three lines list item container height",
+    "value": "88dp"
+  },
+  {
+    "name": "List list item leading space",
+    "value": "16dp"
+  },
+  {
+    "name": "List list item trailing space",
+    "value": "16dp"
+  },
+  {
+    "name": "List list item label text color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item selected label text color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "List list item label text font",
+    "value": "md.sys.typescale.body-large.font"
+  },
+  {
+    "name": "List list item label text line height",
+    "value": "md.sys.typescale.body-large.line-height"
+  },
+  {
+    "name": "List list item label text size",
+    "value": "md.sys.typescale.body-large.size"
+  },
+  {
+    "name": "List list item label text tracking",
+    "value": "md.sys.typescale.body-large.tracking"
+  },
+  {
+    "name": "List list item label text weight",
+    "value": "md.sys.typescale.body-large.weight"
+  },
+  {
+    "name": "List list item leading-icon color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "List list item selected leading-icon color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item leading-icon size",
+    "value": "24dp"
+  },
+  {
+    "name": "List list item leading-icon width",
+    "value": "100dp"
+  },
+  {
+    "name": "List list item small leading-icon height",
+    "value": "56dp"
+  },
+  {
+    "name": "List list item large leading-icon color",
+    "value": "69dp"
+  },
+  {
+    "name": "List list item leading-icon shape",
+    "value": "md.sys.shape.corner.none"
+  },
+  {
+    "name": "List list item trailing icon color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "List list item trailing icon size",
+    "value": "24dp"
+  },
+  {
+    "name": "List list item selected trailing icon color",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "List list item unselected trailing icon color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item divider leading space",
+    "value": "16dp"
+  },
+  {
+    "name": "List list item divider trailing space",
+    "value": "16dp"
+  },
+  {
+    "name": "List list item supporting text color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "List list item selected supporting text color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item supporting text font",
+    "value": "md.sys.typescale.body-medium.font"
+  },
+  {
+    "name": "List list item supporting text line height",
+    "value": "md.sys.typescale.body-medium.line-height"
+  },
+  {
+    "name": "List list item supporting text size",
+    "value": "md.sys.typescale.body-medium.size"
+  },
+  {
+    "name": "List list item supporting text tracking",
+    "value": "md.sys.typescale.body-medium.tracking"
+  },
+  {
+    "name": "List list item supporting text weight",
+    "value": "md.sys.typescale.body-medium.weight"
+  },
+  {
+    "name": "List list item overline color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "List list item selected overline color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item overline font",
+    "value": "md.sys.typescale.label-small.font"
+  },
+  {
+    "name": "List list item overline line height",
+    "value": "md.sys.typescale.label-small.line-height"
+  },
+  {
+    "name": "List list item overline size",
+    "value": "md.sys.typescale.label-small.size"
+  },
+  {
+    "name": "List list item overline tracking",
+    "value": "md.sys.typescale.label-small.tracking"
+  },
+  {
+    "name": "List list item overline weight",
+    "value": "md.sys.typescale.label-small.weight"
+  },
+  {
+    "name": "List list item leading-avatar color",
+    "value": "md.sys.color.primary-container"
+  },
+  {
+    "name": "List list item leading-avatar shape",
+    "value": "md.sys.shape.corner.full"
+  },
+  {
+    "name": "List list item leading-avatar size",
+    "value": "40dp"
+  },
+  {
+    "name": "List list item leading avatar label color",
+    "value": "md.sys.color.on-primary-container"
+  },
+  {
+    "name": "List list item leading avatar label font",
+    "value": "md.sys.typescale.title-medium.font"
+  },
+  {
+    "name": "List list item leadingavatar label line height",
+    "value": "md.sys.typescale.title-medium.line-height"
+  },
+  {
+    "name": "List list item leadingavatar label size",
+    "value": "md.sys.typescale.title-medium.size"
+  },
+  {
+    "name": "List list item leading avatar label tracking",
+    "value": "md.sys.typescale.title-medium.tracking"
+  },
+  {
+    "name": "List list item leading avatar label weight",
+    "value": "md.sys.typescale.title-medium.weight"
+  },
+  {
+    "name": "List list item leading-image width",
+    "value": "56dp"
+  },
+  {
+    "name": "List list item leading-image height",
+    "value": "56dp"
+  },
+  {
+    "name": "List list item leading-image shape",
+    "value": "md.sys.shape.corner.none"
+  },
+  {
+    "name": "List list item trailing supporting text color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "List list item selected trailing supporting text color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item trailing supporting text font",
+    "value": "md.sys.typescale.label-small.font"
+  },
+  {
+    "name": "List list item trailing supporting text line height",
+    "value": "md.sys.typescale.label-small.line-height"
+  },
+  {
+    "name": "List list item trailing supporting text size",
+    "value": "md.sys.typescale.label-small.size"
+  },
+  {
+    "name": "List list item trailing supporting text tracking",
+    "value": "md.sys.typescale.label-small.tracking"
+  },
+  {
+    "name": "List list item trailing supporting text weight",
+    "value": "md.sys.typescale.label-small.weight"
+  },
+  {
+    "name": "List list item disabled label text color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item disabled label text opacity",
+    "value": "0.38"
+  },
+  {
+    "name": "List list item disabled supporting text color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item disabled supporting text opacity",
+    "value": "0.38"
+  },
+  {
+    "name": "List list item disabled leading icon color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item disabled leading icon opacity",
+    "value": "0.38"
+  },
+  {
+    "name": "List list item disabled trailing icon color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item disabled trailing icon opacity",
+    "value": "0.38"
+  },
+  {
+    "name": "List list item disabled overline color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item disabled overline opacity",
+    "value": "0.38"
+  },
+  {
+    "name": "List list item disabled state layer color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item disabled state layer opacity",
+    "value": "md.sys.state.focus.state-layer-opacity"
+  },
+  {
+    "name": "List list item hover label text color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item selected hover label text color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "List list item hover state layer color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item hover state layer opacity",
+    "value": "md.sys.state.hover.state-layer-opacity"
+  },
+  {
+    "name": "List list item selected hover state layer color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item selected hover state layer opacity",
+    "value": "md.sys.state.hover.state-layer-opacity"
+  },
+  {
+    "name": "List list item hover leading icon color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "List list item selected hover leading icon color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item hover trailing icon color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "List list item selected hover trailing icon color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item focus indicator color",
+    "value": "md.sys.color.secondary"
+  },
+  {
+    "name": "List list item focus indicator thickness",
+    "value": "md.sys.state.focus-indicator.thickness"
+  },
+  {
+    "name": "List list item focus indicator offset",
+    "value": "md.sys.state.focus-indicator.inner-offset"
+  },
+  {
+    "name": "List list item focus label text color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item selected focus label text color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "List list item focus state layer color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item focus state layer opacity",
+    "value": "md.sys.state.focus.state-layer-opacity"
+  },
+  {
+    "name": "List list item selected focus state layer color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item selected focus state layer opacity",
+    "value": "md.sys.state.focus.state-layer-opacity"
+  },
+  {
+    "name": "List list item focus leading icon color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "List list item selected focus leading icon color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item focus trailing icon color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "List list item selected focus trailing icon color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item pressed label text color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item selected pressed label text color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "List list item pressed state layer color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item pressed state layer opacity",
+    "value": "md.sys.state.pressed.state-layer-opacity"
+  },
+  {
+    "name": "List list item selected pressed state layer color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item selected pressed state layer opacity",
+    "value": "md.sys.state.pressed.state-layer-opacity"
+  },
+  {
+    "name": "List list item pressed leading icon color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "List list item selected pressed leading icon color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item pressed trailing icon color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "List list item selected pressed trailing icon color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item dragged container color",
+    "value": "md.sys.elevation.level4"
+  },
+  {
+    "name": "List list item dragged label text color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item selected dragged label text color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "List list item dragged state layer color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item dragged state layer opacity",
+    "value": "md.sys.state.dragged.state-layer-opacity"
+  },
+  {
+    "name": "List list item selected dragged state layer color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item selected dragged state layer opacity",
+    "value": "md.sys.state.dragged.state-layer-opacity"
+  },
+  {
+    "name": "List list item dragged trailing icon color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "List list item selected dragged trailing icon color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item dragged leading icon color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "List list item selected dragged leading icon color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "List list item label text type font",
+    "value": "md.sys.typescale.body-large.font"
+  },
+  {
+    "name": "List list item label text type weight",
+    "value": "md.sys.typescale.body-large.weight"
+  },
+  {
+    "name": "List list item label text type size",
+    "value": "md.sys.typescale.body-large.size"
+  },
+  {
+    "name": "List list item label text type line height",
+    "value": "md.sys.typescale.body-large.line-height"
+  },
+  {
+    "name": "List list item label text type tracking",
+    "value": "md.sys.typescale.body-large.tracking"
+  },
+  {
+    "name": "List list item supporting text type font",
+    "value": "md.sys.typescale.body-medium.font"
+  },
+  {
+    "name": "List list item supporting text type weight",
+    "value": "md.sys.typescale.body-medium.weight"
+  },
+  {
+    "name": "List list item supporting text type size",
+    "value": "md.sys.typescale.body-medium.size"
+  },
+  {
+    "name": "List list item supporting text type line height",
+    "value": "md.sys.typescale.body-medium.line-height"
+  },
+  {
+    "name": "List list item supporting text type tracking",
+    "value": "md.sys.typescale.body-medium.tracking"
+  },
+  {
+    "name": "List list item overline type font",
+    "value": "md.sys.typescale.label-small.font"
+  },
+  {
+    "name": "List list item overline type weight",
+    "value": "md.sys.typescale.label-small.weight"
+  },
+  {
+    "name": "List list item overline type size",
+    "value": "md.sys.typescale.label-small.size"
+  },
+  {
+    "name": "List list item overline type line height",
+    "value": "md.sys.typescale.label-small.line-height"
+  },
+  {
+    "name": "List list item overline type tracking",
+    "value": "md.sys.typescale.label-small.tracking"
+  },
+  {
+    "name": "List list item leading avatar label type font",
+    "value": "md.sys.typescale.title-medium.font"
+  },
+  {
+    "name": "List list item leading avatar label type weight",
+    "value": "md.sys.typescale.title-medium.weight"
+  },
+  {
+    "name": "List list item leading avatar label type size",
+    "value": "md.sys.typescale.title-medium.size"
+  },
+  {
+    "name": "List list item leading avatar label type line height",
+    "value": "md.sys.typescale.title-medium.line-height"
+  },
+  {
+    "name": "List list item leading avatar label type tracking",
+    "value": "md.sys.typescale.title-medium.tracking"
+  },
+  {
+    "name": "List list item trailing supporting text type font",
+    "value": "md.sys.typescale.label-small.font"
+  },
+  {
+    "name": "List list item trailing supporting text type weight",
+    "value": "md.sys.typescale.label-small.weight"
+  },
+  {
+    "name": "List list item trailing supporting text type size",
+    "value": "md.sys.typescale.label-small.size"
+  },
+  {
+    "name": "List list item trailing supporting text type line height",
+    "value": "md.sys.typescale.label-small.line-height"
+  },
+  {
+    "name": "List list item trailing supporting text type tracking",
+    "value": "md.sys.typescale.label-small.tracking"
+  }
+]

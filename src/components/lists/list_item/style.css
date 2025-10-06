@@ -1,16 +1,72 @@
-@import url(../_generated/tokens.css);
+@import url(./_generated/tokens.css);
 
-[data-md="list-item"] {
-  all: unset;
-  background-color: var(--container-color);
-  border-radius: var(--container-shape);
-  display: flex;
-  align-items: center;
-  padding-inline-start: var(--container-leading-space);
-  padding-inline-end: var(--container-trailing-space);
-  column-gap: var(--container-leading-space);
-  padding-block-start: var(--container-y-padding);
-  padding-block-end: var(--container-y-padding);
+@scope([data-md="list-item"]) {
+  & {
+    all: unset;
+    background-color: var(--container-color);
+    border-radius: var(--container-shape);
+    display: flex;
+    align-items: center;
+    padding-inline-start: var(--leading-space);
+    padding-inline-end: var(--trailing-space);
+    column-gap: var(--leading-space);
+    padding-block: 8px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: inherit;
+      inset: 0;
+      pointer-events: none;
+    }
+  }
+
+  &[data-selected] {
+    background-color: var(--container-selected-color);
+
+    &:hover::before {
+      background-color: var(--state-layer-selected-hover-color);
+      opacity: var(--state-layer-selected-hover-opacity);
+    }
+
+    &:active::before {
+      background-color: var(--state-layer-selected-pressed-color);
+      opacity: var(--state-layer-selected-pressed-opacity);
+    }
+
+    &:focus-visible::before {
+      background-color: var(--state-layer-selected-focus-color);
+      opacity: var(--state-layer-selected-focus-opacity);
+    }
+  }
+
+  &:hover::before {
+    background-color: var(--state-layer-hover-color);
+    opacity: var(--state-layer-hover-opacity);
+  }
+
+  &:active::before {
+    background-color: var(--state-layer-pressed-color);
+    opacity: var(--state-layer-pressed-opacity);
+  }
+
+  &:focus-visible {
+    outline-style: solid;
+    outline-color: var(--focus-indicator-color);
+    outline-offset: var(--focus-indicator-offset);
+    outline-width: var(--focus-indicator-thickness);
+
+    &::before {
+      background-color: var(--state-layer-focus-color);
+      opacity: var(--state-layer-focus-opacity);
+    }
+  }
+
+  &[data-disabled]::before {
+    background-color: var(--state-layer-disabled-color);
+    opacity: var(--state-layer-disabled-opacity);
+  }
 
   &[data-size=one-line] {
     & [data-supporting-text] {
@@ -19,8 +75,7 @@
   }
 
   &[data-size=three-lines] {
-    padding-block-start: var(--container-three-lines-y-padding);
-    padding-block-end: var(--container-three-lines-y-padding);
+    padding-block: 12px;
     align-items: start;
   }
 
@@ -37,7 +92,7 @@
     flex: 1 1 auto;
   }
 
-  & [data-headline] {
+  [data-headline] {
     all: unset;
     color: var(--label-text-color);
     font-family: var(--label-text-font);
@@ -52,9 +107,14 @@
     -webkit-line-clamp: 1;
     white-space: normal;
     overflow-wrap: anywhere;
+    text-align: start;
 
-    [data-selected=true] & {
+    :scope[data-selected] & {
       color: var(--label-text-selected-color);
+    }
+
+    :scope[data-disabled] & {
+      color: color-mix(in srgb, var(--label-text-disabled-color) var(--label-text-disabled-opacity), transparent);
     }
   }
 
@@ -81,13 +141,13 @@
   }
 
   & [data-leading=video] {
-    width: var(--leading-video-width);
-    height: var(--leading-video-height);
+    width: 100px;
+    height: 64px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin-inline-start: calc(-1 * var(--container-leading-space));
+    margin-inline-start: calc(-1 * var(--leading-space));
   }
 
   & [data-leading=icon] {
@@ -97,6 +157,28 @@
     color: var(--leading-icon-color);
     height: var(--leading-icon-size);
     width: var(--leading-icon-size);
+    font-size: var(--leading-icon-size);
+
+    :scope[data-selected] & {
+      color: var(--leading-icon-selected-color);
+    }
+
+    :scope[data-selected]:hover & {
+      color: var(--leading-icon-selected-hover-color);
+    }
+
+    :scope[data-selected]:active & {
+      color: var(--leading-icon-selected-pressed-color);
+    }
+
+    :scope[data-selected]:focus-visible & {
+      color: var(--leading-icon-selected-focus-color);
+    }
+
+    :scope[data-disabled] &,
+    :scope[data-disabled][data-selected] & {
+      color: color-mix(in srgb, var(--leading-icon-disabled-color) var(--leading-icon-disabled-opacity), transparent);
+    }
   }
 
   & [data-trailing=text] {
@@ -112,9 +194,39 @@
     color: var(--trailing-icon-color);
     width: var(--trailing-icon-size);
     height: var(--trailing-icon-size);
+    font-size: var(--trailing-icon-size);
+
+    :scope:hover & {
+      color: var(--trailing-icon-hover-color);
+    }
+
+    :scope:active & {
+      color: var(--trailing-icon-pressed-color);
+    }
+
+    :scope:focus-visible & {
+      color: var(--trailing-icon-focus-color);
+    }
+
+    :scope[data-selected]:hover & {
+      color: var(--trailing-icon-selected-hover-color);
+    }
+
+    :scope[data-selected]:active & {
+      color: var(--trailing-icon-selected-pressed-color);
+    }
+
+    :scope[data-selected]:active & {
+      color: var(--trailing-icon-selected-focus-color);
+    }
+
+    :scope[data-disabled] &,
+    :scope[data-selected][data-disabled] & {
+      color: color-mix(in srgb, var(--trailing-icon-disabled-color) var(--trailing-icon-disabled-opacity), transparent);
+    }
   }
 
-  & [data-supporting-text] {
+  [data-supporting-text] {
     all: unset;
     color: var(--supporting-text-color);
     font-family: var(--supporting-text-font);
@@ -127,6 +239,27 @@
     -webkit-box-orient: vertical;
     white-space: normal;
     overflow-wrap: anywhere;
+    text-align: start;
+
+    :scope[data-selected] & {
+      color: var(--supporting-text-selected-color);
+    }
+
+    :scope:hover & {
+      color: var(--leading-icon-hover-color);
+    }
+
+    :scope:active & {
+      color: var(--leading-icon-pressed-color);
+    }
+
+    :scope:focus-visible & {
+      color: var(--leading-icon-focus-color);
+    }
+
+    :scope[data-disabled] & {
+      color: color-mix(in srgb, var(--supporting-text-disabled-color) var(--supporting-text-disabled-opacity), transparent);
+    }
   }
 
   &[data-size=two-lines] [data-supporting-text] {

@@ -1,6 +1,7 @@
 import type { JSX, ReactNode } from "react";
 import style from "./_generated/style.ts";
 import Style from "@internal/Style.tsx";
+import { bool } from "@/utils/convert.ts";
 
 export interface ListItemProps {
   leading?: LeadingListItem;
@@ -12,19 +13,34 @@ export interface ListItemProps {
    * @default "two-lines"
    */
   size?: ListItemSize;
+  selected?: boolean;
+  disabled?: boolean;
 }
 
 export type ListItemSize = "one-line" | "two-lines" | "three-lines";
 
-export default function ListItem(props: ListItemProps): JSX.Element {
-  const { headline, supporingText, leading, trailing, size = "two-lines" } =
-    props;
+export default function ListItem(
+  props: ListItemProps & JSX.IntrinsicElements["div"],
+): JSX.Element {
+  const {
+    headline,
+    supporingText,
+    leading,
+    trailing,
+    size = "two-lines",
+    selected,
+    disabled,
+    ...rest
+  } = props;
   return (
     <>
       <div
         role="listitem"
         data-md="list-item"
         data-size={size}
+        data-selected={bool(selected)}
+        data-disabled={bool(disabled)}
+        {...rest}
       >
         {leading && <ListItemLeading {...leading} />}
 

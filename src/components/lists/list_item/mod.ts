@@ -1,1 +1,1 @@
-export { default as ListItem } from "./ListItem.tsx";
+export { default as ListItem, type ListItemProps } from "./ListItem.tsx";

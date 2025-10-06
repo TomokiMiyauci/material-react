@@ -1,0 +1,125 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+/* @embed */
+:root {
+  --container-color: var(--md-sys-color-surface); /** List list item container color */
+  --container-dragged-color: var(--md-sys-elevation-level4); /** List list item dragged container color */
+  --container-elevation: var(--md-sys-elevation-level0); /** List list item container elevation */
+  --container-one-line-height: 56px; /** One line list item container height */
+  --container-selected-color: var(--md-sys-color-secondary-container); /** List list item selected container color */
+  --container-shape: var(--md-sys-shape-corner-none); /** List list item container shape */
+  --container-three-lines-height: 88px; /** Three lines list item container height */
+  --container-two-lines-height: 72px; /** Two lines list item container height */
+  --divider-leading-space: 16px; /** List list item divider leading space */
+  --divider-trailing-space: 16px; /** List list item divider trailing space */
+  --focus-indicator-color: var(--md-sys-color-secondary); /** List list item focus indicator color */
+  --focus-indicator-offset: var(--md-sys-state-focus-indicator-inner-offset); /** List list item focus indicator offset */
+  --focus-indicator-thickness: var(--md-sys-state-focus-indicator-thickness); /** List list item focus indicator thickness */
+  --label-text-color: var(--md-sys-color-on-surface); /** List list item label text color */
+  --label-text-disabled-color: var(--md-sys-color-on-surface); /** List list item disabled label text color */
+  --label-text-disabled-opacity: 38%; /** List list item disabled label text opacity */
+  --label-text-dragged-color: var(--md-sys-color-on-surface); /** List list item dragged label text color */
+  --label-text-focus-color: var(--md-sys-color-on-surface); /** List list item focus label text color */
+  --label-text-font: var(--md-sys-typescale-body-large-font); /** List list item label text font */
+  --label-text-hover-color: var(--md-sys-color-on-surface); /** List list item hover label text color */
+  --label-text-line-height: var(--md-sys-typescale-body-large-line-height); /** List list item label text line height */
+  --label-text-pressed-color: var(--md-sys-color-on-surface); /** List list item pressed label text color */
+  --label-text-selected-color: var(--md-sys-color-on-secondary-container); /** List list item selected label text color */
+  --label-text-selected-dragged-color: var(--md-sys-color-on-secondary-container); /** List list item selected dragged label text color */
+  --label-text-selected-focus-color: var(--md-sys-color-on-secondary-container); /** List list item selected focus label text color */
+  --label-text-selected-hover-color: var(--md-sys-color-on-secondary-container); /** List list item selected hover label text color */
+  --label-text-selected-pressed-color: var(--md-sys-color-on-secondary-container); /** List list item selected pressed label text color */
+  --label-text-size: var(--md-sys-typescale-body-large-size); /** List list item label text size */
+  --label-text-tracking: var(--md-sys-typescale-body-large-tracking); /** List list item label text tracking */
+  --label-text-weight: var(--md-sys-typescale-body-large-weight); /** List list item label text weight */
+  --leading-avatar-label-color: var(--md-sys-color-on-primary-container); /** List list item leading avatar label color */
+  --leading-avatar-label-font: var(--md-sys-typescale-title-medium-font); /** List list item leading avatar label font */
+  --leading-avatar-label-line-height: var(--md-sys-typescale-title-medium-line-height); /** List list item leadingavatar label line height */
+  --leading-avatar-label-size: var(--md-sys-typescale-title-medium-size); /** List list item leadingavatar label size */
+  --leading-avatar-label-tracking: var(--md-sys-typescale-title-medium-tracking); /** List list item leading avatar label tracking */
+  --leading-avatar-label-weight: var(--md-sys-typescale-title-medium-weight); /** List list item leading avatar label weight */
+  --leading-icon-color: var(--md-sys-color-on-surface-variant); /** List list item leading-icon color */
+  --leading-icon-disabled-color: var(--md-sys-color-on-surface); /** List list item disabled leading icon color */
+  --leading-icon-disabled-opacity: 38%; /** List list item disabled leading icon opacity */
+  --leading-icon-dragged-color: var(--md-sys-color-on-surface-variant); /** List list item dragged leading icon color */
+  --leading-icon-focus-color: var(--md-sys-color-on-surface-variant); /** List list item focus leading icon color */
+  --leading-icon-hover-color: var(--md-sys-color-on-surface-variant); /** List list item hover leading icon color */
+  --leading-icon-large-color: 69px; /** List list item large leading-icon color */
+  --leading-icon-pressed-color: var(--md-sys-color-on-surface-variant); /** List list item pressed leading icon color */
+  --leading-icon-selected-color: var(--md-sys-color-on-surface); /** List list item selected leading-icon color */
+  --leading-icon-selected-dragged-color: var(--md-sys-color-on-surface); /** List list item selected dragged leading icon color */
+  --leading-icon-selected-focus-color: var(--md-sys-color-on-surface); /** List list item selected focus leading icon color */
+  --leading-icon-selected-hover-color: var(--md-sys-color-on-surface); /** List list item selected hover leading icon color */
+  --leading-icon-selected-pressed-color: var(--md-sys-color-on-surface); /** List list item selected pressed leading icon color */
+  --leading-icon-shape: var(--md-sys-shape-corner-none); /** List list item leading-icon shape */
+  --leading-icon-size: 24px; /** List list item leading-icon size */
+  --leading-icon-small-height: 56px; /** List list item small leading-icon height */
+  --leading-icon-width: 100px; /** List list item leading-icon width */
+  --leading-space: 16px; /** List list item leading space */
+  --leading-avatar-color: var(--md-sys-color-primary-container); /** List list item leading-avatar color */
+  --leading-avatar-shape: var(--md-sys-shape-corner-full); /** List list item leading-avatar shape */
+  --leading-avatar-size: 40px; /** List list item leading-avatar size */
+  --leading-image-height: 56px; /** List list item leading-image height */
+  --leading-image-shape: var(--md-sys-shape-corner-none); /** List list item leading-image shape */
+  --leading-image-width: 56px; /** List list item leading-image width */
+  --overline-color: var(--md-sys-color-on-surface-variant); /** List list item overline color */
+  --overline-disabled-color: var(--md-sys-color-on-surface); /** List list item disabled overline color */
+  --overline-disabled-opacity: 38%; /** List list item disabled overline opacity */
+  --overline-font: var(--md-sys-typescale-label-small-font); /** List list item overline font */
+  --overline-line-height: var(--md-sys-typescale-label-small-line-height); /** List list item overline line height */
+  --overline-selected-color: var(--md-sys-color-on-surface); /** List list item selected overline color */
+  --overline-size: var(--md-sys-typescale-label-small-size); /** List list item overline size */
+  --overline-tracking: var(--md-sys-typescale-label-small-tracking); /** List list item overline tracking */
+  --overline-weight: var(--md-sys-typescale-label-small-weight); /** List list item overline weight */
+  --state-layer-disabled-color: var(--md-sys-color-on-surface); /** List list item disabled state layer color */
+  --state-layer-disabled-opacity: var(--md-sys-state-focus-state-layer-opacity); /** List list item disabled state layer opacity */
+  --state-layer-dragged-color: var(--md-sys-color-on-surface); /** List list item dragged state layer color */
+  --state-layer-dragged-opacity: var(--md-sys-state-dragged-state-layer-opacity); /** List list item dragged state layer opacity */
+  --state-layer-focus-color: var(--md-sys-color-on-surface); /** List list item focus state layer color */
+  --state-layer-focus-opacity: var(--md-sys-state-focus-state-layer-opacity); /** List list item focus state layer opacity */
+  --state-layer-hover-color: var(--md-sys-color-on-surface); /** List list item hover state layer color */
+  --state-layer-hover-opacity: var(--md-sys-state-hover-state-layer-opacity); /** List list item hover state layer opacity */
+  --state-layer-pressed-color: var(--md-sys-color-on-surface); /** List list item pressed state layer color */
+  --state-layer-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** List list item pressed state layer opacity */
+  --state-layer-selected-dragged-color: var(--md-sys-color-on-surface); /** List list item selected dragged state layer color */
+  --state-layer-selected-dragged-opacity: var(--md-sys-state-dragged-state-layer-opacity); /** List list item selected dragged state layer opacity */
+  --state-layer-selected-focus-color: var(--md-sys-color-on-surface); /** List list item selected focus state layer color */
+  --state-layer-selected-focus-opacity: var(--md-sys-state-focus-state-layer-opacity); /** List list item selected focus state layer opacity */
+  --state-layer-selected-hover-color: var(--md-sys-color-on-surface); /** List list item selected hover state layer color */
+  --state-layer-selected-hover-opacity: var(--md-sys-state-hover-state-layer-opacity); /** List list item selected hover state layer opacity */
+  --state-layer-selected-pressed-color: var(--md-sys-color-on-surface); /** List list item selected pressed state layer color */
+  --state-layer-selected-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** List list item selected pressed state layer opacity */
+  --supporting-text-color: var(--md-sys-color-on-surface-variant); /** List list item supporting text color */
+  --supporting-text-disabled-color: var(--md-sys-color-on-surface); /** List list item disabled supporting text color */
+  --supporting-text-disabled-opacity: 38%; /** List list item disabled supporting text opacity */
+  --supporting-text-font: var(--md-sys-typescale-body-medium-font); /** List list item supporting text font */
+  --supporting-text-line-height: var(--md-sys-typescale-body-medium-line-height); /** List list item supporting text line height */
+  --supporting-text-selected-color: var(--md-sys-color-on-surface); /** List list item selected supporting text color */
+  --supporting-text-size: var(--md-sys-typescale-body-medium-size); /** List list item supporting text size */
+  --supporting-text-tracking: var(--md-sys-typescale-body-medium-tracking); /** List list item supporting text tracking */
+  --supporting-text-weight: var(--md-sys-typescale-body-medium-weight); /** List list item supporting text weight */
+  --trailing-icon-color: var(--md-sys-color-on-surface-variant); /** List list item trailing icon color */
+  --trailing-icon-disabled-color: var(--md-sys-color-on-surface); /** List list item disabled trailing icon color */
+  --trailing-icon-disabled-opacity: 38%; /** List list item disabled trailing icon opacity */
+  --trailing-icon-dragged-color: var(--md-sys-color-on-surface-variant); /** List list item dragged trailing icon color */
+  --trailing-icon-focus-color: var(--md-sys-color-on-surface-variant); /** List list item focus trailing icon color */
+  --trailing-icon-hover-color: var(--md-sys-color-on-surface-variant); /** List list item hover trailing icon color */
+  --trailing-icon-pressed-color: var(--md-sys-color-on-surface-variant); /** List list item pressed trailing icon color */
+  --trailing-icon-selected-color: var(--md-sys-color-primary); /** List list item selected trailing icon color */
+  --trailing-icon-selected-dragged-color: var(--md-sys-color-on-surface); /** List list item selected dragged trailing icon color */
+  --trailing-icon-selected-focus-color: var(--md-sys-color-on-surface); /** List list item selected focus trailing icon color */
+  --trailing-icon-selected-hover-color: var(--md-sys-color-on-surface); /** List list item selected hover trailing icon color */
+  --trailing-icon-selected-pressed-color: var(--md-sys-color-on-surface); /** List list item selected pressed trailing icon color */
+  --trailing-icon-size: 24px; /** List list item trailing icon size */
+  --trailing-icon-unselected-color: var(--md-sys-color-on-surface); /** List list item unselected trailing icon color */
+  --trailing-space: 16px; /** List list item trailing space */
+  --trailing-supporting-text-color: var(--md-sys-color-on-surface-variant); /** List list item trailing supporting text color */
+  --trailing-supporting-text-font: var(--md-sys-typescale-label-small-font); /** List list item trailing supporting text font */
+  --trailing-supporting-text-line-height: var(--md-sys-typescale-label-small-line-height); /** List list item trailing supporting text line height */
+  --trailing-supporting-text-selected-color: var(--md-sys-color-on-surface); /** List list item selected trailing supporting text color */
+  --trailing-supporting-text-size: var(--md-sys-typescale-label-small-size); /** List list item trailing supporting text size */
+  --trailing-supporting-text-tracking: var(--md-sys-typescale-label-small-tracking); /** List list item trailing supporting text tracking */
+  --trailing-supporting-text-weight: var(--md-sys-typescale-label-small-weight); /** List list item trailing supporting text weight */
+}
