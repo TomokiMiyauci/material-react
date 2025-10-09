@@ -3,6 +3,9 @@ import ListItem, {
   type ListItemProps,
   type ListItemSize,
 } from "./ListItem.tsx";
+import ListItemAvatar from "../list_item_avatar/ListItemAvatar.tsx";
+import ListItemIcon from "../list_item_icon/ListItemIcon.tsx";
+import { ListItemText } from "../list_item_text/mod.ts";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
@@ -34,62 +37,77 @@ interface PseudoData {
   "data-active"?: "";
 }
 
+const selectNodes = [
+  { label: "Unselected" },
+  { label: "Selected" },
+];
+
 const yAxis = [
   {
     label: "One Line",
     children: [
-      { label: "Unselected" },
-      { label: "Selected" },
-    ],
-  },
-  {
-    label: "Two Lines",
-    children: [
-      { label: "Unselected" },
-      { label: "Selected" },
-    ],
-  },
-  {
-    label: "Three Lines",
-    children: [
-      { label: "Unselected" },
-      { label: "Selected" },
-    ],
-  },
-  {
-    label: "Leading",
-    children: [
       {
-        label: "Icon",
+        label: "Text Only",
+        children: selectNodes,
+      },
+      {
+        label: "Leading",
         children: [
-          { label: "Unselected" },
-          { label: "Selected" },
+          { label: "Avatar", children: selectNodes },
+          { label: "Icon", children: selectNodes },
         ],
       },
       {
-        label: "Avatar",
+        label: "Trailing",
         children: [
-          { label: "Unselected" },
-          { label: "Selected" },
+          { label: "Text", children: selectNodes },
+          { label: "Icon", children: selectNodes },
         ],
       },
     ],
   },
   {
-    label: "Leading",
+    label: "Two Line",
     children: [
       {
-        label: "Icon",
+        label: "Text Only",
+        children: selectNodes,
+      },
+      {
+        label: "Leading",
         children: [
-          { label: "Unselected" },
-          { label: "Selected" },
+          { label: "Avatar", children: selectNodes },
+          { label: "Icon", children: selectNodes },
         ],
       },
       {
-        label: "Text",
+        label: "Trailing",
         children: [
-          { label: "Unselected" },
-          { label: "Selected" },
+          { label: "Text", children: selectNodes },
+          { label: "Icon", children: selectNodes },
+        ],
+      },
+    ],
+  },
+  {
+    label: "Three Line",
+    children: [
+      {
+        label: "Text Only",
+        children: selectNodes,
+      },
+      {
+        label: "Leading",
+        children: [
+          { label: "Avatar", children: selectNodes },
+          { label: "Icon", children: selectNodes },
+        ],
+      },
+      {
+        label: "Trailing",
+        children: [
+          { label: "Text", children: selectNodes },
+          { label: "Icon", children: selectNodes },
         ],
       },
     ],
@@ -104,106 +122,60 @@ const xAxis = [
   { label: "Pressed" },
 ] satisfies AxisNode[];
 
-const matrix: Item[][] = [
-  [
-    { state: "enabled", size: "one-line" },
-    { state: "disabled", size: "one-line" },
-    { state: "hovered", size: "one-line" },
-    { state: "focused", size: "one-line" },
-    { state: "pressed", size: "one-line" },
-  ],
-  [
-    { state: "enabled", size: "one-line", selected: true },
-    { state: "disabled", size: "one-line", selected: true },
-    { state: "hovered", size: "one-line", selected: true },
-    { state: "focused", size: "one-line", selected: true },
-    { state: "pressed", size: "one-line", selected: true },
-  ],
-  [
-    { state: "enabled", size: "two-lines" },
-    { state: "disabled", size: "two-lines" },
-    { state: "hovered", size: "two-lines" },
-    { state: "focused", size: "two-lines" },
-    { state: "pressed", size: "two-lines" },
-  ],
-  [
-    { state: "enabled", size: "two-lines", selected: true },
-    { state: "disabled", size: "two-lines", selected: true },
-    { state: "hovered", size: "two-lines", selected: true },
-    { state: "focused", size: "two-lines", selected: true },
-    { state: "pressed", size: "two-lines", selected: true },
-  ],
-  [
-    { state: "enabled", size: "three-lines" },
-    { state: "disabled", size: "three-lines" },
-    { state: "hovered", size: "three-lines" },
-    { state: "focused", size: "three-lines" },
-    { state: "pressed", size: "three-lines" },
-  ],
-  [
-    { state: "enabled", size: "three-lines", selected: true },
-    { state: "disabled", size: "three-lines", selected: true },
-    { state: "hovered", size: "three-lines", selected: true },
-    { state: "focused", size: "three-lines", selected: true },
-    { state: "pressed", size: "three-lines", selected: true },
-  ],
-  [
-    { state: "enabled", leading: "icon" },
-    { state: "disabled", leading: "icon" },
-    { state: "hovered", leading: "icon" },
-    { state: "focused", leading: "icon" },
-    { state: "pressed", leading: "icon" },
-  ],
-  [
-    { state: "enabled", leading: "icon", selected: true },
-    { state: "disabled", leading: "icon", selected: true },
-    { state: "hovered", leading: "icon", selected: true },
-    { state: "focused", leading: "icon", selected: true },
-    { state: "pressed", leading: "icon", selected: true },
-  ],
-  [
-    { state: "enabled", leading: "avatar" },
-    { state: "disabled", leading: "avatar" },
-    { state: "hovered", leading: "avatar" },
-    { state: "focused", leading: "avatar" },
-    { state: "pressed", leading: "avatar" },
-  ],
-  [
-    { state: "enabled", leading: "avatar", selected: true },
-    { state: "disabled", leading: "avatar", selected: true },
-    { state: "hovered", leading: "avatar", selected: true },
-    { state: "focused", leading: "avatar", selected: true },
-    { state: "pressed", leading: "avatar", selected: true },
-  ],
-  [
-    { state: "enabled", trailing: "icon" },
-    { state: "disabled", trailing: "icon" },
-    { state: "hovered", trailing: "icon" },
-    { state: "focused", trailing: "icon" },
-    { state: "pressed", trailing: "icon" },
-  ],
-  [
-    { state: "enabled", trailing: "icon", selected: true },
-    { state: "disabled", trailing: "icon", selected: true },
-    { state: "hovered", trailing: "icon", selected: true },
-    { state: "focused", trailing: "icon", selected: true },
-    { state: "pressed", trailing: "icon", selected: true },
-  ],
-  [
-    { state: "enabled", trailing: "text" },
-    { state: "disabled", trailing: "text" },
-    { state: "hovered", trailing: "text" },
-    { state: "focused", trailing: "text" },
-    { state: "pressed", trailing: "text" },
-  ],
-  [
-    { state: "enabled", trailing: "text", selected: true },
-    { state: "disabled", trailing: "text", selected: true },
-    { state: "hovered", trailing: "text", selected: true },
-    { state: "focused", trailing: "text", selected: true },
-    { state: "pressed", trailing: "text", selected: true },
-  ],
-];
+const states = [
+  "enabled",
+  "disabled",
+  "hovered",
+  "focused",
+  "pressed",
+] satisfies State[];
+const selects = [false, true];
+const lines = ["one-line", "two-lines", "three-lines"] satisfies ListItemSize[];
+const relatedItems = [
+  "none",
+  "leading.avatar",
+  "leading.icon",
+  "trailing.text",
+  "trailing.icon",
+] satisfies AdditionalItem[];
+
+type AdditionalItem =
+  | "none"
+  | "leading.avatar"
+  | "leading.icon"
+  | "trailing.text"
+  | "trailing.icon";
+
+function toProps(v: AdditionalItem) {
+  const prpos: Partial<Item> = v === "trailing.text"
+    ? { trailing: "text" }
+    : v === "leading.avatar"
+    ? { leading: "avatar" }
+    : v === "leading.icon"
+    ? { leading: "icon" }
+    : v === "trailing.icon"
+    ? { trailing: "icon" }
+    : {};
+
+  return prpos;
+}
+
+const matrix: Item[][] = lines.flatMap((size) => {
+  return relatedItems.flatMap((v) => {
+    const props = toProps(v);
+
+    return selects.map((selected) =>
+      states.flatMap((state) => {
+        return {
+          size,
+          selected,
+          state,
+          ...props,
+        };
+      })
+    );
+  });
+});
 
 type State = "enabled" | "disabled" | "hovered" | "focused" | "pressed";
 
@@ -215,32 +187,26 @@ function getProps(item: Item): ListItemProps & PseudoData {
     size: item.size,
     leading: item.leading
       ? item.leading === "icon"
-        ? {
-          type: "icon",
-          children: <span className="material-symbols-outlined">person</span>,
-        }
+        ? (
+          <ListItemIcon>
+            <span className="material-symbols-outlined">person</span>
+          </ListItemIcon>
+        )
         : item.leading === "avatar"
-        ? {
-          type: "avatar",
-          children: "A",
-        }
+        ? <ListItemAvatar>A</ListItemAvatar>
         : undefined
       : undefined,
     trailing: item.trailing
       ? item.trailing === "icon"
-        ? {
-          type: "icon",
-          children: (
+        ? (
+          <ListItemIcon>
             <span className="material-symbols-outlined">
               arrow_right
             </span>
-          ),
-        }
+          </ListItemIcon>
+        )
         : item.trailing === "text"
-        ? {
-          type: "text",
-          children: "100+",
-        }
+        ? <ListItemText>100+</ListItemText>
         : undefined
       : undefined,
   } satisfies ListItemProps;
@@ -261,7 +227,6 @@ function getProps(item: Item): ListItemProps & PseudoData {
     case "pressed":
       return { "data-active": "", ...base };
   }
-  return base;
 }
 
 export const Gallary = {

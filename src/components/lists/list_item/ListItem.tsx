@@ -4,10 +4,10 @@ import Style from "@internal/Style.tsx";
 import { bool } from "@/utils/convert.ts";
 
 export interface ListItemProps {
-  leading?: LeadingListItem;
+  leading?: ReactNode;
   headline?: ReactNode;
   supporingText?: ReactNode;
-  trailing?: TrailingListItem;
+  trailing?: ReactNode;
 
   /**
    * @default "two-lines"
@@ -42,47 +42,17 @@ export default function ListItem(
         data-disabled={bool(disabled)}
         {...rest}
       >
-        {leading && <ListItemLeading {...leading} />}
+        {leading}
 
         <div data-label-text-container="">
           <div data-headline="">{headline}</div>
           <div data-supporting-text="">{supporingText}</div>
         </div>
 
-        {trailing && <ListItemTrailing {...trailing} />}
+        {trailing}
       </div>
 
       <Style href="list-item">{style}</Style>
     </>
   );
-}
-
-function ListItemLeading(props: LeadingListItem): JSX.Element {
-  const { children, type } = props;
-
-  return (
-    <div data-leading={type}>
-      {children}
-    </div>
-  );
-}
-
-function ListItemTrailing(props: TrailingListItem): JSX.Element {
-  const { children, type } = props;
-
-  return (
-    <div data-trailing={type}>
-      {children}
-    </div>
-  );
-}
-
-interface LeadingListItem {
-  type: "icon" | "avatar" | "image" | "video";
-  children: ReactNode;
-}
-
-interface TrailingListItem {
-  type: "icon" | "text";
-  children: ReactNode;
 }
