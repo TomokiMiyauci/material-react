@@ -1,3 +1,20 @@
+# [1.0.0-beta.11](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.10...1.0.0-beta.11) (2025-10-09)
+
+
+### Bug Fixes
+
+* **list-item:** fix to flex container style ([398d76e](https://github.com/TomokiMiyauci/material-react/commit/398d76e566f6eb90a9b33ef1e147f82587d4aa17))
+
+
+### Features
+
+* export list components ([8b98978](https://github.com/TomokiMiyauci/material-react/commit/8b98978d59624111900392f3bc500e19f8ca794d))
+* **list-item-avatar:** add avatar component for list item ([1602670](https://github.com/TomokiMiyauci/material-react/commit/16026708222cf452bc5dc788dc500b76170af62c))
+* **list-item-icon:** add list item icon container component ([47a70c1](https://github.com/TomokiMiyauci/material-react/commit/47a70c1f9c1c8c15ed5322c4c1ab74add8262ea9))
+* **list-item-text:** add supporting text for list item ([8af3f54](https://github.com/TomokiMiyauci/material-react/commit/8af3f5425e41e764f2cc3cb76bf0dd422f416aac))
+* **list-item:** add disabled prop field to list item component ([d937568](https://github.com/TomokiMiyauci/material-react/commit/d937568c3baee270d8983a082403e2c110390fb5))
+* **list-item:** add divider prop to list item component ([4935332](https://github.com/TomokiMiyauci/material-react/commit/4935332946bedb4aba2ce6d4267166cf0fb552ce))
+
 # [1.0.0-beta.10](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.9...1.0.0-beta.10) (2025-10-05)
 
 
