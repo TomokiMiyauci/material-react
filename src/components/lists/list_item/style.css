@@ -1,0 +1,167 @@
+@import url(./_generated/tokens.css);
+
+@scope([data-md="list-item"]) {
+  & {
+    all: unset;
+    background-color: var(--container-color);
+    border-radius: var(--container-shape);
+    display: block;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: inherit;
+      inset: 0;
+      pointer-events: none;
+    }
+  }
+
+  [data-container] {
+    all: unset;
+    display: flex;
+    align-items: center;
+    padding-inline-start: var(--leading-space);
+    padding-inline-end: var(--trailing-space);
+    column-gap: var(--leading-space);
+    padding-block: 8px;
+  }
+
+  &[data-selected] {
+    background-color: var(--container-selected-color);
+
+    &:hover::before {
+      background-color: var(--state-layer-selected-hover-color);
+      opacity: var(--state-layer-selected-hover-opacity);
+    }
+
+    &:active::before {
+      background-color: var(--state-layer-selected-pressed-color);
+      opacity: var(--state-layer-selected-pressed-opacity);
+    }
+
+    &:focus-visible::before {
+      background-color: var(--state-layer-selected-focus-color);
+      opacity: var(--state-layer-selected-focus-opacity);
+    }
+  }
+
+  &:hover::before {
+    background-color: var(--state-layer-hover-color);
+    opacity: var(--state-layer-hover-opacity);
+  }
+
+  &:active::before {
+    background-color: var(--state-layer-pressed-color);
+    opacity: var(--state-layer-pressed-opacity);
+  }
+
+  &:focus-visible {
+    outline-style: solid;
+    outline-color: var(--focus-indicator-color);
+    outline-offset: var(--focus-indicator-offset);
+    outline-width: var(--focus-indicator-thickness);
+
+    &::before {
+      background-color: var(--state-layer-focus-color);
+      opacity: var(--state-layer-focus-opacity);
+    }
+  }
+
+  &[data-disabled]::before {
+    background-color: var(--state-layer-disabled-color);
+    opacity: var(--state-layer-disabled-opacity);
+  }
+
+  &[data-size=one-line] {
+    & [data-supporting-text] {
+      display: none;
+    }
+  }
+
+  &[data-size=three-lines] {
+    [data-container] {
+      padding-block: 12px;
+      align-items: start;
+    }
+  }
+
+  & [data-label-text-container] {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  [data-headline] {
+    all: unset;
+    color: var(--label-text-color);
+    font-family: var(--label-text-font);
+    font-size: var(--label-text-size);
+    font-weight: var(--label-text-weight);
+    line-height: var(--label-text-line-height);
+    letter-spacing: var(--label-text-tracking);
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    text-align: start;
+
+    :scope[data-selected] & {
+      color: var(--label-text-selected-color);
+    }
+
+    :scope[data-disabled] & {
+      color: color-mix(in srgb, var(--label-text-disabled-color) var(--label-text-disabled-opacity), transparent);
+    }
+  }
+
+  [data-supporting-text] {
+    all: unset;
+    color: var(--supporting-text-color);
+    font-family: var(--supporting-text-font);
+    font-size: var(--supporting-text-size);
+    font-weight: var(--supporting-text-weight);
+    line-height: var(--supporting-text-line-height);
+    letter-spacing: var(--supporting-text-tracking);
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    text-align: start;
+
+    :scope[data-selected] & {
+      color: var(--supporting-text-selected-color);
+    }
+
+    :scope:hover & {
+      color: var(--leading-icon-hover-color);
+    }
+
+    :scope:active & {
+      color: var(--leading-icon-pressed-color);
+    }
+
+    :scope:focus-visible & {
+      color: var(--leading-icon-focus-color);
+    }
+
+    :scope[data-disabled] & {
+      color: color-mix(in srgb, var(--supporting-text-disabled-color) var(--supporting-text-disabled-opacity), transparent);
+    }
+  }
+
+  &[data-size=two-lines] [data-supporting-text] {
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+  }
+
+  &[data-size=three-lines] [data-supporting-text] {
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+  }
+}

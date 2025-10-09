@@ -1,0 +1,38 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+/* @embed */
+:root {
+  --leading-icon-color: var(--md-sys-color-on-surface-variant); /** List list item leading-icon color */
+  --leading-icon-disabled-color: var(--md-sys-color-on-surface); /** List list item disabled leading icon color */
+  --leading-icon-disabled-opacity: 38%; /** List list item disabled leading icon opacity */
+  --leading-icon-dragged-color: var(--md-sys-color-on-surface-variant); /** List list item dragged leading icon color */
+  --leading-icon-focus-color: var(--md-sys-color-on-surface-variant); /** List list item focus leading icon color */
+  --leading-icon-hover-color: var(--md-sys-color-on-surface-variant); /** List list item hover leading icon color */
+  --leading-icon-large-color: 69px; /** List list item large leading-icon color */
+  --leading-icon-pressed-color: var(--md-sys-color-on-surface-variant); /** List list item pressed leading icon color */
+  --leading-icon-selected-color: var(--md-sys-color-on-surface); /** List list item selected leading-icon color */
+  --leading-icon-selected-dragged-color: var(--md-sys-color-on-surface); /** List list item selected dragged leading icon color */
+  --leading-icon-selected-focus-color: var(--md-sys-color-on-surface); /** List list item selected focus leading icon color */
+  --leading-icon-selected-hover-color: var(--md-sys-color-on-surface); /** List list item selected hover leading icon color */
+  --leading-icon-selected-pressed-color: var(--md-sys-color-on-surface); /** List list item selected pressed leading icon color */
+  --leading-icon-shape: var(--md-sys-shape-corner-none); /** List list item leading-icon shape */
+  --leading-icon-size: 24px; /** List list item leading-icon size */
+  --leading-icon-small-height: 56px; /** List list item small leading-icon height */
+  --leading-icon-width: 100px; /** List list item leading-icon width */
+  --trailing-icon-color: var(--md-sys-color-on-surface-variant); /** List list item trailing icon color */
+  --trailing-icon-disabled-color: var(--md-sys-color-on-surface); /** List list item disabled trailing icon color */
+  --trailing-icon-disabled-opacity: 38%; /** List list item disabled trailing icon opacity */
+  --trailing-icon-dragged-color: var(--md-sys-color-on-surface-variant); /** List list item dragged trailing icon color */
+  --trailing-icon-focus-color: var(--md-sys-color-on-surface-variant); /** List list item focus trailing icon color */
+  --trailing-icon-hover-color: var(--md-sys-color-on-surface-variant); /** List list item hover trailing icon color */
+  --trailing-icon-pressed-color: var(--md-sys-color-on-surface-variant); /** List list item pressed trailing icon color */
+  --trailing-icon-selected-color: var(--md-sys-color-primary); /** List list item selected trailing icon color */
+  --trailing-icon-selected-dragged-color: var(--md-sys-color-on-surface); /** List list item selected dragged trailing icon color */
+  --trailing-icon-selected-focus-color: var(--md-sys-color-on-surface); /** List list item selected focus trailing icon color */
+  --trailing-icon-selected-hover-color: var(--md-sys-color-on-surface); /** List list item selected hover trailing icon color */
+  --trailing-icon-selected-pressed-color: var(--md-sys-color-on-surface); /** List list item selected pressed trailing icon color */
+  --trailing-icon-size: 24px; /** List list item trailing icon size */
+  --trailing-icon-unselected-color: var(--md-sys-color-on-surface); /** List list item unselected trailing icon color */
+}

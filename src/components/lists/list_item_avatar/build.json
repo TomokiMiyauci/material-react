@@ -1,0 +1,55 @@
+{
+  "steps": [
+    {
+      "use": "items2tokens",
+      "input": "../_generated/items.json",
+      "output": "./_generated/tokens.json",
+      "options": {
+        "exclude": {
+          "matches": ["leading avatar label type"]
+        },
+        "include": {
+          "matches": ["avatar"]
+        },
+        "segments": ["List list item", "leading avatar", "leading-avatar"],
+        "path": {
+          "exclude": {
+            "matches": [
+              "List list item",
+              "leading avatar",
+              "leading-avatar",
+              "leadingavatar"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "use": "tokens2css",
+      "input": "./_generated/tokens.json",
+      "output": "./_generated/tokens.css"
+    },
+    {
+      "use": "css",
+      "input": "./style.css",
+      "output": "./_generated/style.css",
+      "options": {
+        "minify": true,
+        "embed": true
+      }
+    },
+    {
+      "use": "css2ts",
+      "input": "./_generated/style.css",
+      "output": "./_generated/style.ts"
+    },
+    {
+      "use": "mustache",
+      "input": "./README.md.mustache",
+      "output": "./README.md",
+      "options": {
+        "tokenSource": "./_generated/style.css"
+      }
+    }
+  ]
+}
