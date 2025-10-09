@@ -113,7 +113,7 @@ const yAxis = [
       },
     ],
   },
-  { label: "With Divier" },
+  { label: "With Divider" },
 ] satisfies AxisNode[];
 
 const xAxis = [
