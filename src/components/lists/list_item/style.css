@@ -79,17 +79,11 @@
     align-items: start;
   }
 
-  & [data-leading],
-  & [data-trailing] {
-    all: unset;
-    flex: 0 0 auto;
-  }
-
   & [data-label-text-container] {
     all: unset;
     display: flex;
     flex-direction: column;
-    flex: 1 1 auto;
+    flex: 1;
   }
 
   [data-headline] {
