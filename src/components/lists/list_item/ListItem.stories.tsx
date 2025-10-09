@@ -29,6 +29,7 @@ interface Item {
   selected?: boolean;
   leading?: "icon" | "avatar";
   trailing?: "icon" | "text";
+  divider?: boolean;
 }
 
 interface PseudoData {
@@ -112,6 +113,7 @@ const yAxis = [
       },
     ],
   },
+  { label: "With Divier" },
 ] satisfies AxisNode[];
 
 const xAxis = [
@@ -175,7 +177,14 @@ const matrix: Item[][] = lines.flatMap((size) => {
       })
     );
   });
-});
+}).concat([
+  states.map((state) => ({
+    state,
+    selected: false,
+    size: "one-line",
+    divider: true,
+  })),
+]);
 
 type State = "enabled" | "disabled" | "hovered" | "focused" | "pressed";
 
@@ -209,6 +218,7 @@ function getProps(item: Item): ListItemProps & PseudoData {
         ? <ListItemText>100+</ListItemText>
         : undefined
       : undefined,
+    divider: item.divider,
   } satisfies ListItemProps;
 
   switch (item.state) {

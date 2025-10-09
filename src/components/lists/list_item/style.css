@@ -5,12 +5,7 @@
     all: unset;
     background-color: var(--container-color);
     border-radius: var(--container-shape);
-    display: flex;
-    align-items: center;
-    padding-inline-start: var(--leading-space);
-    padding-inline-end: var(--trailing-space);
-    column-gap: var(--leading-space);
-    padding-block: 8px;
+    display: block;
     position: relative;
 
     &::before {
@@ -20,6 +15,16 @@
       inset: 0;
       pointer-events: none;
     }
+  }
+
+  [data-container] {
+    all: unset;
+    display: flex;
+    align-items: center;
+    padding-inline-start: var(--leading-space);
+    padding-inline-end: var(--trailing-space);
+    column-gap: var(--leading-space);
+    padding-block: 8px;
   }
 
   &[data-selected] {
@@ -75,8 +80,10 @@
   }
 
   &[data-size=three-lines] {
-    padding-block: 12px;
-    align-items: start;
+    [data-container] {
+      padding-block: 12px;
+      align-items: start;
+    }
   }
 
   & [data-label-text-container] {

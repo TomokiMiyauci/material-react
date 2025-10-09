@@ -1,6 +1,7 @@
 import type { JSX, ReactNode } from "react";
 import style from "./_generated/style.ts";
 import Style from "@internal/Style.tsx";
+import { Divider } from "@/components/divider/mod.ts";
 import { bool } from "@/utils/convert.ts";
 
 export interface ListItemProps {
@@ -15,6 +16,7 @@ export interface ListItemProps {
   size?: ListItemSize;
   selected?: boolean;
   disabled?: boolean;
+  divider?: boolean;
 }
 
 export type ListItemSize = "one-line" | "two-lines" | "three-lines";
@@ -30,6 +32,7 @@ export default function ListItem(
     size = "two-lines",
     selected,
     disabled,
+    divider,
     ...rest
   } = props;
   return (
@@ -42,14 +45,18 @@ export default function ListItem(
         data-disabled={bool(disabled)}
         {...rest}
       >
-        {leading}
+        <div data-container="">
+          {leading}
 
-        <div data-label-text-container="">
-          <div data-headline="">{headline}</div>
-          <div data-supporting-text="">{supporingText}</div>
+          <div data-label-text-container="">
+            <div data-headline="">{headline}</div>
+            <div data-supporting-text="">{supporingText}</div>
+          </div>
+
+          {trailing}
         </div>
 
-        {trailing}
+        {divider && <Divider />}
       </div>
 
       <Style href="list-item">{style}</Style>
