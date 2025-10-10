@@ -7,3 +7,4 @@ export * from "./components/tooltips/plain_tooltip/mod.ts";
 export * from "./components/buttons/button/mod.ts";
 export * from "./components/divider/mod.ts";
 export * from "./components/lists/mod.ts";
+export * from "./components/fab/mod.ts";

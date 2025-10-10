@@ -1,0 +1,436 @@
+[
+  {
+    "name": "FAB container height",
+    "value": "56dp"
+  },
+  {
+    "name": "FAB container width",
+    "value": "56dp"
+  },
+  {
+    "name": "FAB icon size",
+    "value": "24dp"
+  },
+  {
+    "name": "FAB container shape",
+    "value": "md.sys.shape.corner.large"
+  },
+  {
+    "name": "FAB medium container height",
+    "value": "80dp"
+  },
+  {
+    "name": "FAB medium container width",
+    "value": "80dp"
+  },
+  {
+    "name": "FAB medium icon size",
+    "value": "28dp"
+  },
+  {
+    "name": "FAB medium container shape",
+    "value": "md.sys.shape.corner.large-increased"
+  },
+  {
+    "name": "FAB large container height",
+    "value": "96dp"
+  },
+  {
+    "name": "FAB large container width",
+    "value": "96dp"
+  },
+  {
+    "name": "FAB large icon size",
+    "value": "36dp"
+  },
+  {
+    "name": "FAB large container shape",
+    "value": "md.sys.shape.corner.extra-large"
+  },
+  {
+    "name": "FAB tonal primary container color",
+    "value": "md.sys.color.primary-container"
+  },
+  {
+    "name": "FAB tonal primary container shadow color",
+    "value": "md.sys.color.shadow"
+  },
+  {
+    "name": "FAB tonal primary container elevation",
+    "value": "md.sys.elevation.level3"
+  },
+  {
+    "name": "FAB tonal primary icon color",
+    "value": "md.sys.color.on-primary-container"
+  },
+  {
+    "name": "FAB tonal primary hovered container elevation",
+    "value": "md.sys.elevation.level4"
+  },
+  {
+    "name": "FAB tonal primary hovered state layer color",
+    "value": "md.sys.color.on-primary-container"
+  },
+  {
+    "name": "FAB tonal primary hovered state layer opacity",
+    "value": "md.sys.state.hover.state-layer-opacity"
+  },
+  {
+    "name": "FAB tonal primary hovered icon color",
+    "value": "md.sys.color.on-primary-container"
+  },
+  {
+    "name": "FAB tonal primary focused container elevation",
+    "value": "md.sys.elevation.level3"
+  },
+  {
+    "name": "FAB tonal primary focused state layer color",
+    "value": "md.sys.color.on-primary-container"
+  },
+  {
+    "name": "FAB tonal primary focused state layer opacity",
+    "value": "md.sys.state.focus.state-layer-opacity"
+  },
+  {
+    "name": "FAB tonal primary focused icon color",
+    "value": "md.sys.color.on-primary-container"
+  },
+  {
+    "name": "FAB tonal primary pressed container elevation",
+    "value": "md.sys.elevation.level3"
+  },
+  {
+    "name": "FAB tonal primary pressed state layer color",
+    "value": "md.sys.color.on-primary-container"
+  },
+  {
+    "name": "FAB tonal primary pressed state layer opacity",
+    "value": "md.sys.state.pressed.state-layer-opacity"
+  },
+  {
+    "name": "FAB tonal primary pressed icon color",
+    "value": "md.sys.color.on-primary-container"
+  },
+  {
+    "name": "FAB tonal secondary container color",
+    "value": "md.sys.color.secondary-container"
+  },
+  {
+    "name": "FAB tonal secondary container shadow color",
+    "value": "md.sys.color.shadow"
+  },
+  {
+    "name": "FAB tonal secondary container elevation",
+    "value": "md.sys.elevation.level3"
+  },
+  {
+    "name": "FAB tonal secondary icon color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "FAB tonal secondary hovered container elevation",
+    "value": "md.sys.elevation.level4"
+  },
+  {
+    "name": "FAB tonal secondary hovered state layer color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "FAB tonal secondary hovered state layer opacity",
+    "value": "md.sys.state.hover.state-layer-opacity"
+  },
+  {
+    "name": "FAB tonal secondary hovered icon color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "FAB tonal secondary focused container elevation",
+    "value": "md.sys.elevation.level3"
+  },
+  {
+    "name": "FAB tonal secondary focused state layer color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "FAB tonal secondary focused state layer opacity",
+    "value": "md.sys.state.focus.state-layer-opacity"
+  },
+  {
+    "name": "FAB tonal secondary focused icon color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "FAB tonal secondary pressed container elevation",
+    "value": "md.sys.elevation.level3"
+  },
+  {
+    "name": "FAB tonal secondary pressed state layer color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "FAB tonal secondary pressed state layer opacity",
+    "value": "md.sys.state.pressed.state-layer-opacity"
+  },
+  {
+    "name": "FAB tonal secondary pressed icon color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "FAB tonal tertiary container color",
+    "value": "md.sys.color.tertiary-container"
+  },
+  {
+    "name": "FAB tonal tertiary container shadow color",
+    "value": "md.sys.color.shadow"
+  },
+  {
+    "name": "FAB tonal tertiary container elevation",
+    "value": "md.sys.elevation.level3"
+  },
+  {
+    "name": "FAB tonal tertiary icon color",
+    "value": "md.sys.color.on-tertiary-container"
+  },
+  {
+    "name": "FAB tonal tertiary hovered container elevation",
+    "value": "md.sys.elevation.level4"
+  },
+  {
+    "name": "FAB tonal tertiary hovered state layer color",
+    "value": "md.sys.color.on-tertiary-container"
+  },
+  {
+    "name": "FAB tonal tertiary hovered state layer opacity",
+    "value": "md.sys.state.hover.state-layer-opacity"
+  },
+  {
+    "name": "FAB tonal tertiary hovered icon color",
+    "value": "md.sys.color.on-tertiary-container"
+  },
+  {
+    "name": "FAB tonal tertiary focused container elevation",
+    "value": "md.sys.elevation.level3"
+  },
+  {
+    "name": "FAB tonal tertiary focused state layer color",
+    "value": "md.sys.color.on-tertiary-container"
+  },
+  {
+    "name": "FAB tonal tertiary focused state layer opacity",
+    "value": "md.sys.state.focus.state-layer-opacity"
+  },
+  {
+    "name": "FAB tonal tertiary focused icon color",
+    "value": "md.sys.color.on-tertiary-container"
+  },
+  {
+    "name": "FAB tonal tertiary pressed container elevation",
+    "value": "md.sys.elevation.level3"
+  },
+  {
+    "name": "FAB tonal tertiary pressed state layer color",
+    "value": "md.sys.color.on-tertiary-container"
+  },
+  {
+    "name": "FAB tonal tertiary pressed state layer opacity",
+    "value": "md.sys.state.pressed.state-layer-opacity"
+  },
+  {
+    "name": "FAB tonal tertiary pressed icon color",
+    "value": "md.sys.color.on-tertiary-container"
+  },
+  {
+    "name": "FAB primary container color",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "FAB primary container shadow color",
+    "value": "md.sys.color.shadow"
+  },
+  {
+    "name": "FAB primary container elevation",
+    "value": "md.sys.elevation.level3"
+  },
+  {
+    "name": "FAB primary icon color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "FAB primary hovered container elevation",
+    "value": "md.sys.elevation.level4"
+  },
+  {
+    "name": "FAB primary hovered state layer color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "FAB primary hovered state layer opacity",
+    "value": "md.sys.state.hover.state-layer-opacity"
+  },
+  {
+    "name": "FAB primary hovered icon color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "FAB primary focused container elevation",
+    "value": "md.sys.elevation.level3"
+  },
+  {
+    "name": "FAB primary focused state layer color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "FAB primary focused state layer opacity",
+    "value": "md.sys.state.focus.state-layer-opacity"
+  },
+  {
+    "name": "FAB primary focused icon color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "FAB primary pressed container elevation",
+    "value": "md.sys.elevation.level3"
+  },
+  {
+    "name": "FAB primary pressed state layer color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "FAB primary pressed state layer opacity",
+    "value": "md.sys.state.pressed.state-layer-opacity"
+  },
+  {
+    "name": "FAB primary pressed icon color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "FAB secondary container color",
+    "value": "md.sys.color.secondary"
+  },
+  {
+    "name": "FAB secondary container shadow color",
+    "value": "md.sys.color.shadow"
+  },
+  {
+    "name": "FAB secondary container elevation",
+    "value": "md.sys.elevation.level3"
+  },
+  {
+    "name": "FAB secondary icon color",
+    "value": "md.sys.color.on-secondary"
+  },
+  {
+    "name": "FAB tonal hovered container elevation",
+    "value": "md.sys.elevation.level4"
+  },
+  {
+    "name": "FAB tonal hovered state layer color",
+    "value": "md.sys.color.on-secondary"
+  },
+  {
+    "name": "FAB tonal hovered state layer opacity",
+    "value": "md.sys.state.hover.state-layer-opacity"
+  },
+  {
+    "name": "FAB tonal hovered icon color",
+    "value": "md.sys.color.on-secondary"
+  },
+  {
+    "name": "FAB tonal focused container elevation",
+    "value": "md.sys.elevation.level3"
+  },
+  {
+    "name": "FAB tonal focused state layer color",
+    "value": "md.sys.color.on-secondary"
+  },
+  {
+    "name": "FAB tonal focused state layer opacity",
+    "value": "md.sys.state.focus.state-layer-opacity"
+  },
+  {
+    "name": "FAB tonal focused icon color",
+    "value": "md.sys.color.on-secondary"
+  },
+  {
+    "name": "FAB tonal pressed container elevation",
+    "value": "md.sys.elevation.level3"
+  },
+  {
+    "name": "FAB secondary pressed state layer color",
+    "value": "md.sys.color.on-secondary"
+  },
+  {
+    "name": "FAB tonal pressed state layer opacity",
+    "value": "md.sys.state.pressed.state-layer-opacity"
+  },
+  {
+    "name": "FAB secondary pressed icon color",
+    "value": "md.sys.color.on-secondary",
+    "$comment": "There was a typo in the spec, so I renamed it manually."
+  },
+  {
+    "name": "FAB tertiary container color",
+    "value": "md.sys.color.tertiary"
+  },
+  {
+    "name": "FAB tertiary container shadow color",
+    "value": "md.sys.color.shadow"
+  },
+  {
+    "name": "FAB tertiary container elevation",
+    "value": "md.sys.elevation.level3"
+  },
+  {
+    "name": "FAB tertiary icon color",
+    "value": "md.sys.color.on-tertiary"
+  },
+  {
+    "name": "FAB tertiary hovered container elevation",
+    "value": "md.sys.elevation.level4"
+  },
+  {
+    "name": "FAB tertiary hovered state layer color",
+    "value": "md.sys.color.on-tertiary",
+    "$comment": "There was a typo in the spec, so I renamed it manually."
+  },
+  {
+    "name": "FAB tertiary hovered state layer opacity",
+    "value": "md.sys.state.hover.state-layer-opacity"
+  },
+  {
+    "name": "FAB tertiary hovered icon color",
+    "value": "md.sys.color.on-tertiary"
+  },
+  {
+    "name": "FAB tertiary focused container elevation",
+    "value": "md.sys.elevation.level3"
+  },
+  {
+    "name": "FAB tertiary focused state layer color",
+    "value": "md.sys.color.on-tertiary"
+  },
+  {
+    "name": "FAB tertiary focused state layer opacity",
+    "value": "md.sys.state.focus.state-layer-opacity"
+  },
+  {
+    "name": "FAB tertiary focused icon color",
+    "value": "md.sys.color.on-tertiary"
+  },
+  {
+    "name": "FAB tertiary pressed container elevation",
+    "value": "md.sys.elevation.level3"
+  },
+  {
+    "name": "FAB tertiary pressed state layer color",
+    "value": "md.sys.color.on-tertiary"
+  },
+  {
+    "name": "FAB tertiary pressed state layer opacity",
+    "value": "md.sys.state.pressed.state-layer-opacity"
+  },
+  {
+    "name": "FAB tertiary pressed icon color",
+    "value": "md.sys.color.on-tertiary"
+  }
+]
