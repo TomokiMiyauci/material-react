@@ -1,3 +1,12 @@
+# [1.0.0-beta.12](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.11...1.0.0-beta.12) (2025-10-10)
+
+
+### Features
+
+* export fab component ([a0c43c7](https://github.com/TomokiMiyauci/material-react/commit/a0c43c7a09255ad8cc6e577d27cac1aadaaa1b5b))
+* **fab:** add fab component ([7de669c](https://github.com/TomokiMiyauci/material-react/commit/7de669c26df7b007c65f2aadf556b83b2735b3f5))
+* **fab:** change icon field as children, remove icon wrapper DOM ([a365b57](https://github.com/TomokiMiyauci/material-react/commit/a365b577dc13a993c43a5c247cb313c2fa463b1a))
+
 # [1.0.0-beta.11](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.10...1.0.0-beta.11) (2025-10-09)
 
 
