@@ -1,0 +1,51 @@
+@import url(./_generated/tokens.css);
+
+@scope([data-md=list-item-icon]) {
+  & {
+    all: unset;
+    display: inline flex;
+    align-items: center;
+    justify-items: center;
+    color: var(--leading-icon-color);
+    height: var(--leading-icon-size);
+    width: var(--leading-icon-size);
+    font-size: var(--leading-icon-size);
+  }
+}
+
+@scope([data-md=list-item]) {
+  [data-md=list-item-icon] {
+    :scope:hover & {
+      color: var(--leading-icon-hover-color);
+    }
+
+    :scope:active & {
+      color: var(--leading-icon-pressed-color);
+    }
+
+    :scope:focus-visible & {
+      color: var(--leading-icon-focus-color);
+    }
+
+    :scope[data-selected] & {
+      color: var(--leading-icon-selected-color);
+    }
+
+    :scope[data-selected]:hover & {
+      color: var(--leading-icon-selected-hover-color)
+    }
+
+    :scope[data-selected]:active & {
+      color: var(--leading-icon-selected-pressed-color)
+    }
+
+    :scope[data-selected]:focus-visible & {
+      color: var(--leading-icon-selected-focus-color)
+    }
+
+    :scope[data-disabled] &,
+    :scope[data-selected][data-disabled] & {
+      color: color-mix(in srgb, var(--leading-icon-disabled-color) var(--leading-icon-disabled-opacity), transparent);
+    }
+  }
+}

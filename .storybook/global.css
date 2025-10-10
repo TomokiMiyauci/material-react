@@ -1,7 +1,12 @@
 @layer theme, base, components, utilities;
 @import "tailwindcss/utilities.css" layer(utilities);
+@import "tailwindcss/theme.css" layer(theme);
 @source "src/**/*.stories.tsx";
 
-@plugin "@iconify/tailwind4" {
-  scale: 0;
+@theme {
+  --font-roboto: "Roboto", sans-serif;
+}
+
+.material-symbols-outlined {
+  font-size: inherit;
 }

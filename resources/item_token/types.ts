@@ -2,6 +2,7 @@ export interface ItemTokenConfig {
   segments?: string[];
   exclude?: Exclude;
   include?: Include;
+  renames?: Record<string, string>;
   path?: PathConfig;
 }
 

@@ -1,0 +1,8 @@
+{
+  "steps": [{
+    "use": "spec2tokens",
+    "input": "https://m3.material.io/components/buttons/specs",
+    "output": "./_generated/items.json",
+    "run": { "skipIfExists": true }
+  }]
+}

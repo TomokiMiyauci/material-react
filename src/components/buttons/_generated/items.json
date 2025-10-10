@@ -1,0 +1,1530 @@
+[
+  {
+    "name": "Button container color",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button container color - toggle (unselected)",
+    "value": "md.sys.color.surface-container"
+  },
+  {
+    "name": "Button container color - toggle (selected)",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button shadow color",
+    "value": "md.sys.color.shadow"
+  },
+  {
+    "name": "Button elevation",
+    "value": "md.sys.elevation.level0"
+  },
+  {
+    "name": "Button label color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button label color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button label color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button icon color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button icon color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button icon color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button container height",
+    "value": "40dp"
+  },
+  {
+    "name": "Button icon size",
+    "value": "20dp"
+  },
+  {
+    "name": "Button shape round",
+    "value": "md.sys.shape.corner.full"
+  },
+  {
+    "name": "Button shape square",
+    "value": "md.sys.shape.corner.medium"
+  },
+  {
+    "name": "Button leading space",
+    "value": "24dp"
+  },
+  {
+    "name": "Button between icon label space",
+    "value": "8dp"
+  },
+  {
+    "name": "Button trailing space",
+    "value": "24dp"
+  },
+  {
+    "name": "Button shape pressed morph",
+    "value": "md.sys.shape.corner.small"
+  },
+  {
+    "name": "Button shape spring animation damping",
+    "value": "md.sys.motion.spring.fast.spatial.damping"
+  },
+  {
+    "name": "Button shape spring animation stiffness",
+    "value": "md.sys.motion.spring.fast.spatial.stiffness"
+  },
+  {
+    "name": "Button selected container shape round",
+    "value": "md.sys.shape.corner.medium"
+  },
+  {
+    "name": "Button selected container shape square",
+    "value": "md.sys.shape.corner.full"
+  },
+  {
+    "name": "Button focus ring indicator color",
+    "value": "md.sys.color.secondary"
+  },
+  {
+    "name": "Button focus ring indicator thickness",
+    "value": "md.sys.state.focus-indicator.thickness"
+  },
+  {
+    "name": "Button focus ring outline offset",
+    "value": "md.sys.state.focus-indicator.outer-offset"
+  },
+  {
+    "name": "Button disabled container color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "Button disabled container opacity",
+    "value": "0.1"
+  },
+  {
+    "name": "Button disabled container elevation",
+    "value": "md.sys.elevation.level0"
+  },
+  {
+    "name": "Button disabled label color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "Button disabled label opacity",
+    "value": "0.38"
+  },
+  {
+    "name": "Button disabled icon color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "Button disabled icon opacity",
+    "value": "0.38"
+  },
+  {
+    "name": "Button hovered container state layer color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button hovered container state layer color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button hovered container state layer color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button hovered container state layer opacity",
+    "value": "md.sys.state.hover.state-layer-opacity"
+  },
+  {
+    "name": "Button hovered label color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button hovered label color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button hovered label color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button hovered icon color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button hovered icon color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button hovered icon color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button focused container state layer color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button focused container state layer color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button focused container state layer color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button focused container state layer opacity",
+    "value": "md.sys.state.focus.state-layer-opacity"
+  },
+  {
+    "name": "Button focused container state layer elevation",
+    "value": "md.sys.elevation.level0"
+  },
+  {
+    "name": "Button focused label color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button focused label color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button focused label color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button focused icon color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button focused icon color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button focused icon color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button pressed container state layer color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button pressed container state layer color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button pressed container state layer color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button pressed container state layer opacity",
+    "value": "md.sys.state.pressed.state-layer-opacity"
+  },
+  {
+    "name": "Button pressed container state layer elevation",
+    "value": "md.sys.elevation.level0"
+  },
+  {
+    "name": "Button pressed label color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button pressed label color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button pressed label color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button pressed icon color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button pressed icon color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button pressed icon color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button label size font",
+    "value": "md.ref.typeface.plain"
+  },
+  {
+    "name": "Button label size weight",
+    "value": "md.ref.typeface.weight-medium"
+  },
+  {
+    "name": "Button label size size",
+    "value": "14pt"
+  },
+  {
+    "name": "Button label size line height",
+    "value": "20pt"
+  },
+  {
+    "name": "Button label size tracking",
+    "value": "0.1pt"
+  },
+  {
+    "name": "Button elevated container color",
+    "value": "md.sys.color.surface-container-low"
+  },
+  {
+    "name": "Button elevated container color - toggle (unselected)",
+    "value": "md.sys.color.surface-container-low"
+  },
+  {
+    "name": "Button elevated container color - toggle (selected)",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button elevated shadow color",
+    "value": "md.sys.color.shadow"
+  },
+  {
+    "name": "Button elevated elevation",
+    "value": "md.sys.elevation.level1"
+  },
+  {
+    "name": "Button elevated label color",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button elevated label color - toggle (unselected)",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button elevated label color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button elevated icon color",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button elevated icon color - toggle (unselected)",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button elevated icon color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button elevated disabled container color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "Button elevated disabled container opacity",
+    "value": "0.1"
+  },
+  {
+    "name": "Button elevated disabled container elevation",
+    "value": "md.sys.elevation.level0"
+  },
+  {
+    "name": "Button elevated disabled label color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "Button elevated disabled label opacity",
+    "value": "0.38"
+  },
+  {
+    "name": "Button elevated disabled icon color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "Button elevated disabled icon opacity",
+    "value": "0.38"
+  },
+  {
+    "name": "Button elevated hovered container state layer color",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button elevated hovered container state layer color - toggle (unselected)",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button elevated hovered container state layer color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button elevated hovered container state layer opacity",
+    "value": "md.sys.state.hover.state-layer-opacity"
+  },
+  {
+    "name": "Button elevated hovered label color",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button elevated hovered label color - toggle (unselected)",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button elevated hovered label color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button elevated hovered icon color",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button elevated hovered icon color - toggle (unselected)",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button elevated hovered icon color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button elevated focused container state layer color",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button elevated focused container state layer color - toggle (unselected)",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button elevated focused container state layer color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button elevated focused container state layer opacity",
+    "value": "md.sys.state.focus.state-layer-opacity"
+  },
+  {
+    "name": "Button elevated focused container state layer elevation",
+    "value": "md.sys.elevation.level1"
+  },
+  {
+    "name": "Button elevated focused label color",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button elevated focused label color - toggle (unselected)",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button elevated focused label color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button elevated focused icon color",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button elevated focused icon color - toggle (unselected)",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button elevated focused icon color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button elevated pressed container state layer color",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button elevated pressed container state layer color - toggle (unselected)",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button elevated pressed container state layer color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button elevated pressed container state layer opacity",
+    "value": "md.sys.state.pressed.state-layer-opacity"
+  },
+  {
+    "name": "Button elevated pressed container state layer elevation",
+    "value": "md.sys.elevation.level1"
+  },
+  {
+    "name": "Button elevated pressed label color",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button elevated pressed label color - toggle (unselected)",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button elevated pressed label color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button elevated pressed icon color",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button elevated pressed icon color - toggle (unselected)",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button elevated pressed icon color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button filled container color",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button filled container color - toggle (unselected)",
+    "value": "md.sys.color.surface-container"
+  },
+  {
+    "name": "Button filled container color - toggle (selected)",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button filled shadow color",
+    "value": "md.sys.color.shadow"
+  },
+  {
+    "name": "Button filled elevation",
+    "value": "md.sys.elevation.level0"
+  },
+  {
+    "name": "Button filled label color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button filled label color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button filled label color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button filled icon color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button filled icon color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button filled icon color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button filled disabled container color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "Button filled disabled container opacity",
+    "value": "0.1"
+  },
+  {
+    "name": "Button filled disabled container elevation",
+    "value": "md.sys.elevation.level0"
+  },
+  {
+    "name": "Button filled disabled label color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "Button filled disabled label opacity",
+    "value": "0.38"
+  },
+  {
+    "name": "Button filled disabled icon color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "Button filled disabled icon opacity",
+    "value": "0.38"
+  },
+  {
+    "name": "Button filled hovered container state layer color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button filled hovered container state layer color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button filled hovered container state layer color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button filled hovered container state layer opacity",
+    "value": "md.sys.state.hover.state-layer-opacity"
+  },
+  {
+    "name": "Button filled hovered label color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button filled hovered label color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button filled hovered label color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button filled hovered icon color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button filled hovered icon color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button filled hovered icon color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button filled focused container state layer color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button filled focused container state layer color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button filled focused container state layer color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button filled focused container state layer opacity",
+    "value": "md.sys.state.focus.state-layer-opacity"
+  },
+  {
+    "name": "Button filled focused container state layer elevation",
+    "value": "md.sys.elevation.level0"
+  },
+  {
+    "name": "Button filled focused label color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button filled focused label color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button filled focused label color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button filled focused icon color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button filled focused icon color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button filled focused icon color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button filled pressed container state layer color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button filled pressed container state layer color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button filled pressed container state layer color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button filled pressed container state layer opacity",
+    "value": "md.sys.state.pressed.state-layer-opacity"
+  },
+  {
+    "name": "Button filled pressed container state layer elevation",
+    "value": "md.sys.elevation.level0"
+  },
+  {
+    "name": "Button filled pressed label color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button filled pressed label color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button filled pressed label color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button filled pressed icon color",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button filled pressed icon color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button filled pressed icon color - toggle (selected)",
+    "value": "md.sys.color.on-primary"
+  },
+  {
+    "name": "Button tonal container color",
+    "value": "md.sys.color.secondary-container"
+  },
+  {
+    "name": "Button tonal container color - toggle (unselected)",
+    "value": "md.sys.color.secondary-container"
+  },
+  {
+    "name": "Button tonal container color - toggle (selected)",
+    "value": "md.sys.color.secondary"
+  },
+  {
+    "name": "Button tonal shadow color",
+    "value": "md.sys.color.shadow"
+  },
+  {
+    "name": "Button tonal elevation",
+    "value": "md.sys.elevation.level0"
+  },
+  {
+    "name": "Button tonal label color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Button tonal label color - toggle (unselected)",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Button tonal label color - toggle (selected)",
+    "value": "md.sys.color.on-secondary"
+  },
+  {
+    "name": "Button tonal icon color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Button tonal icon color - toggle (unselected)",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Button tonal icon color - toggle (selected)",
+    "value": "md.sys.color.on-secondary"
+  },
+  {
+    "name": "Button tonal disabled container color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "Button tonal disabled container opacity",
+    "value": "0.1"
+  },
+  {
+    "name": "Button tonal disabled container elevation",
+    "value": "md.sys.elevation.level0"
+  },
+  {
+    "name": "Button tonal disabled label color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "Button tonal disabled label opacity",
+    "value": "0.38"
+  },
+  {
+    "name": "Button tonal disabled icon color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "Button tonal disabled icon opacity",
+    "value": "0.38"
+  },
+  {
+    "name": "Button tonal hovered container state layer color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Button tonal hovered container state layer color - toggle (unselected)",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Button tonal hovered container state layer color - toggle (selected)",
+    "value": "md.sys.color.on-secondary"
+  },
+  {
+    "name": "Button tonal hovered container state layer opacity",
+    "value": "md.sys.state.hover.state-layer-opacity"
+  },
+  {
+    "name": "Button tonal hovered label color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Button tonal hovered label color - toggle (unselected)",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Button tonal hovered label color - toggle (selected)",
+    "value": "md.sys.color.on-secondary"
+  },
+  {
+    "name": "Button tonal hovered icon color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Button tonal hovered icon color - toggle (unselected)",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Button tonal hovered icon color - toggle (selected)",
+    "value": "md.sys.color.on-secondary"
+  },
+  {
+    "name": "Button tonal focused container state layer color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Button tonal focused container state layer color - toggle (unselected)",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Button tonal focused container state layer color - toggle (selected)",
+    "value": "md.sys.color.on-secondary"
+  },
+  {
+    "name": "Button tonal focused container state layer opacity",
+    "value": "md.sys.state.focus.state-layer-opacity"
+  },
+  {
+    "name": "Button tonal focused container state layer elevation",
+    "value": "md.sys.elevation.level0"
+  },
+  {
+    "name": "Button tonal focused label color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Button tonal focused label color - toggle (unselected)",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Button tonal focused label color - toggle (selected)",
+    "value": "md.sys.color.on-secondary"
+  },
+  {
+    "name": "Button tonal focused icon color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Button tonal focused icon color - toggle (unselected)",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Button tonal focused icon color - toggle (selected)",
+    "value": "md.sys.color.on-secondary"
+  },
+  {
+    "name": "Button tonal pressed container state layer color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Button tonal pressed container state layer color - toggle (unselected)",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Button tonal pressed container state layer color - toggle (selected)",
+    "value": "md.sys.color.on-secondary"
+  },
+  {
+    "name": "Button tonal pressed container state layer opacity",
+    "value": "md.sys.state.pressed.state-layer-opacity"
+  },
+  {
+    "name": "Button tonal pressed container state layer elevation",
+    "value": "md.sys.elevation.level0"
+  },
+  {
+    "name": "Button tonal pressed label color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Button tonal pressed label color - toggle (unselected)",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Button tonal pressed label color - toggle (selected)",
+    "value": "md.sys.color.on-secondary"
+  },
+  {
+    "name": "Button tonal pressed icon color",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Button tonal pressed icon color - toggle (unselected)",
+    "value": "md.sys.color.on-secondary-container"
+  },
+  {
+    "name": "Button tonal pressed icon color - toggle (selected)",
+    "value": "md.sys.color.on-secondary"
+  },
+  {
+    "name": "Button outlined outline color",
+    "value": "md.sys.color.outline-variant"
+  },
+  {
+    "name": "Button outlined container color - toggle (selected)",
+    "value": "md.sys.color.inverse-surface"
+  },
+  {
+    "name": "Button outlined label color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button outlined label color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button outlined label color - toggle (selected)",
+    "value": "md.sys.color.inverse-on-surface"
+  },
+  {
+    "name": "Button outlined icon color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button outlined icon color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button outlined icon color - toggle (selected)",
+    "value": "md.sys.color.inverse-on-surface"
+  },
+  {
+    "name": "Button outlined disabled outline color",
+    "value": "md.sys.color.outline-variant"
+  },
+  {
+    "name": "Button outlined disabled outline color (unselected)",
+    "value": "md.sys.color.outline-variant"
+  },
+  {
+    "name": "Button outlined disabled container color (selected)",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "Button outlined disabled container opacity",
+    "value": "0.1"
+  },
+  {
+    "name": "Button outlined disabled label color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "Button outlined disabled label opacity",
+    "value": "0.38"
+  },
+  {
+    "name": "Button outlined disabled icon color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "Button outlined disabled icon opacity",
+    "value": "0.38"
+  },
+  {
+    "name": "Button outlined hovered state layer color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button outlined hovered state layer color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button outlined hovered state layer color - toggle (selected)",
+    "value": "md.sys.color.inverse-on-surface"
+  },
+  {
+    "name": "Button outlined hovered state layer opacity",
+    "value": "md.sys.state.hover.state-layer-opacity"
+  },
+  {
+    "name": "Button outlined hovered outline color",
+    "value": "md.sys.color.outline-variant"
+  },
+  {
+    "name": "Button outlined hovered outline color - toggle (unselected)",
+    "value": "md.sys.color.outline-variant"
+  },
+  {
+    "name": "Button outlined hovered label color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button outlined hovered label color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button outlined hovered label color - toggle (selected)",
+    "value": "md.sys.color.inverse-on-surface"
+  },
+  {
+    "name": "Button outlined hovered icon color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button outlined hovered icon color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button outlined hovered icon color - toggle (selected)",
+    "value": "md.sys.color.inverse-on-surface"
+  },
+  {
+    "name": "Button outlined focused container state layer color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button outlined focused container state layer color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button outlined focused container state layer color - toggle (selected)",
+    "value": "md.sys.color.inverse-on-surface"
+  },
+  {
+    "name": "Button outlined focused container state layer opacity",
+    "value": "md.sys.state.focus.state-layer-opacity"
+  },
+  {
+    "name": "Button outlined focused outline color",
+    "value": "md.sys.color.outline-variant"
+  },
+  {
+    "name": "Button outlined focused outline color - toggle (unselected)",
+    "value": "md.sys.color.outline-variant"
+  },
+  {
+    "name": "Button outlined focused label color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button outlined focused label color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button outlined focused label color - toggle (selected)",
+    "value": "md.sys.color.inverse-on-surface"
+  },
+  {
+    "name": "Button outlined focused icon color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button outlined focused icon color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button outlined focused icon color - toggle (selected)",
+    "value": "md.sys.color.inverse-on-surface"
+  },
+  {
+    "name": "Button outlined pressed container state layer color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button outlined pressed container state layer color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button outlined pressed container state layer color - toggle (selected)",
+    "value": "md.sys.color.inverse-on-surface"
+  },
+  {
+    "name": "Button outlined pressed container state layer opacity",
+    "value": "md.sys.state.pressed.state-layer-opacity"
+  },
+  {
+    "name": "Button outlined pressed outline color",
+    "value": "md.sys.color.outline-variant"
+  },
+  {
+    "name": "Button outlined pressed outline color - toggle (unselected)",
+    "value": "md.sys.color.outline-variant"
+  },
+  {
+    "name": "Button outlined pressed label color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button outlined pressed label color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button outlined pressed label color - toggle (selected)",
+    "value": "md.sys.color.inverse-on-surface"
+  },
+  {
+    "name": "Button outlined pressed icon color",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button outlined pressed icon color - toggle (unselected)",
+    "value": "md.sys.color.on-surface-variant"
+  },
+  {
+    "name": "Button outlined pressed icon color - toggle (selected)",
+    "value": "md.sys.color.inverse-on-surface"
+  },
+  {
+    "name": "Button text label color",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button text icon color",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button text disabled container color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "Button text disabled container opacity",
+    "value": "0.1"
+  },
+  {
+    "name": "Button text disabled label color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "Button text disabled label opacity",
+    "value": "0.38"
+  },
+  {
+    "name": "Button text disabled icon color",
+    "value": "md.sys.color.on-surface"
+  },
+  {
+    "name": "Button text disabled icon opacity",
+    "value": "0.38"
+  },
+  {
+    "name": "Button text hovered state layer color",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button text hovered state layer opacity",
+    "value": "md.sys.state.hover.state-layer-opacity"
+  },
+  {
+    "name": "Button text hovered label color",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button text hovered icon color",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button text focused state layer color",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button text focused state layer opacity",
+    "value": "md.sys.state.focus.state-layer-opacity"
+  },
+  {
+    "name": "Button text focused label color",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button text focused icon color",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button text pressed state layer color",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button text pressed state layer opacity",
+    "value": "md.sys.state.pressed.state-layer-opacity"
+  },
+  {
+    "name": "Button text pressed label color",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button text pressed icon color",
+    "value": "md.sys.color.primary"
+  },
+  {
+    "name": "Button xsmall container height",
+    "value": "32dp"
+  },
+  {
+    "name": "Button xsmall outline width",
+    "value": "1dp"
+  },
+  {
+    "name": "Button xsmall icon size",
+    "value": "20dp"
+  },
+  {
+    "name": "Button xsmall shape round",
+    "value": "md.sys.shape.corner.full"
+  },
+  {
+    "name": "Button xsmall shape square",
+    "value": "md.sys.shape.corner.medium"
+  },
+  {
+    "name": "Button xsmall leading space",
+    "value": "12dp"
+  },
+  {
+    "name": "Button xsmall between icon label space",
+    "value": "8dp"
+  },
+  {
+    "name": "Button xsmall trailing space",
+    "value": "12dp"
+  },
+  {
+    "name": "Button xsmall shape pressed morph",
+    "value": "md.sys.shape.corner.small"
+  },
+  {
+    "name": "Button xsmall shape spring animation damping",
+    "value": "md.sys.motion.spring.fast.spatial.damping"
+  },
+  {
+    "name": "Button xsmall shape spring animation stiffness",
+    "value": "md.sys.motion.spring.fast.spatial.stiffness"
+  },
+  {
+    "name": "Button xsmall selected container shape round",
+    "value": "md.sys.shape.corner.medium"
+  },
+  {
+    "name": "Button xsmall selected container shape square",
+    "value": "md.sys.shape.corner.full"
+  },
+  {
+    "name": "Button xsmall label size font",
+    "value": "md.ref.typeface.plain"
+  },
+  {
+    "name": "Button xsmall label size weight",
+    "value": "md.ref.typeface.weight-medium"
+  },
+  {
+    "name": "Button xsmall label size size",
+    "value": "14pt"
+  },
+  {
+    "name": "Button xsmall label size line height",
+    "value": "20pt"
+  },
+  {
+    "name": "Button xsmall label size tracking",
+    "value": "0.1pt"
+  },
+  {
+    "name": "Button small container height",
+    "value": "40dp"
+  },
+  {
+    "name": "Button small outline width",
+    "value": "1dp"
+  },
+  {
+    "name": "Button small icon size",
+    "value": "20dp"
+  },
+  {
+    "name": "Button small shape round",
+    "value": "md.sys.shape.corner.full"
+  },
+  {
+    "name": "Button small shape square",
+    "value": "md.sys.shape.corner.medium"
+  },
+  {
+    "name": "Button small leading space",
+    "value": "16dp"
+  },
+  {
+    "name": "Button small between icon label space",
+    "value": "8dp"
+  },
+  {
+    "name": "Button small trailing space",
+    "value": "16dp"
+  },
+  {
+    "name": "Button small shape pressed morph",
+    "value": "md.sys.shape.corner.small"
+  },
+  {
+    "name": "Button small shape spring animation damping",
+    "value": "md.sys.motion.spring.fast.spatial.damping"
+  },
+  {
+    "name": "Button small shape spring animation stiffness",
+    "value": "md.sys.motion.spring.fast.spatial.stiffness"
+  },
+  {
+    "name": "Button small selected container shape round",
+    "value": "md.sys.shape.corner.medium"
+  },
+  {
+    "name": "Button small selected container shape square",
+    "value": "md.sys.shape.corner.full"
+  },
+  {
+    "name": "Button small label size font",
+    "value": "md.ref.typeface.plain"
+  },
+  {
+    "name": "Button small label size weight",
+    "value": "md.ref.typeface.weight-medium"
+  },
+  {
+    "name": "Button small label size size",
+    "value": "14pt"
+  },
+  {
+    "name": "Button small label size line height",
+    "value": "20pt"
+  },
+  {
+    "name": "Button small label size tracking",
+    "value": "0.1pt"
+  },
+  {
+    "name": "Button medium container height",
+    "value": "56dp"
+  },
+  {
+    "name": "Button medium outline width",
+    "value": "1dp"
+  },
+  {
+    "name": "Button medium icon size",
+    "value": "24dp"
+  },
+  {
+    "name": "Button medium shape round",
+    "value": "md.sys.shape.corner.full"
+  },
+  {
+    "name": "Button medium shape square",
+    "value": "md.sys.shape.corner.large"
+  },
+  {
+    "name": "Button medium leading space",
+    "value": "24dp"
+  },
+  {
+    "name": "Button medium between icon label space",
+    "value": "8dp"
+  },
+  {
+    "name": "Button medium trailing space",
+    "value": "24dp"
+  },
+  {
+    "name": "Button medium shape pressed morph",
+    "value": "md.sys.shape.corner.medium"
+  },
+  {
+    "name": "Button medium shape spring animation damping",
+    "value": "md.sys.motion.spring.fast.spatial.damping"
+  },
+  {
+    "name": "Button medium shape spring animation stiffness",
+    "value": "md.sys.motion.spring.fast.spatial.stiffness"
+  },
+  {
+    "name": "Button medium selected container shape round",
+    "value": "md.sys.shape.corner.large"
+  },
+  {
+    "name": "Button medium selected container shape square",
+    "value": "md.sys.shape.corner.full"
+  },
+  {
+    "name": "Button medium label size font",
+    "value": "md.ref.typeface.plain"
+  },
+  {
+    "name": "Button medium label size weight",
+    "value": "md.ref.typeface.weight-medium"
+  },
+  {
+    "name": "Button medium label size size",
+    "value": "16pt"
+  },
+  {
+    "name": "Button medium label size line height",
+    "value": "24pt"
+  },
+  {
+    "name": "Button medium label size tracking",
+    "value": "0.15pt"
+  },
+  {
+    "name": "Button large container height",
+    "value": "96dp"
+  },
+  {
+    "name": "Button large outline width",
+    "value": "2dp"
+  },
+  {
+    "name": "Button large icon size",
+    "value": "32dp"
+  },
+  {
+    "name": "Button large shape round",
+    "value": "md.sys.shape.corner.full"
+  },
+  {
+    "name": "Button large shape square",
+    "value": "md.sys.shape.corner.extra-large"
+  },
+  {
+    "name": "Button large leading space",
+    "value": "48dp"
+  },
+  {
+    "name": "Button large between icon label space",
+    "value": "12dp"
+  },
+  {
+    "name": "Button large trailing space",
+    "value": "48dp"
+  },
+  {
+    "name": "Button large shape pressed morph",
+    "value": "md.sys.shape.corner.large"
+  },
+  {
+    "name": "Button large shape spring animation damping",
+    "value": "md.sys.motion.spring.fast.spatial.damping"
+  },
+  {
+    "name": "Button large shape spring animation stiffness",
+    "value": "md.sys.motion.spring.fast.spatial.stiffness"
+  },
+  {
+    "name": "Button large selected container shape round",
+    "value": "md.sys.shape.corner.extra-large"
+  },
+  {
+    "name": "Button large selected container shape square",
+    "value": "md.sys.shape.corner.full"
+  },
+  {
+    "name": "Button large label size font",
+    "value": "md.ref.typeface.brand"
+  },
+  {
+    "name": "Button large label size weight",
+    "value": "md.ref.typeface.weight-regular"
+  },
+  {
+    "name": "Button large label size size",
+    "value": "24pt"
+  },
+  {
+    "name": "Button large label size line height",
+    "value": "32pt"
+  },
+  {
+    "name": "Button large label size tracking",
+    "value": "0"
+  },
+  {
+    "name": "Button xlarge container height",
+    "value": "136dp"
+  },
+  {
+    "name": "Button xlarge outline width",
+    "value": "3dp"
+  },
+  {
+    "name": "Button xlarge icon size",
+    "value": "40dp"
+  },
+  {
+    "name": "Button xlarge shape round",
+    "value": "md.sys.shape.corner.full"
+  },
+  {
+    "name": "Button xlarge shape square",
+    "value": "md.sys.shape.corner.extra-large"
+  },
+  {
+    "name": "Button xlarge leading space",
+    "value": "64dp"
+  },
+  {
+    "name": "Button xlarge between icon label space",
+    "value": "16dp"
+  },
+  {
+    "name": "Button xlarge trailing space",
+    "value": "64dp"
+  },
+  {
+    "name": "Button xlarge shape pressed morph",
+    "value": "md.sys.shape.corner.large"
+  },
+  {
+    "name": "Button xlarge shape spring animation damping",
+    "value": "md.sys.motion.spring.fast.spatial.damping"
+  },
+  {
+    "name": "Button xlarge shape spring animation stiffness",
+    "value": "md.sys.motion.spring.fast.spatial.stiffness"
+  },
+  {
+    "name": "Button xlarge selected container shape round",
+    "value": "md.sys.shape.corner.extra-large"
+  },
+  {
+    "name": "Button xlarge selected container shape square",
+    "value": "md.sys.shape.corner.full"
+  },
+  {
+    "name": "Button xlarge label size font",
+    "value": "md.ref.typeface.brand"
+  },
+  {
+    "name": "Button xlarge label size weight",
+    "value": "md.ref.typeface.weight-regular"
+  },
+  {
+    "name": "Button xlarge label size size",
+    "value": "32pt"
+  },
+  {
+    "name": "Button xlarge label size line height",
+    "value": "40pt"
+  },
+  {
+    "name": "Button xlarge label size tracking",
+    "value": "0"
+  }
+]
