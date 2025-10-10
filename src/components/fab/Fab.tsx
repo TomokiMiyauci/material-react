@@ -9,7 +9,7 @@ export interface FabProps {
    * @default "primary-container"
    */
   color?: FabColor;
-  icon?: ReactNode;
+  children?: ReactNode;
 }
 
 export type FabSize = "baseline" | "medium" | "large";
@@ -22,10 +22,13 @@ export type FabColor =
   | "tertiary"
   | "tertiary-container";
 
+/**
+ * Floating action buttons (FABs) help people take primary actions
+ */
 export default function Fab(
   props: FabProps & JSX.IntrinsicElements["button"],
 ): JSX.Element {
-  const { size, color = "primary-container", icon, ...rest } = props;
+  const { size, color = "primary-container", children, ...rest } = props;
 
   return (
     <>
@@ -36,7 +39,7 @@ export default function Fab(
         data-color={color}
         {...rest}
       >
-        <span data-icon="">{icon}</span>
+        {children}
       </button>
 
       <Style href="fab">{style}</Style>
