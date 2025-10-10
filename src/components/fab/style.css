@@ -2,19 +2,21 @@
 @import url(../../_internal/elevation.css);
 
 @scope([data-md=fab]) {
-  all: unset;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: var(--container-width);
-  height: var(--container-height);
-  border-radius: var(--container-shape);
-  --elevation: var(--md-sys-elevation-level3);
-  box-shadow: var(--box-shadow);
-  position: relative;
-  cursor: pointer;
-  font-size: var(--icon-size);
-  color: var(--icon-tonal-primary-color);
+  & {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--container-width);
+    height: var(--container-height);
+    border-radius: var(--container-shape);
+    --elevation: var(--md-sys-elevation-level3);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    cursor: pointer;
+    font-size: var(--icon-size);
+    color: var(--icon-tonal-primary-color);
+  }
 
   &::before {
     content: "";
