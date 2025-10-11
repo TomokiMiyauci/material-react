@@ -1,3 +1,10 @@
+# [1.0.0-beta.13](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.12...1.0.0-beta.13) (2025-10-11)
+
+
+### Features
+
+* **extended-fab:** add extended fab component ([e5cf01c](https://github.com/TomokiMiyauci/material-react/commit/e5cf01c8bd36605e90fb33ac834a88e0654fd61f))
+
 # [1.0.0-beta.12](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.11...1.0.0-beta.12) (2025-10-10)
 
 
