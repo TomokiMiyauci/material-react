@@ -1,0 +1,16 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+/* @embed */
+:root {
+  --color: var(--md-sys-color-primary-container); /** List list item leading-avatar color */
+  --label-color: var(--md-sys-color-on-primary-container); /** List list item leading avatar label color */
+  --label-font: var(--md-sys-typescale-title-medium-font); /** List list item leading avatar label font */
+  --label-line-height: var(--md-sys-typescale-title-medium-line-height); /** List list item leadingavatar label line height */
+  --label-size: var(--md-sys-typescale-title-medium-size); /** List list item leadingavatar label size */
+  --label-tracking: var(--md-sys-typescale-title-medium-tracking); /** List list item leading avatar label tracking */
+  --label-weight: var(--md-sys-typescale-title-medium-weight); /** List list item leading avatar label weight */
+  --shape: var(--md-sys-shape-corner-full); /** List list item leading-avatar shape */
+  --size: 40px; /** List list item leading-avatar size */
+}

@@ -92,6 +92,7 @@ jobs:
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           storybookBuildDir: storybook-static
+          onlyChanged: true 
           exitZeroOnChanges: false
 
   release:
@@ -108,13 +109,23 @@ jobs:
         os: [ubuntu-latest]
 
     steps:
+      - name: Generate Token
+        id: app-token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ secrets.BOT_APP_ID }}
+          private-key: ${{ secrets.BOT_PRIVATE_KEY }}
+
       - name: Checkout
         uses: actions/checkout@v5
+        with:
+         fetch-depth: 0
+         persist-credentials: false
 
       - uses: cycjimmy/semantic-release-action@v5
         id: semantic
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
 
   publish:
     needs: [release]

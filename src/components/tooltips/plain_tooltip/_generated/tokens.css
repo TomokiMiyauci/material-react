@@ -1,0 +1,15 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+/* @embed */
+:root {
+  --container-color: var(--md-sys-color-inverse-surface); /** Plain tooltip container color */
+  --container-shape: var(--md-sys-shape-corner-extra-small); /** Plain tooltip container shape */
+  --supporting-text-color: var(--md-sys-color-inverse-on-surface); /** Plain tooltip supporting text color */
+  --supporting-text-font: var(--md-sys-typescale-body-small-font); /** Plain tooltip supporting text font */
+  --supporting-text-line-height: var(--md-sys-typescale-body-small-line-height); /** Plain tooltip supporting text line height */
+  --supporting-text-size: var(--md-sys-typescale-body-small-size); /** Plain tooltip supporting text size */
+  --supporting-text-tracking: var(--md-sys-typescale-body-small-tracking); /** Plain tooltip supporting text tracking */
+  --supporting-text-weight: var(--md-sys-typescale-body-small-weight); /** Plain tooltip supporting text weight */
+}

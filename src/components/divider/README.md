@@ -1,0 +1,28 @@
+# Divider
+
+A divider is a thin line used to group content in lists and layouts.
+
+## Example
+
+```tsx
+import { Divider } from "@miyauci/material-react";
+
+<Divider />;
+```
+
+## Props
+
+| Name          | Type                            |   Default    |
+| ------------- | ------------------------------- | :----------: |
+| `orientation` | `horizontal`, `vertical`        | `horizontal` |
+| `variant`     | `full`, `inset`, `middle-inset` |      -       |
+
+And `HTMLHRElement` arrtibutes.
+
+## Tokens
+
+Depends on the following CSS variables.
+
+<!-- deno-fmt-ignore-start -->
+- --md-sys-color-outline-variant
+<!-- deno-fmt-ignore-end -->

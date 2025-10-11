@@ -8,6 +8,7 @@ import postcss from "postcss";
 import atImport from "postcss-import";
 import autoprefixer from "autoprefixer";
 import cssnano from "cssnano";
+import presetEnv from "postcss-preset-env";
 import inlineToken from "~/resources/postcss/inline_token.ts";
 import mustashe from "mustache";
 import valueParser from "postcss-value-parser";
@@ -61,6 +62,7 @@ export class CssTransformer implements Transformer {
     const processor = postcss([
       // deno-lint-ignore no-explicit-any
       atImport as any,
+      presetEnv({ features: { "nesting-rules": true } }),
       inlineToken,
       autoprefixer,
       cssnano,

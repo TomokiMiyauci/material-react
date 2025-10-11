@@ -1,0 +1,34 @@
+# Button
+
+Buttons prompt most actions in a UI.
+
+## Example
+
+```tsx
+import { Button } from "@miyauci/material-react";
+
+<Button label="Button" />;
+```
+
+## Props
+
+| Name       | Type                                                  | Default  |
+| ---------- | ----------------------------------------------------- | :------: |
+| `size`     | `xsmall`, `small`, `medium`, `large`, `xlarge`        | `small`  |
+| `shape`    | `round`, `square`                                     | `round`  |
+| `color`    | `filled`, `elevated`, `tonal`, `outlined`, `standard` | `filled` |
+| `disabled` | `boolean`                                             |    -     |
+| `label`    | `string`                                              |    -     |
+| `icon`     | `ReactNode`                                           |    -     |
+
+And `HTMLButtonElement` arrtibutes.
+
+## Tokens
+
+Depends on the following CSS variables.
+
+<!-- deno-fmt-ignore-start -->
+{{#tokens}}
+- {{.}}
+{{/tokens}}
+<!-- deno-fmt-ignore-end -->
