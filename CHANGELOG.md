@@ -1,3 +1,10 @@
+# [1.0.0-beta.14](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.13...1.0.0-beta.14) (2025-10-13)
+
+
+### Features
+
+* **badge:** change badge component to DSD style ([f28cf42](https://github.com/TomokiMiyauci/material-react/commit/f28cf4239a74a03cc0bdc99b36e34e9038a1aae5))
+
 # [1.0.0-beta.13](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.12...1.0.0-beta.13) (2025-10-11)
 
 
