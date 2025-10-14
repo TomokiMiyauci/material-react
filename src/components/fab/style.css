@@ -1,22 +1,22 @@
-@import url(./_generated/tokens.css);
-@import url(../../_internal/elevation.css);
+@import url("./_generated/tokens.css");
+@import url("../../_internal/elevation.css");
 
-@scope([data-md=fab]) {
-  & {
-    all: unset;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: var(--container-width);
-    height: var(--container-height);
-    border-radius: var(--container-shape);
-    --elevation: var(--md-sys-elevation-level3);
-    box-shadow: var(--box-shadow);
-    position: relative;
-    cursor: pointer;
-    font-size: var(--icon-size);
-    color: var(--icon-tonal-primary-color);
-  }
+[data-md="fab"] {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--container-width);
+  height: var(--container-height);
+  border-radius: var(--container-shape);
+
+  --elevation: var(--md-sys-elevation-level3);
+
+  box-shadow: var(--box-shadow);
+  position: relative;
+  cursor: pointer;
+  font-size: var(--icon-size);
+  color: var(--icon-tonal-primary-color);
 
   &::before {
     content: "";
@@ -26,28 +26,30 @@
     pointer-events: none;
   }
 
-  &[data-size=medium] {
+  &[data-size="medium"] {
     width: var(--container-medium-width);
     height: var(--container-medium-height);
     border-radius: var(--container-medium-shape);
-    font-size: var(--icon-medium-size)
+    font-size: var(--icon-medium-size);
   }
 
-  &[data-size=large] {
+  &[data-size="large"] {
     width: var(--container-large-width);
     height: var(--container-large-height);
     border-radius: var(--container-large-shape);
     font-size: var(--icon-large-size);
   }
 
-  &[data-color=primary] {
+  &[data-color="primary"] {
     --elevation: var(--container-primary-elevation);
     --shadow-color: var(--container-primary-shadow-color);
+
     background-color: var(--container-primary-color);
     color: var(--icon-primary-color);
 
     &:hover {
       --elevation: var(--container-primary-hovered-elevation);
+
       color: var(--icon-primary-hovered-color);
 
       &::before {
@@ -58,6 +60,7 @@
 
     &:active {
       --elevation: var(--container-primary-pressed-elevation);
+
       color: var(--icon-primary-pressed-color);
 
       &::before {
@@ -68,6 +71,7 @@
 
     &:focus-visible {
       --elevation: var(--container-primary-focused-elevation);
+
       color: var(--icon-primary-focused-color);
 
       &::before {
@@ -77,14 +81,16 @@
     }
   }
 
-  &[data-color=primary-container] {
+  &[data-color="primary-container"] {
     --elevation: var(--container-tonal-primary-elevation);
     --shadow-color: var(--container-tonal-primary-shadow-color);
+
     background-color: var(--container-tonal-primary-color);
     color: var(--icon-tonal-primary-color);
 
     &:hover {
       --elevation: var(--container-tonal-primary-hovered-elevation);
+
       color: var(--icon-tonal-primary-hovered-color);
 
       &::before {
@@ -95,6 +101,7 @@
 
     &:active {
       --elevation: var(--container-tonal-primary-pressed-elevation);
+
       color: var(--icon-tonal-primary-pressed-color);
 
       &::before {
@@ -105,6 +112,7 @@
 
     &:focus-visible {
       --elevation: var(--container-tonal-primary-focused-elevation);
+
       color: var(--icon-tonal-primary-focused-color);
 
       &::before {
@@ -114,14 +122,16 @@
     }
   }
 
-  &[data-color=secondary] {
+  &[data-color="secondary"] {
     --elevation: var(--container-secondary-elevation);
     --shadow-color: var(--container-secondary-shadow-color);
+
     background-color: var(--container-secondary-color);
     color: var(--icon-secondary-color);
 
     &:hover {
       --elevation: var(--container-tonal-hovered-elevation);
+
       color: var(--icon-tonal-hovered-color);
 
       &::before {
@@ -132,6 +142,7 @@
 
     &:active {
       --elevation: var(--container-tonal-pressed-elevation);
+
       color: var(--icon-secondary-pressed-color);
 
       &::before {
@@ -142,6 +153,7 @@
 
     &:focus-visible {
       --elevation: var(--container-tonal-focused-elevation);
+
       color: var(--icon-tonal-focused-color);
 
       &::before {
@@ -151,14 +163,16 @@
     }
   }
 
-  &[data-color=secondary-container] {
+  &[data-color="secondary-container"] {
     --elevation: var(--container-tonal-secondary-elevation);
     --shadow-color: var(--container-tonal-secondary-shadow-color);
+
     background-color: var(--container-tonal-secondary-color);
     color: var(--icon-tonal-secondary-color);
 
     &:hover {
       --elevation: var(--container-tonal-secondary-hovered-elevation);
+
       color: var(--icon-tonal-secondary-hovered-color);
 
       &::before {
@@ -169,6 +183,7 @@
 
     &:active {
       --elevation: var(--container-tonal-secondary-pressed-elevation);
+
       color: var(--icon-tonal-secondary-pressed-color);
 
       &::before {
@@ -179,6 +194,7 @@
 
     &:focus-visible {
       --elevation: var(--container-tonal-secondary-focused-elevation);
+
       color: var(--icon-tonal-secondary-focused-color);
 
       &::before {
@@ -188,14 +204,16 @@
     }
   }
 
-  &[data-color=tertiary] {
+  &[data-color="tertiary"] {
     --elevation: var(--container-tertiary-elevation);
     --shadow-color: var(--container-tertiary-shadow-color);
+
     background-color: var(--container-tertiary-color);
     color: var(--icon-tertiary-color);
 
     &:hover {
       --elevation: var(--container-tertiary-hovered-elevation);
+
       color: var(--icon-tertiary-hovered-color);
 
       &::before {
@@ -206,6 +224,7 @@
 
     &:active {
       --elevation: var(--container-tertiary-pressed-elevation);
+
       color: var(--icon-tertiary-pressed-color);
 
       &::before {
@@ -216,6 +235,7 @@
 
     &:focus-visible {
       --elevation: var(--container-tertiary-focused-elevation);
+
       color: var(--icon-tertiary-focused-color);
 
       &::before {
@@ -225,14 +245,16 @@
     }
   }
 
-  &[data-color=tertiary-container] {
+  &[data-color="tertiary-container"] {
     --elevation: var(--container-tonal-tertiary-elevation);
     --shadow-color: var(--container-tonal-tertiary-shadow-color);
+
     background-color: var(--container-tonal-tertiary-color);
     color: var(--icon-tonal-tertiary-color);
 
     &:hover {
       --elevation: var(--container-tonal-tertiary-hovered-elevation);
+
       color: var(--icon-tonal-tertiary-hovered-color);
 
       &::before {
@@ -243,6 +265,7 @@
 
     &:active {
       --elevation: var(--container-tonal-tertiary-pressed-elevation);
+
       color: var(--icon-tonal-tertiary-pressed-color);
 
       &::before {
@@ -253,6 +276,7 @@
 
     &:focus-visible {
       --elevation: var(--container-tonal-tertiary-focused-elevation);
+
       color: var(--icon-tonal-tertiary-focused-color);
 
       &::before {
