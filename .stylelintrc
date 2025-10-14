@@ -1,0 +1,7 @@
+{
+  "rules": {
+    "plugin/browser-compat": [true, {}]
+  },
+  "plugins": ["stylelint-browser-compat"],
+  "extends": ["stylelint-config-standard"]
+}
