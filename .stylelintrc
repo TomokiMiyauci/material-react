@@ -1,8 +1,6 @@
 {
   "rules": {
-    "plugin/browser-compat": [true, {
-      "browserslist": ["baseline 2023"]
-    }],
+    "plugin/browser-compat": [true, {}],
     "declaration-block-no-redundant-longhand-properties": null
   },
   "plugins": ["stylelint-browser-compat"],
