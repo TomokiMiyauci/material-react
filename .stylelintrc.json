@@ -1,12 +1,7 @@
 {
   "rules": {
-    "plugin/use-baseline": [
-      true,
-      { "available": "widely", "ignoreSelectors": ["nesting"] }
-    ]
+    "plugin/browser-compat": [true, {}]
   },
-  "plugins": [
-    "stylelint-plugin-use-baseline"
-  ],
+  "plugins": ["stylelint-browser-compat"],
   "extends": ["stylelint-config-standard"]
 }
