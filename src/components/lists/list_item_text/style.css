@@ -1,25 +1,25 @@
-@import url(./_generated/tokens.css);
+@import url("./_generated/tokens.css");
 
-@scope([data-md=list-item-text]) {
-  & {
-    all: unset;
-    color: var(--color);
-    font-family: var(--font);
-    font-size: var(--size);
-    font-weight: var(--weight);
-    line-height: var(--line-height);
-    letter-spacing: var(--tracking);
-  }
+[data-md="list-item-text"] {
+  all: unset;
+  color: var(--color);
+  font-family: var(--font);
+  font-size: var(--size);
+  font-weight: var(--weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--tracking);
 }
 
-@scope([data-md=list-item]) {
-  [data-md=list-item-text] {
-    :scope[data-selected] & {
-      color: var(--selected-color);
-    }
+[data-md="list-item"] {
+  &[data-selected] [data-md="list-item-text"] {
+    color: var(--selected-color);
+  }
 
-    :scope[data-disabled] & {
-      color: color-mix(in srgb, var(--disabled-color) var(--disabled-opacity), transparent);
-    }
+  &[data-disabled] [data-md="list-item-text"] {
+    color: color-mix(
+      in srgb,
+      var(--disabled-color) var(--disabled-opacity),
+      transparent
+    );
   }
 }
