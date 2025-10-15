@@ -12,6 +12,13 @@ const meta = {
   args: {
     children: <span className="material-symbols-outlined">person</span>,
   },
+  decorators: [(Story) => {
+    return (
+      <div data-md="list-item" style={style}>
+        <Story />
+      </div>
+    );
+  }],
 } satisfies Meta<typeof ListItemIcon>;
 
 export default meta;
@@ -20,10 +27,19 @@ type Story = StoryObj<typeof meta>;
 
 export const Enabled = {} satisfies Story;
 
+const style = {
+  display: "flex",
+  alignItems: "center",
+};
+
 export const Disabled = {
   decorators: [(Story) => {
     return (
-      <div data-md="list-item" data-disabled="">
+      <div
+        data-md="list-item"
+        data-disabled=""
+        style={style}
+      >
         <Story />
       </div>
     );
@@ -33,7 +49,7 @@ export const Disabled = {
 export const Selected = {
   decorators: [(Story) => {
     return (
-      <div data-md="list-item" data-selected="">
+      <div style={style} data-md="list-item" data-selected="">
         <Story />
       </div>
     );
@@ -43,7 +59,7 @@ export const Selected = {
 export const SelectedDisabled = {
   decorators: [(Story) => {
     return (
-      <div data-md="list-item" data-selected="" data-disabled="">
+      <div style={style} data-md="list-item" data-selected="" data-disabled="">
         <Story />
       </div>
     );
