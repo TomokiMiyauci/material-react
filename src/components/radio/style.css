@@ -1,15 +1,13 @@
-@import url(./_generated/tokens.css);
+@import url("./_generated/tokens.css");
 
-@scope([data-md=radio]) {
-  & {
-    all: unset;
-    appearance: none;
-    box-sizing: border-box;
-    position: relative;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-  }
+[data-md="radio"] {
+  all: unset;
+  appearance: none;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
 
   &:not(:disabled) {
     cursor: pointer;
@@ -49,78 +47,130 @@
   }
 
   &:hover {
-    background-color: color-mix(in srgb, var(--state-layer-unselected-hover-color) var(--state-layer-unselected-hover-opacity), transparent);
+    background-color: color-mix(
+      in srgb,
+      var(--state-layer-unselected-hover-color) var(
+        --state-layer-unselected-hover-opacity
+      ),
+      transparent
+    );
 
     &::before {
       border-color: var(--icon-unselected-hover-color);
     }
-
-    &:checked {
-      background-color: color-mix(in srgb, var(--state-layer-selected-hover-color) var(--state-layer-selected-hover-opacity), transparent);
-
-      &::before {
-        border-color: var(--icon-selected-hover-color);
-      }
-
-      &::after {
-        background-color: var(--icon-selected-hover-color);
-      }
-    }
   }
 
   &:active {
-    background-color: color-mix(in srgb, var(--state-layer-unselected-pressed-color) var(--state-layer-unselected-pressed-opacity), transparent);
+    background-color: color-mix(
+      in srgb,
+      var(--state-layer-unselected-pressed-color) var(
+        --state-layer-unselected-pressed-opacity
+      ),
+      transparent
+    );
 
     &::before {
       border-color: var(--icon-unselected-pressed-color);
     }
-
-    &:checked {
-      background-color: color-mix(in srgb, var(--state-layer-selected-pressed-color) var(--state-layer-selected-pressed-opacity), transparent);
-
-      &::before {
-        border-color: var(--icon-selected-pressed-color);
-      }
-
-      &::after {
-        background-color: var(--icon-selected-pressed-color);
-      }
-    }
   }
 
   &:focus-visible {
-    background-color: color-mix(in srgb, var(--state-layer-unselected-focus-color) var(--state-layer-unselected-focus-opacity), transparent);
+    background-color: color-mix(
+      in srgb,
+      var(--state-layer-unselected-focus-color) var(
+        --state-layer-unselected-focus-opacity
+      ),
+      transparent
+    );
 
     &::before {
       border-color: var(--icon-unselected-focus-color);
-    }
-
-    &:checked {
-      background-color: color-mix(in srgb, var(--state-layer-selected-focus-color) var(--state-layer-selected-focus-opacity), transparent);
-
-      &::before {
-        border-color: var(--icon-selected-focus-color);
-      }
-
-      &::after {
-        background-color: var(--icon-selected-focus-color);
-      }
     }
   }
 
   &:disabled {
     &::before {
-      border-color: color-mix(in srgb, var(--icon-unselected-disabled-color), transparent);
+      border-color: color-mix(
+        in srgb,
+        var(--icon-unselected-disabled-color),
+        transparent
+      );
     }
 
     &:checked {
       &::before {
-        border-color: color-mix(in srgb, var(--icon-selected-disabled-color) var(--icon-selected-disabled-opacity), transparent);
+        border-color: color-mix(
+          in srgb,
+          var(--icon-selected-disabled-color) var(
+            --icon-selected-disabled-opacity
+          ),
+          transparent
+        );
       }
 
       &::after {
-        background-color: color-mix(in srgb, var(--icon-selected-disabled-color) var(--icon-selected-disabled-opacity), transparent);
+        background-color: color-mix(
+          in srgb,
+          var(--icon-selected-disabled-color) var(
+            --icon-selected-disabled-opacity
+          ),
+          transparent
+        );
       }
+    }
+  }
+
+  &:hover:checked {
+    background-color: color-mix(
+      in srgb,
+      var(--state-layer-selected-hover-color) var(
+        --state-layer-selected-hover-opacity
+      ),
+      transparent
+    );
+
+    &::before {
+      border-color: var(--icon-selected-hover-color);
+    }
+
+    &::after {
+      background-color: var(--icon-selected-hover-color);
+    }
+  }
+
+  &:active:checked {
+    background-color: color-mix(
+      in srgb,
+      var(--state-layer-selected-pressed-color) var(
+        --state-layer-selected-pressed-opacity
+      ),
+      transparent
+    );
+
+    &::before {
+      border-color: var(--icon-selected-pressed-color);
+    }
+
+    &::after {
+      background-color: var(--icon-selected-pressed-color);
+    }
+  }
+
+  &:focus-visible:checked {
+    background-color: color-mix(
+      in srgb,
+      var(--state-layer-selected-focus-color) var(
+        --state-layer-selected-focus-opacity
+      ),
+      transparent
+    );
+
+    &::before {
+      border-color: var(--icon-selected-focus-color);
+    }
+
+    &::after {
+      background-color: var(--icon-selected-focus-color);
     }
   }
 }

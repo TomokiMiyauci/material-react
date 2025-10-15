@@ -1,20 +1,18 @@
-@import url(./_generated/tokens.css);
+@import url("./_generated/tokens.css");
 
-@scope([data-md="list-item"]) {
-  & {
-    all: unset;
-    background-color: var(--container-color);
-    border-radius: var(--container-shape);
-    display: block;
-    position: relative;
+[data-md="list-item"] {
+  all: unset;
+  background-color: var(--container-color);
+  border-radius: var(--container-shape);
+  display: block;
+  position: relative;
 
-    &::before {
-      content: "";
-      position: absolute;
-      border-radius: inherit;
-      inset: 0;
-      pointer-events: none;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    inset: 0;
+    pointer-events: none;
   }
 
   [data-container] {
@@ -73,20 +71,14 @@
     opacity: var(--state-layer-disabled-opacity);
   }
 
-  &[data-size=one-line] {
-    & [data-supporting-text] {
-      display: none;
-    }
-  }
-
-  &[data-size=three-lines] {
+  &[data-size="three-lines"] {
     [data-container] {
       padding-block: 12px;
       align-items: start;
     }
   }
 
-  & [data-label-text-container] {
+  [data-label-text-container] {
     all: unset;
     display: flex;
     flex-direction: column;
@@ -104,19 +96,22 @@
     display: -webkit-box;
     overflow: hidden;
     -webkit-box-orient: vertical;
-    line-clamp: 1;
     -webkit-line-clamp: 1;
     white-space: normal;
     overflow-wrap: anywhere;
     text-align: start;
+  }
 
-    :scope[data-selected] & {
-      color: var(--label-text-selected-color);
-    }
+  &[data-selected] [data-headline] {
+    color: var(--label-text-selected-color);
+  }
 
-    :scope[data-disabled] & {
-      color: color-mix(in srgb, var(--label-text-disabled-color) var(--label-text-disabled-opacity), transparent);
-    }
+  &[data-disabled] [data-headline] {
+    color: color-mix(
+      in srgb,
+      var(--label-text-disabled-color) var(--label-text-disabled-opacity),
+      transparent
+    );
   }
 
   [data-supporting-text] {
@@ -133,35 +128,31 @@
     white-space: normal;
     overflow-wrap: anywhere;
     text-align: start;
-
-    :scope[data-selected] & {
-      color: var(--supporting-text-selected-color);
-    }
-
-    :scope:hover & {
-      color: var(--leading-icon-hover-color);
-    }
-
-    :scope:active & {
-      color: var(--leading-icon-pressed-color);
-    }
-
-    :scope:focus-visible & {
-      color: var(--leading-icon-focus-color);
-    }
-
-    :scope[data-disabled] & {
-      color: color-mix(in srgb, var(--supporting-text-disabled-color) var(--supporting-text-disabled-opacity), transparent);
-    }
   }
 
-  &[data-size=two-lines] [data-supporting-text] {
-    line-clamp: 1;
+  &[data-selected] [data-supporting-text] {
+    color: var(--supporting-text-selected-color);
+  }
+
+  &[data-disabled] [data-supporting-text] {
+    color: color-mix(
+      in srgb,
+      var(--supporting-text-disabled-color) var(
+        --supporting-text-disabled-opacity
+      ),
+      transparent
+    );
+  }
+
+  &[data-size="one-line"] [data-supporting-text] {
+    display: none;
+  }
+
+  &[data-size="two-lines"] [data-supporting-text] {
     -webkit-line-clamp: 1;
   }
 
-  &[data-size=three-lines] [data-supporting-text] {
-    line-clamp: 2;
+  &[data-size="three-lines"] [data-supporting-text] {
     -webkit-line-clamp: 2;
   }
 }

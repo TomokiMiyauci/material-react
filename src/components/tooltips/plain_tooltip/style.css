@@ -1,22 +1,20 @@
-@import url(./_generated/tokens.css);
+@import url("./_generated/tokens.css");
 
-@scope([data-md=plain-tooltip]) {
-  & {
-    all: unset;
-    display: inline-flex;
-    align-items: center;
-    padding-inline: 8px;
-    padding-block: 4px;
-    min-block-size: 24px;
-    box-sizing: border-box;
-    vertical-align: middle;
-    background-color: var(--container-color);
-    border-radius: var(--container-shape);
-    font-family: var(--supporting-text-font);
-    font-size: var(--supporting-text-size);
-    font-weight: var(--supporting-text-weight);
-    color: var(--supporting-text-color);
-    line-height: var(--supporting-text-line-height);
-    letter-spacing: var(--supporting-text-tracking);
-  }
+[data-md="plain-tooltip"] {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  padding-inline: 8px;
+  padding-block: 4px;
+  min-block-size: 24px;
+  box-sizing: border-box;
+  vertical-align: middle;
+  background-color: var(--container-color);
+  border-radius: var(--container-shape);
+  font-family: var(--supporting-text-font);
+  font-size: var(--supporting-text-size);
+  font-weight: var(--supporting-text-weight);
+  color: var(--supporting-text-color);
+  line-height: var(--supporting-text-line-height);
+  letter-spacing: var(--supporting-text-tracking);
 }

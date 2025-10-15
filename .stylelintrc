@@ -1,7 +1,11 @@
 {
   "rules": {
-    "plugin/browser-compat": [true, {}]
+    "declaration-block-no-redundant-longhand-properties": null,
+    "plugin/use-baseline": [true, { "available": 2023 }]
   },
-  "plugins": ["stylelint-browser-compat"],
-  "extends": ["stylelint-config-standard"]
+  "plugins": ["stylelint-plugin-use-baseline"],
+  "extends": ["stylelint-config-standard"],
+  "ignoreFiles": [
+    "src/**/_generated/*.css"
+  ]
 }
