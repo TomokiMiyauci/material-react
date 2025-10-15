@@ -1,3 +1,31 @@
+# [1.0.0-beta.15](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.14...1.0.0-beta.15) (2025-10-15)
+
+
+### Bug Fixes
+
+* **button:** flatten back reference selectors in button ([21302c7](https://github.com/TomokiMiyauci/material-react/commit/21302c712d40df4db8ec6a8155df3b51dc377b4e))
+* **extended-fab:** flatten back reference selectors in extended fab ([df3f851](https://github.com/TomokiMiyauci/material-react/commit/df3f851423024ac674099376389eeae6d752cfab))
+* **icon-button:** flatten backreference selectors in icon button ([1950674](https://github.com/TomokiMiyauci/material-react/commit/19506743defec912c8e44bfb13561bd8f3904b31))
+
+
+### Features
+
+* **button:** flatten nesting styles in button component ([bf89b07](https://github.com/TomokiMiyauci/material-react/commit/bf89b07ec32919319166875ed5e5a222f9272def))
+* **button:** stop using [@scope](https://github.com/scope) at-rule in button component ([57154f8](https://github.com/TomokiMiyauci/material-react/commit/57154f8130fc31d34b48d2a2c3e2fe621a898b55))
+* **divider:** stop using [@scope](https://github.com/scope) at-rule in divider component ([8b8df7a](https://github.com/TomokiMiyauci/material-react/commit/8b8df7a88753bc24beaa77cbb1366de6651409ac))
+* **extended-fab:** stop using [@scope](https://github.com/scope) at-rule in extended fab component ([f9f5518](https://github.com/TomokiMiyauci/material-react/commit/f9f5518c537bb0a072612b0273ac215ee5d97190))
+* **fab:** stop using [@scope](https://github.com/scope) at-rule in fab component ([1064450](https://github.com/TomokiMiyauci/material-react/commit/106445094e6af07f6c654e093a7ccbed17524900))
+* **icon-button:** stop using [@scope](https://github.com/scope) at-rule in icon button component ([3283473](https://github.com/TomokiMiyauci/material-react/commit/3283473b59208820cdf548586066d72267bc2960))
+* **list-item-avatar:** stop using [@scoe](https://github.com/scoe) at-rule in list item avatar component ([b62b95a](https://github.com/TomokiMiyauci/material-react/commit/b62b95a37cb339528cef01ad2cfaf0cf5e60aed4))
+* **list-item-icon:** stop using [@scope](https://github.com/scope) at-rule in list item icon ([1049a6a](https://github.com/TomokiMiyauci/material-react/commit/1049a6af9059b574c4eb8e32f13f2d8b4b093a97))
+* **list-item-text:** stop using [@scope](https://github.com/scope) at-rule in list item text component ([4248727](https://github.com/TomokiMiyauci/material-react/commit/4248727971ddcb024bbbf13d34c2bd482d97b880))
+* **list-item:** stop using [@scope](https://github.com/scope) at-rule in list item component ([c19a517](https://github.com/TomokiMiyauci/material-react/commit/c19a51764bfeb20fdc2d9e068dc5bd109af00dba))
+* **navigation-bar-item:** stop using [@scope](https://github.com/scope) at-rule in navigation bar item component ([4bbb7e8](https://github.com/TomokiMiyauci/material-react/commit/4bbb7e84033171b92eded2883ef4bd03f5b3a7cb))
+* **navigation-bar:** stop using [@scope](https://github.com/scope) at-rule in navigation bar component ([f1b6cc6](https://github.com/TomokiMiyauci/material-react/commit/f1b6cc6d1b80541782ac6c4b49c486148280f28b))
+* **plain-tooltip:** stop using [@scope](https://github.com/scope) at-rule in plain tooltip component ([bad89c2](https://github.com/TomokiMiyauci/material-react/commit/bad89c241a8d10c1f901a5ce9496c7e7a5bc6617))
+* **radio:** stop using [@scope](https://github.com/scope) at-rule in radio component ([094e193](https://github.com/TomokiMiyauci/material-react/commit/094e193eae19540dbc3022fa0d57b8731c2999ce))
+* **switch:** stop using [@scope](https://github.com/scope) at-rule in switch component ([985f0fe](https://github.com/TomokiMiyauci/material-react/commit/985f0fe76266deb14c0786e12846079bca1ca253))
+
 # [1.0.0-beta.14](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.13...1.0.0-beta.14) (2025-10-13)
 
 
