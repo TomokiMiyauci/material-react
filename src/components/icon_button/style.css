@@ -348,133 +348,131 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
+  }
 
-    [data-size="xsmall"] & {
-      height: var(--icon-xsmall-size);
-      width: var(--icon-xsmall-size);
-      font-size: var(--icon-xsmall-size);
-    }
+  &[data-size="xsmall"] [data-icon] {
+    height: var(--icon-xsmall-size);
+    width: var(--icon-xsmall-size);
+    font-size: var(--icon-xsmall-size);
+  }
 
-    [data-size="small"] & {
-      height: var(--icon-small-size);
-      width: var(--icon-small-size);
-      font-size: var(--icon-small-size);
-    }
+  &[data-size="small"] [data-icon] {
+    height: var(--icon-small-size);
+    width: var(--icon-small-size);
+    font-size: var(--icon-small-size);
+  }
 
-    [data-size="medium"] & {
-      height: var(--icon-medium-size);
-      width: var(--icon-medium-size);
-      font-size: var(--icon-medium-size);
-    }
+  &[data-size="medium"] [data-icon] {
+    height: var(--icon-medium-size);
+    width: var(--icon-medium-size);
+    font-size: var(--icon-medium-size);
+  }
 
-    [data-size="large"] & {
-      height: var(--icon-large-size);
-      width: var(--icon-large-size);
-      font-size: var(--icon-large-size);
-    }
+  &[data-size="large"] [data-icon] {
+    height: var(--icon-large-size);
+    width: var(--icon-large-size);
+    font-size: var(--icon-large-size);
+  }
 
-    [data-size="xlarge"] & {
-      height: var(--icon-xlarge-size);
-      width: var(--icon-xlarge-size);
-      font-size: var(--icon-xlarge-size);
-    }
+  &[data-size="xlarge"] [data-icon] {
+    height: var(--icon-xlarge-size);
+    width: var(--icon-xlarge-size);
+    font-size: var(--icon-xlarge-size);
+  }
 
-    [data-color="filled"] & {
-      color: var(--icon-filled-color);
-    }
+  &[data-color="filled"] [data-icon] {
+    color: var(--icon-filled-color);
+  }
 
-    [data-color="tonal"] & {
-      color: var(--icon-tonal-color);
-    }
+  &[data-color="tonal"] [data-icon] {
+    color: var(--icon-tonal-color);
+  }
 
-    [data-color="outlined"] & {
-      color: var(--icon-outlined-color);
-    }
+  &[data-color="outlined"] [data-icon] {
+    color: var(--icon-outlined-color);
+  }
 
-    [data-color="standard"] & {
-      color: var(--icon-color);
-    }
+  &[data-color="standard"] [data-icon] {
+    color: var(--icon-color);
+  }
 
-    [data-color="filled"]:active & {
-      color: var(--icon-filled-pressed-color);
-    }
+  &[data-color="filled"]:active [data-icon] {
+    color: var(--icon-filled-pressed-color);
+  }
 
-    [data-color="filled"]:hover & {
-      color: var(--icon-filled-hovered-color);
-    }
+  &[data-color="filled"]:hover [data-icon] {
+    color: var(--icon-filled-hovered-color);
+  }
 
-    [data-color="filled"]:focus & {
-      color: var(--icon-filled-focused-color);
-    }
+  &[data-color="filled"]:focus [data-icon] {
+    color: var(--icon-filled-focused-color);
+  }
 
-    [data-color="filled"]:disabled & {
-      color: color-mix(
-        in srgb,
-        var(--icon-filled-disabled-color) var(--icon-filled-disabled-opacity),
-        transparent
-      );
-    }
+  &[data-color="filled"]:disabled [data-icon] {
+    color: color-mix(
+      in srgb,
+      var(--icon-filled-disabled-color) var(--icon-filled-disabled-opacity),
+      transparent
+    );
+  }
 
-    [data-color="tonal"]:active & {
-      color: var(--icon-tonal-pressed-color);
-    }
+  &[data-color="tonal"]:active [data-icon] {
+    color: var(--icon-tonal-pressed-color);
+  }
 
-    [data-color="tonal"]:hover & {
-      color: var(--icon-tonal-hovered-color);
-    }
+  &[data-color="tonal"]:hover [data-icon] {
+    color: var(--icon-tonal-hovered-color);
+  }
 
-    [data-color="tonal"]:focus & {
-      color: var(--icon-tonal-focused-color);
-    }
+  &[data-color="tonal"]:focus [data-icon] {
+    color: var(--icon-tonal-focused-color);
+  }
 
-    [data-color="tonal"]:disabled & {
-      color: color-mix(
-        in srgb,
-        var(--icon-tonal-disabled-color) var(--icon-tonal-disabled-opacity),
-        transparent
-      );
-    }
+  &[data-color="tonal"]:disabled [data-icon] {
+    color: color-mix(
+      in srgb,
+      var(--icon-tonal-disabled-color) var(--icon-tonal-disabled-opacity),
+      transparent
+    );
+  }
 
-    [data-color="outlined"]:active & {
-      color: var(--icon-outlined-pressed-color);
-    }
+  &[data-color="outlined"]:active [data-icon] {
+    color: var(--icon-outlined-pressed-color);
+  }
 
-    [data-color="outlined"]:hover & {
-      color: var(--icon-outlined-hovered-color);
-    }
+  &[data-color="outlined"]:hover [data-icon] {
+    color: var(--icon-outlined-hovered-color);
+  }
 
-    [data-color="outlined"]:focus & {
-      color: var(--icon-outlined-focused-color);
-    }
+  &[data-color="outlined"]:focus [data-icon] {
+    color: var(--icon-outlined-focused-color);
+  }
 
-    [data-color="outlined"]:disabled & {
-      color: color-mix(
-        in srgb,
-        var(--icon-outlined-disabled-color) var(
-          --icon-outlined-disabled-opacity
-        ),
-        transparent
-      );
-    }
+  &[data-color="outlined"]:disabled [data-icon] {
+    color: color-mix(
+      in srgb,
+      var(--icon-outlined-disabled-color) var(--icon-outlined-disabled-opacity),
+      transparent
+    );
+  }
 
-    [data-color="standard"]:active & {
-      color: var(--icon-pressed-color);
-    }
+  &[data-color="standard"]:active [data-icon] {
+    color: var(--icon-pressed-color);
+  }
 
-    [data-color="standard"]:hover & {
-      color: var(--icon-hovered-color);
-    }
+  &[data-color="standard"]:hover [data-icon] {
+    color: var(--icon-hovered-color);
+  }
 
-    [data-color="standard"]:focus & {
-      color: var(--icon-focused-color);
-    }
+  &[data-color="standard"]:focus [data-icon] {
+    color: var(--icon-focused-color);
+  }
 
-    [data-color="standard"]:disabled & {
-      color: color-mix(
-        in srgb,
-        var(--icon-disabled-color) var(--icon-disabled-opacity),
-        transparent
-      );
-    }
+  &[data-color="standard"]:disabled [data-icon] {
+    color: color-mix(
+      in srgb,
+      var(--icon-disabled-color) var(--icon-disabled-opacity),
+      transparent
+    );
   }
 }
