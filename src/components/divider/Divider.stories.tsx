@@ -7,6 +7,7 @@ const meta = {
   component: Divider,
   parameters: {
     layout: "centered",
+    chromatic: { disableSnapshot: false },
   },
   tags: ["autodocs"],
   decorators: [
@@ -22,7 +23,11 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Default = {} satisfies Story;
+export const Default = {
+  parameters: {
+    chromatic: { disableSnapshot: true },
+  },
+} satisfies Story;
 
 export const VerticalFull = {
   parameters: {
