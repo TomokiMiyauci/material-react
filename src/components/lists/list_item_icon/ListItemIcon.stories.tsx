@@ -2,7 +2,7 @@ import ListItemIcon from "./ListItemIcon.tsx";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
-  title: "Example/ListItemIcon",
+  title: "Component/ListItemIcon",
   component: ListItemIcon,
   parameters: {
     layout: "centered",

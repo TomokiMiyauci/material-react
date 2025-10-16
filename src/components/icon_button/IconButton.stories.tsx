@@ -9,7 +9,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { type AxisNode, renderGallary } from "~/resources/gallary/mod.ts";
 
 const meta = {
-  title: "Example/IconButton",
+  title: "Component/IconButton",
   component: IconButton,
   parameters: {
     layout: "centered",

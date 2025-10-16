@@ -6,7 +6,7 @@ import { Badge } from "@miyauci/material-react";
 import { type AxisNode, renderGallary } from "~/resources/gallary/mod.ts";
 
 const meta = {
-  title: "Example/NavigationBars/NavigationBarItem",
+  title: "Component/NavigationBars/NavigationBarItem",
   component: NavigationBarItem,
   parameters: {
     layout: "centered",

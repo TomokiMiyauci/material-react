@@ -1,0 +1,3 @@
+export const snapshot = {};
+
+snapshot[`ListItem > snapshot > default 1`] = `'<div role="listitem" data-md="list-item" data-size="two-lines"><div data-container=""><div data-label-text-container=""><div data-headline=""></div><div data-supporting-text=""></div></div></div></div>'`;

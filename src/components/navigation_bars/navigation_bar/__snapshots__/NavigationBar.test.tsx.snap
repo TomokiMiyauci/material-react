@@ -1,0 +1,3 @@
+export const snapshot = {};
+
+snapshot[`NavigationBar > snapshot > default 1`] = `'<div data-md="navigation-bar" data-variant="vertical"></div>'`;

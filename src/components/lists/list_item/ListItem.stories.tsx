@@ -9,7 +9,7 @@ import { ListItemText } from "../list_item_text/mod.ts";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
-  title: "Example/ListItem",
+  title: "Component/ListItem",
   component: ListItem,
   parameters: {
     layout: "centered",

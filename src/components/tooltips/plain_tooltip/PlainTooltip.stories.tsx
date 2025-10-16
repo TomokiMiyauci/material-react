@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { md } from "~/resources/figma.ts";
 
 const meta = {
-  title: "Example/PlainTooltip",
+  title: "Component/PlainTooltip",
   component: PlainTooltip,
   parameters: {
     layout: "centered",

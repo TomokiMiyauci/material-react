@@ -3,7 +3,7 @@ import Fab, { type FabColor, type FabProps, type FabSize } from "./Fab.tsx";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
-  title: "Example/Fab",
+  title: "Component/Fab",
   component: Fab,
   parameters: {
     layout: "centered",

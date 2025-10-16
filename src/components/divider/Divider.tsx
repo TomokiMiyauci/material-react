@@ -26,7 +26,6 @@ export default function Divider(
         role="separator"
         data-orientation={orientation}
         data-variant={variant}
-        aria-orientation={orientation}
         {...rest}
       />
 
