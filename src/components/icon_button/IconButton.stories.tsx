@@ -158,6 +158,8 @@ function getProps(item: Item): IconButtonProps & DataStates {
   }
 }
 
+export const Default = {} satisfies Story;
+
 export const Gallary = {
   render: () =>
     renderGallary({ matrix, xAxis, yAxis }, {
@@ -181,5 +183,3 @@ export const Gallary = {
     chromatic: { disableSnapshot: false },
   },
 } satisfies Story;
-
-export const Default = {} satisfies Story;

@@ -239,6 +239,8 @@ function getProps(item: Item): ListItemProps & PseudoData {
   }
 }
 
+export const Default = {} satisfies Story;
+
 export const Gallary = {
   render: () =>
     renderGallary({
@@ -270,7 +272,3 @@ export const Gallary = {
 } satisfies Story;
 
 type Story = StoryObj<typeof meta>;
-
-export const Default = {
-  args: {},
-} satisfies Story;

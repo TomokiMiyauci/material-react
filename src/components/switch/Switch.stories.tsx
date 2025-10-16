@@ -104,6 +104,12 @@ interface DataStates {
   "data-active"?: "";
 }
 
+export const Default = {
+  parameters: {
+    design: md.figma("switch", "all"),
+  },
+} satisfies Story;
+
 export const Gallary = {
   render: () =>
     renderGallary({ xAxis, yAxis, matrix }, {
@@ -128,10 +134,4 @@ export const Gallary = {
     a11y: { test: "off" },
   },
   tags: ["!autodocs"],
-} satisfies Story;
-
-export const Default = {
-  parameters: {
-    design: md.figma("switch", "all"),
-  },
 } satisfies Story;
