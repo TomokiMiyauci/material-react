@@ -1,35 +1,8 @@
-@property --md-sys-elevation-level0 {
-  syntax: "<number>";
-  inherits: true;
-  initial-value: 0;
-}
-
-@property --md-sys-elevation-level1 {
-  syntax: "<number>";
-  inherits: true;
-  initial-value: 1;
-}
-
-@property --md-sys-elevation-level2 {
-  syntax: "<number>";
-  inherits: true;
-  initial-value: 3;
-}
-
-@property --md-sys-elevation-level3 {
-  syntax: "<number>";
-  inherits: true;
-  initial-value: 6;
-}
-
-@property --md-sys-elevation-level4 {
-  syntax: "<number>";
-  inherits: true;
-  initial-value: 8;
-}
-
-@property --md-sys-elevation-level5 {
-  syntax: "<number>";
-  inherits: true;
-  initial-value: 12;
+:root {
+  --md-sys-elevation-level0: 0; /** 0 */
+  --md-sys-elevation-level1: 1; /** +1 */
+  --md-sys-elevation-level2: 3; /** +2 */
+  --md-sys-elevation-level3: 6; /** +3 */
+  --md-sys-elevation-level4: 8; /** +4 */
+  --md-sys-elevation-level5: 12; /** +5 */
 }

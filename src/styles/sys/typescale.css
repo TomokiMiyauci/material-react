@@ -1,6 +1,6 @@
 :root {
   --md-sys-typescale-display-large-size: 3.5625rem; /** Display Large font size */
-  --md-sys-typescale-display-large-tracking: -0.015625rem; /** Display Large font tracking */
+  --md-sys-typescale-display-large-tracking: -0.0156rem; /** Display Large font tracking */
   --md-sys-typescale-display-large-line-height: 4rem; /** Display Large line height */
   --md-sys-typescale-display-medium-size: 2.8125rem; /** Display Medium font size */
   --md-sys-typescale-display-medium-tracking: 0rem; /** Display Medium font tracking */
@@ -21,28 +21,28 @@
   --md-sys-typescale-title-large-tracking: 0rem; /** Title Large font tracking */
   --md-sys-typescale-title-large-line-height: 1.75rem; /** Title Large line height */
   --md-sys-typescale-title-medium-size: 1rem; /** Title Medium font size */
-  --md-sys-typescale-title-medium-tracking: 0.009375rem; /** Title Medium font tracking */
+  --md-sys-typescale-title-medium-tracking: 0.0094rem; /** Title Medium font tracking */
   --md-sys-typescale-title-medium-line-height: 1.5rem; /** Title Medium line height */
   --md-sys-typescale-title-small-size: 0.875rem; /** Title Small font size */
-  --md-sys-typescale-title-small-tracking: 0.00625rem; /** Title Small font tracking */
+  --md-sys-typescale-title-small-tracking: 0.0063rem; /** Title Small font tracking */
   --md-sys-typescale-title-small-line-height: 1.25rem; /** Title Small line height */
   --md-sys-typescale-body-large-size: 1rem; /** Body Large font size */
-  --md-sys-typescale-body-large-tracking: 0.03125rem; /** Body Large font tracking */
+  --md-sys-typescale-body-large-tracking: 0.0313rem; /** Body Large font tracking */
   --md-sys-typescale-body-large-line-height: 1.5rem; /** Body Large line height */
   --md-sys-typescale-body-medium-size: 0.875rem; /** Body Medium font size */
-  --md-sys-typescale-body-medium-tracking: 0.015625rem; /** Body Medium font tracking */
+  --md-sys-typescale-body-medium-tracking: 0.0156rem; /** Body Medium font tracking */
   --md-sys-typescale-body-medium-line-height: 1.25rem; /** Body Medium line height */
   --md-sys-typescale-body-small-size: 0.75rem; /** Body Small font size */
   --md-sys-typescale-body-small-tracking: 0.025rem; /** Body Small font tracking */
   --md-sys-typescale-body-small-line-height: 1rem; /** Body Small line height */
   --md-sys-typescale-label-large-size: 0.875rem; /** Label Large font size */
-  --md-sys-typescale-label-large-tracking: 0.00625rem; /** Label Large font tracking */
+  --md-sys-typescale-label-large-tracking: 0.0063rem; /** Label Large font tracking */
   --md-sys-typescale-label-large-line-height: 1.25rem; /** Label Large line height */
   --md-sys-typescale-label-medium-size: 0.75rem; /** Label Medium font size */
-  --md-sys-typescale-label-medium-tracking: 0.03125rem; /** Label Medium font tracking */
+  --md-sys-typescale-label-medium-tracking: 0.0313rem; /** Label Medium font tracking */
   --md-sys-typescale-label-medium-line-height: 1rem; /** Label Medium line height */
   --md-sys-typescale-label-small-size: 0.6875rem; /** Label Small font size */
-  --md-sys-typescale-label-small-tracking: 0.03125rem; /** Label Small font tracking */
+  --md-sys-typescale-label-small-tracking: 0.0313rem; /** Label Small font tracking */
   --md-sys-typescale-label-small-line-height: 1rem; /** Label Small line height */
   --md-sys-typescale-display-large-font: var(--md-ref-typeface-brand); /** Display Large font name */
   --md-sys-typescale-display-large-weight: var(--md-ref-typeface-weight-regular); /** Display Large font weight */

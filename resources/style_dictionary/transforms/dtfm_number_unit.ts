@@ -17,8 +17,8 @@ export default {
     if (typeof $value === "number") {
       switch (unit) {
         case "pt": {
-          const value = $value / 16;
-          return `${value}rem`;
+          const value = rem($value);
+          return value;
         }
 
         case "dp": {
@@ -30,3 +30,18 @@ export default {
     return;
   },
 } satisfies Transform;
+
+function roundTo(num: number, digits = 0): number {
+  const factor = 10 ** digits;
+  return Math.round(num * factor) / factor;
+}
+
+function rem(value: number): string {
+  const v = roundTo(toRem(value), 4);
+
+  return `${v}rem`;
+}
+
+function toRem(value: number): number {
+  return value / 16;
+}
