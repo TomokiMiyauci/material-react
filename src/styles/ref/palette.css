@@ -1,33 +1,3 @@
-@property --md-ref-typeface-brand {
-  syntax: "*";
-  inherits: true;
-  initial-value: Roboto;
-}
-
-@property --md-ref-typeface-plain {
-  syntax: "*";
-  inherits: true;
-  initial-value: Roboto;
-}
-
-@property --md-ref-typeface-weight-regular {
-  syntax: "<integer>";
-  inherits: true;
-  initial-value: 400;
-}
-
-@property --md-ref-typeface-weight-medium {
-  syntax: "<integer>";
-  inherits: true;
-  initial-value: 500;
-}
-
-@property --md-ref-typeface-weight-bold {
-  syntax: "<integer>";
-  inherits: true;
-  initial-value: 700;
-}
-
 @property --md-ref-palette-primary0 {
   syntax: "<color>";
   inherits: true;
