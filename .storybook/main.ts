@@ -2,6 +2,7 @@ import { type InlineConfig, mergeConfig, type Plugin } from "vite";
 import react from "@vitejs/plugin-react";
 import type { StorybookConfig } from "@storybook/react-vite";
 import { join } from "node:path";
+import { webfontDownload } from "vite-plugin-webfont-dl";
 
 export default {
   "stories": ["../src/**/*.stories.tsx"],
@@ -24,6 +25,7 @@ export default {
           jsxRuntime: "automatic",
         }) as Plugin[],
         tailwindcss(),
+        webfontDownload(),
       ],
       "resolve": {
         "alias": {
@@ -31,6 +33,15 @@ export default {
           "@": join(__dirname, "..", "src"),
           "@miyauci/material-react": join(__dirname, "..", "src", "mod.ts"),
           "~": join(__dirname, ".."),
+          "react-dsd": join(
+            __dirname,
+            "..",
+            "src",
+            "components",
+            "_internal",
+            "dsd",
+            "mod.ts",
+          ),
         },
       },
     } satisfies InlineConfig;
