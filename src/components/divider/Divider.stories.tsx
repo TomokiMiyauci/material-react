@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { md } from "~/resources/figma.ts";
 
 const meta = {
-  title: "Example/Divider",
+  title: "Component/Divider",
   component: Divider,
   parameters: {
     layout: "centered",

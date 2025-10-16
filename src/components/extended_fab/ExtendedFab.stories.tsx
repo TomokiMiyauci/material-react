@@ -7,7 +7,7 @@ import ExtendedFab, {
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
-  title: "Example/ExtendedFab",
+  title: "Component/ExtendedFab",
   component: ExtendedFab,
   parameters: {
     layout: "centered",

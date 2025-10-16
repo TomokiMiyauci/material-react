@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { md } from "~/resources/figma.ts";
 
 const meta = {
-  title: "Example/Badge",
+  title: "Component/Badge",
   component: Badge,
   parameters: {
     layout: "centered",

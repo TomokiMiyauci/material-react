@@ -4,7 +4,7 @@ import { md } from "~/resources/figma.ts";
 import { type AxisNode, renderGallary } from "~/resources/gallary/mod.ts";
 
 const meta = {
-  title: "Example/Switch",
+  title: "Component/Switch",
   component: Switch,
   parameters: {
     layout: "centered",
