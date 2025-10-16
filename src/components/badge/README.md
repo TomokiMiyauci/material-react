@@ -19,6 +19,12 @@ import { Badge } from "@miyauci/material-react";
 
 And `HTMLSpanElement` arrtibutes.
 
+## Slots
+
+| Name      | Description               |
+| --------- | ------------------------- |
+| (default) | The text to be displayed. |
+
 ## Tokens
 
 Depends on the following CSS variables.

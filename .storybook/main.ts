@@ -4,9 +4,7 @@ import type { StorybookConfig } from "@storybook/react-vite";
 import { join } from "node:path";
 
 export default {
-  "stories": [
-    "../src/**/*.stories.tsx",
-  ],
+  "stories": ["../src/**/*.stories.tsx"],
   "addons": [
     "@storybook/addon-docs",
     "@storybook/addon-a11y",

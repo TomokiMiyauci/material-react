@@ -1,0 +1,42 @@
+@import url("./_generated/tokens.css");
+
+[data-md="divider"] {
+  all: unset;
+  display: block;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--color);
+  }
+
+  &[data-orientation="horizontal"] {
+    inline-size: 100%;
+    block-size: var(--thickness);
+
+    &[data-variant="inset"]::before {
+      left: 16px;
+    }
+
+    &[data-variant="middle-inset"]::before {
+      left: 16px;
+      right: 16px;
+    }
+  }
+
+  &[data-orientation="vertical"] {
+    inline-size: var(--thickness);
+    block-size: 100%;
+
+    &[data-variant="inset"]::before {
+      top: 16px;
+    }
+
+    &[data-variant="middle-inset"]::before {
+      top: 16px;
+      bottom: 16px;
+    }
+  }
+}

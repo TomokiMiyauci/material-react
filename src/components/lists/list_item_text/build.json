@@ -1,0 +1,58 @@
+{
+  "steps": [
+    {
+      "use": "items2tokens",
+      "input": "../_generated/items.json",
+      "output": "./_generated/tokens.json",
+      "options": {
+        "include": {
+          "matches": ["trailing supporting text", "disabled supporting text"]
+        },
+        "exclude": {
+          "matches": ["List list item trailing supporting text type"]
+        },
+        "segments": [
+          "List list item",
+          "trailing supporting text",
+          "supporting text"
+        ],
+        "path": {
+          "exclude": {
+            "matches": [
+              "List list item",
+              "trailing supporting text",
+              "supporting text"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "use": "tokens2css",
+      "input": "./_generated/tokens.json",
+      "output": "./_generated/tokens.css"
+    },
+    {
+      "use": "css",
+      "input": "./style.css",
+      "output": "./_generated/style.css",
+      "options": {
+        "minify": true,
+        "embed": true
+      }
+    },
+    {
+      "use": "css2ts",
+      "input": "./_generated/style.css",
+      "output": "./_generated/style.ts"
+    },
+    {
+      "use": "mustache",
+      "input": "./README.md.mustache",
+      "output": "./README.md",
+      "options": {
+        "tokenSource": "./_generated/style.css"
+      }
+    }
+  ]
+}

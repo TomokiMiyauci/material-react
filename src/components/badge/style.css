@@ -1,9 +1,10 @@
-@import url(./_generated/tokens.css);
+@import url("./_generated/tokens.css");
 
-@scope([data-md=badge]) {
-  & {
-    all: unset;
-    display: inline-flex;
+[data-md="badge"] {
+  display: contents;
+
+  &::part(container) {
+    display: inline flex;
     justify-content: center;
     align-items: center;
     min-height: var(--size);
@@ -14,7 +15,7 @@
     contain: layout;
   }
 
-  &[data-size=large] {
+  &[data-size="large"]::part(container) {
     min-height: var(--large-size);
     min-width: var(--large-size);
     background-color: var(--large-color);
@@ -25,7 +26,10 @@
     font-weight: var(--label-text-large-weight);
     line-height: var(--label-text-large-line-height);
     letter-spacing: var(--label-text-large-tracking);
-    padding-inline-start: 4px;
-    padding-inline-end: 4px;
+    padding-inline: 4px;
+  }
+
+  &:not([data-size="large"])::part(text) {
+    display: none;
   }
 }

@@ -1,0 +1,16 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+/* @embed */
+:root {
+  --color: var(--md-sys-color-on-surface-variant); /** List list item trailing supporting text color */
+  --disabled-color: var(--md-sys-color-on-surface); /** List list item disabled supporting text color */
+  --disabled-opacity: 38%; /** List list item disabled supporting text opacity */
+  --font: var(--md-sys-typescale-label-small-font); /** List list item trailing supporting text font */
+  --line-height: var(--md-sys-typescale-label-small-line-height); /** List list item trailing supporting text line height */
+  --selected-color: var(--md-sys-color-on-surface); /** List list item selected trailing supporting text color */
+  --size: var(--md-sys-typescale-label-small-size); /** List list item trailing supporting text size */
+  --tracking: var(--md-sys-typescale-label-small-tracking); /** List list item trailing supporting text tracking */
+  --weight: var(--md-sys-typescale-label-small-weight); /** List list item trailing supporting text weight */
+}
