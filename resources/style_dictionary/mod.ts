@@ -4,6 +4,7 @@ import {
   dimensitonTransform,
   dtfmAttributeSyntax,
   dtfmExtensionsAttributeSyntax,
+  dtfmFontFamily,
   dtfmNumberAsRadio,
   dtfmNumberUnit,
   flattenKababTransform,
@@ -24,6 +25,7 @@ sd.registerTransform(dtfmAttributeSyntax);
 sd.registerTransform(dtfmNumberAsRadio);
 sd.registerTransform(dtfmExtensionsAttributeSyntax);
 sd.registerTransform(dtfmNumberUnit);
+sd.registerTransform(dtfmFontFamily);
 sd.registerFormat(cssVariableWithComment);
 sd.registerFormat(cssPropertyFormat);
 
@@ -37,6 +39,7 @@ export enum transformers {
   dtfmExtensionsAttributeSyntax = "dtfm/extensions/attribute/syntax",
   dtfmNumberAsRadio = "dtfm/number+ratio",
   dtfmNumberUnit = "dtfm/number+unit",
+  dtfmFontFamily = "dtfm/font-family",
 }
 
 export enum formats {
