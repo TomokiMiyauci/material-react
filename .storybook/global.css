@@ -1,12 +1,15 @@
+/* stylelint-disable */
 @layer theme, base, components, utilities;
 @import "tailwindcss/utilities.css" layer(utilities);
 @import "tailwindcss/theme.css" layer(theme);
+
 @source "src/**/*.stories.tsx";
 
 @theme {
   --font-roboto: "Roboto", sans-serif;
 }
 
+/* stylelint-enable */
 .material-symbols-outlined {
   font-size: inherit;
 }

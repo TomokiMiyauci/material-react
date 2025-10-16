@@ -36,6 +36,7 @@
     "npm:react-dom@^19.2.0": "19.2.0_react@19.2.0",
     "npm:react@^19.1.1": "19.2.0",
     "npm:storybook-addon-pseudo-states@^9.1.5": "9.1.10_storybook@9.1.10__vite@7.1.9___picomatch@4.0.3__esbuild@0.25.10_vite@7.1.9__picomatch@4.0.3",
+    "npm:storybook@9.1.10": "9.1.10_vite@7.1.9__picomatch@4.0.3_esbuild@0.25.10",
     "npm:storybook@^9.1.3": "9.1.10_vite@7.1.9__picomatch@4.0.3_esbuild@0.25.10",
     "npm:style-dictionary@^5.0.2": "5.1.1",
     "npm:stylelint-config-standard@^39.0.1": "39.0.1_stylelint@16.25.0__@csstools+css-tokenizer@3.0.4__@csstools+css-parser-algorithms@3.0.5___@csstools+css-tokenizer@3.0.4__postcss-selector-parser@7.1.0__postcss@8.5.6",
