@@ -4,10 +4,7 @@ import {
 } from "style-dictionary/enums";
 import type { Config } from "style-dictionary";
 import { fromFileUrl } from "@std/path";
-import instance, {
-  formats,
-  transformers,
-} from "~/resources/style_dictionary/mod.ts";
+import instance, { transformers } from "~/resources/style_dictionary/mod.ts";
 
 const config = {
   source: [fromFileUrl(import.meta.resolve("~/resources/tokens.json"))],
@@ -20,17 +17,16 @@ const config = {
       files: [
         {
           destination: "ref/typeface.css",
-          format: formats.cssProperty,
+          format: defaultFormats.cssVariables,
           options: {
             showFileHeader: false,
             outputReferences: true,
-            inherits: true,
           },
           filter: ({ path }) => path.includes("typeface"),
         },
         {
           destination: "ref/palette.css",
-          format: formats.cssProperty,
+          format: defaultFormats.cssVariables,
           options: {
             showFileHeader: false,
             outputReferences: true,
@@ -40,7 +36,7 @@ const config = {
         },
         {
           destination: "sys/shape.css",
-          format: formats.cssProperty,
+          format: defaultFormats.cssVariables,
           options: {
             showFileHeader: false,
             outputReferences: true,
@@ -67,7 +63,7 @@ const config = {
         },
         {
           destination: "sys/elevation.css",
-          format: formats.cssProperty,
+          format: defaultFormats.cssVariables,
           options: {
             showFileHeader: false,
             outputReferences: true,
@@ -81,7 +77,7 @@ const config = {
         },
         {
           destination: "sys/states/state_layer.css",
-          format: formats.cssProperty,
+          format: defaultFormats.cssVariables,
           options: {
             showFileHeader: false,
             outputReferences: true,
@@ -95,7 +91,7 @@ const config = {
         },
         {
           destination: "sys/states/focus_indicator.css",
-          format: formats.cssProperty,
+          format: defaultFormats.cssVariables,
           options: {
             showFileHeader: false,
             outputReferences: true,
@@ -179,6 +175,7 @@ const config = {
         transformers.dtfmNumberAsRadio,
         transformers.dtfmExtensionsAttributeSyntax,
         transformers.dtfmNumberUnit,
+        transformers.dtfmFontFamily,
       ],
     },
   },

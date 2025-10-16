@@ -1,17 +1,5 @@
-@property --md-sys-state-focus-indicator-thickness {
-  syntax: "<length>";
-  inherits: true;
-  initial-value: 3px;
-}
-
-@property --md-sys-state-focus-indicator-outer-offset {
-  syntax: "<length>";
-  inherits: true;
-  initial-value: 2px;
-}
-
-@property --md-sys-state-focus-indicator-inner-offset {
-  syntax: "<length>";
-  inherits: true;
-  initial-value: -3px;
+:root {
+  --md-sys-state-focus-indicator-thickness: 3px;
+  --md-sys-state-focus-indicator-outer-offset: 2px;
+  --md-sys-state-focus-indicator-inner-offset: -3px;
 }

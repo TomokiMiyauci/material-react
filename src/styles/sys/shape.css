@@ -1,53 +1,11 @@
-@property --md-sys-shape-corner-full {
-  syntax: "*";
-  inherits: true;
-  initial-value: 9999px;
-}
-
-@property --md-sys-shape-corner-extra-large-increased {
-  syntax: "<length>";
-  inherits: true;
-  initial-value: 32px;
-}
-
-@property --md-sys-shape-corner-extra-large {
-  syntax: "<length>";
-  inherits: true;
-  initial-value: 28px;
-}
-
-@property --md-sys-shape-corner-large-increased {
-  syntax: "<length>";
-  inherits: true;
-  initial-value: 20px;
-}
-
-@property --md-sys-shape-corner-large {
-  syntax: "<length>";
-  inherits: true;
-  initial-value: 16px;
-}
-
-@property --md-sys-shape-corner-medium {
-  syntax: "<length>";
-  inherits: true;
-  initial-value: 12px;
-}
-
-@property --md-sys-shape-corner-small {
-  syntax: "<length>";
-  inherits: true;
-  initial-value: 8px;
-}
-
-@property --md-sys-shape-corner-extra-small {
-  syntax: "<length>";
-  inherits: true;
-  initial-value: 4px;
-}
-
-@property --md-sys-shape-corner-none {
-  syntax: "<number>";
-  inherits: true;
-  initial-value: 0;
+:root {
+  --md-sys-shape-corner-full: 9999px; /** Fully rounded */
+  --md-sys-shape-corner-extra-large-increased: 32px; /** Extra large increased rounding */
+  --md-sys-shape-corner-extra-large: 28px; /** Extra large rounding */
+  --md-sys-shape-corner-large-increased: 20px; /** Large increased rounding */
+  --md-sys-shape-corner-large: 16px; /** Large rounding */
+  --md-sys-shape-corner-medium: 12px; /** Medium rounding */
+  --md-sys-shape-corner-small: 8px; /** Small rounding */
+  --md-sys-shape-corner-extra-small: 4px; /** Extra small rounding */
+  --md-sys-shape-corner-none: 0; /** No rounding */
 }
