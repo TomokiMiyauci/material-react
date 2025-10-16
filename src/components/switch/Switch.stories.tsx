@@ -34,39 +34,37 @@ interface Item {
 const matrix: Item[][] = [
   [
     { state: "enabled" },
-    { state: "enabled", selected: true },
-    { state: "enabled", icon: true },
-    { state: "enabled", icon: true, selected: true },
-  ],
-  [
     { state: "disabled" },
-    { state: "disabled", selected: true },
-    { state: "disabled", icon: true },
-    { state: "disabled", icon: true, selected: true },
-  ],
-  [
     { state: "hovered" },
-    { state: "hovered", selected: true },
-    { state: "hovered", icon: true },
-    { state: "hovered", icon: true, selected: true },
-  ],
-  [
     { state: "focused" },
-    { state: "focused", selected: true },
-    { state: "focused", icon: true },
-    { state: "focused", icon: true, selected: true },
+    { state: "pressed" },
   ],
   [
-    { state: "pressed" },
+    { state: "enabled", selected: true },
+    { state: "disabled", selected: true },
+    { state: "hovered", selected: true },
+    { state: "focused", selected: true },
     { state: "pressed", selected: true },
+  ],
+  [
+    { state: "enabled", icon: true },
+    { state: "disabled", icon: true },
+    { state: "hovered", icon: true },
+    { state: "focused", icon: true },
     { state: "pressed", icon: true },
+  ],
+  [
+    { state: "enabled", icon: true, selected: true },
+    { state: "disabled", icon: true, selected: true },
+    { state: "hovered", icon: true, selected: true },
+    { state: "focused", icon: true, selected: true },
     { state: "pressed", icon: true, selected: true },
   ],
 ];
-const xAxis = [{ label: "Default" }, { label: "Selected" }, { label: "Icon" }, {
+const yAxis = [{ label: "Default" }, { label: "Selected" }, { label: "Icon" }, {
   label: "Icon Selected",
 }] satisfies AxisNode[];
-const yAxis = [
+const xAxis = [
   { label: "Enabled" },
   { label: "Disabled" },
   { label: "Hovered" },
@@ -132,43 +130,8 @@ export const Gallary = {
   tags: ["!autodocs"],
 } satisfies Story;
 
-export const Enabled = {
+export const Default = {
   parameters: {
     design: md.figma("switch", "all"),
-  },
-} satisfies Story;
-export const Disabled = {
-  args: {
-    disabled: true,
-  },
-  parameters: {
-    design: md.figma("switch", { state: "disabled" }),
-  },
-} satisfies Story;
-
-export const Hovered = {
-  parameters: {
-    design: md.figma("switch", { state: "hovered" }),
-    pseudo: {
-      hover: true,
-    },
-  },
-} satisfies Story;
-
-export const Focused = {
-  parameters: {
-    pseudo: {
-      focusVisible: true,
-    },
-    design: md.figma("switch", { state: "focused" }),
-  },
-} satisfies Story;
-
-export const Pressed = {
-  parameters: {
-    pseudo: {
-      active: true,
-    },
-    design: md.figma("switch", { state: "pressed" }),
   },
 } satisfies Story;

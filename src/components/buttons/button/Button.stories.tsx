@@ -24,17 +24,9 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-const sizeNodes = [
-  { label: "XSmall" },
-  { label: "Small" },
-  { label: "Medium" },
-  { label: "Large" },
-  { label: "XLarge" },
-] satisfies AxisNode[];
-
 const shapeNodes = [
-  { label: "Round", children: sizeNodes },
-  { label: "Square", children: sizeNodes },
+  { label: "Round" },
+  { label: "Square" },
 ] satisfies AxisNode[];
 
 const colorNodes = [
@@ -45,12 +37,20 @@ const colorNodes = [
   { label: "Text", children: shapeNodes },
 ] satisfies AxisNode[];
 
-const xAxis = [
-  { "label": "No Icon", children: colorNodes },
-  { "label": "Icon", children: colorNodes },
-] satisfies AxisNode[];
+const iconNodes = [{ "label": "No Icon", children: colorNodes }, {
+  "label": "Icon",
+  children: colorNodes,
+}];
 
 const yAxis = [
+  { label: "XSmall", children: iconNodes },
+  { label: "Small", children: iconNodes },
+  { label: "Medium", children: iconNodes },
+  { label: "Large", children: iconNodes },
+  { label: "XLarge", children: iconNodes },
+] satisfies AxisNode[];
+
+const xAxis = [
   { label: "Enabled" },
   { label: "Disabled" },
   { label: "Hovered" },
@@ -94,11 +94,11 @@ const colors = [
   "text",
 ] satisfies ButtonColor[];
 
-const matrix = states.map((state) =>
+const matrix = sizes.flatMap((size) =>
   [false, true].flatMap((icon) =>
     colors.flatMap((color) =>
-      shapes.flatMap((shape) =>
-        sizes.flatMap((size) => ({ size, shape, color, state, icon }))
+      shapes.map((shape) =>
+        states.flatMap((state) => ({ size, shape, color, state, icon }))
       )
     )
   )
