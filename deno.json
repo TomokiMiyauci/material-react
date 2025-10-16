@@ -32,7 +32,8 @@
   "tasks": {
     "generate:example": "deno run --allow-write=src/styles --allow-sys --allow-env --allow-read scripts/gen_example.ts",
     "build": "deno run -P=build scripts/build.ts",
-    "test": "deno test -P=test"
+    "test": "deno test -P=test",
+    "lint": "deno run -P=lint stylelint src/**/*.css"
   },
   "nodeModulesDir": "auto",
   "permissions": {
@@ -47,6 +48,12 @@
     "test": {
       "read": true,
       "env": true
+    },
+    "lint": {
+      "read": true,
+      "env": true,
+      "sys": true,
+      "write": [".stylelintcache"]
     }
   }
 }

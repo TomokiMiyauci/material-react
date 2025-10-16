@@ -7,26 +7,19 @@ on:
     #   - main
 
 jobs:
-#   lint:
-#     runs-on: ${{ matrix.os }}
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
 
-#     strategy:
-#       matrix:
-#         os: [ubuntu-latest]
-#         deno: [v1.x]
-
-#     steps:
-#       - name: Checkout
-#         uses: actions/checkout@v5
-
-#       - uses: denoland/setup-deno@v1
-#         with:
-#           deno-version: ${{ matrix.deno }}
-
-#       - name: Lint
-#         run: |
-#           deno fmt --check
-#           deno lint
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+          cache: true
+      
+      - name: Test
+        run: deno task lint
 
   test:
     runs-on: ubuntu-latest
@@ -43,7 +36,7 @@ jobs:
         run: deno task test
 
   build-storybook:
-    needs: [test]
+    needs: [lint, test]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
