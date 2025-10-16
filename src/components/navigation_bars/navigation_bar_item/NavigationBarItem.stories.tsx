@@ -248,6 +248,8 @@ function getProps(item: Item): NavigationBarItemProps & StateProps {
   }
 }
 
+export const Default = {} satisfies Story;
+
 export const Gallary = {
   render: () =>
     renderGallary({
@@ -273,5 +275,3 @@ export const Gallary = {
   },
   tags: ["!autodocs"],
 } satisfies Story;
-
-export const Default = {} satisfies Story;

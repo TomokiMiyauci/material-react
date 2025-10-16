@@ -139,6 +139,8 @@ function getProps(item: Item): ButtonProps & PseudoData {
   }
 }
 
+export const Default = {} satisfies Story;
+
 export const Gallary = {
   render: () =>
     renderGallary({ xAxis, yAxis, matrix }, {
@@ -160,5 +162,3 @@ export const Gallary = {
   },
   tags: ["!autodocs"],
 } satisfies Story;
-
-export const Default = {} satisfies Story;
