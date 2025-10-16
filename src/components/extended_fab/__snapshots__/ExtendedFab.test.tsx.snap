@@ -1,0 +1,3 @@
+export const snapshot = {};
+
+snapshot[`ExtendedFab > snapshot > default 1`] = `'<button type="button" data-md="extended-fab" data-size="small" data-color="primary-container"><span data-text=""></span></button>'`;

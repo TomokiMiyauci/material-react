@@ -3,7 +3,7 @@ import Style from "@internal/Style.tsx";
 import style from "./_generated/style.ts";
 
 export interface PlainTooltipProps {
-  text: string;
+  text?: string;
 }
 
 /**

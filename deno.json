@@ -17,7 +17,8 @@
     "style-dictionary": "npm:style-dictionary@^5.0.2",
     "@/": "./src/",
     "~/": "./",
-    "react-dsd": "./src/components/_internal/dsd/mod.ts"
+    "react-dsd": "./src/components/_internal/dsd/mod.ts",
+    "@testing": "./tests/mod.ts"
   },
   "compilerOptions": {
     "jsx": "react-jsx",
@@ -30,7 +31,8 @@
   },
   "tasks": {
     "generate:example": "deno run --allow-write=examples --allow-sys --allow-env --allow-read scripts/gen_example.ts",
-    "build": "deno run -P=build scripts/build.ts"
+    "build": "deno run -P=build scripts/build.ts",
+    "test": "deno test -P=test"
   },
   "nodeModulesDir": "auto",
   "permissions": {
@@ -41,6 +43,10 @@
       "write": ["./src"],
       "net": true,
       "run": true
+    },
+    "test": {
+      "read": true,
+      "env": true
     }
   }
 }
