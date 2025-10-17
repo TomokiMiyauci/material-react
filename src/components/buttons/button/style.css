@@ -408,32 +408,22 @@
   }
 
   &[data-size="xsmall"] [data-icon] {
-    width: var(--icon-xsmall-size);
-    height: var(--icon-xsmall-size);
     font-size: var(--icon-xsmall-size);
   }
 
   &[data-size="small"] [data-icon] {
-    width: var(--icon-small-size);
-    height: var(--icon-small-size);
     font-size: var(--icon-small-size);
   }
 
   &[data-size="medium"] [data-icon] {
-    width: var(--icon-medium-size);
-    height: var(--icon-medium-size);
     font-size: var(--icon-medium-size);
   }
 
   &[data-size="large"] [data-icon] {
-    width: var(--icon-large-size);
-    height: var(--icon-large-size);
     font-size: var(--icon-large-size);
   }
 
   &[data-size="xlarge"] [data-icon] {
-    width: var(--icon-xlarge-size);
-    height: var(--icon-xlarge-size);
     font-size: var(--icon-xlarge-size);
   }
 
