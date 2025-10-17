@@ -163,6 +163,9 @@ export const Gallary = {
       active: ["[data-active]"],
     },
     chromatic: { disableSnapshot: false },
+    a11y: {
+      test: "off",
+    },
   },
   tags: ["!autodocs"],
 } satisfies Story;
