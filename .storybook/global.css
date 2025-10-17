@@ -9,6 +9,10 @@
   --font-roboto: "Roboto", sans-serif;
 }
 
+@utility font-filled {
+  font-variation-settings: "FILL" 1;
+}
+
 /* stylelint-enable */
 .material-symbols-outlined {
   font-size: inherit;

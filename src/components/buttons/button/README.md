@@ -7,7 +7,18 @@ Buttons prompt most actions in a UI.
 ```tsx
 import { Button } from "@miyauci/material-react";
 
-<Button label="Button" />;
+<Button>Label</Button>;
+```
+
+### With icon
+
+```tsx
+import { Button } from "@miyauci/material-react";
+
+<Button>
+  <span slot="icon">icon</span>
+  Label
+</Button>;
 ```
 
 ## Props
@@ -18,10 +29,15 @@ import { Button } from "@miyauci/material-react";
 | `shape`    | `round`, `square`                                     | `round`  |
 | `color`    | `filled`, `elevated`, `tonal`, `outlined`, `standard` | `filled` |
 | `disabled` | `boolean`                                             |    -     |
-| `label`    | `string`                                              |    -     |
-| `icon`     | `ReactNode`                                           |    -     |
 
 And `HTMLButtonElement` arrtibutes.
+
+## Slots
+
+| Name        | Description     |
+| ----------- | --------------- |
+| `(default)` | Button label    |
+| `icon`      | Icon for button |
 
 ## Tokens
 

@@ -16,7 +16,7 @@ const meta = {
   tags: ["autodocs"],
   argTypes: {},
   args: {
-    label: "Label",
+    children: "Label",
   },
 } satisfies Meta<typeof Button>;
 
@@ -114,14 +114,18 @@ function getProps(item: Item): ButtonProps & PseudoData {
   const { state, icon, ...rest } = item;
   const base = {
     ...rest,
-    label: "Label",
-    icon: icon && (
-      <span
-        style={{ "fontVariationSettings": "'FILL' 1" }}
-        className="material-symbols-outlined"
-      >
-        stars
-      </span>
+    children: (
+      <>
+        {icon && (
+          <span
+            className="material-symbols-outlined font-filled"
+            slot="icon"
+          >
+            stars
+          </span>
+        )}
+        Label
+      </>
     ),
   } satisfies ButtonProps;
 
