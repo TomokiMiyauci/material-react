@@ -20,13 +20,13 @@
   --label-text-horizontal-font: var(--md-ref-typeface-plain); /** Nav bar item horizontal label text text font */
   --label-text-horizontal-line-height: 1rem; /** Nav bar item horizontal label text text line height */
   --label-text-horizontal-size: 0.75rem; /** Nav bar item horizontal label text text size */
-  --label-text-horizontal-tracking: 0.03125rem; /** Nav bar item horizontal label text text tracking */
+  --label-text-horizontal-tracking: 0.0313rem; /** Nav bar item horizontal label text text tracking */
   --label-text-horizontal-weight: var(--md-ref-typeface-weight-medium); /** Nav bar item horizontal label text text weight */
   --label-text-inactive-color: var(--md-sys-color-on-surface-variant); /** Nav bar item inactive label text color */
   --label-text-vertical-font: var(--md-ref-typeface-plain); /** Nav bar item vertical label text font */
   --label-text-vertical-line-height: 1rem; /** Nav bar item vertical label text line height */
   --label-text-vertical-size: 0.75rem; /** Nav bar item vertical label text size */
-  --label-text-vertical-tracking: 0.03125rem; /** Nav bar item vertical label text tracking */
+  --label-text-vertical-tracking: 0.0313rem; /** Nav bar item vertical label text tracking */
   --label-text-vertical-weight: var(--md-ref-typeface-weight-medium); /** Nav bar item vertical label text weight */
   --shape: var(--md-sys-shape-corner-full); /** Nav bar item shape */
   --state-layer-active-focused-color: var(--md-sys-color-on-secondary-container); /** Nav bar item active focused state layer color */

@@ -97,7 +97,7 @@
   --label-text-small-font: var(--md-ref-typeface-plain); /** Extended FAB small label text font */
   --label-text-small-line-height: 1.5rem; /** Extended FAB small label text line height */
   --label-text-small-size: 1rem; /** Extended FAB small label text size */
-  --label-text-small-tracking: 0.009375rem; /** Extended FAB small label text tracking */
+  --label-text-small-tracking: 0.0094rem; /** Extended FAB small label text tracking */
   --label-text-small-weight: var(--md-ref-typeface-weight-medium); /** Extended FAB small label text weight */
   --label-text-tertiary-color: var(--md-sys-color-on-tertiary); /** Extended FAB tertiary label text color */
   --label-text-tertiary-focused-color: var(--md-sys-color-on-tertiary); /** Extended FAB tertiary focused label text color */
