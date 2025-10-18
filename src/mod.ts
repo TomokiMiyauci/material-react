@@ -8,3 +8,4 @@ export * from "./components/buttons/button/mod.ts";
 export * from "./components/divider/mod.ts";
 export * from "./components/lists/mod.ts";
 export * from "./components/fab/mod.ts";
+export * from "./components/styles/mod.ts";
