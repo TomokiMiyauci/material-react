@@ -28,7 +28,8 @@
     "noPropertyAccessFromIndexSignature": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedIndexedAccess": true
+    "noUncheckedIndexedAccess": true,
+    "lib": ["dom", "es2024"]
   },
   "tasks": {
     "generate:example": "deno run --allow-write=src/styles --allow-sys --allow-env --allow-read scripts/gen_example.ts",
