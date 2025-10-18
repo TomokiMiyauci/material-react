@@ -1,3 +1,10 @@
+# [1.0.0-beta.16](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.15...1.0.0-beta.16) (2025-10-18)
+
+
+### Features
+
+* **button:** change button component to DSD style ([7c76567](https://github.com/TomokiMiyauci/material-react/commit/7c76567d500071b6ed3766f2c76ac32fbdd578f1))
+
 # [1.0.0-beta.15](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.14...1.0.0-beta.15) (2025-10-15)
 
 
