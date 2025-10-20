@@ -2,14 +2,18 @@ import type { JSX, ReactNode } from "react";
 import Style from "@internal/Style.tsx";
 import style from "./_generated/style.ts";
 import { bool } from "@/utils/convert.ts";
+import { Template } from "react-dsd";
 
 export interface ButtonProps {
+  /**
+   * @default "small"
+   */
   size?: ButtonSize;
+
   shape?: ButtonShape;
   color?: ButtonColor;
-  label?: ReactNode;
-  icon?: ReactNode;
   disabled?: boolean;
+  children?: ReactNode;
 }
 
 export type ButtonSize = "xsmall" | "small" | "medium" | "large" | "xlarge";
@@ -25,10 +29,9 @@ export default function Button(
   const {
     size = "small",
     shape = "round",
-    label,
     color = "filled",
-    icon,
     disabled,
+    children,
     ...rest
   } = props;
 
@@ -42,8 +45,14 @@ export default function Button(
         data-disabled={bool(disabled)}
         {...rest}
       >
-        {icon && <span data-icon="">{icon}</span>}
-        <span data-label="">{label}</span>
+        <span data-host="">
+          <Template shadowrootmode="open">
+            <slot name="icon" part="icon" />
+            <slot part="label" />
+          </Template>
+
+          {children}
+        </span>
       </button>
 
       <Style href="button">{style}</Style>

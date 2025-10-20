@@ -34,7 +34,3 @@ Syntax:
 | No rounding          | `--md-sys-shape-corner-none`        |
 
 ## Color
-
-## Example
-
-- [Material Design3 default theme](/examples/material_themes/style.css)

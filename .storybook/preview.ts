@@ -4,7 +4,7 @@ import type { Preview } from "@storybook/react-vite";
 import { createElement } from "react";
 
 import "./global.css";
-import "./theme.css";
+import "@/styles/style_light.css";
 
 export default {
   parameters: {

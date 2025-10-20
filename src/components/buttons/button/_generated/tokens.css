@@ -154,7 +154,7 @@
   --label-medium-font: var(--md-ref-typeface-plain); /** Button medium label size font */
   --label-medium-line-height: 1.5rem; /** Button medium label size line height */
   --label-medium-size: 1rem; /** Button medium label size size */
-  --label-medium-tracking: 0.009375rem; /** Button medium label size tracking */
+  --label-medium-tracking: 0.0094rem; /** Button medium label size tracking */
   --label-medium-weight: var(--md-ref-typeface-weight-medium); /** Button medium label size weight */
   --label-outlined-color: var(--md-sys-color-on-surface-variant); /** Button outlined label color */
   --label-outlined-disabled-color: var(--md-sys-color-on-surface); /** Button outlined disabled label color */
@@ -167,7 +167,7 @@
   --label-small-font: var(--md-ref-typeface-plain); /** Button small label size font */
   --label-small-line-height: 1.25rem; /** Button small label size line height */
   --label-small-size: 0.875rem; /** Button small label size size */
-  --label-small-tracking: 0.00625rem; /** Button small label size tracking */
+  --label-small-tracking: 0.0063rem; /** Button small label size tracking */
   --label-small-weight: var(--md-ref-typeface-weight-medium); /** Button small label size weight */
   --label-text-color: var(--md-sys-color-primary); /** Button text label color */
   --label-text-disabled-color: var(--md-sys-color-on-surface); /** Button text disabled label color */
@@ -181,7 +181,7 @@
   --label-tonal-focused-color: var(--md-sys-color-on-secondary-container); /** Button tonal focused label color */
   --label-tonal-hovered-color: var(--md-sys-color-on-secondary-container); /** Button tonal hovered label color */
   --label-tonal-pressed-color: var(--md-sys-color-on-secondary-container); /** Button tonal pressed label color */
-  --label-tracking: 0.00625rem; /** Button label size tracking */
+  --label-tracking: 0.0063rem; /** Button label size tracking */
   --label-weight: var(--md-ref-typeface-weight-medium); /** Button label size weight */
   --label-xlarge-font: var(--md-ref-typeface-brand); /** Button xlarge label size font */
   --label-xlarge-line-height: 2.5rem; /** Button xlarge label size line height */
@@ -191,7 +191,7 @@
   --label-xsmall-font: var(--md-ref-typeface-plain); /** Button xsmall label size font */
   --label-xsmall-line-height: 1.25rem; /** Button xsmall label size line height */
   --label-xsmall-size: 0.875rem; /** Button xsmall label size size */
-  --label-xsmall-tracking: 0.00625rem; /** Button xsmall label size tracking */
+  --label-xsmall-tracking: 0.0063rem; /** Button xsmall label size tracking */
   --label-xsmall-weight: var(--md-ref-typeface-weight-medium); /** Button xsmall label size weight */
   --large-morph-pressed-shape: var(--md-sys-shape-corner-large); /** Button large shape pressed morph */
   --large-spring-animation-damping-shape: var(--md-sys-motion-spring-fast-spatial-damping); /** Button large shape spring animation damping */

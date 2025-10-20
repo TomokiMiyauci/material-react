@@ -15,8 +15,7 @@
     "editor.tabSize": 2
   },
   "[css]": {
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "vscode.css-language-features"
+    "editor.tabSize": 2
   },
   "files.associations": {
     "*.md.mustache": "markdown"
@@ -30,5 +29,7 @@
   "deno.codeLens.referencesAllFunctions": true,
   "json.schemas": [
     { "fileMatch": ["tokens.json"], "url": "./schemas/dtfm.schema.json" }
-  ]
+  ],
+  "css.validate": false,
+  "stylelint.enable": true
 }

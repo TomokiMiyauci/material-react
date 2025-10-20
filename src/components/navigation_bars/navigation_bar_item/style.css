@@ -1,14 +1,12 @@
-@import url(./_generated/tokens.css);
+@import url("./_generated/tokens.css");
 
-@scope([data-md=navigation-bar-item]) {
-  & {
-    all: unset;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    flex: 1;
-  }
+[data-md="navigation-bar-item"] {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
 
   [data-icon] {
     all: unset;
@@ -20,20 +18,20 @@
     font-size: var(--icon-size);
     color: var(--icon-inactive-color);
     position: relative;
+  }
 
-    :scope[data-active] & {
-      color: var(--icon-active-color);
-      font-variation-settings: "FILL" 1;
-    }
+  &[data-active] [data-icon] {
+    color: var(--icon-active-color);
+    font-variation-settings: "FILL" 1;
   }
 
   [data-label-text] {
     all: unset;
     color: var(--label-text-inactive-color);
+  }
 
-    :scope[data-active] & {
-      color: var(--label-text-active-color);
-    }
+  &[data-active] [data-label-text] {
+    color: var(--label-text-active-color);
   }
 
   [data-icon-container] {
@@ -44,20 +42,18 @@
     all: unset;
   }
 
-  &[data-variant=horizontal] {
+  &[data-variant="horizontal"] {
     --variant: horizontal;
   }
 
-  &[data-variant=variant] {
+  &[data-variant="variant"] {
     --variant: variant;
   }
 }
 
 @container style(--variant: vertical) or style(--variant: initial) {
-  @scope([data-md=navigation-bar-item]) {
-    & {
-      row-gap: var(--active-indicator-icon-label-vertical-space);
-    }
+  [data-md="navigation-bar-item"] {
+    row-gap: var(--active-indicator-icon-label-vertical-space);
 
     [data-icon-container] {
       display: inline-flex;
@@ -65,6 +61,8 @@
       justify-content: center;
       border-radius: var(--shape);
       position: relative;
+      width: var(--active-indicator-vertical-width);
+      height: var(--active-indicator-vertical-height);
 
       &::before {
         content: "";
@@ -72,40 +70,40 @@
         inset: 0;
         border-radius: inherit;
       }
+    }
 
-      :scope[data-active] & {
-        background-color: var(--indicator-color);
-      }
+    &[data-active] [data-icon-container] {
+      background-color: var(--indicator-color);
+    }
 
-      :scope:hover &::before {
-        background-color: var(--state-layer-inactive-hovered-color);
-        opacity: var(--state-layer-active-hovered-opacity);
-      }
+    &:hover [data-icon-container]::before {
+      background-color: var(--state-layer-inactive-hovered-color);
+      opacity: var(--state-layer-active-hovered-opacity);
+    }
 
-      :scope:active &::before {
-        background-color: var(--state-layer-inactive-pressed-color);
-        opacity: var(--state-layer-active-pressed-opacity);
-      }
+    &:active [data-icon-container]::before {
+      background-color: var(--state-layer-inactive-pressed-color);
+      opacity: var(--state-layer-active-pressed-opacity);
+    }
 
-      :scope:focus-visible &::before {
-        background-color: var(--state-layer-inactive-focused-color);
-        opacity: var(--state-layer-active-focused-opacity);
-      }
+    &:focus-visible [data-icon-container]::before {
+      background-color: var(--state-layer-inactive-focused-color);
+      opacity: var(--state-layer-active-focused-opacity);
+    }
 
-      :scope[data-active]:hover &::before {
-        background-color: var(--state-layer-active-hovered-color);
-        opacity: var(--state-layer-active-hovered-opacity);
-      }
+    &[data-active]:hover [data-icon-container]::before {
+      background-color: var(--state-layer-active-hovered-color);
+      opacity: var(--state-layer-active-hovered-opacity);
+    }
 
-      :scope[data-active]:active &::before {
-        background-color: var(--state-layer-active-pressed-color);
-        opacity: var(--state-layer-active-pressed-opacity);
-      }
+    &[data-active]:active [data-icon-container]::before {
+      background-color: var(--state-layer-active-pressed-color);
+      opacity: var(--state-layer-active-pressed-opacity);
+    }
 
-      :scope[data-active]:focus-visible &::before {
-        background-color: var(--state-layer-active-focused-color);
-        opacity: var(--state-layer-active-focused-opacity);
-      }
+    &[data-active]:focus-visible [data-icon-container]::before {
+      background-color: var(--state-layer-active-focused-color);
+      opacity: var(--state-layer-active-focused-opacity);
     }
 
     [data-container] {
@@ -123,16 +121,11 @@
       line-height: var(--label-text-vertical-line-height);
       letter-spacing: var(--label-text-vertical-tracking);
     }
-
-    [data-icon-container] {
-      width: var(--active-indicator-vertical-width);
-      height: var(--active-indicator-vertical-height);
-    }
   }
 }
 
 @container style(--variant: horizontal) {
-  @scope([data-md=navigation-bar-item]) {
+  [data-md="navigation-bar-item"] {
     [data-container] {
       display: inline-flex;
       justify-content: center;
@@ -150,40 +143,40 @@
         inset: 0;
         border-radius: inherit;
       }
+    }
 
-      :scope[data-active] & {
-        background-color: var(--indicator-color);
-      }
+    &[data-active] [data-container] {
+      background-color: var(--indicator-color);
+    }
 
-      :scope:hover &::before {
-        background-color: var(--state-layer-inactive-hovered-color);
-        opacity: var(--state-layer-active-hovered-opacity);
-      }
+    &:hover [data-container]::before {
+      background-color: var(--state-layer-inactive-hovered-color);
+      opacity: var(--state-layer-active-hovered-opacity);
+    }
 
-      :scope:active &::before {
-        background-color: var(--state-layer-inactive-pressed-color);
-        opacity: var(--state-layer-active-pressed-opacity);
-      }
+    &:active [data-container]::before {
+      background-color: var(--state-layer-inactive-pressed-color);
+      opacity: var(--state-layer-active-pressed-opacity);
+    }
 
-      :scope:focus-visible &::before {
-        background-color: var(--state-layer-inactive-focused-color);
-        opacity: var(--state-layer-active-focused-opacity);
-      }
+    &:focus-visible [data-container]::before {
+      background-color: var(--state-layer-inactive-focused-color);
+      opacity: var(--state-layer-active-focused-opacity);
+    }
 
-      :scope[data-active]:hover &::before {
-        background-color: var(--state-layer-active-hovered-color);
-        opacity: var(--state-layer-active-hovered-opacity);
-      }
+    &[data-active]:hover [data-container]::before {
+      background-color: var(--state-layer-active-hovered-color);
+      opacity: var(--state-layer-active-hovered-opacity);
+    }
 
-      :scope[data-active]:active &::before {
-        background-color: var(--state-layer-active-pressed-color);
-        opacity: var(--state-layer-active-pressed-opacity);
-      }
+    &[data-active]:active [data-container]::before {
+      background-color: var(--state-layer-active-pressed-color);
+      opacity: var(--state-layer-active-pressed-opacity);
+    }
 
-      :scope[data-active]:focus-visible &::before {
-        background-color: var(--state-layer-active-focused-color);
-        opacity: var(--state-layer-active-focused-opacity);
-      }
+    &[data-active]:focus-visible [data-container]::before {
+      background-color: var(--state-layer-active-focused-color);
+      opacity: var(--state-layer-active-focused-opacity);
     }
 
     [data-label-text] {

@@ -9,7 +9,7 @@ import { ListItemText } from "../list_item_text/mod.ts";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
-  title: "Example/ListItem",
+  title: "Component/ListItem",
   component: ListItem,
   parameters: {
     layout: "centered",
@@ -239,6 +239,8 @@ function getProps(item: Item): ListItemProps & PseudoData {
   }
 }
 
+export const Default = {} satisfies Story;
+
 export const Gallary = {
   render: () =>
     renderGallary({
@@ -270,7 +272,3 @@ export const Gallary = {
 } satisfies Story;
 
 type Story = StoryObj<typeof meta>;
-
-export const Default = {
-  args: {},
-} satisfies Story;

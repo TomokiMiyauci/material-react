@@ -7,55 +7,46 @@ on:
     #   - main
 
 jobs:
-#   lint:
-#     runs-on: ${{ matrix.os }}
-
-#     strategy:
-#       matrix:
-#         os: [ubuntu-latest]
-#         deno: [v1.x]
-
-#     steps:
-#       - name: Checkout
-#         uses: actions/checkout@v5
-
-#       - uses: denoland/setup-deno@v1
-#         with:
-#           deno-version: ${{ matrix.deno }}
-
-#       - name: Lint
-#         run: |
-#           deno fmt --check
-#           deno lint
-
-#   test:
-#     runs-on: ${{ matrix.os }}
-
-#     strategy:
-#       matrix:
-#         os: [ubuntu-latest]
-#         deno: [v1.x]
-
-#     steps:
-#       - name: Checkout
-#         uses: actions/checkout@v5
-
-#       - uses: denoland/setup-deno@v1
-#         with:
-#           deno-version: ${{ matrix.deno }}
-
-#       - name: Test
-#         run: deno task test --coverage=coverage
-
-#       - name: Generate coverage
-#         run: deno coverage coverage --output=cov_profile.lcov --lcov
-
-#       - uses: codecov/codecov-action@v4
-#         with:
-#           files: cov_profile.lcov
-#           token: ${{ secrets.CODECOV_TOKEN }}
-  build-storybook:
+  lint:
     runs-on: ubuntu-latest
+    permissions: 
+      contents: read   
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+          cache: true
+      
+      - name: Test
+        run: deno task lint
+
+  test:
+    runs-on: ubuntu-latest
+    permissions: 
+      contents: read   
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+          cache: true
+      
+      - name: Test
+        run: deno task test
+
+  build-storybook:
+    needs: [lint, test]
+    runs-on: ubuntu-latest
+    permissions: 
+      contents: read   
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v5
@@ -76,6 +67,9 @@ jobs:
   chromatic:
     needs: [build-storybook]
     runs-on: ubuntu-latest
+    permissions: 
+      contents: read   
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v5

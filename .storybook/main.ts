@@ -31,6 +31,15 @@ export default {
           "@": join(__dirname, "..", "src"),
           "@miyauci/material-react": join(__dirname, "..", "src", "mod.ts"),
           "~": join(__dirname, ".."),
+          "react-dsd": join(
+            __dirname,
+            "..",
+            "src",
+            "components",
+            "_internal",
+            "dsd",
+            "mod.ts",
+          ),
         },
       },
     } satisfies InlineConfig;

@@ -3,7 +3,7 @@ import NavigationBarItem from "./navigation_bar_item/NavigationBarItem.tsx";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
-  title: "Example/NavigationBars",
+  title: "Component/NavigationBars",
   component: NavigationBar,
   parameters: {
     layout: "centered",

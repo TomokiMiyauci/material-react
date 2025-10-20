@@ -1,0 +1,165 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+/* @embed */
+:root {
+  --container-large-height: 96px; /** Extended FAB large container height */
+  --container-large-shape: var(--md-sys-shape-corner-extra-large); /** Extended FAB large container shape */
+  --container-medium-height: 80px; /** Extended FAB medium container height */
+  --container-medium-shape: var(--md-sys-shape-corner-large-increased); /** Extended FAB medium container shape */
+  --container-primary-color: var(--md-sys-color-primary); /** Extended FAB primary container color */
+  --container-primary-elevation: var(--md-sys-elevation-level3); /** Extended FAB primary container elevation */
+  --container-primary-focused-elevation: var(--md-sys-elevation-level3); /** Extended FAB primary focused container elevation */
+  --container-primary-hovered-elevation: var(--md-sys-elevation-level4); /** Extended FAB primary hovered container elevation */
+  --container-primary-pressed-elevation: var(--md-sys-elevation-level3); /** Extended FAB primary pressed container elevation */
+  --container-primary-shadow-color: var(--md-sys-color-shadow); /** Extended FAB primary container shadow color */
+  --container-secondary-color: var(--md-sys-color-secondary); /** Extended FAB secondary container color */
+  --container-secondary-elevation: var(--md-sys-elevation-level3); /** Extended FAB secondary container elevation */
+  --container-secondary-focused-elevation: var(--md-sys-elevation-level3); /** Extended FAB secondary focused container elevation */
+  --container-secondary-hovered-elevation: var(--md-sys-elevation-level4); /** Extended FAB secondary hovered container elevation */
+  --container-secondary-pressed-elevation: var(--md-sys-elevation-level3); /** Extended FAB secondary pressed container elevation */
+  --container-secondary-shadow-color: var(--md-sys-color-shadow); /** Extended FAB secondary container shadow color */
+  --container-small-height: 56px; /** Extended FAB small container height */
+  --container-small-shape: var(--md-sys-shape-corner-large); /** Extended FAB small container shape */
+  --container-tertiary-color: var(--md-sys-color-tertiary); /** Extended FAB tertiary container color */
+  --container-tertiary-elevation: var(--md-sys-elevation-level3); /** Extended FAB tertiary container elevation */
+  --container-tertiary-focused-elevation: var(--md-sys-elevation-level3); /** Extended FAB tertiary focused container elevation */
+  --container-tertiary-hovered-elevation: var(--md-sys-elevation-level4); /** Extended FAB tertiary hovered container elevation */
+  --container-tertiary-pressed-elevation: var(--md-sys-elevation-level3); /** Extended FAB tertiary pressed container elevation */
+  --container-tertiary-shadow-color: var(--md-sys-color-shadow); /** Extended FAB tertiary container shadow color */
+  --container-tonal-primary-color: var(--md-sys-color-primary-container); /** Extended FAB tonal primary container color */
+  --container-tonal-primary-elevation: var(--md-sys-elevation-level3); /** Extended FAB tonal primary container elevation */
+  --container-tonal-primary-focused-elevation: var(--md-sys-elevation-level3); /** Extended FAB tonal primary focused container elevation */
+  --container-tonal-primary-hovered-elevation: var(--md-sys-elevation-level4); /** Extended FAB tonal primary hovered container elevation */
+  --container-tonal-primary-pressed-elevation: var(--md-sys-elevation-level3); /** Extended FAB tonal primary pressed container elevation */
+  --container-tonal-primary-shadow-color: var(--md-sys-color-shadow); /** Extended FAB tonal primary container shadow color */
+  --container-tonal-secondary-color: var(--md-sys-color-secondary-container); /** Extended FAB tonal secondary container color */
+  --container-tonal-secondary-elevation: var(--md-sys-elevation-level3); /** Extended FAB tonal secondary container elevation */
+  --container-tonal-secondary-focused-elevation: var(--md-sys-elevation-level3); /** Extended FAB tonal secondary focused container elevation */
+  --container-tonal-secondary-hovered-elevation: var(--md-sys-elevation-level4); /** Extended FAB tonal secondary hovered container elevation */
+  --container-tonal-secondary-pressed-elevation: var(--md-sys-elevation-level3); /** Extended FAB tonal secondary pressed container elevation */
+  --container-tonal-secondary-shadow-color: var(--md-sys-color-shadow); /** Extended FAB tonal secondary container shadow color */
+  --container-tonal-tertiary-color: var(--md-sys-color-tertiary-container); /** Extended FAB tonal tertiary container color */
+  --container-tonal-tertiary-elevation: var(--md-sys-elevation-level3); /** Extended FAB tonal tertiary container elevation */
+  --container-tonal-tertiary-focused-elevation: var(--md-sys-elevation-level3); /** Extended FAB tonal tertiary focused container elevation */
+  --container-tonal-tertiary-hovered-elevation: var(--md-sys-elevation-level4); /** Extended FAB tonal tertiary hovered container elevation */
+  --container-tonal-tertiary-pressed-elevation: var(--md-sys-elevation-level3); /** Extended FAB tonal tertiary pressed container elevation */
+  --container-tonal-tertiary-shadow-color: var(--md-sys-color-shadow); /** Extended FAB tonal tertiary container shadow color */
+  --icon-large-size: 36px; /** Extended FAB large icon size */
+  --icon-medium-size: 28px; /** Extended FAB medium icon size */
+  --icon-primary-color: var(--md-sys-color-on-primary); /** Extended FAB primary container icon color */
+  --icon-primary-focused-color: var(--md-sys-color-on-primary); /** Extended FAB primary focused icon color */
+  --icon-primary-hovered-color: var(--md-sys-color-on-primary); /** Extended FAB primary hovered icon color */
+  --icon-primary-pressed-color: var(--md-sys-color-on-primary); /** Extended FAB primary pressed icon color */
+  --icon-secondary-color: var(--md-sys-color-on-secondary); /** Extended FAB secondary container icon color */
+  --icon-secondary-focused-color: var(--md-sys-color-on-secondary); /** Extended FAB secondary focused icon color */
+  --icon-secondary-hovered-color: var(--md-sys-color-on-secondary); /** Extended FAB secondary hovered icon color */
+  --icon-secondary-pressed-color: var(--md-sys-color-on-secondary); /** Extended FAB secondary pressed icon color */
+  --icon-small-size: 24px; /** Extended FAB small icon size */
+  --icon-tertiary-color: var(--md-sys-color-on-tertiary); /** Extended FAB tertiary container icon color */
+  --icon-tertiary-focused-color: var(--md-sys-color-on-tertiary); /** Extended FAB tertiary focused icon color */
+  --icon-tertiary-hovered-color: var(--md-sys-color-on-tertiary); /** Extended FAB tertiary hovered icon color */
+  --icon-tertiary-pressed-color: var(--md-sys-color-on-tertiary); /** Extended FAB tertiary pressed icon color */
+  --icon-tonal-primary-color: var(--md-sys-color-on-primary-container); /** Extended FAB tonal primary container icon color */
+  --icon-tonal-primary-focused-color: var(--md-sys-color-on-primary-container); /** Extended FAB tonal primary focused icon color */
+  --icon-tonal-primary-hovered-color: var(--md-sys-color-on-primary-container); /** Extended FAB tonal primary hovered icon color */
+  --icon-tonal-primary-pressed-color: var(--md-sys-color-on-primary-container); /** Extended FAB tonal primary pressed icon color */
+  --icon-tonal-secondary-color: var(--md-sys-color-on-secondary-container); /** Extended FAB tonal secondary container icon color */
+  --icon-tonal-secondary-focused-color: var(--md-sys-color-on-secondary-container); /** Extended FAB tonal secondary focused icon color */
+  --icon-tonal-secondary-hovered-color: var(--md-sys-color-on-secondary-container); /** Extended FAB tonal secondary hovered icon color */
+  --icon-tonal-secondary-pressed-color: var(--md-sys-color-on-secondary-container); /** Extended FAB tonal secondary pressed icon color */
+  --icon-tonal-tertiary-color: var(--md-sys-color-on-tertiary-container); /** Extended FAB tonal tertiary container icon color */
+  --icon-tonal-tertiary-focused-color: var(--md-sys-color-on-tertiary-container); /** Extended FAB tonal tertiary focused icon color */
+  --icon-tonal-tertiary-hovered-color: var(--md-sys-color-on-tertiary-container); /** Extended FAB tonal tertiary hovered icon color */
+  --icon-tonal-tertiary-pressed-color: var(--md-sys-color-on-tertiary-container); /** Extended FAB tonal tertiary pressed icon color */
+  --label-text-font: var(--md-sys-typescale-label-large-font); /** Label text type style font */
+  --label-text-large-font: var(--md-ref-typeface-brand); /** Extended FAB large label text font */
+  --label-text-large-line-height: 2rem; /** Extended FAB large label text line height */
+  --label-text-large-size: 1.5rem; /** Extended FAB large label text size */
+  --label-text-large-tracking: 0; /** Extended FAB large label text tracking */
+  --label-text-large-weight: var(--md-ref-typeface-weight-regular); /** Extended FAB large label text weight */
+  --label-text-line-height: var(--md-sys-typescale-label-large-line-height); /** Label text type style line height */
+  --label-text-medium-font: var(--md-ref-typeface-brand); /** Extended FAB medium label text font */
+  --label-text-medium-line-height: 1.75rem; /** Extended FAB medium label text line height */
+  --label-text-medium-size: 1.375rem; /** Extended FAB medium label text size */
+  --label-text-medium-tracking: 0; /** Extended FAB medium label text tracking */
+  --label-text-medium-weight: var(--md-ref-typeface-weight-regular); /** Extended FAB medium label text weight */
+  --label-text-primary-color: var(--md-sys-color-on-primary); /** Extended FAB primary label text color */
+  --label-text-primary-focused-color: var(--md-sys-color-on-primary); /** Extended FAB primary focused label text color */
+  --label-text-primary-hovered-color: var(--md-sys-color-on-primary); /** Extended FAB primary hovered label text color */
+  --label-text-primary-pressed-color: var(--md-sys-color-on-primary); /** Extended FAB primary pressed label text color */
+  --label-text-secondary-color: var(--md-sys-color-on-secondary); /** Extended FAB secondary label text color */
+  --label-text-secondary-focused-color: var(--md-sys-color-on-secondary); /** Extended FAB secondary focused label text color */
+  --label-text-secondary-hovered-color: var(--md-sys-color-on-secondary); /** Extended FAB secondary hovered label text color */
+  --label-text-secondary-pressed-color: var(--md-sys-color-on-secondary); /** Extended FAB secondary pressed label text color */
+  --label-text-size: var(--md-sys-typescale-label-large-size); /** Label text type style size */
+  --label-text-small-font: var(--md-ref-typeface-plain); /** Extended FAB small label text font */
+  --label-text-small-line-height: 1.5rem; /** Extended FAB small label text line height */
+  --label-text-small-size: 1rem; /** Extended FAB small label text size */
+  --label-text-small-tracking: 0.0094rem; /** Extended FAB small label text tracking */
+  --label-text-small-weight: var(--md-ref-typeface-weight-medium); /** Extended FAB small label text weight */
+  --label-text-tertiary-color: var(--md-sys-color-on-tertiary); /** Extended FAB tertiary label text color */
+  --label-text-tertiary-focused-color: var(--md-sys-color-on-tertiary); /** Extended FAB tertiary focused label text color */
+  --label-text-tertiary-hovered-color: var(--md-sys-color-on-tertiary); /** Extended FAB tertiary hovered label text color */
+  --label-text-tertiary-pressed-color: var(--md-sys-color-on-tertiary); /** Extended FAB tertiary pressed label text color */
+  --label-text-tonal-primary-color: var(--md-sys-color-on-primary-container); /** Extended FAB tonal primary label text color */
+  --label-text-tonal-primary-focused-color: var(--md-sys-color-on-primary-container); /** Extended FAB tonal primary focused label text color */
+  --label-text-tonal-primary-hovered-color: var(--md-sys-color-on-primary-container); /** Extended FAB tonal primary hovered label text color */
+  --label-text-tonal-primary-pressed-color: var(--md-sys-color-on-primary-container); /** Extended FAB tonal primary pressed label text color */
+  --label-text-tonal-secondary-color: var(--md-sys-color-on-secondary-container); /** Extended FAB tonal secondary label text color */
+  --label-text-tonal-secondary-focused-color: var(--md-sys-color-on-secondary-container); /** Extended FAB tonal secondary focused label text color */
+  --label-text-tonal-secondary-hovered-color: var(--md-sys-color-on-secondary-container); /** Extended FAB tonal secondary hovered label text color */
+  --label-text-tonal-secondary-pressed-color: var(--md-sys-color-on-secondary-container); /** Extended FAB tonal secondary pressed label text color */
+  --label-text-tonal-tertiary-color: var(--md-sys-color-on-tertiary-container); /** Extended FAB tonal tertiary label text color */
+  --label-text-tonal-tertiary-focused-color: var(--md-sys-color-on-tertiary-container); /** Extended FAB tonal tertiary focused label text color */
+  --label-text-tonal-tertiary-hovered-color: var(--md-sys-color-on-tertiary-container); /** Extended FAB tonal tertiary hovered label text color */
+  --label-text-tonal-tertiary-pressed-color: var(--md-sys-color-on-tertiary-container); /** Extended FAB tonal tertiary pressed label text color */
+  --label-text-tracking: var(--md-sys-typescale-label-large-tracking); /** Label text type style tracking */
+  --label-text-weight: var(--md-sys-typescale-label-large-weight); /** Label text type style weight */
+  --large-icon-label-space: 16px; /** Extended FAB large icon label space */
+  --large-leading-space: 28px; /** Extended FAB large leading space */
+  --large-trailing-space: 28px; /** Extended FAB large trailing space */
+  --medium-icon-label-space: 12px; /** Extended FAB medium icon label space */
+  --medium-leading-space: 26px; /** Extended FAB medium leading space */
+  --medium-trailing-space: 26px; /** Extended FAB medium trailing space */
+  --small-icon-label-space: 8px; /** Extended FAB small icon label space */
+  --small-leading-space: 16px; /** Extended FAB small leading space */
+  --small-trailing-space: 16px; /** Extended FAB small trailing space */
+  --state-layer-primary-focused-color: var(--md-sys-color-on-primary); /** Extended FAB primary focused state layer color */
+  --state-layer-primary-focused-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Extended FAB primary focused state layer opacity */
+  --state-layer-primary-hovered-color: var(--md-sys-color-on-primary); /** Extended FAB primary hovered state layer color */
+  --state-layer-primary-hovered-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Extended FAB primary hovered state layer opacity */
+  --state-layer-primary-pressed-color: var(--md-sys-color-on-primary); /** Extended FAB primary pressed state layer color */
+  --state-layer-primary-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Extended FAB primary pressed state layer opacity */
+  --state-layer-secondary-focused-color: var(--md-sys-color-on-secondary); /** Extended FAB secondary focused state layer color */
+  --state-layer-secondary-focused-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Extended FAB secondary focused state layer opacity */
+  --state-layer-secondary-hovered-color: var(--md-sys-color-on-secondary); /** Extended FAB secondary hovered state layer color */
+  --state-layer-secondary-hovered-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Extended FAB secondary hovered state layer opacity */
+  --state-layer-secondary-pressed-color: var(--md-sys-color-on-secondary); /** Extended FAB secondary pressed state layer color */
+  --state-layer-secondary-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Extended FAB secondary pressed state layer opacity */
+  --state-layer-tertiary-focused-color: var(--md-sys-color-on-tertiary); /** Extended FAB tertiary focused state layer color */
+  --state-layer-tertiary-focused-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Extended FAB tertiary focused state layer opacity */
+  --state-layer-tertiary-hovered-color: var(--md-sys-color-on-tertiary); /** Extended FAB tertiary hovered state layer color */
+  --state-layer-tertiary-hovered-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Extended FAB tertiary hovered state layer opacity */
+  --state-layer-tertiary-pressed-color: var(--md-sys-color-on-tertiary); /** Extended FAB tertiary pressed state layer color */
+  --state-layer-tertiary-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Extended FAB tertiary pressed state layer opacity */
+  --state-layer-tonal-primary-focused-color: var(--md-sys-color-on-primary-container); /** Extended FAB tonal primary focused state layer color */
+  --state-layer-tonal-primary-focused-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Extended FAB tonal primary focused state layer opacity */
+  --state-layer-tonal-primary-hovered-color: var(--md-sys-color-on-primary-container); /** Extended FAB tonal primary hovered state layer color */
+  --state-layer-tonal-primary-hovered-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Extended FAB tonal primary hovered state layer opacity */
+  --state-layer-tonal-primary-pressed-color: var(--md-sys-color-on-primary-container); /** Extended FAB tonal primary pressed state layer color */
+  --state-layer-tonal-primary-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Extended FAB tonal primary pressed state layer opacity */
+  --state-layer-tonal-secondary-focused-color: var(--md-sys-color-on-secondary-container); /** Extended FAB tonal secondary focused state layer color */
+  --state-layer-tonal-secondary-focused-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Extended FAB tonal secondary focused state layer opacity */
+  --state-layer-tonal-secondary-hovered-color: var(--md-sys-color-on-secondary-container); /** Extended FAB tonal secondary hovered state layer color */
+  --state-layer-tonal-secondary-hovered-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Extended FAB tonal secondary hovered state layer opacity */
+  --state-layer-tonal-secondary-pressed-color: var(--md-sys-color-on-secondary-container); /** Extended FAB tonal secondary pressed state layer color */
+  --state-layer-tonal-secondary-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Extended FAB tonal secondary pressed state layer opacity */
+  --state-layer-tonal-tertiary-focused-color: var(--md-sys-color-on-tertiary-container); /** Extended FAB tonal tertiary focused state layer color */
+  --state-layer-tonal-tertiary-focused-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Extended FAB tonal tertiary focused state layer opacity */
+  --state-layer-tonal-tertiary-hovered-color: var(--md-sys-color-on-tertiary-container); /** Extended FAB tonal tertiary hovered state layer color */
+  --state-layer-tonal-tertiary-hovered-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Extended FAB tonal tertiary hovered state layer opacity */
+  --state-layer-tonal-tertiary-pressed-color: var(--md-sys-color-on-tertiary-container); /** Extended FAB tonal tertiary pressed state layer color */
+  --state-layer-tonal-tertiary-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Extended FAB tonal tertiary pressed state layer opacity */
+}

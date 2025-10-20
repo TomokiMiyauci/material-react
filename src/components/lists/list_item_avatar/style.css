@@ -1,20 +1,18 @@
-@import url(./_generated/tokens.css);
+@import url("./_generated/tokens.css");
 
-@scope([data-md=list-item-avatar]) {
-  & {
-    all: unset;
-    display: inline flex;
-    align-items: center;
-    justify-content: center;
-    inline-size: var(--size);
-    block-size: var(--size);
-    background-color: var(--color);
-    border-radius: var(--shape);
-    color: var(--label-color);
-    font-size: var(--label-size);
-    font-family: var(--label-font);
-    font-weight: var(--label-weight);
-    line-height: var(--label-line-height);
-    letter-spacing: var(--label-tracking);
-  }
+[data-md="list-item-avatar"] {
+  all: unset;
+  display: inline flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: var(--size);
+  block-size: var(--size);
+  background-color: var(--color);
+  border-radius: var(--shape);
+  color: var(--label-color);
+  font-size: var(--label-size);
+  font-family: var(--label-font);
+  font-weight: var(--label-weight);
+  line-height: var(--label-line-height);
+  letter-spacing: var(--label-tracking);
 }

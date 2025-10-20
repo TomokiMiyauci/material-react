@@ -5,7 +5,7 @@
 The current target is
 [Material 3 Expressive](https://m3.material.io/blog/building-with-m3-expressive#what-rsquo-s-material-3-expressive).
 
-[View Storybook](https://main--68c81fa50dc88ae16247371c.chromatic.com)
+[View Storybook](https://beta--68c81fa50dc88ae16247371c.chromatic.com)
 
 ## Install
 

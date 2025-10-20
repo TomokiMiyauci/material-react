@@ -9,7 +9,7 @@ import type { Meta, StoryObj } from "@storybook/react-vite";
 import { type AxisNode, renderGallary } from "~/resources/gallary/mod.ts";
 
 const meta = {
-  title: "Example/IconButton",
+  title: "Component/IconButton",
   component: IconButton,
   parameters: {
     layout: "centered",
@@ -63,7 +63,7 @@ const shapeNodes = [
   },
 ] satisfies AxisNode[];
 
-const xAxis = [
+const yAxis = [
   { label: "XSmall", children: shapeNodes },
   { label: "Small", children: shapeNodes },
   { label: "Medium", children: shapeNodes },
@@ -71,7 +71,7 @@ const xAxis = [
   { label: "XLarge", children: shapeNodes },
 ] satisfies AxisNode[];
 
-const yAxis = [
+const xAxis = [
   { label: "Enabled" },
   { label: "Disabled" },
   { label: "Hovered" },
@@ -102,11 +102,11 @@ const colors = [
   "standard",
 ] satisfies IconButtonColor[];
 
-const matrix = states.map((state) => {
-  return sizes.flatMap((size) => {
-    return shapes.flatMap((shape) => {
-      return widths.flatMap((width) => {
-        return colors.flatMap((color) => {
+const matrix = sizes.flatMap((size) => {
+  return shapes.flatMap((shape) => {
+    return widths.flatMap((width) => {
+      return colors.map((color) => {
+        return states.flatMap((state) => {
           return {
             state,
             size,
@@ -158,6 +158,8 @@ function getProps(item: Item): IconButtonProps & DataStates {
   }
 }
 
+export const Default = {} satisfies Story;
+
 export const Gallary = {
   render: () =>
     renderGallary({ matrix, xAxis, yAxis }, {
@@ -179,30 +181,5 @@ export const Gallary = {
       active: ["[data-active]"],
     },
     chromatic: { disableSnapshot: false },
-  },
-} satisfies Story;
-
-export const Enabled = {} satisfies Story;
-export const Disabled = {
-  args: {
-    disabled: true,
-  },
-} satisfies Story;
-
-export const Pressed = {
-  parameters: {
-    pseudo: { active: true },
-  },
-} satisfies Story;
-
-export const Focused = {
-  parameters: {
-    pseudo: { focusVisible: true },
-  },
-} satisfies Story;
-
-export const Hovered = {
-  parameters: {
-    pseudo: { hover: true },
   },
 } satisfies Story;

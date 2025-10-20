@@ -1,0 +1,3 @@
+export const snapshot = {};
+
+snapshot[`Switch > snapshot > default 1`] = `'<button data-md="switch" role="switch" aria-checked="false"><span data-handle-container=""><span data-handle=""></span></span></button>'`;

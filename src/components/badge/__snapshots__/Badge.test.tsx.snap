@@ -1,0 +1,3 @@
+export const snapshot = {};
+
+snapshot[`Badge > snapshot > default 1`] = `'<span data-md="badge"><template shadowrootmode="open"><span part="container"><slot part="text"></slot></span></template></span>'`;

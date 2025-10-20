@@ -3,7 +3,7 @@ import Fab, { type FabColor, type FabProps, type FabSize } from "./Fab.tsx";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 
 const meta = {
-  title: "Example/Fab",
+  title: "Component/Fab",
   component: Fab,
   parameters: {
     layout: "centered",
@@ -104,6 +104,8 @@ function getProps(item: Item): FabProps & PseudoData {
   }
 }
 
+export const Default = {} satisfies Story;
+
 export const Gallary = {
   render: () =>
     renderGallary({ xAxis, yAxis, matrix }, {
@@ -125,5 +127,3 @@ export const Gallary = {
   },
   tags: ["!autodocs"],
 } satisfies Story;
-
-export const Default = {} satisfies Story;
