@@ -1,5 +1,3 @@
-/// <reference lib="dom" />
-
 "use client";
 import { createPortal } from "react-dom";
 import {
