@@ -1,0 +1,495 @@
+@import url("./_generated/tokens.css");
+@import url("../../_internal/elevation.css");
+
+[data-md="extended-fab"] {
+  all: unset;
+  display: inline flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+  }
+
+  &[data-size="small"] {
+    block-size: var(--container-small-height);
+    border-radius: var(--container-small-shape);
+    column-gap: var(--small-icon-label-space);
+    padding-inline-start: var(--small-leading-space);
+    padding-inline-end: var(--small-trailing-space);
+  }
+
+  &[data-size="medium"] {
+    block-size: var(--container-medium-height);
+    border-radius: var(--container-medium-shape);
+    column-gap: var(--medium-icon-label-space);
+    padding-inline-start: var(--medium-leading-space);
+    padding-inline-end: var(--medium-trailing-space);
+  }
+
+  &[data-size="large"] {
+    block-size: var(--container-large-height);
+    border-radius: var(--container-large-shape);
+    column-gap: var(--large-icon-label-space);
+    padding-inline-start: var(--large-leading-space);
+    padding-inline-end: var(--large-trailing-space);
+  }
+
+  &[data-color="primary"] {
+    background-color: var(--container-primary-color);
+
+    --elevation: var(--container-primary-elevation);
+    --shadow-color: var(--container-primary-shadow-color);
+
+    &:hover {
+      --elevation: var(--container-primary-hovered-elevation);
+
+      &::before {
+        background-color: var(--state-layer-primary-hovered-color);
+        opacity: var(--state-layer-primary-hovered-opacity);
+      }
+    }
+
+    &:active {
+      --elevation: var(--container-primary-pressed-elevation);
+
+      &::before {
+        background-color: var(--state-layer-primary-pressed-color);
+        opacity: var(--state-layer-primary-pressed-opacity);
+      }
+    }
+
+    &:focus-visible {
+      --elevation: var(--container-primary-focused-elevation);
+
+      &::before {
+        background-color: var(--state-layer-primary-focused-color);
+        opacity: var(--state-layer-primary-focused-opacity);
+      }
+    }
+  }
+
+  &[data-color="primary-container"] {
+    background-color: var(--container-tonal-primary-color);
+
+    --elevation: var(--container-tonal-primary-elevation);
+    --shadow-color: var(--container-tonal-primary-shadow-color);
+
+    &:hover {
+      --elevation: var(--container-tonal-primary-hovered-elevation);
+
+      &::before {
+        background-color: var(--state-layer-tonal-primary-hovered-color);
+        opacity: var(--state-layer-tonal-primary-hovered-opacity);
+      }
+    }
+
+    &:active {
+      --elevation: var(--container-tonal-primary-pressed-elevation);
+
+      &::before {
+        background-color: var(--state-layer-tonal-primary-pressed-color);
+        opacity: var(--state-layer-tonal-primary-pressed-opacity);
+      }
+    }
+
+    &:focus-visible {
+      --elevation: var(--container-tonal-primary-focused-elevation);
+
+      &::before {
+        background-color: var(--state-layer-tonal-primary-focused-color);
+        opacity: var(--state-layer-tonal-primary-focused-opacity);
+      }
+    }
+  }
+
+  &[data-color="secondary"] {
+    background-color: var(--container-secondary-color);
+
+    --elevation: var(--container-secondary-elevation);
+    --shadow-color: var(--container-secondary-shadow-color);
+
+    &:hover {
+      --elevation: var(--container-secondary-hovered-elevation);
+
+      &::before {
+        background-color: var(--state-layer-secondary-hovered-color);
+        opacity: var(--state-layer-secondary-hovered-opacity);
+      }
+    }
+
+    &:active {
+      --elevation: var(--container-secondary-pressed-elevation);
+
+      &::before {
+        background-color: var(--state-layer-secondary-pressed-color);
+        opacity: var(--state-layer-secondary-pressed-opacity);
+      }
+    }
+
+    &:focus-visible {
+      --elevation: var(--container-secondary-focused-elevation);
+
+      &::before {
+        background-color: var(--state-layer-secondary-focused-color);
+        opacity: var(--state-layer-secondary-focused-opacity);
+      }
+    }
+  }
+
+  &[data-color="secondary-container"] {
+    background-color: var(--container-tonal-secondary-color);
+
+    --elevation: var(--container-tonal-secondary-elevation);
+    --shadow-color: var(--container-tonal-secondary-shadow-color);
+
+    &:hover {
+      --elevation: var(--container-tonal-secondary-hovered-elevation);
+
+      &::before {
+        background-color: var(--state-layer-tonal-secondary-hovered-color);
+        opacity: var(--state-layer-tonal-secondary-hovered-opacity);
+      }
+    }
+
+    &:active {
+      --elevation: var(--container-tonal-secondary-pressed-elevation);
+
+      &::before {
+        background-color: var(--state-layer-tonal-secondary-pressed-color);
+        opacity: var(--state-layer-tonal-secondary-pressed-opacity);
+      }
+    }
+
+    &:focus-visible {
+      --elevation: var(--container-tonal-secondary-focused-elevation);
+
+      &::before {
+        background-color: var(--state-layer-tonal-secondary-focused-color);
+        opacity: var(--state-layer-tonal-secondary-focused-opacity);
+      }
+    }
+  }
+
+  &[data-color="tertiary"] {
+    background-color: var(--container-tertiary-color);
+
+    --elevation: var(--container-tertiary-elevation);
+    --shadow-color: var(--container-tertiary-shadow-color);
+
+    &:hover {
+      --elevation: var(--container-tertiary-hovered-elevation);
+
+      &::before {
+        background-color: var(--state-layer-tertiary-hovered-color);
+        opacity: var(--state-layer-tertiary-hovered-opacity);
+      }
+    }
+
+    &:active {
+      --elevation: var(--container-tertiary-pressed-elevation);
+
+      &::before {
+        background-color: var(--state-layer-tertiary-pressed-color);
+        opacity: var(--state-layer-tertiary-pressed-opacity);
+      }
+    }
+
+    &:focus-visible {
+      --elevation: var(--container-tertiary-focused-elevation);
+
+      &::before {
+        background-color: var(--state-layer-tertiary-focused-color);
+        opacity: var(--state-layer-tertiary-focused-opacity);
+      }
+    }
+  }
+
+  &[data-color="tertiary-container"] {
+    background-color: var(--container-tonal-tertiary-color);
+
+    --elevation: var(--container-tonal-tertiary-elevation);
+    --shadow-color: var(--container-tonal-tertiary-shadow-color);
+
+    &:hover {
+      --elevation: var(--container-tonal-tertiary-hovered-elevation);
+
+      &::before {
+        background-color: var(--state-layer-tonal-tertiary-hovered-color);
+        opacity: var(--state-layer-tonal-tertiary-hovered-opacity);
+      }
+    }
+
+    &:active {
+      --elevation: var(--container-tonal-tertiary-pressed-elevation);
+
+      &::before {
+        background-color: var(--state-layer-tonal-tertiary-pressed-color);
+        opacity: var(--state-layer-tonal-tertiary-pressed-opacity);
+      }
+    }
+
+    &:focus-visible {
+      --elevation: var(--container-tonal-tertiary-focused-elevation);
+
+      &::before {
+        background-color: var(--state-layer-tonal-tertiary-focused-color);
+        opacity: var(--state-layer-tonal-tertiary-focused-opacity);
+      }
+    }
+  }
+
+  [data-text] {
+    all: unset;
+    display: inline flex;
+    align-items: center;
+    justify-items: center;
+    font-family: var(--label-text-font);
+    font-size: var(--label-text-size);
+    font-weight: var(--label-text-weight);
+    letter-spacing: var(--label-text-tracking);
+    line-height: var(--label-text-line-height);
+  }
+
+  &[data-size="small"] [data-text] {
+    font-family: var(--label-text-small-font);
+    font-size: var(--label-text-small-size);
+    font-weight: var(--label-text-small-weight);
+    line-height: var(--label-text-small-line-height);
+    letter-spacing: var(--label-text-small-tracking);
+  }
+
+  &[data-size="medium"] [data-text] {
+    font-family: var(--label-text-medium-font);
+    font-size: var(--label-text-medium-size);
+    font-weight: var(--label-text-medium-weight);
+    line-height: var(--label-text-medium-line-height);
+    letter-spacing: var(--label-text-medium-tracking);
+  }
+
+  &[data-size="large"] [data-text] {
+    font-family: var(--label-text-large-font);
+    font-size: var(--label-text-large-size);
+    font-weight: var(--label-text-large-weight);
+    line-height: var(--label-text-large-line-height);
+    letter-spacing: var(--label-text-large-tracking);
+  }
+
+  &[data-color="primary"] [data-text] {
+    color: var(--label-text-primary-color);
+  }
+
+  &[data-color="primary-container"] [data-text] {
+    color: var(--label-text-tonal-primary-color);
+  }
+
+  &[data-color="secondary"] [data-text] {
+    color: var(--label-text-secondary-color);
+  }
+
+  &[data-color="secondary-container"] [data-text] {
+    color: var(--label-text-tonal-secondary-color);
+  }
+
+  &[data-color="tertiary"] [data-text] {
+    color: var(--label-text-tertiary-color);
+  }
+
+  &[data-color="tertiary-container"] [data-text] {
+    color: var(--label-text-tonal-tertiary-color);
+  }
+
+  &[data-color="primary"]:hover [data-text] {
+    color: var(--label-text-primary-hovered-color);
+  }
+
+  &[data-color="primary"]:active [data-text] {
+    color: var(--label-text-primary-pressed-color);
+  }
+
+  &[data-color="primary"]:focus-visible [data-text] {
+    color: var(--label-text-primary-focused-color);
+  }
+
+  &[data-color="primary-container"]:hover [data-text] {
+    color: var(--label-text-tonal-primary-hovered-color);
+  }
+
+  &[data-color="primary-container"]:active [data-text] {
+    color: var(--label-text-tonal-primary-pressed-color);
+  }
+
+  &[data-color="primary-container"]:focus-visible [data-text] {
+    color: var(--label-text-tonal-primary-focused-color);
+  }
+
+  &[data-color="secondary"]:hover [data-text] {
+    color: var(--label-text-secondary-hovered-color);
+  }
+
+  &[data-color="secondary"]:active [data-text] {
+    color: var(--label-text-secondary-pressed-color);
+  }
+
+  &[data-color="secondary"]:focus-visible [data-text] {
+    color: var(--label-text-secondary-focused-color);
+  }
+
+  &[data-color="secondary-container"]:hover [data-text] {
+    color: var(--label-text-tonal-secondary-hovered-color);
+  }
+
+  &[data-color="secondary-container"]:active [data-text] {
+    color: var(--label-text-tonal-secondary-pressed-color);
+  }
+
+  &[data-color="secondary-container"]:focus-visible [data-text] {
+    color: var(--label-text-tonal-secondary-focused-color);
+  }
+
+  &[data-color="tertiary"]:hover [data-text] {
+    color: var(--label-text-tertiary-hovered-color);
+  }
+
+  &[data-color="tertiary"]:active [data-text] {
+    color: var(--label-text-tertiary-pressed-color);
+  }
+
+  &[data-color="tertiary"]:focus-visible [data-text] {
+    color: var(--label-text-tertiary-focused-color);
+  }
+
+  &[data-color="tertiary-container"]:hover [data-text] {
+    color: var(--label-text-tonal-tertiary-hovered-color);
+  }
+
+  &[data-color="tertiary-container"]:active [data-text] {
+    color: var(--label-text-tonal-tertiary-pressed-color);
+  }
+
+  &[data-color="tertiary-container"]:focus-visible [data-text] {
+    color: var(--label-text-tonal-tertiary-focused-color);
+  }
+
+  [data-icon] {
+    all: unset;
+    display: inline flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &[data-size="small"] [data-icon] {
+    font-size: var(--icon-small-size);
+  }
+
+  &[data-size="medium"] [data-icon] {
+    font-size: var(--icon-medium-size);
+  }
+
+  &[data-size="large"] [data-icon] {
+    font-size: var(--icon-large-size);
+  }
+
+  &[data-color="primary"] [data-icon] {
+    color: var(--icon-primary-color);
+  }
+
+  &[data-color="primary-container"] [data-icon] {
+    color: var(--icon-tonal-primary-color);
+  }
+
+  &[data-color="secondary"] [data-icon] {
+    color: var(--icon-secondary-color);
+  }
+
+  &[data-color="secondary-container"] [data-icon] {
+    color: var(--icon-tonal-secondary-color);
+  }
+
+  &[data-color="tertiary"] [data-icon] {
+    color: var(--icon-tertiary-color);
+  }
+
+  &[data-color="tertiary-container"] [data-icon] {
+    color: var(--icon-tonal-tertiary-color);
+  }
+
+  &[data-color="primary"]:hover [data-icon] {
+    color: var(--icon-primary-hovered-color);
+  }
+
+  &[data-color="primary"]:active [data-icon] {
+    color: var(--icon-primary-pressed-color);
+  }
+
+  &[data-color="primary"]:focus-visible [data-icon] {
+    color: var(--icon-primary-focused-color);
+  }
+
+  &[data-color="primary-container"]:hover [data-icon] {
+    color: var(--icon-tonal-primary-hovered-color);
+  }
+
+  &[data-color="primary-container"]:active [data-icon] {
+    color: var(--icon-tonal-primary-pressed-color);
+  }
+
+  &[data-color="primary-container"]:focus-visible [data-icon] {
+    color: var(--icon-tonal-primary-focused-color);
+  }
+
+  &[data-color="secondary"]:hover [data-icon] {
+    color: var(--icon-secondary-hovered-color);
+  }
+
+  &[data-color="secondary"]:active [data-icon] {
+    color: var(--icon-secondary-pressed-color);
+  }
+
+  &[data-color="secondary"]:focus-visible [data-icon] {
+    color: var(--icon-secondary-focused-color);
+  }
+
+  &[data-color="secondary-container"]:hover [data-icon] {
+    color: var(--icon-tonal-secondary-hovered-color);
+  }
+
+  &[data-color="secondary-container"]:active [data-icon] {
+    color: var(--icon-tonal-secondary-pressed-color);
+  }
+
+  &[data-color="secondary-container"]:focus-visible [data-icon] {
+    color: var(--icon-tonal-secondary-focused-color);
+  }
+
+  &[data-color="tertiary"]:hover [data-icon] {
+    color: var(--icon-tertiary-hovered-color);
+  }
+
+  &[data-color="tertiary"]:active [data-icon] {
+    color: var(--icon-tertiary-pressed-color);
+  }
+
+  &[data-color="tertiary"]:focus-visible [data-icon] {
+    color: var(--icon-tertiary-focused-color);
+  }
+
+  &[data-color="tertiary-container"]:hover [data-icon] {
+    color: var(--icon-tonal-tertiary-hovered-color);
+  }
+
+  &[data-color="tertiary-container"]:active [data-icon] {
+    color: var(--icon-tonal-tertiary-pressed-color);
+  }
+
+  &[data-color="tertiary-container"]:focus-visible [data-icon] {
+    color: var(--icon-tonal-tertiary-focused-color);
+  }
+}

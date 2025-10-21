@@ -1,6 +1,7 @@
-@import url(./_generated/tokens.css);
+@import url("./_generated/tokens.css");
+@import url("../../../_internal/elevation.css");
 
-@scope([data-md=navigation-bar]) {
+[data-md="navigation-bar"] {
   all: unset;
   background-color: var(--container-color);
   height: var(--height);
@@ -8,15 +9,16 @@
   display: flex;
   column-gap: var(--space-between-items);
 
-  :scope>* {
-    flex: 1;
-  }
+  --elevation: var(--container-elevation);
+  --shadow-color: var(--container-shadow-color);
 
-  &[data-variant=vertical] {
+  box-shadow: var(--box-shadow);
+
+  &[data-variant="vertical"] {
     --variant: vertical;
   }
 
-  &[data-variant=horizontal] {
+  &[data-variant="horizontal"] {
     --variant: horizontal;
   }
 }

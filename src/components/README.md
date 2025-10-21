@@ -26,6 +26,7 @@ Please prepare your own token for your project, referencing the
 - [FilterChip](./chips/filter_chip/README.md)
 - [InputChip](./chips/input_chip/README.md)
 - [SuggestionChip](./chips/suggestion_chip/README.md)
+- [Switch](./switch/README.md)
 
 ## Style
 

@@ -1,0 +1,79 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+/* @embed */
+:root {
+  --focus-indicator-color: var(--md-sys-color-secondary); /** Switch focus indicator color */
+  --focus-indicator-offset: var(--md-sys-state-focus-indicator-outer-offset); /** Switch focus indicator offset */
+  --focus-indicator-thickness: var(--md-sys-state-focus-indicator-thickness); /** Switch focus indicator thickness */
+  --handle-pressed-height: 28px; /** Switch pressed handle height */
+  --handle-pressed-width: 28px; /** Switch pressed handle width */
+  --handle-selected-color: var(--md-sys-color-on-primary); /** Switch selected handle color */
+  --handle-selected-disabled-color: var(--md-sys-color-surface); /** Switch disabled selected handle color */
+  --handle-selected-disabled-opacity: 100%; /** Switch disabled selected handle opacity */
+  --handle-selected-focus-color: var(--md-sys-color-primary-container); /** Switch selected focus handle color */
+  --handle-selected-height: 24px; /** Switch selected handle height */
+  --handle-selected-hover-color: var(--md-sys-color-primary-container); /** Switch selected hover handle color */
+  --handle-selected-pressed-color: var(--md-sys-color-primary-container); /** Switch selected pressed handle color */
+  --handle-selected-width: 24px; /** Switch selected handle width */
+  --handle-shape: var(--md-sys-shape-corner-full); /** Switch handle shape */
+  --handle-unselected-color: var(--md-sys-color-outline); /** Switch unselected handle color */
+  --handle-unselected-disabled-color: var(--md-sys-color-on-surface); /** Switch disabled unselected handle color */
+  --handle-unselected-disabled-opacity: 38%; /** Switch disabled unselected handle opacity */
+  --handle-unselected-focus-color: var(--md-sys-color-on-surface-variant); /** Switch unselected focus handle color */
+  --handle-unselected-height: 16px; /** Switch unselected handle height */
+  --handle-unselected-hover-color: var(--md-sys-color-on-surface-variant); /** Switch unselected hover handle color */
+  --handle-unselected-pressed-color: var(--md-sys-color-on-surface-variant); /** Switch unselected pressed handle color */
+  --handle-unselected-width: 16px; /** Switch unselected handle width */
+  --handle-with-icon-height: 24px; /** Switch with icon handle height */
+  --handle-with-icon-width: 24px; /** Switch with icon handle width */
+  --icon-selected-color: var(--md-sys-color-on-primary-container); /** Switch selected icon color */
+  --icon-selected-disabled-color: var(--md-sys-color-on-surface); /** Switch disabled selected icon color */
+  --icon-selected-disabled-opacity: 38%; /** Switch disabled selected icon opacity */
+  --icon-selected-focus-color: var(--md-sys-color-on-primary-container); /** Switch selected focus icon color */
+  --icon-selected-hover-color: var(--md-sys-color-on-primary-container); /** Switch selected hover icon color */
+  --icon-selected-pressed-color: var(--md-sys-color-on-primary-container); /** Switch selected pressed icon color */
+  --icon-selected-size: 16px; /** Switch selected icon size */
+  --icon-unselected-color: var(--md-sys-color-surface-container-highest); /** Switch unselected icon color */
+  --icon-unselected-disabled-color: var(--md-sys-color-surface-container-highest); /** Switch disabled unselected icon color */
+  --icon-unselected-disabled-opacity: 38%; /** Switch disabled unselected icon opacity */
+  --icon-unselected-focus-color: var(--md-sys-color-surface-container-highest); /** Switch unselected focus icon color */
+  --icon-unselected-hover-color: var(--md-sys-color-surface-container-highest); /** Switch unselected hover icon color */
+  --icon-unselected-pressed-color: var(--md-sys-color-surface-container-highest); /** Switch unselected pressed icon color */
+  --icon-unselected-size: 16px; /** Switch unselected icon size */
+  --state-layer-selected-focus-color: var(--md-sys-color-primary); /** Switch selected focus state layer color */
+  --state-layer-selected-focus-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Switch selected focus state layer opacity */
+  --state-layer-selected-hover-color: var(--md-sys-color-primary); /** Switch selected hover state layer color */
+  --state-layer-selected-hover-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Switch selected hover state layer opacity */
+  --state-layer-selected-pressed-color: var(--md-sys-color-primary); /** Switch selected pressed state layer color */
+  --state-layer-selected-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Switch selected pressed state layer opacity */
+  --state-layer-shape: var(--md-sys-shape-corner-full); /** Switch state layer shape */
+  --state-layer-size: 40px; /** Switch state layer size */
+  --state-layer-unselected-focus-color: var(--md-sys-color-on-surface); /** Switch unselected focus state layer color */
+  --state-layer-unselected-focus-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Switch unselected focus state layer opacity */
+  --state-layer-unselected-hover-color: var(--md-sys-color-on-surface); /** Switch unselected hover state layer color */
+  --state-layer-unselected-hover-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Switch unselected hover state layer opacity */
+  --state-layer-unselected-pressed-color: var(--md-sys-color-on-surface); /** Switch unselected pressed state layer color */
+  --state-layer-unselected-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Switch unselected pressed state layer opacity */
+  --track-disabled-opacity: 12%; /** Switch disabled track opacity */
+  --track-height: 32px; /** Switch track height */
+  --track-outline-color: var(--md-sys-color-outline); /** Switch track outline color */
+  --track-outline-width: 2px; /** Switch track outline width */
+  --track-selected-color: var(--md-sys-color-primary); /** Switch selected track color */
+  --track-selected-disabled-color: var(--md-sys-color-on-surface); /** Switch disabled selected track color */
+  --track-selected-focus-color: var(--md-sys-color-primary); /** Switch selected focus track color */
+  --track-selected-hover-color: var(--md-sys-color-primary); /** Switch selected hover track color */
+  --track-selected-pressed-color: var(--md-sys-color-primary); /** Switch selected pressed track color */
+  --track-shape: var(--md-sys-shape-corner-full); /** Switch track shape */
+  --track-unselected-color: var(--md-sys-color-surface-container-highest); /** Switch unselected track color */
+  --track-unselected-disabled-color: var(--md-sys-color-surface-container-highest); /** Switch disabled unselected track color */
+  --track-unselected-disabled-outline-color: var(--md-sys-color-on-surface); /** Switch disabled unselected track outline color */
+  --track-unselected-focus-color: var(--md-sys-color-surface-container-highest); /** Switch unselected focus track color */
+  --track-unselected-focus-outline-color: var(--md-sys-color-outline); /** Switch unselected focus track outline color */
+  --track-unselected-hover-color: var(--md-sys-color-surface-container-highest); /** Switch unselected hover track color */
+  --track-unselected-hover-outline-color: var(--md-sys-color-outline); /** Switch unselected hover track outline color */
+  --track-unselected-pressed-color: var(--md-sys-color-surface-container-highest); /** Switch unselected pressed track color */
+  --track-unselected-pressed-outline-color: var(--md-sys-color-outline); /** Switch unselected pressed track outline color */
+  --track-width: 52px; /** Switch track width */
+}

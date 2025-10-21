@@ -13,6 +13,8 @@ import inlineToken from "~/resources/postcss/inline_token.ts";
 import mustashe from "mustache";
 import valueParser from "postcss-value-parser";
 import puppeteer from "puppeteer-core";
+import stylelint from "stylelint";
+import postcssReporter from "postcss-reporter";
 import type { ItemTokenConfig } from "~/resources/item_token/mod.ts";
 
 export class Items2Toekns implements Transformer {
@@ -60,6 +62,8 @@ export class CssTransformer implements Transformer {
     ctx: TransformContexts,
   ): Promise<string> {
     const processor = postcss([
+      stylelint(),
+      postcssReporter({ clearReportedMessages: true }),
       // deno-lint-ignore no-explicit-any
       atImport as any,
       presetEnv({ features: { "nesting-rules": true } }),

@@ -1,0 +1,35 @@
+# ExtendedFab
+
+Extended FABs help people take primary actions. They're wider than FABs to
+accommodate a text label and larger target area.
+
+## Example
+
+```tsx
+import { ExtendedFab } from "@miyauci/material-react";
+
+<ExtendedFab icon={<span>Icon</span>}>
+  Label
+</ExtendedFab>;
+```
+
+## Props
+
+| Name       | Type                                                                                                             |
+| ---------- | ---------------------------------------------------------------------------------------------------------------- |
+| `size`     | `"small"`, `"medium"`, `"large"`                                                                                 |
+| `color`    | `"primary"`, `"primary-container"`, `"secondary"`, `"secondary-container"`, `"tertiary"`, `"tertiary-container"` |
+| `icon`     | `ReactNode`                                                                                                      |
+| `children` | `ReactNode`                                                                                                      |
+
+And `HTMLButtonElement` arrtibutes.
+
+## Tokens
+
+Depends on the following CSS variables.
+
+<!-- deno-fmt-ignore-start -->
+{{#tokens}}
+- {{.}}
+{{/tokens}}
+<!-- deno-fmt-ignore-end -->

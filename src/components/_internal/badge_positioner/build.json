@@ -1,0 +1,18 @@
+{
+  "steps": [
+    {
+      "use": "css",
+      "input": "./style.css",
+      "output": "./_generated/style.css",
+      "options": {
+        "minify": true,
+        "embed": true
+      }
+    },
+    {
+      "use": "css2ts",
+      "input": "./_generated/style.css",
+      "output": "./_generated/style.ts"
+    }
+  ]
+}

@@ -4,10 +4,7 @@ import {
 } from "style-dictionary/enums";
 import type { Config } from "style-dictionary";
 import { fromFileUrl } from "@std/path";
-import instance, {
-  formats,
-  transformers,
-} from "~/resources/style_dictionary/mod.ts";
+import instance, { transformers } from "~/resources/style_dictionary/mod.ts";
 
 const config = {
   source: [fromFileUrl(import.meta.resolve("~/resources/tokens.json"))],
@@ -15,52 +12,99 @@ const config = {
     css: {
       transformGroup: transformGroups.css,
       buildPath: fromFileUrl(
-        import.meta.resolve("~/examples/material_themes/"),
+        import.meta.resolve("~/src/styles/"),
       ),
       files: [
         {
-          destination: "ref.css",
-          format: formats.cssProperty,
-          options: {
-            showFileHeader: false,
-            outputReferences: true,
-            inherits: true,
-          },
-          filter: ({ path }) => path.includes("ref"),
-        },
-        {
-          destination: "sys.css",
-          format: formats.cssProperty,
-          options: {
-            showFileHeader: false,
-            outputReferences: true,
-            inherits: true,
-          },
-          filter: (arg, options) => {
-            const { path } = arg;
-            const type = options.usesDtcg ? arg.$type : arg.type;
-
-            return type && type !== "token" && path.includes("sys") &&
-              path.every((value) => !value.startsWith("$"));
-          },
-        },
-        {
-          destination: "base.css",
+          destination: "ref/typeface.css",
           format: defaultFormats.cssVariables,
           options: {
             showFileHeader: false,
             outputReferences: true,
           },
-          filter: (arg, options) => {
+          filter: ({ path }) => path.includes("typeface"),
+        },
+        {
+          destination: "ref/palette.css",
+          format: defaultFormats.cssVariables,
+          options: {
+            showFileHeader: false,
+            outputReferences: true,
+            inherits: true,
+          },
+          filter: ({ path }) => path.includes("palette"),
+        },
+        {
+          destination: "sys/shape.css",
+          format: defaultFormats.cssVariables,
+          options: {
+            showFileHeader: false,
+            outputReferences: true,
+            inherits: true,
+          },
+          filter: (arg) => {
             const { path } = arg;
-            const type = options.usesDtcg ? arg.$type : arg.type;
 
-            return (!type || type === "token") && path.includes("sys") &&
-              path.every((value) => !value.startsWith("$"));
+            return path.includes("shape");
           },
         },
         {
-          destination: "light.css",
+          destination: "sys/typescale.css",
+          format: defaultFormats.cssVariables,
+          options: {
+            showFileHeader: false,
+            outputReferences: true,
+          },
+          filter: (arg) => {
+            const { path } = arg;
+
+            return path.includes("typescale");
+          },
+        },
+        {
+          destination: "sys/elevation.css",
+          format: defaultFormats.cssVariables,
+          options: {
+            showFileHeader: false,
+            outputReferences: true,
+            inherits: true,
+          },
+          filter: (arg) => {
+            const { path } = arg;
+
+            return path.includes("elevation");
+          },
+        },
+        {
+          destination: "sys/states/state_layer.css",
+          format: defaultFormats.cssVariables,
+          options: {
+            showFileHeader: false,
+            outputReferences: true,
+            inherits: true,
+          },
+          filter: (arg) => {
+            const { path } = arg;
+
+            return path.includes("state layer");
+          },
+        },
+        {
+          destination: "sys/states/focus_indicator.css",
+          format: defaultFormats.cssVariables,
+          options: {
+            showFileHeader: false,
+            outputReferences: true,
+            inherits: true,
+          },
+          filter: (arg) => {
+            const { path } = arg;
+
+            return path.includes("focus indicator");
+          },
+        },
+        {
+          destination: "sys/colors/light.css",
           format: defaultFormats.cssVariables,
           options: {
             showFileHeader: false,
@@ -70,7 +114,7 @@ const config = {
             path.includes("$light") && path.includes("$default"),
         },
         {
-          destination: "dark.css",
+          destination: "sys/colors/dark.css",
           format: defaultFormats.cssVariables,
           options: {
             showFileHeader: false,
@@ -80,7 +124,7 @@ const config = {
             path.includes("$dark") && path.includes("$default"),
         },
         {
-          destination: "light_hc.css",
+          destination: "sys/colors/light_hc.css",
           format: defaultFormats.cssVariables,
           options: {
             showFileHeader: false,
@@ -90,7 +134,7 @@ const config = {
             path.includes("$light") && path.includes("$high"),
         },
         {
-          destination: "dark_hc.css",
+          destination: "sys/colors/dark_hc.css",
           format: defaultFormats.cssVariables,
           options: {
             showFileHeader: false,
@@ -100,7 +144,7 @@ const config = {
             path.includes("$dark") && path.includes("$high"),
         },
         {
-          destination: "light_mc.css",
+          destination: "sys/colors/light_mc.css",
           format: defaultFormats.cssVariables,
           options: {
             showFileHeader: false,
@@ -110,7 +154,7 @@ const config = {
             path.includes("$light") && path.includes("$medium"),
         },
         {
-          destination: "dark_mc.css",
+          destination: "sys/colors/dark_mc.css",
           format: defaultFormats.cssVariables,
           options: {
             showFileHeader: false,
@@ -131,6 +175,7 @@ const config = {
         transformers.dtfmNumberAsRadio,
         transformers.dtfmExtensionsAttributeSyntax,
         transformers.dtfmNumberUnit,
+        transformers.dtfmFontFamily,
       ],
     },
   },

@@ -4,9 +4,7 @@ import type { StorybookConfig } from "@storybook/react-vite";
 import { join } from "node:path";
 
 export default {
-  "stories": [
-    "../src/**/*.stories.tsx",
-  ],
+  "stories": ["../src/**/*.stories.tsx"],
   "addons": [
     "@storybook/addon-docs",
     "@storybook/addon-a11y",
@@ -33,6 +31,15 @@ export default {
           "@": join(__dirname, "..", "src"),
           "@miyauci/material-react": join(__dirname, "..", "src", "mod.ts"),
           "~": join(__dirname, ".."),
+          "react-dsd": join(
+            __dirname,
+            "..",
+            "src",
+            "components",
+            "_internal",
+            "dsd",
+            "mod.ts",
+          ),
         },
       },
     } satisfies InlineConfig;

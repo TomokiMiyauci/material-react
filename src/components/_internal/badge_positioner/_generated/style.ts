@@ -1,1 +1,1 @@
-export default `@scope([data-md=badge-positioner]){all:unset;display:inherit;position:absolute;right:0;top:0;:scope:has([data-size=large]){inset:auto;bottom:100%;left:100%;transform:translate(-12px,14px)}}`;
+export default `[data-md=badge-positioner]{all:unset;display:inherit;position:absolute;right:0;top:0}[data-md=badge-positioner]:has([data-size=large]){inset:auto;bottom:100%;left:100%;transform:translate(-12px,14px)}`;
