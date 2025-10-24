@@ -18,6 +18,7 @@ export default {
   async viteFinal(config) {
     /** @see https://github.com/tailwindlabs/tailwindcss/issues/13216 */
     const { default: tailwindcss } = await import("@tailwindcss/vite");
+
     const extend = {
       plugins: [
         react({
@@ -31,15 +32,6 @@ export default {
           "@": join(__dirname, "..", "src"),
           "@miyauci/material-react": join(__dirname, "..", "src", "mod.ts"),
           "~": join(__dirname, ".."),
-          "react-dsd": join(
-            __dirname,
-            "..",
-            "src",
-            "components",
-            "_internal",
-            "dsd",
-            "mod.ts",
-          ),
         },
       },
     } satisfies InlineConfig;
