@@ -18,7 +18,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Short = {
   args: {
-    text: "Supporting text",
+    children: "Supporting text",
   },
   parameters: {
     design: md.figma("plain-tooltip", { line: "single" }),
@@ -27,7 +27,7 @@ export const Short = {
 
 export const Long = {
   args: {
-    text:
+    children:
       "Supporting text Body text string goes here psum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
 
     style: { maxWidth: "200px" },

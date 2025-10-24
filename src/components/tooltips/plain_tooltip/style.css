@@ -17,4 +17,8 @@
   color: var(--supporting-text-color);
   line-height: var(--supporting-text-line-height);
   letter-spacing: var(--supporting-text-tracking);
+
+  [data-host] {
+    display: contents;
+  }
 }
