@@ -2,7 +2,7 @@ import type { JSX, ReactNode } from "react";
 import Style from "@internal/Style.tsx";
 import style from "./_generated/style.ts";
 import { bool } from "@/utils/convert.ts";
-import { Template } from "react-dsd";
+import { Template } from "@miyauci/react-shadow-dom";
 
 export interface ButtonProps {
   /**
@@ -46,7 +46,7 @@ export default function Button(
         {...rest}
       >
         <span data-host="">
-          <Template shadowrootmode="open">
+          <Template shadowRootMode="open">
             <slot name="icon" part="icon" />
             <slot part="label" />
           </Template>

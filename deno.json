@@ -18,11 +18,11 @@
     "style-dictionary": "npm:style-dictionary@^5.0.2",
     "@/": "./src/",
     "~/": "./",
-    "react-dsd": "./src/components/_internal/dsd/mod.ts",
     "@testing": "./tests/mod.ts"
   },
   "compilerOptions": {
     "jsx": "react-jsx",
+    "jsxImportSource": "react",
     "noUnusedLocals": true,
     "noImplicitReturns": true,
     "noPropertyAccessFromIndexSignature": true,

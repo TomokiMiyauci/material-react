@@ -1,7 +1,7 @@
 import type { JSX, ReactNode } from "react";
 import style from "./_generated/style.ts";
 import Style from "@internal/Style.tsx";
-import Template from "@internal/dsd/Template.tsx";
+import { Template } from "@miyauci/react-shadow-dom";
 
 export interface BadgeProps {
   size?: BadgeSize;
@@ -22,7 +22,7 @@ export default function Badge(
   return (
     <>
       <span data-md="badge" data-size={size}>
-        <Template shadowrootmode="open">
+        <Template shadowRootMode="open">
           <span part="container" {...rest}>
             <slot part="text"></slot>
           </span>
