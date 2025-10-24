@@ -1,3 +1,10 @@
+# [1.0.0-beta.17](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.16...1.0.0-beta.17) (2025-10-24)
+
+
+### Features
+
+* **extended-fab:** change extended fab component to DSD style ([3229601](https://github.com/TomokiMiyauci/material-react/commit/32296017dc002964bb05788a0364fb92003d5c5c))
+
 # [1.0.0-beta.16](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.15...1.0.0-beta.16) (2025-10-18)
 
 
