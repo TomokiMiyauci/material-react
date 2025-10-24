@@ -14,13 +14,18 @@ import { Fab } from "@miyauci/material-react";
 
 ## Props
 
-| Name       | Type                                                                                                             |
-| ---------- | ---------------------------------------------------------------------------------------------------------------- |
-| `size`     | `"baseline"`, `"medium"`, `"large"`                                                                              |
-| `color`    | `"primary"`, `"primary-container"`, `"secondary"`, `"secondary-container"`, `"tertiary"`, `"tertiary-container"` |
-| `children` | `ReactNode`                                                                                                      |
+| Name    | Type                                                                                                             |
+| ------- | ---------------------------------------------------------------------------------------------------------------- |
+| `size`  | `"baseline"`, `"medium"`, `"large"`                                                                              |
+| `color` | `"primary"`, `"primary-container"`, `"secondary"`, `"secondary-container"`, `"tertiary"`, `"tertiary-container"` |
 
 And `HTMLButtonElement` arrtibutes.
+
+## Slots
+
+| Name        | Description     |
+| ----------- | --------------- |
+| `(default)` | Icon for button |
 
 ## Tokens
 
