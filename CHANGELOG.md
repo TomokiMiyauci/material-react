@@ -1,3 +1,10 @@
+# [1.0.0-beta.18](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.17...1.0.0-beta.18) (2025-10-25)
+
+
+### Features
+
+* change registry of external deps to jsr instead of npm ([1458de7](https://github.com/TomokiMiyauci/material-react/commit/1458de7bc5e92c917825363d23f85cd2c06b49b8))
+
 # [1.0.0-beta.17](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.16...1.0.0-beta.17) (2025-10-24)
 
 
