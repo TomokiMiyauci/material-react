@@ -5,6 +5,7 @@
   },
   "imports": {
     "@miyauci/material-react": "jsr:@miyauci/material-react@^1.0.0-beta.13",
+    "@miyauci/react-shadow-dom": "jsr:@miyauci/react-shadow-dom@1.0.0-beta.7",
     "@std/fs": "jsr:@std/fs@^1.0.19",
     "@std/path": "jsr:@std/path@^1.1.2",
     "@std/testing": "jsr:@std/testing@^1.0.16",
