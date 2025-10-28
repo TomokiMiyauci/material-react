@@ -15,8 +15,7 @@ import { Button } from "@miyauci/material-react";
 ```tsx
 import { Button } from "@miyauci/material-react";
 
-<Button>
-  <span slot="icon">icon</span>
+<Button icon={<span className="my-icon" />}>
   Label
 </Button>;
 ```
@@ -29,15 +28,10 @@ import { Button } from "@miyauci/material-react";
 | `shape`    | `round`, `square`                                     | `round`  |
 | `color`    | `filled`, `elevated`, `tonal`, `outlined`, `standard` | `filled` |
 | `disabled` | `boolean`                                             |    -     |
+| `icon`     | `ReactNode`                                           |          |
+| `children` | `ReactNode`                                           |          |
 
 And `HTMLButtonElement` arrtibutes.
-
-## Slots
-
-| Name        | Description     |
-| ----------- | --------------- |
-| `(default)` | Button label    |
-| `icon`      | Icon for button |
 
 ## Tokens
 
