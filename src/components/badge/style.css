@@ -3,7 +3,7 @@
 [data-md="badge"] {
   display: contents;
 
-  &::part(container) {
+  [data-container] {
     display: inline flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@
     contain: layout;
   }
 
-  &[data-size="large"]::part(container) {
+  &[data-size="large"] [data-container] {
     min-height: var(--large-size);
     min-width: var(--large-size);
     background-color: var(--large-color);
@@ -29,7 +29,7 @@
     padding-inline: 4px;
   }
 
-  &:not([data-size="large"])::part(text) {
+  &:not([data-size="large"]) [data-text] {
     display: none;
   }
 }

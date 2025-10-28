@@ -13,17 +13,12 @@ import { Badge } from "@miyauci/material-react";
 
 ## Props
 
-| Name   | Type             | Default |
-| ------ | ---------------- | :-----: |
-| `size` | `small`, `large` | `small` |
+| Name       | Type             | Default |
+| ---------- | ---------------- | :-----: |
+| `size`     | `small`, `large` | `small` |
+| `children` | `ReactNode`      |         |
 
 And `HTMLSpanElement` arrtibutes.
-
-## Slots
-
-| Name      | Description               |
-| --------- | ------------------------- |
-| (default) | The text to be displayed. |
 
 ## Tokens
 
