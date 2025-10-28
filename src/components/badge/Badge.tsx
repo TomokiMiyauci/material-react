@@ -21,9 +21,7 @@ export default function Badge(
   return (
     <>
       <span data-md="badge" data-size={size} {...rest}>
-        <span data-container="">
-          <span data-text="">{children}</span>
-        </span>
+        {children && <span data-text="">{children}</span>}
       </span>
 
       <Style href="badge">{style}</Style>

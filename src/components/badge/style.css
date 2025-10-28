@@ -1,32 +1,31 @@
 @import url("./_generated/tokens.css");
 
 [data-md="badge"] {
-  display: contents;
+  all: unset;
+  display: inline flex;
+  justify-content: center;
+  align-items: center;
+  min-height: var(--size);
+  min-width: var(--size);
+  background-color: var(--color);
+  border-radius: var(--shape);
+  box-sizing: border-box;
 
-  [data-container] {
-    display: inline flex;
-    justify-content: center;
-    align-items: center;
-    min-height: var(--size);
-    min-width: var(--size);
-    background-color: var(--color);
-    border-radius: var(--shape);
-    box-sizing: border-box;
-    contain: layout;
-  }
-
-  &[data-size="large"] [data-container] {
+  &[data-size="large"] {
     min-height: var(--large-size);
     min-width: var(--large-size);
     background-color: var(--large-color);
     border-radius: var(--large-shape);
+    padding-inline: 4px;
+  }
+
+  [data-text] {
     color: var(--label-text-large-color);
     font-family: var(--label-text-large-font);
     font-size: var(--label-text-large-size);
     font-weight: var(--label-text-large-weight);
     line-height: var(--label-text-large-line-height);
     letter-spacing: var(--label-text-large-tracking);
-    padding-inline: 4px;
   }
 
   &:not([data-size="large"]) [data-text] {
