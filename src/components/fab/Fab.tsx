@@ -1,6 +1,7 @@
 import type { JSX, ReactNode } from "react";
 import Style from "@internal/Style.tsx";
 import style from "./_generated/style.ts";
+import { Template } from "@miyauci/react-shadow-dom";
 
 export interface FabProps {
   size?: FabSize;
@@ -24,6 +25,8 @@ export type FabColor =
 
 /**
  * Floating action buttons (FABs) help people take primary actions
+ *
+ * @slot Icon for button
  */
 export default function Fab(
   props: FabProps & JSX.IntrinsicElements["button"],
@@ -39,7 +42,12 @@ export default function Fab(
         data-color={color}
         {...rest}
       >
-        {children}
+        <span data-host="">
+          <Template shadowRootMode="open">
+            <slot />
+          </Template>
+          {children}
+        </span>
       </button>
 
       <Style href="fab">{style}</Style>

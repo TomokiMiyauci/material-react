@@ -1,3 +1,3 @@
 export const snapshot = {};
 
-snapshot[`Fab > snapshot > default 1`] = `'<button type="button" data-md="fab" data-color="primary-container"></button>'`;
+snapshot[`Fab > snapshot > default 1`] = `'<button type="button" data-md="fab" data-color="primary-container"><span data-host=""><template shadowrootmode="open"><slot></slot></template><template></template></span></button>'`;

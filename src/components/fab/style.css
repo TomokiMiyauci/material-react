@@ -285,4 +285,8 @@
       }
     }
   }
+
+  [data-host] {
+    display: contents;
+  }
 }

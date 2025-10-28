@@ -1,6 +1,7 @@
 import type { JSX, ReactNode } from "react";
 import style from "./_generated/style.ts";
 import Style from "@internal/Style.tsx";
+import { Template } from "@miyauci/react-shadow-dom";
 
 export interface IconButtonProps {
   /**
@@ -23,7 +24,7 @@ export interface IconButtonProps {
    */
   color?: IconButtonColor;
 
-  icon?: ReactNode;
+  children?: ReactNode;
 }
 
 export type IconButtonSize = "xsmall" | "small" | "medium" | "large" | "xlarge";
@@ -45,6 +46,8 @@ const DEFAULT_PROPS = {
 
 /**
  * Icon buttons help people take minor actions with one tap.
+ *
+ * @slot Icon for button
  */
 export default function IconButton(
   props:
@@ -56,7 +59,7 @@ export default function IconButton(
     shape = DEFAULT_PROPS.shape,
     width = DEFAULT_PROPS.width,
     color = DEFAULT_PROPS.color,
-    icon,
+    children,
     ...rest
   } = props;
 
@@ -70,7 +73,13 @@ export default function IconButton(
         data-color={color}
         {...rest}
       >
-        <span data-icon="">{icon}</span>
+        <span data-host="">
+          <Template shadowRootMode="open">
+            <slot part="icon" />
+          </Template>
+
+          {children}
+        </span>
       </button>
 
       <Style href={NAME}>{style}</Style>

@@ -13,11 +13,13 @@ import { PlainTooltip } from "@miyauci/material-react";
 
 ## Props
 
-| Name   | Type     |
-| ------ | -------- |
-| `text` | `string` |
+`HTMLSpanElement` arrtibutes.
 
-And `HTMLSpanElement` arrtibutes.
+## Slots
+
+| Name        | Description      |
+| ----------- | ---------------- |
+| `(default)` | Text for tooltip |
 
 ## Tokens
 
