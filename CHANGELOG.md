@@ -1,3 +1,26 @@
+# [1.0.0-beta.20](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.19...1.0.0-beta.20) (2025-10-29)
+
+
+### Bug Fixes
+
+* **filter-chip:** fix to order of pseudo active and hover ([5c501f3](https://github.com/TomokiMiyauci/material-react/commit/5c501f34c00abca2d433a603103f11de0835005f))
+* **suggestion-chip:** currect hover state to match spec ([e486c2f](https://github.com/TomokiMiyauci/material-react/commit/e486c2f5c2bfdad818f3a863c3ef2c6057d9699b))
+
+
+### Features
+
+* **assist-chip:** add assist chip component ([cdc3d60](https://github.com/TomokiMiyauci/material-react/commit/cdc3d6085cdc84b6a34465d1397ee6b10b326199))
+* **assist-chip:** remove outline color on focus ([88b575b](https://github.com/TomokiMiyauci/material-react/commit/88b575b171050958c20ff79362abe2f671f269b1))
+* **assist-chip:** stop using scoped css ([da135b1](https://github.com/TomokiMiyauci/material-react/commit/da135b1c3ab6e2b017c50f11d54e4a8822fed056))
+* **assit-chip:** apply border if it is not elevated ([99b8b87](https://github.com/TomokiMiyauci/material-react/commit/99b8b87bc3b1aece3315b5c213ddd889a9b19ec2))
+* export chips from default ([be3d7d6](https://github.com/TomokiMiyauci/material-react/commit/be3d7d6cd1de50acb665edb21e929ba986747088))
+* **filter-chip:** add filter chip component ([65d75d7](https://github.com/TomokiMiyauci/material-react/commit/65d75d778b1e7bbc165501947a88cb112f49d93b))
+* **filter-chip:** stop using scoped css ([fc5f826](https://github.com/TomokiMiyauci/material-react/commit/fc5f82619a5cf372e9df171a62885b82cd0c5f37))
+* **input-chip:** add input chip component ([807bffa](https://github.com/TomokiMiyauci/material-react/commit/807bffae5f312c95911be270dbf9daf8102b97d3))
+* **input-chip:** stop using scoped css ([40cf4a7](https://github.com/TomokiMiyauci/material-react/commit/40cf4a728654caf7ef871538980a0dd5e735561c))
+* **suggestion-chip:** add suggestion chip component ([2bd0f11](https://github.com/TomokiMiyauci/material-react/commit/2bd0f113bb9cb143508efe36ce2a127f356c3d31))
+* **suggestion-chip:** stop using scoped css ([4fe5e64](https://github.com/TomokiMiyauci/material-react/commit/4fe5e642ad32b5119ec614256567deba6e1558b2))
+
 # [1.0.0-beta.19](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.18...1.0.0-beta.19) (2025-10-29)
 
 
