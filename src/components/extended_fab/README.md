@@ -8,7 +8,17 @@ accommodate a text label and larger target area.
 ```tsx
 import { ExtendedFab } from "@miyauci/material-react";
 
-<ExtendedFab icon={<span>Icon</span>}>
+<ExtendedFab>
+  Label
+</ExtendedFab>;
+```
+
+### With Icon
+
+```tsx
+import { ExtendedFab } from "@miyauci/material-react";
+
+<ExtendedFab icon={<span className="my-icon" />}>
   Label
 </ExtendedFab>;
 ```

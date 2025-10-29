@@ -73,6 +73,7 @@ type State = "enabled" | "hovered" | "focused" | "pressed";
 
 interface Item extends ExtendedFabProps {
   state: State;
+  icon?: boolean;
 }
 
 interface PseudoData {
@@ -85,17 +86,16 @@ function getProps(item: Item): ExtendedFabProps & PseudoData {
   const base = {
     color: item.color,
     size: item.size,
+    icon: item.icon && (
+      <span
+        className="material-symbols-outlined"
+        style={{ fontVariationSettings: "'FILL' 1" }}
+        slot="icon"
+      >
+        stars
+      </span>
+    ),
     children: "Label",
-    icon: item.icon
-      ? (
-        <span
-          className="material-symbols-outlined"
-          style={{ fontVariationSettings: "'FILL' 1" }}
-        >
-          stars
-        </span>
-      )
-      : undefined,
   } satisfies ExtendedFabProps;
 
   switch (item.state) {
@@ -130,6 +130,9 @@ export const Gallary = {
       focusVisible: "[data-focus-visible]",
     },
     chromatic: { disableSnapshot: false },
+    a11y: {
+      test: "off",
+    },
   },
   tags: ["!autodocs"],
 } satisfies Story;

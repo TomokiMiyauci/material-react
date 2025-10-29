@@ -12,7 +12,15 @@ export interface ExtendedFabProps {
    * @default "primary-container"
    */
   color?: ExtendedFabColor;
+
+  /**
+   * Icon for button
+   */
   icon?: ReactNode;
+
+  /**
+   * Label text for button
+   */
   children?: ReactNode;
 }
 
@@ -28,6 +36,23 @@ export type ExtendedFabColor =
 
 /**
  * Extended FABs help people take primary actions. They're wider than FABs to accommodate a text label and larger target area.
+ *
+ * @example Basic
+ * ```tsx
+ * import { ExtendedFab } from "@miyauci/material-react";
+ * <ExtendedFab>
+ *   Label
+ * </ExtendedFab>;
+ * ```
+ *
+ * @example With Icon
+ * ```tsx
+ * import { ExtendedFab } from "@miyauci/material-react";
+ *
+ * <ExtendedFab icon={<span className="my-icon" />}>
+ *   Label
+ * </ExtendedFab>;
+ * ```
  */
 export default function ExtendedFab(
   props: ExtendedFabProps & JSX.IntrinsicElements["button"],
@@ -51,7 +76,7 @@ export default function ExtendedFab(
       >
         {icon && <span data-icon="">{icon}</span>}
 
-        <span data-text="">{children}</span>
+        {children && <span data-label="">{children}</span>}
       </button>
 
       <Style href="extended-fab">{style}</Style>
