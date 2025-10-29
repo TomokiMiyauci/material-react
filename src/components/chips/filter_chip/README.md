@@ -8,19 +8,41 @@ alternative to toggle buttons or checkboxes.
 ```tsx
 import { FilterChip } from "@miyauci/material-react";
 
-<FilterChip label="Filter chip" />;
+<FilterChip>
+  Label
+</FilterChip>;
+```
+
+### With Leading
+
+```tsx
+import { FilterChip } from "@miyauci/material-react";
+
+<FilterChip leading={<span className="my-icon" />}>
+  Label
+</FilterChip>;
+```
+
+### With Trailing
+
+```tsx
+import { FilterChip } from "@miyauci/material-react";
+
+<FilterChip trailing={<span className="my-icon" />}>
+  Label
+</FilterChip>;
 ```
 
 ## Props
 
-| Name           | Type        |
-| -------------- | ----------- |
-| `selected`     | `boolean`   |
-| `elevated`     | `boolean`   |
-| `disabled`     | `boolean`   |
-| `label`        | `ReactNode` |
-| `leadingIcon`  | `ReactNode` |
-| `trailingIcon` | `ReactNode` |
+| Name       | Type        |
+| ---------- | ----------- |
+| `selected` | `boolean`   |
+| `elevated` | `boolean`   |
+| `disabled` | `boolean`   |
+| `leading`  | `ReactNode` |
+| `trailing` | `ReactNode` |
+| `children` | `ReactNode` |
 
 And `HTMLSpanElement` arrtibutes.
 

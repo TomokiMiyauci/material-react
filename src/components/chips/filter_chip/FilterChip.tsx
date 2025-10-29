@@ -7,14 +7,40 @@ export interface FilterChipProps {
   selected?: boolean;
   elevated?: boolean;
   disabled?: boolean;
-  label?: ReactNode;
-  leadingIcon?: ReactNode;
-  trailingIcon?: ReactNode;
+  leading?: ReactNode;
+  trailing?: ReactNode;
+  children?: ReactNode;
 }
 
 /**
  * Filter chips use tags or descriptive words to filter content. They can be a good
  * alternative to toggle buttons or checkboxes.
+ *
+ * @example Basic
+ * ```tsx
+ * import { FilterChip } from "@miyauci/material-react";
+ *
+ * <FilterChip>
+ *   Label
+ * </FilterChip>;
+ * ```
+ * @example With Leading
+ * ```tsx
+ * import { FilterChip } from "@miyauci/material-react";
+ *
+ * <FilterChip leading={<span className="my-icon" />}>
+ *   Label
+ * </FilterChip>;
+ * ```
+ *
+ * @example With Trailing
+ * ```tsx
+ * import { FilterChip } from "@miyauci/material-react";
+ *
+ * <FilterChip trailing={<span className="my-icon" />}>
+ *   Label
+ * </FilterChip>;
+ * ```
  */
 export default function FilterChip(
   props: FilterChipProps & JSX.IntrinsicElements["span"],
@@ -23,9 +49,9 @@ export default function FilterChip(
     selected,
     elevated,
     disabled,
-    label,
-    leadingIcon,
-    trailingIcon,
+    children,
+    leading,
+    trailing,
     ...rest
   } = props;
 
@@ -38,9 +64,9 @@ export default function FilterChip(
         data-disabled={bool(disabled)}
         {...rest}
       >
-        {leadingIcon && <span data-icon="leading">{leadingIcon}</span>}
-        <span data-label="">{label}</span>
-        {trailingIcon && <span data-icon="trailing">{trailingIcon}</span>}
+        {leading && <span data-icon="leading">{leading}</span>}
+        {children && <span data-label="">{children}</span>}
+        {trailing && <span data-icon="trailing">{trailing}</span>}
       </span>
 
       <Style href="filter-chip">{style}</Style>
