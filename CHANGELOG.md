@@ -1,3 +1,17 @@
+# [1.0.0-beta.19](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.18...1.0.0-beta.19) (2025-10-29)
+
+
+### Bug Fixes
+
+* **badge:** stop using DSD style in badge component ([1acc64c](https://github.com/TomokiMiyauci/material-react/commit/1acc64cfa0848eb661e6523074e300e047767762))
+* **button:** stop using DSD style in button component ([ef6e006](https://github.com/TomokiMiyauci/material-react/commit/ef6e00682c6ac118ce469e5a191283c96dc3854c))
+* **extended-fab:** stop using DSD style in extended fab component ([be00240](https://github.com/TomokiMiyauci/material-react/commit/be00240811c2a79a9bb34185ed08aeb6e5f3d906))
+
+
+### Performance Improvements
+
+* **badge:** remove unnecessary DOM ([a131644](https://github.com/TomokiMiyauci/material-react/commit/a131644c8150f25735d29e74e8993be4fe7bbbbc))
+
 # [1.0.0-beta.18](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.17...1.0.0-beta.18) (2025-10-25)
 
 
