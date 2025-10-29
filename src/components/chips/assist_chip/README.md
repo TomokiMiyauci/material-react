@@ -8,7 +8,19 @@ such as opening a calendar event from the home screen.
 ```tsx
 import { AssistChip } from "@miyauci/material-react";
 
-<AssistChip label="Assist chip" />;
+<AssistChip>
+  Label
+</AssistChip>;
+```
+
+### With Icon
+
+```tsx
+import { AssistChip } from "@miyauci/material-react";
+
+<AssistChip icon={<span className="my-icon" />}>
+  Label
+</AssistChip>;
 ```
 
 ## Props
@@ -17,8 +29,8 @@ import { AssistChip } from "@miyauci/material-react";
 | ---------- | ----------- |
 | `elevated` | `boolean`   |
 | `disabled` | `boolean`   |
-| `label`    | `ReactNode` |
 | `icon`     | `ReactNode` |
+| `children` | `ReactNode` |
 
 And `HTMLSpanElement` arrtibutes.
 
