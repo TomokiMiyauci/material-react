@@ -1,0 +1,56 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+/* @embed */
+:root {
+  --container-dragged-elevation: var(--md-sys-elevation-level4); /** Assist chip dragged container elevation */
+  --container-elevated-color: var(--md-sys-color-surface-container-low); /** Assist chip elevated container color */
+  --container-elevated-disabled-color: var(--md-sys-color-on-surface); /** Assist chip elevated disabled container color */
+  --container-elevated-disabled-elevation: var(--md-sys-elevation-level0); /** Assist chip elevated disabled container elevation */
+  --container-elevated-disabled-opacity: 12%; /** Assist chip elevated disabled container opacity */
+  --container-elevated-elevation: var(--md-sys-elevation-level1); /** Assist chip elevated container elevation */
+  --container-elevated-focus-elevation: var(--md-sys-elevation-level1); /** Assist chip elevated focus container elevation */
+  --container-elevated-hover-elevation: var(--md-sys-elevation-level2); /** Assist chip elevated hover container elevation */
+  --container-elevated-pressed-elevation: var(--md-sys-elevation-level1); /** Assist chip elevated pressed container elevation */
+  --container-elevated-shadow-color: var(--md-sys-color-shadow); /** Assist chip elevated container shadow color */
+  --container-elevation: var(--md-sys-elevation-level0); /** Assist chip container elevation */
+  --container-height: 32px; /** Assist chip container height */
+  --container-outline-color: var(--md-sys-color-outline-variant); /** Assist chip container outline color */
+  --container-outline-width: 1px; /** Assist chip container outline width */
+  --container-shape: var(--md-sys-shape-corner-small); /** Assist chip container shape */
+  --disabled-outline-color: var(--md-sys-color-on-surface); /** Assist chip disabled outline color */
+  --disabled-outline-opacity: 12%; /** Assist chip disabled outline opacity */
+  --focus-indicator-color: var(--md-sys-color-secondary); /** Assist chip focus indicator color */
+  --focus-indicator-offset: var(--md-sys-state-focus-indicator-outer-offset); /** Assist chip focus indicator offset */
+  --focus-indicator-thickness: var(--md-sys-state-focus-indicator-thickness); /** Assist chip focus indicator thickness */
+  --focus-outline-color: var(--md-sys-color-on-surface); /** Assist chip focus outline color */
+  --icon-color: var(--md-sys-color-primary); /** Assist chip icon color */
+  --icon-disabled-color: var(--md-sys-color-on-surface); /** Assist chip with icon disabled icon color */
+  --icon-disabled-opacity: 38%; /** Assist chip with icon disabled icon opacity */
+  --icon-dragged-color: var(--md-sys-color-primary); /** Assist chip with icon dragged icon color */
+  --icon-focus-color: var(--md-sys-color-primary); /** Assist chip with icon focus icon color */
+  --icon-hover-color: var(--md-sys-color-primary); /** Assist chip with icon hover icon color */
+  --icon-pressed-color: var(--md-sys-color-primary); /** Assist chip with icon pressed icon color */
+  --icon-size: 18px; /** Assist chip icon size */
+  --label-text-color: var(--md-sys-color-on-surface); /** Assist chip label text color */
+  --label-text-disabled-color: var(--md-sys-color-on-surface); /** Assist chip disabled label text color */
+  --label-text-disabled-opacity: 38%; /** Assist chip disabled label text opacity */
+  --label-text-dragged-color: var(--md-sys-color-on-surface); /** Assist chip dragged label text color */
+  --label-text-focus-color: var(--md-sys-color-on-surface); /** Assist chip focus label text color */
+  --label-text-font: var(--md-sys-typescale-label-large-font); /** Assist chip label text font */
+  --label-text-hover-color: var(--md-sys-color-on-surface); /** Assist chip hover label text color */
+  --label-text-line-height: var(--md-sys-typescale-label-large-line-height); /** Assist chip label text line height */
+  --label-text-pressed-color: var(--md-sys-color-on-surface); /** Assist chip pressed label text color */
+  --label-text-size: var(--md-sys-typescale-label-large-size); /** Assist chip label text size */
+  --label-text-tracking: var(--md-sys-typescale-label-large-tracking); /** Assist chip label text tracking */
+  --label-text-weight: var(--md-sys-typescale-label-large-weight); /** Assist chip label text weight */
+  --state-layer-dragged-color: var(--md-sys-color-on-surface); /** Assist chip dragged state layer color */
+  --state-layer-dragged-opacity: var(--md-sys-state-dragged-state-layer-opacity); /** Assist chip dragged state layer opacity */
+  --state-layer-focus-color: var(--md-sys-color-on-surface); /** Assist chip focus state layer color */
+  --state-layer-focus-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Assist chip focus state layer opacity */
+  --state-layer-hover-color: var(--md-sys-color-on-surface); /** Assist chip hover state layer color */
+  --state-layer-hover-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Assist chip hover state layer opacity */
+  --state-layer-pressed-color: var(--md-sys-color-on-surface); /** Assist chip pressed state layer color */
+  --state-layer-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Assist chip pressed state layer opacity */
+}

@@ -22,6 +22,10 @@ Please prepare your own token for your project, referencing the
 - [IconButton](./icon_button/README.md)
 - [NavigationBar](./navigation_bars/navigation_bar/README.md)
 - [NavigationBarItem](./navigation_bars/navigation_bar_item/README.md)
+- [AssistChip](./chips/assist_chip/README.md)
+- [FilterChip](./chips/filter_chip/README.md)
+- [InputChip](./chips/input_chip/README.md)
+- [SuggestionChip](./chips/suggestion_chip/README.md)
 - [Switch](./switch/README.md)
 
 ## Style

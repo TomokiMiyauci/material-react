@@ -1,0 +1,247 @@
+@import url("./_generated/tokens.css");
+@import url("../../../_internal/elevation.css");
+
+[data-md="input-chip"] {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--container-height);
+  border-radius: var(--container-shape);
+
+  --elevation: var(--container-elevation);
+
+  box-shadow: var(--box-shadow);
+  border-color: var(--unselected-outline-color);
+  border-width: var(--unselected-outline-width);
+  border-style: solid;
+  box-sizing: border-box;
+  column-gap: 8px;
+  padding-inline-start: 12px;
+  padding-inline-end: 12px;
+  position: relative;
+
+  &:has([data-leading="avatar"]) {
+    padding-inline-start: 4px;
+  }
+
+  &:has([data-leading="icon"]) {
+    padding-inline-start: 8px;
+  }
+
+  &:has([data-trailing]) {
+    padding-inline-end: 8px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    border-radius: inherit;
+  }
+
+  &:active::before {
+    background-color: var(--state-layer-unselected-pressed-color);
+    opacity: var(--state-layer-unselected-pressed-opacity);
+  }
+
+  &:hover::before {
+    background-color: var(--state-layer-unselected-hover-color);
+    opacity: var(--state-layer-unselected-hover-opacity);
+  }
+
+  &:focus-visible {
+    outline-offset: var(--focus-indicator-offset);
+    outline-width: var(--focus-indicator-thickness);
+    outline-style: solid;
+    outline-color: var(--focus-indicator-color);
+
+    /* border-color: var(--unselected-focus-outline-color); */
+
+    &::before {
+      background-color: var(--state-layer-unselected-focus-color);
+      opacity: var(--state-layer-unselected-focus-opacity);
+    }
+  }
+
+  &[data-disabled] {
+    border-color: color-mix(
+      in srgb,
+      var(--unselected-disabled-outline-color) var(
+        --unselected-disabled-outline-opacity
+      ),
+      transparent
+    );
+  }
+
+  &[data-selected] {
+    background-color: var(--container-selected-color);
+    border-width: var(--selected-outline-width);
+
+    &[data-disabled] {
+      background-color: color-mix(
+        in srgb,
+        var(--container-selected-disabled-color) var(
+          --container-selected-disabled-opacity
+        ),
+        transparent
+      );
+    }
+
+    &:active::before {
+      background-color: var(--state-layer-selected-pressed-color);
+      opacity: var(--state-layer-selected-pressed-opacity);
+    }
+
+    &:hover::before {
+      background-color: var(--state-layer-selected-hover-color);
+      opacity: var(--state-layer-selected-hover-opacity);
+    }
+
+    &:focus-visible::before {
+      background-color: var(--state-layer-selected-focus-color);
+      opacity: var(--state-layer-selected-focus-opacity);
+    }
+  }
+
+  [data-label] {
+    all: unset;
+    display: inline flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--label-text-unselected-color);
+    font-family: var(--label-text-font);
+    font-size: var(--label-text-size);
+    font-weight: var(--label-text-weight);
+    letter-spacing: var(--label-text-tracking);
+    line-height: var(--label-text-line-height);
+  }
+
+  &:active [data-label] {
+    color: var(--label-text-unselected-pressed-color);
+  }
+
+  &:hover [data-label] {
+    color: var(--label-text-unselected-hover-color);
+  }
+
+  &:focus-visible [data-label] {
+    color: var(--label-text-unselected-focus-color);
+  }
+
+  &[data-disabled] [data-label] {
+    color: var(--label-text-disabled-color);
+    opacity: var(--label-text-disabled-opacity);
+  }
+
+  &[data-selected] [data-label] {
+    color: var(--label-text-selected-color);
+  }
+
+  &:active[data-selected] [data-label] {
+    color: var(--label-text-selected-pressed-color);
+  }
+
+  &:hover[data-selected] [data-label] {
+    color: var(--label-text-selected-hover-color);
+  }
+
+  &:focus-visible[data-selected] [data-label] {
+    color: var(--label-text-selected-focus-color);
+  }
+
+  /* [data-leading="avatar"] {
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: var(--avatar-shape);
+
+    :scope[data-disabled] & {
+      opacity: var(--avatar-disabled-opacity);
+    }
+  } */
+
+  [data-leading] {
+    all: unset;
+    display: inline flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--leading-icon-size);
+    color: var(--leading-icon-unselected-color);
+  }
+
+  &:active [data-leading] {
+    color: var(--leading-icon-unselected-pressed-color);
+  }
+
+  &:hover [data-leading] {
+    color: var(--leading-icon-unselected-hover-color);
+  }
+
+  &:focus-visible [data-leading] {
+    color: var(--leading-icon-unselected-focus-color);
+  }
+
+  &[data-disabled] [data-leading] {
+    color: var(--leading-icon-disabled-color);
+    opacity: var(--leading-icon-disabled-opacity);
+  }
+
+  &[data-selected] [data-leading] {
+    color: var(--leading-icon-selected-color);
+  }
+
+  &:active[data-selected] [data-leading] {
+    color: var(--leading-icon-selected-pressed-color);
+  }
+
+  &:hover[data-selected] [data-leading] {
+    color: var(--leading-icon-selected-hover-color);
+  }
+
+  &:focus-visible[data-selected] [data-leading] {
+    color: var(--leading-icon-selected-focus-color);
+  }
+
+  [data-trailing] {
+    all: unset;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--trailing-icon-size);
+    color: var(--trailing-icon-unselected-color);
+  }
+
+  &:active [data-trailing] {
+    color: var(--trailing-icon-unselected-pressed-color);
+  }
+
+  &:hover [data-trailing] {
+    color: var(--trailing-icon-unselected-hover-color);
+  }
+
+  &:focus-visible [data-trailing] {
+    color: var(--trailing-icon-unselected-focus-color);
+  }
+
+  &[data-disabled] [data-trailing] {
+    color: var(--trailing-icon-disabled-color);
+    opacity: var(--trailing-icon-disabled-opacity);
+  }
+
+  &[data-selected] [data-trailing] {
+    color: var(--trailing-icon-selected-color);
+  }
+
+  &:active[data-selected] [data-trailing] {
+    color: var(--trailing-icon-selected-pressed-color);
+  }
+
+  &:hover[data-selected] [data-trailing] {
+    color: var(--trailing-icon-selected-hover-color);
+  }
+
+  &:focus-visible[data-selected] [data-trailing] {
+    color: var(--trailing-icon-selected-focus-color);
+  }
+}

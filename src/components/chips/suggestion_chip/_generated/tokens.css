@@ -1,0 +1,56 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+/* @embed */
+:root {
+  --container-dragged-elevation: var(--md-sys-elevation-level4); /** Suggestion chip dragged container elevation */
+  --container-elevated-color: var(--md-sys-color-surface-container-low); /** Suggestion chip elevated container color */
+  --container-elevated-disabled-color: var(--md-sys-color-on-surface); /** Suggestion chip elevated disabled container color */
+  --container-elevated-disabled-elevation: var(--md-sys-elevation-level0); /** Suggestion chip elevated disabled container elevation */
+  --container-elevated-disabled-opacity: 12%; /** Suggestion chip elevated disabled container opacity */
+  --container-elevated-elevation: var(--md-sys-elevation-level1); /** Suggestion chip elevated container elevation */
+  --container-elevated-focus-elevation: var(--md-sys-elevation-level1); /** Suggestion chip elevated focus container elevation */
+  --container-elevated-hover-elevation: var(--md-sys-elevation-level2); /** Suggestion chip elevated hover container elevation */
+  --container-elevated-pressed-elevation: var(--md-sys-elevation-level1); /** Suggestion chip elevated pressed container elevation */
+  --container-elevated-shadow-color: var(--md-sys-color-shadow); /** Suggestion chip elevated container shadow color */
+  --container-elevation: var(--md-sys-elevation-level0); /** Suggestion chip container elevation */
+  --container-height: 32px; /** Suggestion chip container height */
+  --container-outline-color: var(--md-sys-color-outline-variant); /** Suggestion chip container outline color */
+  --container-outline-width: 1px; /** Suggestion chip container outline width */
+  --container-shape: var(--md-sys-shape-corner-small); /** Suggestion chip container shape */
+  --disabled-outline-color: var(--md-sys-color-on-surface); /** Suggestion chip disabled outline color */
+  --disabled-outline-opacity: 12%; /** Suggestion chip disabled outline opacity */
+  --focus-indicator-color: var(--md-sys-color-secondary); /** Suggestion chip focus indicator color */
+  --focus-indicator-offset: var(--md-sys-state-focus-indicator-outer-offset); /** Suggestion chip focus indicator offset */
+  --focus-indicator-thickness: var(--md-sys-state-focus-indicator-thickness); /** Suggestion chip focus indicator thickness */
+  --focus-outline-color: var(--md-sys-color-on-surface-variant); /** Suggestion chip focus outline color */
+  --icon-color: var(--md-sys-color-primary); /** Suggestion chip leading icon color */
+  --icon-disabled-color: var(--md-sys-color-on-surface); /** Suggestion chip disabled leading icon color */
+  --icon-disabled-opacity: 38%; /** Suggestion chip disabled leading icon opacity */
+  --icon-dragged-color: var(--md-sys-color-primary); /** Suggestion chip dragged leading icon color */
+  --icon-focus-color: var(--md-sys-color-primary); /** Suggestion chip focus leading icon color */
+  --icon-hover-color: var(--md-sys-color-primary); /** Suggestion chip hover leading icon color */
+  --icon-pressed-color: var(--md-sys-color-primary); /** Suggestion chip pressed leading icon color */
+  --icon-size: 18px; /** Suggestion chip leading icon size */
+  --label-text-color: var(--md-sys-color-on-surface-variant); /** Suggestion chip label text color */
+  --label-text-disabled-color: var(--md-sys-color-on-surface); /** Suggestion chip disabled label text color */
+  --label-text-disabled-opacity: 38%; /** Suggestion chip disabled label text opacity */
+  --label-text-dragged-color: var(--md-sys-color-on-surface-variant); /** Suggestion chip dragged label text color */
+  --label-text-elevated-pressed-color: var(--md-sys-color-on-surface-variant); /** Suggestion chip elevated pressed label text color */
+  --label-text-focus-color: var(--md-sys-color-on-surface-variant); /** Suggestion chip focus label text color */
+  --label-text-font: var(--md-sys-typescale-label-large-font); /** Suggestion chip label text font */
+  --label-text-hover-color: var(--md-sys-color-on-surface-variant); /** Suggestion chip hover label text color */
+  --label-text-line-height: var(--md-sys-typescale-label-large-line-height); /** Suggestion chip label text line height */
+  --label-text-size: var(--md-sys-typescale-label-large-size); /** Suggestion chip label text size */
+  --label-text-tracking: var(--md-sys-typescale-label-large-tracking); /** Suggestion chip label text tracking */
+  --label-text-weight: var(--md-sys-typescale-label-large-weight); /** Suggestion chip label text weight */
+  --state-layer-dragged-color: var(--md-sys-color-on-surface-variant); /** Suggestion chip dragged state layer color */
+  --state-layer-dragged-opacity: var(--md-sys-state-dragged-state-layer-opacity); /** Suggestion chip dragged state layer opacity */
+  --state-layer-elevated-hover-color: var(--md-sys-color-on-surface-variant); /** Suggestion chip elevated hover state layer color */
+  --state-layer-elevated-hover-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Suggestion chip elevated hover state layer opacity */
+  --state-layer-elevated-pressed-color: var(--md-sys-color-on-surface-variant); /** Suggestion chip elevated pressed state layer color */
+  --state-layer-elevated-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Suggestion chip elevated pressed state layer opacity */
+  --state-layer-focus-color: var(--md-sys-color-on-surface-variant); /** Suggestion chip focus state layer color */
+  --state-layer-focus-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Suggestion chip focus state layer opacity */
+}
