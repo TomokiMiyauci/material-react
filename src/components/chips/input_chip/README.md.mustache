@@ -8,19 +8,20 @@ Gmail contacts or filter options within a search field.
 ```tsx
 import { InputChip } from "@miyauci/material-react";
 
-<InputChip label="Input chip" />;
+<InputChip>
+  Label
+</InputChip>;
 ```
 
 ## Props
 
-| Name          | Type                 |
-| ------------- | -------------------- |
-| `selected`    | `boolean`            |
-| `disabled`    | `boolean`            |
-| `label`       | `ReactNode`          |
-| `leadingType` | `"avatar"`, `"icon"` |
-| `leading`     | `ReactNode`          |
-| `trailing`    | `ReactNode`          |
+| Name       | Type        |
+| ---------- | ----------- |
+| `selected` | `boolean`   |
+| `disabled` | `boolean`   |
+| `leading`  | `ReactNode` |
+| `trailing` | `ReactNode` |
+| `children` | `ReactNode` |
 
 And `HTMLSpanElement` arrtibutes.
 

@@ -1,31 +1,31 @@
-@import url(./_generated/tokens.css);
-@import url(../../../_internal/elevation.css);
+@import url("./_generated/tokens.css");
+@import url("../../../_internal/elevation.css");
 
-@scope([data-md=input-chip]) {
-  & {
-    all: unset;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: var(--container-height);
-    border-radius: var(--container-shape);
-    --elevation: var(--container-elevation);
-    box-shadow: var(--box-shadow);
-    border-color: var(--unselected-outline-color);
-    border-width: var(--unselected-outline-width);
-    border-style: solid;
-    box-sizing: border-box;
-    column-gap: 8px;
-    padding-inline-start: 12px;
-    padding-inline-end: 12px;
-    position: relative;
-  }
+[data-md="input-chip"] {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--container-height);
+  border-radius: var(--container-shape);
 
-  &:has([data-leading=avatar]) {
+  --elevation: var(--container-elevation);
+
+  box-shadow: var(--box-shadow);
+  border-color: var(--unselected-outline-color);
+  border-width: var(--unselected-outline-width);
+  border-style: solid;
+  box-sizing: border-box;
+  column-gap: 8px;
+  padding-inline-start: 12px;
+  padding-inline-end: 12px;
+  position: relative;
+
+  &:has([data-leading="avatar"]) {
     padding-inline-start: 4px;
   }
 
-  &:has([data-leading=icon]) {
+  &:has([data-leading="icon"]) {
     padding-inline-start: 8px;
   }
 
@@ -56,7 +56,8 @@
     outline-width: var(--focus-indicator-thickness);
     outline-style: solid;
     outline-color: var(--focus-indicator-color);
-    border-color: var(--unselected-focus-outline-color);
+
+    /* border-color: var(--unselected-focus-outline-color); */
 
     &::before {
       background-color: var(--state-layer-unselected-focus-color);
@@ -65,7 +66,13 @@
   }
 
   &[data-disabled] {
-    border-color: color-mix(in srgb, var(--unselected-disabled-outline-color) var(--unselected-disabled-outline-opacity), transparent);
+    border-color: color-mix(
+      in srgb,
+      var(--unselected-disabled-outline-color) var(
+        --unselected-disabled-outline-opacity
+      ),
+      transparent
+    );
   }
 
   &[data-selected] {
@@ -73,7 +80,13 @@
     border-width: var(--selected-outline-width);
 
     &[data-disabled] {
-      background-color: color-mix(in srgb, var(--container-selected-disabled-color) var(--container-selected-disabled-opacity), transparent);
+      background-color: color-mix(
+        in srgb,
+        var(--container-selected-disabled-color) var(
+          --container-selected-disabled-opacity
+        ),
+        transparent
+      );
     }
 
     &:active::before {
@@ -94,55 +107,51 @@
 
   [data-label] {
     all: unset;
+    display: inline flex;
+    align-items: center;
+    justify-content: center;
     color: var(--label-text-unselected-color);
     font-family: var(--label-text-font);
     font-size: var(--label-text-size);
     font-weight: var(--label-text-weight);
     letter-spacing: var(--label-text-tracking);
     line-height: var(--label-text-line-height);
-
-    :scope:active & {
-      color: var(--label-text-unselected-pressed-color);
-    }
-
-    :scope:hover & {
-      color: var(--label-text-unselected-hover-color);
-    }
-
-    :scope:focus-visible & {
-      color: var(--label-text-unselected-focus-color);
-    }
-
-    :scope[data-disabled] & {
-      color: var(--label-text-disabled-color);
-      opacity: var(--label-text-disabled-opacity);
-    }
-
-    :scope[data-selected] & {
-      color: var(--label-text-selected-color);
-    }
-
-    :scope:active[data-selected] & {
-      color: var(--label-text-selected-pressed-color);
-    }
-
-    :scope:hover[data-selected] & {
-      color: var(--label-text-selected-hover-color);
-    }
-
-    :scope:focus-visible[data-selected] & {
-      color: var(--label-text-selected-focus-color);
-    }
   }
 
-  [data-leading] {
-    all: unset;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+  &:active [data-label] {
+    color: var(--label-text-unselected-pressed-color);
   }
 
-  [data-leading=avatar] {
+  &:hover [data-label] {
+    color: var(--label-text-unselected-hover-color);
+  }
+
+  &:focus-visible [data-label] {
+    color: var(--label-text-unselected-focus-color);
+  }
+
+  &[data-disabled] [data-label] {
+    color: var(--label-text-disabled-color);
+    opacity: var(--label-text-disabled-opacity);
+  }
+
+  &[data-selected] [data-label] {
+    color: var(--label-text-selected-color);
+  }
+
+  &:active[data-selected] [data-label] {
+    color: var(--label-text-selected-pressed-color);
+  }
+
+  &:hover[data-selected] [data-label] {
+    color: var(--label-text-selected-hover-color);
+  }
+
+  &:focus-visible[data-selected] [data-label] {
+    color: var(--label-text-selected-focus-color);
+  }
+
+  /* [data-leading="avatar"] {
     width: var(--avatar-size);
     height: var(--avatar-size);
     border-radius: var(--avatar-shape);
@@ -150,46 +159,48 @@
     :scope[data-disabled] & {
       opacity: var(--avatar-disabled-opacity);
     }
-  }
+  } */
 
-  [data-leading=icon] {
-    width: var(--leading-icon-size);
-    height: var(--leading-icon-size);
+  [data-leading] {
+    all: unset;
+    display: inline flex;
+    align-items: center;
+    justify-content: center;
     font-size: var(--leading-icon-size);
     color: var(--leading-icon-unselected-color);
+  }
 
-    :scope:active & {
-      color: var(--leading-icon-unselected-pressed-color);
-    }
+  &:active [data-leading] {
+    color: var(--leading-icon-unselected-pressed-color);
+  }
 
-    :scope:hover & {
-      color: var(--leading-icon-unselected-hover-color);
-    }
+  &:hover [data-leading] {
+    color: var(--leading-icon-unselected-hover-color);
+  }
 
-    :scope:focus-visible & {
-      color: var(--leading-icon-unselected-focus-color);
-    }
+  &:focus-visible [data-leading] {
+    color: var(--leading-icon-unselected-focus-color);
+  }
 
-    :scope[data-disabled] & {
-      color: var(--leading-icon-disabled-color);
-      opacity: var(--leading-icon-disabled-opacity);
-    }
+  &[data-disabled] [data-leading] {
+    color: var(--leading-icon-disabled-color);
+    opacity: var(--leading-icon-disabled-opacity);
+  }
 
-    :scope[data-selected] & {
-      color: var(--leading-icon-selected-color);
-    }
+  &[data-selected] [data-leading] {
+    color: var(--leading-icon-selected-color);
+  }
 
-    :scope:active[data-selected] & {
-      color: var(--leading-icon-selected-pressed-color);
-    }
+  &:active[data-selected] [data-leading] {
+    color: var(--leading-icon-selected-pressed-color);
+  }
 
-    :scope:hover[data-selected] & {
-      color: var(--leading-icon-selected-hover-color);
-    }
+  &:hover[data-selected] [data-leading] {
+    color: var(--leading-icon-selected-hover-color);
+  }
 
-    :scope:focus-visible[data-selected] & {
-      color: var(--leading-icon-selected-focus-color);
-    }
+  &:focus-visible[data-selected] [data-leading] {
+    color: var(--leading-icon-selected-focus-color);
   }
 
   [data-trailing] {
@@ -197,42 +208,40 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: var(--trailing-icon-size);
-    width: var(--trailing-icon-size);
     font-size: var(--trailing-icon-size);
     color: var(--trailing-icon-unselected-color);
+  }
 
-    :scope:active & {
-      color: var(--trailing-icon-unselected-pressed-color);
-    }
+  &:active [data-trailing] {
+    color: var(--trailing-icon-unselected-pressed-color);
+  }
 
-    :scope:hover & {
-      color: var(--trailing-icon-unselected-hover-color);
-    }
+  &:hover [data-trailing] {
+    color: var(--trailing-icon-unselected-hover-color);
+  }
 
-    :scope:focus-visible & {
-      color: var(--trailing-icon-unselected-focus-color);
-    }
+  &:focus-visible [data-trailing] {
+    color: var(--trailing-icon-unselected-focus-color);
+  }
 
-    :scope[data-disabled] & {
-      color: var(--trailing-icon-disabled-color);
-      opacity: var(--trailing-icon-disabled-opacity);
-    }
+  &[data-disabled] [data-trailing] {
+    color: var(--trailing-icon-disabled-color);
+    opacity: var(--trailing-icon-disabled-opacity);
+  }
 
-    :scope[data-selected] & {
-      color: var(--trailing-icon-selected-color);
-    }
+  &[data-selected] [data-trailing] {
+    color: var(--trailing-icon-selected-color);
+  }
 
-    :scope:active[data-selected] & {
-      color: var(--trailing-icon-selected-pressed-color);
-    }
+  &:active[data-selected] [data-trailing] {
+    color: var(--trailing-icon-selected-pressed-color);
+  }
 
-    :scope:hover[data-selected] & {
-      color: var(--trailing-icon-selected-hover-color);
-    }
+  &:hover[data-selected] [data-trailing] {
+    color: var(--trailing-icon-selected-hover-color);
+  }
 
-    :scope:focus-visible[data-selected] & {
-      color: var(--trailing-icon-selected-focus-color);
-    }
+  &:focus-visible[data-selected] [data-trailing] {
+    color: var(--trailing-icon-selected-focus-color);
   }
 }

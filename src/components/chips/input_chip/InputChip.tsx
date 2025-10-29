@@ -6,13 +6,10 @@ import style from "./_generated/style.ts";
 export interface InputChipProps {
   selected?: boolean;
   disabled?: boolean;
-  label?: ReactNode;
-  leadingType?: LeadingType;
   leading?: ReactNode;
   trailing?: ReactNode;
+  children?: ReactNode;
 }
-
-export type LeadingType = "avatar" | "icon";
 
 /**
  * Input chips represent discrete pieces of information entered by a user, such as Gmail contacts or filter options within a search field.
@@ -23,10 +20,9 @@ export default function InputChip(
   const {
     selected,
     disabled,
-    label,
     leading,
     trailing,
-    leadingType = "icon",
+    children,
     ...rest
   } = props;
 
@@ -38,11 +34,9 @@ export default function InputChip(
         data-disabled={bool(disabled)}
         {...rest}
       >
-        {leading && leadingType && (
-          <span data-leading={leadingType}>{leading}</span>
-        )}
+        {leading && <span data-leading="">{leading}</span>}
 
-        <span data-label="">{label}</span>
+        {children && <span data-label="">{children}</span>}
 
         {trailing && <span data-trailing="">{trailing}</span>}
       </span>
