@@ -1,22 +1,22 @@
-@import url(./_generated/tokens.css);
-@import url(../../../_internal/elevation.css);
+@import url("./_generated/tokens.css");
+@import url("../../../_internal/elevation.css");
 
-@scope([data-md=suggestion-chip]) {
-  & {
-    all: unset;
-    box-sizing: border-box;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: var(--container-height);
-    border-radius: var(--container-shape);
-    --elevation: var(--container-elevation);
-    box-shadow: var(--box-shadow);
-    padding-inline-start: 16px;
-    padding-inline-end: 16px;
-    gap: 8px;
-    position: relative;
-  }
+[data-md="suggestion-chip"] {
+  all: unset;
+  box-sizing: border-box;
+  display: inline flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--container-height);
+  border-radius: var(--container-shape);
+
+  --elevation: var(--container-elevation);
+
+  box-shadow: var(--box-shadow);
+  padding-inline-start: 16px;
+  padding-inline-end: 16px;
+  gap: 8px;
+  position: relative;
 
   &:not([data-elevated]) {
     border-color: var(--container-outline-color);
@@ -59,6 +59,7 @@
     outline-width: var(--focus-indicator-thickness);
     outline-style: solid;
     outline-color: var(--focus-indicator-color);
+
     /* border-color: var(--focus-outline-color); */
 
     &::before {
@@ -68,12 +69,17 @@
   }
 
   &[data-disabled] {
-    border-color: color-mix(in srgb, var(--disabled-outline-color) var(--disabled-outline-opacity), transparent);
+    border-color: color-mix(
+      in srgb,
+      var(--disabled-outline-color) var(--disabled-outline-opacity),
+      transparent
+    );
   }
 
   &[data-elevated] {
     --elevation: var(--container-elevated-elevation);
     --shadow-color: var(--container-elevated-shadow-color);
+
     background-color: var(--container-elevated-color);
 
     &:hover {
@@ -90,6 +96,7 @@
 
     &[data-disabled] {
       --elevation: var(--container-elevated-disabled-elevation);
+
       /* background-color: color-mix(in srgb, var(--container-elevated-disabled-color) var(--container-elevated-disabled-opacity), transparent); */
     }
   }
@@ -102,50 +109,48 @@
     font-weight: var(--label-text-weight);
     letter-spacing: var(--label-text-tracking);
     line-height: var(--label-text-line-height);
+  }
 
-    :scope:hover & {
-      color: var(--label-text-hover-color);
-    }
+  &:hover [data-label] {
+    color: var(--label-text-hover-color);
+  }
 
-    :scope:focus-visible & {
-      color: var(--label-text-focus-color);
-    }
+  &:focus-visible [data-label] {
+    color: var(--label-text-focus-color);
+  }
 
-    :scope[data-disabled] & {
-      color: var(--label-text-disabled-color);
-      opacity: var(--label-text-disabled-opacity);
-    }
+  &[data-disabled] [data-label] {
+    color: var(--label-text-disabled-color);
+    opacity: var(--label-text-disabled-opacity);
+  }
 
-    :scope:active[data-elevated] & {
-      color: var(--label-text-elevated-pressed-color);
-    }
+  &[data-elevated]:active [data-label] {
+    color: var(--label-text-elevated-pressed-color);
   }
 
   [data-icon] {
     all: unset;
-    display: inline-flex;
+    display: inline flex;
     align-items: center;
     justify-content: center;
-    height: var(--icon-size);
-    width: var(--icon-size);
     font-size: var(--icon-size);
     color: var(--icon-color);
+  }
 
-    :scope:hover & {
-      color: var(--icon-hover-color);
-    }
+  &:hover [data-icon] {
+    color: var(--icon-hover-color);
+  }
 
-    :scope:active & {
-      color: var(--icon-pressed-color);
-    }
+  &:active [data-icon] {
+    color: var(--icon-pressed-color);
+  }
 
-    :scope:focus-visible & {
-      color: var(--icon-focus-color);
-    }
+  &:focus-visible [data-icon] {
+    color: var(--icon-focus-color);
+  }
 
-    [data-disabled] & {
-      color: var(--icon-disabled-color);
-      opacity: var(--icon-disabled-opacity);
-    }
+  &[data-disabled] [data-icon] {
+    color: var(--icon-disabled-color);
+    opacity: var(--icon-disabled-opacity);
   }
 }

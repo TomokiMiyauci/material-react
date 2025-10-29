@@ -8,7 +8,19 @@ suggestions, such as suggested responses or search filters.
 ```tsx
 import { SuggestionChip } from "@miyauci/material-react";
 
-<SuggestionChip label="Suggestion chip" />;
+<SuggestionChip>
+  Label
+</SuggestionChip>;
+```
+
+### With Icon
+
+```tsx
+import { SuggestionChip } from "@miyauci/material-react";
+
+<SuggestionChip icon={<span className="my-icon" />}>
+  Label
+</SuggestionChip>;
 ```
 
 ## Props
@@ -17,8 +29,8 @@ import { SuggestionChip } from "@miyauci/material-react";
 | ---------- | ----------- |
 | `elevated` | `boolean`   |
 | `disabled` | `boolean`   |
-| `label`    | `ReactNode` |
 | `icon`     | `ReactNode` |
+| `children` | `ReactNode` |
 
 And `HTMLSpanElement` arrtibutes.
 
