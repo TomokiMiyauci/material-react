@@ -132,6 +132,7 @@
   &[data-selected] {
     border-width: var(--selected-outline-width);
     border-color: var(--selected-outline-color);
+    background-color: var(--container-selected-elevated-color);
 
     &:hover {
       --elevation: var(--container-selected-hover-elevation);
@@ -169,10 +170,6 @@
         transparent
       );
     }
-  }
-
-  &[data-selected] {
-    background-color: var(--container-selected-elevated-color);
   }
 
   [data-label] {
