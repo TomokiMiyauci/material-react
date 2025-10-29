@@ -2,7 +2,6 @@ import type { JSX, ReactNode } from "react";
 import Style from "@internal/Style.tsx";
 import style from "./_generated/style.ts";
 import { bool } from "@/utils/convert.ts";
-import { Template } from "@miyauci/react-shadow-dom";
 
 export interface ButtonProps {
   /**
@@ -13,6 +12,15 @@ export interface ButtonProps {
   shape?: ButtonShape;
   color?: ButtonColor;
   disabled?: boolean;
+
+  /**
+   * Icon for button
+   */
+  icon?: ReactNode;
+
+  /**
+   * Label for button
+   */
   children?: ReactNode;
 }
 
@@ -31,6 +39,7 @@ export default function Button(
     shape = "round",
     color = "filled",
     disabled,
+    icon,
     children,
     ...rest
   } = props;
@@ -45,14 +54,8 @@ export default function Button(
         data-disabled={bool(disabled)}
         {...rest}
       >
-        <span data-host="">
-          <Template shadowRootMode="open">
-            <slot name="icon" part="icon" />
-            <slot part="label" />
-          </Template>
-
-          {children}
-        </span>
+        {icon && <span data-icon="">{icon}</span>}
+        {children && <span data-label="">{children}</span>}
       </button>
 
       <Style href="button">{style}</Style>

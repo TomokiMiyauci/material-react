@@ -86,20 +86,16 @@ function getProps(item: Item): ExtendedFabProps & PseudoData {
   const base = {
     color: item.color,
     size: item.size,
-    children: (
-      <>
-        {item.icon && (
-          <span
-            className="material-symbols-outlined"
-            style={{ fontVariationSettings: "'FILL' 1" }}
-            slot="icon"
-          >
-            stars
-          </span>
-        )}
-        Label
-      </>
+    icon: item.icon && (
+      <span
+        className="material-symbols-outlined"
+        style={{ fontVariationSettings: "'FILL' 1" }}
+        slot="icon"
+      >
+        stars
+      </span>
     ),
+    children: "Label",
   } satisfies ExtendedFabProps;
 
   switch (item.state) {

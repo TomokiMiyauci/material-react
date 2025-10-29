@@ -1,7 +1,6 @@
 import type { JSX, ReactNode } from "react";
 import Style from "@internal/Style.tsx";
 import style from "./_generated/style.ts";
-import { Template } from "@miyauci/react-shadow-dom";
 
 export interface ExtendedFabProps {
   /**
@@ -13,6 +12,15 @@ export interface ExtendedFabProps {
    * @default "primary-container"
    */
   color?: ExtendedFabColor;
+
+  /**
+   * Icon for button
+   */
+  icon?: ReactNode;
+
+  /**
+   * Label text for button
+   */
   children?: ReactNode;
 }
 
@@ -29,9 +37,6 @@ export type ExtendedFabColor =
 /**
  * Extended FABs help people take primary actions. They're wider than FABs to accommodate a text label and larger target area.
  *
- * @slot Label text for button
- * @slot icon - Icon for button
- *
  * @example Basic
  * ```tsx
  * import { ExtendedFab } from "@miyauci/material-react";
@@ -44,8 +49,7 @@ export type ExtendedFabColor =
  * ```tsx
  * import { ExtendedFab } from "@miyauci/material-react";
  *
- * <ExtendedFab>
- *   <span slot="icon" className="my-icon" />
+ * <ExtendedFab icon={<span className="my-icon" />}>
  *   Label
  * </ExtendedFab>;
  * ```
@@ -56,6 +60,7 @@ export default function ExtendedFab(
   const {
     size = "small",
     color = "primary-container",
+    icon,
     children,
     ...rest
   } = props;
@@ -69,14 +74,9 @@ export default function ExtendedFab(
         data-color={color}
         {...rest}
       >
-        <span data-host="">
-          <Template shadowRootMode="open">
-            <slot part="icon" name="icon" />
-            <slot part="label" />
-          </Template>
+        {icon && <span data-icon="">{icon}</span>}
 
-          {children}
-        </span>
+        {children && <span data-label="">{children}</span>}
       </button>
 
       <Style href="extended-fab">{style}</Style>

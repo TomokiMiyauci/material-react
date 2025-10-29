@@ -18,27 +18,21 @@ import { ExtendedFab } from "@miyauci/material-react";
 ```tsx
 import { ExtendedFab } from "@miyauci/material-react";
 
-<ExtendedFab>
-  <span slot="icon" className="my-icon" />
+<ExtendedFab icon={<span className="my-icon" />}>
   Label
 </ExtendedFab>;
 ```
 
 ## Props
 
-| Name    | Type                                                                                                             |
-| ------- | ---------------------------------------------------------------------------------------------------------------- |
-| `size`  | `"small"`, `"medium"`, `"large"`                                                                                 |
-| `color` | `"primary"`, `"primary-container"`, `"secondary"`, `"secondary-container"`, `"tertiary"`, `"tertiary-container"` |
+| Name       | Type                                                                                                             |
+| ---------- | ---------------------------------------------------------------------------------------------------------------- |
+| `size`     | `"small"`, `"medium"`, `"large"`                                                                                 |
+| `color`    | `"primary"`, `"primary-container"`, `"secondary"`, `"secondary-container"`, `"tertiary"`, `"tertiary-container"` |
+| `icon`     | `ReactNode`                                                                                                      |
+| `children` | `ReactNode`                                                                                                      |
 
 And `HTMLButtonElement` arrtibutes.
-
-## Slots
-
-| Name        | Description           |
-| ----------- | --------------------- |
-| `(default)` | Label text for button |
-| `icon`      | Icon for button       |
 
 ## Tokens
 
