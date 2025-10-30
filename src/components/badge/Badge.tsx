@@ -1,7 +1,6 @@
 import type { JSX, ReactNode } from "react";
 import style from "./_generated/style.ts";
 import Style from "@internal/Style.tsx";
-import Template from "@internal/dsd/Template.tsx";
 
 export interface BadgeProps {
   size?: BadgeSize;
@@ -21,14 +20,8 @@ export default function Badge(
 
   return (
     <>
-      <span data-md="badge" data-size={size}>
-        <Template shadowrootmode="open">
-          <span part="container" {...rest}>
-            <slot part="text"></slot>
-          </span>
-        </Template>
-
-        {children}
+      <span data-md="badge" data-size={size} {...rest}>
+        {children && <span data-text="">{children}</span>}
       </span>
 
       <Style href="badge">{style}</Style>

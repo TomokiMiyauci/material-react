@@ -35,6 +35,50 @@
         "disabled": "53923-28299"
       }
     },
+    "assist-chip": {
+      "outlined": {
+        "enabled": "53923-28267",
+        "hovered": "53923-28237",
+        "focused": "53923-28207",
+        "pressed": "53923-28177",
+        "dragged": "53923-28147",
+        "disabled": "53923-28117"
+      },
+      "elevated": {
+        "enabled": "53923-28264",
+        "hovered": "53923-28234",
+        "focused": "53923-28204",
+        "pressed": "53923-28174",
+        "dragged": "53923-28144",
+        "disabled": "53923-28114"
+      },
+      "icon": {
+        "enabled": "53923-28260",
+        "disabled": "53923-28110"
+      }
+    },
+    "suggestion-chip": {
+      "outlined": {
+        "enabled": "53923-28845",
+        "hovered": "53923-28831",
+        "focused": "53923-28817",
+        "pressed": "53923-28803",
+        "dragged": "53923-28789",
+        "disabled": "53923-28775"
+      },
+      "elevated": {
+        "enabled": "53923-28842",
+        "hovered": "53923-28828",
+        "focused": "53923-28814",
+        "pressed": "53923-28800",
+        "dragged": "53923-28786",
+        "disabled": "53923-28772"
+      },
+      "icon": {
+        "enabled": "53923-28838",
+        "disabled": "53923-28768"
+      }
+    },
     "switch": {
       "all": "54446-25289",
       "unselected": {
