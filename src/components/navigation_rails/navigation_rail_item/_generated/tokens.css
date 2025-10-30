@@ -4,25 +4,46 @@
 
 /* @embed */
 :root {
+  --active-indicator-color: var(--md-sys-color-secondary-container); /** Nav rail item active indicator color */
+  --active-indicator-horizontal-height: 56px; /** Nav rail item horizontal active indicator height */
+  --active-indicator-icon-label-space: 8px; /** Nav rail item active indicator icon label space */
+  --active-indicator-leading-space: 16px; /** Nav rail item active indicator leading space */
+  --active-indicator-shape: var(--md-sys-shape-corner-full); /** Nav rail item active indicator shape */
+  --active-indicator-trailing-space: 16px; /** Nav rail item active indicator trailing space */
+  --active-indicator-vertical-height: 32px; /** Nav rail item vertical active indicator height */
+  --active-indicator-vertical-width: 56px; /** Nav rail item vertical active indicator width */
   --container-height: 64px; /** Nav rail item container height */
-  --container-short-height: 56px; /** Nav rail item short container height */
   --container-shape: var(--md-sys-shape-corner-none); /** Nav rail item container shape */
+  --container-short-height: 56px; /** Nav rail item short container height */
   --container-vertical-space: 6px; /** Nav rail item container vertical space */
-  --container-header-minimum-space: 40px; /** Nav rail item header space minimum */
+  --icon-active-color: var(--md-sys-color-on-secondary-container); /** Nav rail item active icon color */
+  --icon-inactive-color: var(--md-sys-color-on-surface-variant); /** Nav rail item inactive icon color */
+  --icon-label-horizontal-space: 8px; /** Nav rail item horizontal icon label space */
+  --icon-label-vertical-space: 4px; /** Nav rail item vertical icon label space */
   --icon-size: 24px; /** Nav rail item icon size */
-  --indicator-active-shape: var(--md-sys-shape-corner-full); /** Nav rail item active indicator shape */
-  --indicator-active-leading-space: 16px; /** Nav rail item active indicator leading space */
-  --indicator-active-trailing-space: 16px; /** Nav rail item active indicator trailing space */
-  --indicator-active-color: var(--md-sys-color-secondary-container); /** Nav rail item active indicator color */
-  --indicator-vertical-active-height: 32px; /** Nav rail item vertical active indicator height */
-  --indicator-vertical-active-width: 56px; /** Nav rail item vertical active indicator width */
-  --item-between-indicator-and-icon-space: 8px; /** Nav rail item active indicator icon label space */
-  --item-vertical-between-indicator-and-icon-space: 4px; /** Nav rail item vertical icon label space */
   --label-text-active-color: var(--md-sys-color-secondary); /** Nav rail item active label text color */
+  --label-text-horizontal-font: var(--md-ref-typeface-plain); /** Nav rail item horizontal label text font */
+  --label-text-horizontal-line-height: 1.25rem; /** Nav rail item horizontal label text line height */
+  --label-text-horizontal-size: 0.875rem; /** Nav rail item horizontal label text size */
+  --label-text-horizontal-tracking: 0.0063rem; /** Nav rail item horizontal label text tracking */
+  --label-text-horizontal-weight: var(--md-ref-typeface-weight-medium); /** Nav rail item horizontal label text weight */
   --label-text-inactive-color: var(--md-sys-color-on-surface-variant); /** Nav rail item inactive label text color */
-  --label-text-vertical-font-name: var(--md-ref-typeface-plain); /** Nav rail item vertical label text */
-  --label-text-vertical-font-weight: var(--md-ref-typeface-weight-medium); /** Nav rail item vertical label text */
-  --label-text-vertical-font-size: 12px; /** Nav rail item vertical label text */
-  --label-text-vertical-font-tracking: 0.5px; /** Nav rail item vertical label text */
-  --label-text-vertical-line-height: 16px; /** Nav rail item vertical label text */
+  --label-text-vertical-font: var(--md-ref-typeface-plain); /** Nav rail item vertical label text font */
+  --label-text-vertical-line-height: 1rem; /** Nav rail item vertical label text line height */
+  --label-text-vertical-size: 0.75rem; /** Nav rail item vertical label text size */
+  --label-text-vertical-tracking: 0.0313rem; /** Nav rail item vertical label text tracking */
+  --label-text-vertical-weight: var(--md-ref-typeface-weight-medium); /** Nav rail item vertical label text weight */
+  --leading-horizontal-full-width-space: 16px; /** Nav rail item horizontal full width leading space */
+  --leading-vertical-space: 16px; /** Nav rail item vertical leading space */
+  --state-layer-active-focused-color: var(--md-sys-color-on-secondary-container); /** Nav rail item active focused state layer color */
+  --state-layer-active-focused-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Nav rail item active focused state layer opacity */
+  --state-layer-active-hovered-color: var(--md-sys-color-on-secondary-container); /** Nav rail item active hovered state layer color */
+  --state-layer-active-hovered-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Nav rail item active hovered state layer opacity */
+  --state-layer-active-pressed-color: var(--md-sys-color-on-secondary-container); /** Nav rail item active pressed state layer color */
+  --state-layer-active-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Nav rail item active pressed state layer opacity */
+  --state-layer-inactive-focused-color: var(--md-sys-color-on-secondary-container); /** Nav rail item inactive focused state layer color */
+  --state-layer-inactive-hovered-color: var(--md-sys-color-on-secondary-container); /** Nav rail item inactive hovered state layer color */
+  --state-layer-inactive-pressed-color: var(--md-sys-color-on-secondary-container); /** Nav rail item inactive pressed state layer color */
+  --trailing-horizontal-full-width-space: 16px; /** Nav rail item horizontal full width trailing space */
+  --trailing-vertical-space: 16px; /** Nav rail item vertical trailing space */
 }

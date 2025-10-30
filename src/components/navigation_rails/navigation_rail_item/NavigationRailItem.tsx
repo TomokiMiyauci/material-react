@@ -1,34 +1,37 @@
 import type { JSX, ReactNode } from "react";
 import style from "./_generated/style.ts";
 import Style from "@internal/Style.tsx";
+import { bool } from "@/utils/convert.ts";
 
 export type NavigationRailItemProps = {
-  label?: string;
   active?: boolean;
+  orientation?: NavigationRailItemOrientation;
   icon?: ReactNode;
+  children?: ReactNode;
 };
+
+type NavigationRailItemOrientation = "horizontal" | "vertical";
 
 export default function NavigationRailItem(
   props: NavigationRailItemProps,
 ): JSX.Element {
-  const { label, active, icon, ...rest } = props;
+  const { children, active, icon, orientation, ...rest } = props;
   return (
     <>
       <div
         data-md="navigation-rail-item"
-        data-active={active}
+        data-active={bool(active)}
+        data-orientation={orientation}
         {...rest}
       >
         <div data-container="">
-          <div data-indicator="">
-            <span data-icon="">
-              {icon}
-            </span>
-          </div>
+          {icon && (
+            <div data-icon-container="">
+              <span data-icon="">{icon}</span>
+            </div>
+          )}
 
-          <span data-label-text="">
-            {label}
-          </span>
+          {children && <span data-label="">{children}</span>}
         </div>
       </div>
 
