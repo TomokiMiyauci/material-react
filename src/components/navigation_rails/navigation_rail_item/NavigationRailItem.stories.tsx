@@ -32,7 +32,7 @@ export const WithIcon = {
 interface DataStates {
   "data-hover"?: "";
   "data-focus-visible"?: "";
-  "data-active"?: "";
+  "data-press"?: "";
 }
 
 const xAxis = [
@@ -107,7 +107,7 @@ function getProps(item: Item): NavigationRailItemProps & DataStates {
       return { ...base };
 
     case "pressed":
-      return { "data-active": "", ...base };
+      return { "data-press": "", ...base };
   }
 }
 
@@ -129,7 +129,7 @@ export const Gallary = {
     pseudo: {
       hover: "[data-hover]",
       focusVisible: "[data-focus-visible]",
-      active: "[data-active]",
+      active: "[data-press]",
     },
     chromatic: { disableSnapshot: false },
   },
