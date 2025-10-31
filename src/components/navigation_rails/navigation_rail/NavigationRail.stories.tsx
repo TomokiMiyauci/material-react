@@ -50,10 +50,8 @@ const fab = (
   </Fab>
 );
 const menu = (
-  <IconButton
-    color="standard"
-    icon={<span className="material-symbols-outlined">menu_open</span>}
-  >
+  <IconButton color="standard">
+    <span className="material-symbols-outlined">menu_open</span>
   </IconButton>
 );
 
@@ -66,10 +64,8 @@ export const Default = {
 export const WithMenu = {
   args: {
     menu: (
-      <IconButton
-        color="standard"
-        icon={<span className="material-symbols-outlined">menu_open</span>}
-      >
+      <IconButton color="standard">
+        <span className="material-symbols-outlined">menu_open</span>
       </IconButton>
     ),
     children,
