@@ -1,3 +1,16 @@
+# [1.0.0-beta.21](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.20...1.0.0-beta.21) (2025-10-31)
+
+
+### Bug Fixes
+
+* **navigation-rail-item:** add cursor pointer style ([ebf0efc](https://github.com/TomokiMiyauci/material-react/commit/ebf0efc5f226d542091850b9b450d16ee0da0bd3))
+
+
+### Features
+
+* **navigation-rail-item:** add horizontal styles, change props ([3b0a8f5](https://github.com/TomokiMiyauci/material-react/commit/3b0a8f5e2efa5404b251cf6d496338f6116d40a7))
+* **navigation-rail:** add navigation rail component ([28aabe6](https://github.com/TomokiMiyauci/material-react/commit/28aabe6f91fad365bb7c91a459cbeefbf5da383c))
+
 # [1.0.0-beta.20](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.19...1.0.0-beta.20) (2025-10-29)
 
 
