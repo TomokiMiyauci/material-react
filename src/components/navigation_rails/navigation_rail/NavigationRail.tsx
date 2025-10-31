@@ -12,6 +12,9 @@ export interface NavigationRailProps {
    * @default "standard"
    */
   layout?: NavigationRailExtendedLayout;
+
+  menu?: ReactNode;
+  fab?: ReactNode;
   children?: ReactNode;
 }
 
@@ -22,8 +25,14 @@ export type NavigationRailVariant = "collapsed" | "expanded";
 export default function NavigationRail(
   props: NavigationRailProps,
 ): JSX.Element {
-  const { variant = "collapsed", layout = "standard", children, ...rest } =
-    props;
+  const {
+    variant = "collapsed",
+    layout = "standard",
+    menu,
+    fab,
+    children,
+    ...rest
+  } = props;
 
   return (
     <>
@@ -33,9 +42,14 @@ export default function NavigationRail(
         data-layout={layout}
         {...rest}
       >
-        <div data-navigation-items="">
-          {children}
-        </div>
+        {(menu || fab) && (
+          <div data-menu-fab-container="">
+            {menu}
+            {fab}
+          </div>
+        )}
+
+        {children && <div data-navigation-items="">{children}</div>}
       </div>
 
       <Style href="navigation-rail">{style}</Style>

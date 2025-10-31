@@ -4,21 +4,20 @@
 
 /* @embed */
 :root {
-  --container-minimum-header-space: 40px; /** Nav rail item header space minimum */
-  --collapsed-width: 96px; /** Nav rail collapsed container width */
-  --collapsed-narrow-width: 80px; /** Nav rail collapsed narrow container width */
-  --collapsed-elevation: var(--md-sys-elevation-level0); /** Nav rail collapsed container elevation */
-  --collapsed-shape: var(--md-sys-shape-corner-none); /** Nav rail collapsed container shape */
-  --collapsed-color: var(--md-sys-color-surface); /** Nav rail collapsed container color */
-  --collapsed-item-vertical-space: 4px; /** Nav rail collapsed item vertical space */
   --collapsed-item-top-space: 44px; /** Nav rail collapsed item top space */
-  --extended-minimum-width: 220px; /** Nav rail expanded container width minimum */
-  --extended-maximum-width: 360px; /** Nav rail expanded container width maximum */
-  --extended-top-space: 44px; /** Nav rail expanded top space */
-  --extended-elevation: var(--md-sys-elevation-level0); /** Nav rail expanded container elevation */
-  --extended-modal-elevation: var(--md-sys-elevation-level2); /** Nav rail expanded modal container elevation */
-  --extended-modal-color: var(--md-sys-color-surface-container); /** Nav rail expanded modal container color */
-  --extended-modal-shape: var(--md-sys-shape-corner-large); /** Nav rail expanded modal container shape */
-  --extended-color: var(--md-sys-color-surface); /** Nav rail expanded container color */
-  --extended-shape: var(--md-sys-shape-corner-none); /** Nav rail expanded container shape */
+  --collapsed-item-vertical-space: 4px; /** Nav rail collapsed item vertical space */
+  --container-collapsed-color: var(--md-sys-color-surface); /** Nav rail collapsed container color */
+  --container-collapsed-elevation: var(--md-sys-elevation-level0); /** Nav rail collapsed container elevation */
+  --container-collapsed-narrow-width: 80px; /** Nav rail collapsed narrow container width */
+  --container-collapsed-shape: var(--md-sys-shape-corner-none); /** Nav rail collapsed container shape */
+  --container-collapsed-width: 96px; /** Nav rail collapsed container width */
+  --container-expanded-color: var(--md-sys-color-surface); /** Nav rail expanded container color */
+  --container-expanded-elevation: var(--md-sys-elevation-level0); /** Nav rail expanded container elevation */
+  --container-expanded-maximum-width: 360px; /** Nav rail expanded container width maximum */
+  --container-expanded-minimum-width: 220px; /** Nav rail expanded container width minimum */
+  --container-expanded-modal-color: var(--md-sys-color-surface-container); /** Nav rail expanded modal container color */
+  --container-expanded-modal-elevation: var(--md-sys-elevation-level2); /** Nav rail expanded modal container elevation */
+  --container-expanded-modal-shape: var(--md-sys-shape-corner-large); /** Nav rail expanded modal container shape */
+  --container-expanded-shape: var(--md-sys-shape-corner-none); /** Nav rail expanded container shape */
+  --expanded-top-space: 44px; /** Nav rail expanded top space */
 }
