@@ -7,7 +7,9 @@ Icon container for list item.
 ```tsx
 import { ListItemIcon } from "@miyauci/material-react";
 
-<ListItemIcon><span>Icon<span></ListItemIcon>;
+<ListItemIcon>
+  <span>Icon</span>
+</ListItemIcon>;
 ```
 
 ## Props

@@ -29,7 +29,7 @@ immediate use in any environment (SSR, RSC, CSR, etc) without additional builds.
 ```tsx
 import { Badge } from "@miyauci/material-react";
 
-const node = <Badge>;
+<Badge />;
 ```
 
 See [Component](/src/components/README.md).

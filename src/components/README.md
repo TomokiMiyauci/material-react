@@ -8,7 +8,7 @@ Components are imported either as the default entry or from
 ```tsx
 import { Badge } from "@miyauci/material-react";
 
-const node = <Badge>;
+<Badge />;
 ```
 
 Additionally, each component relies on [tokens](/docs/token.md).
