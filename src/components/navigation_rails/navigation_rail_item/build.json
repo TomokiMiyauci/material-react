@@ -1,0 +1,65 @@
+{
+  "steps": [
+    {
+      "use": "items2tokens",
+      "input": "../_generated/items.json",
+      "output": "./_generated/tokens.json",
+      "options": {
+        "include": {
+          "matches": ["Nav rail item"]
+        },
+        "exclude": {
+          "matches": ["header"]
+        },
+        "renames": {
+          "Nav rail item vertical leading-space": "Nav rail item vertical leading space",
+          "Nav rail item horizontal icon-label-space": "Nav rail item horizontal icon label space"
+        },
+        "segments": [
+          "Nav rail item",
+          "state layer",
+          "active indicator",
+          "label text",
+          "icon label"
+        ],
+        "path": {
+          "exclude": {
+            "matches": ["Nav rail item"]
+          },
+          "heads": [
+            "state layer",
+            "container",
+            "active indicator",
+            "label text",
+            "icon",
+            "leading",
+            "trailing",
+            "icon label"
+          ],
+          "tails": [
+            "space"
+          ]
+        }
+      }
+    },
+    {
+      "use": "tokens2css",
+      "input": "./_generated/tokens.json",
+      "output": "./_generated/tokens.css"
+    },
+    {
+      "use": "css",
+      "input": "./style.css",
+      "output": "./_generated/style.css",
+      "options": {
+        "minify": true,
+        "embed": true
+      }
+    },
+    {
+      "use": "css2ts",
+      "input": "./_generated/style.css",
+      "output": "./_generated/style.ts"
+    }
+  ]
+}
