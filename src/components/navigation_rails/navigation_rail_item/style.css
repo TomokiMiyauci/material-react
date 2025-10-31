@@ -9,6 +9,7 @@
   max-height: var(--container-height);
   min-height: var(--container-short-height);
   border-radius: var(--container-shape);
+  cursor: pointer;
 
   [data-container] {
     all: unset;
