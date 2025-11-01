@@ -2,11 +2,11 @@ import type { JSX, ReactNode } from "react";
 import { bool } from "@/utils/convert.ts";
 import Style from "@internal/Style.tsx";
 import style from "./_generated/style.ts";
+import type { StateDisabledProps } from "@/components/types.ts";
 
-export interface FilterChipProps {
+export interface FilterChipProps extends StateDisabledProps {
   selected?: boolean;
   elevated?: boolean;
-  disabled?: boolean;
   leading?: ReactNode;
   trailing?: ReactNode;
   children?: ReactNode;
@@ -48,7 +48,7 @@ export default function FilterChip(
   const {
     selected,
     elevated,
-    disabled,
+    state,
     children,
     leading,
     trailing,
@@ -61,7 +61,7 @@ export default function FilterChip(
         data-md="filter-chip"
         data-selected={bool(selected)}
         data-elevated={bool(elevated)}
-        data-disabled={bool(disabled)}
+        data-disabled={bool(state === "disabled")}
         {...rest}
       >
         {leading && <span data-icon="leading">{leading}</span>}

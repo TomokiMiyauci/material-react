@@ -35,14 +35,14 @@ import { FilterChip } from "@miyauci/material-react";
 
 ## Props
 
-| Name       | Type        |
-| ---------- | ----------- |
-| `selected` | `boolean`   |
-| `elevated` | `boolean`   |
-| `disabled` | `boolean`   |
-| `leading`  | `ReactNode` |
-| `trailing` | `ReactNode` |
-| `children` | `ReactNode` |
+| Name       | Type         |
+| ---------- | ------------ |
+| `selected` | `boolean`    |
+| `elevated` | `boolean`    |
+| `state`    | `"disabled"` |
+| `leading`  | `ReactNode`  |
+| `trailing` | `ReactNode`  |
+| `children` | `ReactNode`  |
 
 And `HTMLSpanElement` arrtibutes.
 
