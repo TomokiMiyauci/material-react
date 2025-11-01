@@ -1,0 +1,14 @@
+{
+  "steps": [
+    {
+      "use": "css",
+      "input": "../../../../styles/sys/colors/dark_hc.css",
+      "output": "./_generated/style.css"
+    },
+    {
+      "use": "css2ts",
+      "input": "./_generated/style.css",
+      "output": "./_generated/style.ts"
+    }
+  ]
+}
