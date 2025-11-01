@@ -20,7 +20,7 @@ import { ListItem } from "@miyauci/material-react";
 | `trailing`       | `ReactNode`                                  |
 | `size`           | `"one-line"`, `"two-lines"`, `"three-lines"` |
 | `selected`       | `boolean`                                    |
-| `disabled`       | `boolean`                                    |
+| `state`          | `"disabled"`                                 |
 | `divider`        | `boolean`                                    |
 
 And `HTMLDivElement` arrtibutes.

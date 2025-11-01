@@ -88,7 +88,7 @@ function getProps(item: Item): AssitChipProps & PseudoProps {
     case "enabled":
       return base;
     case "disabled":
-      return { ...base, disabled: true };
+      return { ...base, state: "disabled" };
     case "focused":
       return { ...base, "data-focus-visible": "" };
     case "hovered":

@@ -226,7 +226,7 @@ function getProps(item: Item): ListItemProps & PseudoData {
       return base;
 
     case "disabled":
-      return { disabled: true, ...base };
+      return { state: "disabled", ...base };
 
     case "hovered":
       return { "data-hover": "", ...base };

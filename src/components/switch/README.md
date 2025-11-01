@@ -12,11 +12,11 @@ import { Switch } from "@miyauci/material-react";
 
 ## Props
 
-| Name       | Type        |
-| ---------- | ----------- |
-| `disabled` | `boolean`   |
-| `selected` | `boolean`   |
-| `icon`     | `ReactNode` |
+| Name       | Type         |
+| ---------- | ------------ |
+| `selected` | `boolean`    |
+| `state`    | `"disabled"` |
+| `icon`     | `ReactNode`  |
 
 And `HTMLButtonElement` arrtibutes.
 
