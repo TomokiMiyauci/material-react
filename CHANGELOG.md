@@ -1,3 +1,10 @@
+# [1.0.0-beta.22](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.21...1.0.0-beta.22) (2025-11-01)
+
+
+### Features
+
+* **icon-button:** rename props to children from icon ([204f142](https://github.com/TomokiMiyauci/material-react/commit/204f1429188932aa3f6bfcc7b474d47b5ca82a15))
+
 # [1.0.0-beta.21](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.20...1.0.0-beta.21) (2025-10-31)
 
 
