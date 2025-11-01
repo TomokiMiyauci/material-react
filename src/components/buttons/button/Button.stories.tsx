@@ -114,19 +114,15 @@ function getProps(item: Item): ButtonProps & PseudoData {
   const { state, icon, ...rest } = item;
   const base = {
     ...rest,
-    children: (
-      <>
-        {icon && (
-          <span
-            className="material-symbols-outlined font-filled"
-            slot="icon"
-          >
-            stars
-          </span>
-        )}
-        Label
-      </>
+    icon: icon && (
+      <span
+        className="material-symbols-outlined font-filled"
+        slot="icon"
+      >
+        stars
+      </span>
     ),
+    children: "Label",
   } satisfies ButtonProps;
 
   switch (state) {

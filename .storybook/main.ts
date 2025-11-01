@@ -18,12 +18,15 @@ export default {
   async viteFinal(config) {
     /** @see https://github.com/tailwindlabs/tailwindcss/issues/13216 */
     const { default: tailwindcss } = await import("@tailwindcss/vite");
+    const { default: deno } = await import("@deno/vite-plugin");
+
     const extend = {
       plugins: [
         react({
           jsxRuntime: "automatic",
         }) as Plugin[],
         tailwindcss(),
+        deno(),
       ],
       "resolve": {
         "alias": {
@@ -31,15 +34,8 @@ export default {
           "@": join(__dirname, "..", "src"),
           "@miyauci/material-react": join(__dirname, "..", "src", "mod.ts"),
           "~": join(__dirname, ".."),
-          "react-dsd": join(
-            __dirname,
-            "..",
-            "src",
-            "components",
-            "_internal",
-            "dsd",
-            "mod.ts",
-          ),
+          // TODO(miyauci): remove on fix @deno/vite-plugin bug @see https://github.com/denoland/deno-vite-plugin/pull/59
+          "npm:react@^19.2.0/jsx-runtime": "react/jsx-runtime",
         },
       },
     } satisfies InlineConfig;

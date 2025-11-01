@@ -18,24 +18,28 @@
     "style-dictionary": "npm:style-dictionary@^5.0.2",
     "@/": "./src/",
     "~/": "./",
-    "react-dsd": "./src/components/_internal/dsd/mod.ts",
     "@testing": "./tests/mod.ts"
   },
   "compilerOptions": {
     "jsx": "react-jsx",
+    "jsxImportSource": "react",
     "noUnusedLocals": true,
     "noImplicitReturns": true,
     "noPropertyAccessFromIndexSignature": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedIndexedAccess": true,
-    "lib": ["dom", "es2024"]
+    "lib": ["dom", "es2024", "deno.ns"]
   },
   "tasks": {
     "generate:example": "deno run --allow-write=src/styles --allow-sys --allow-env --allow-read scripts/gen_example.ts",
     "build": "deno run -P=build scripts/build.ts",
     "test": "deno test -P=test",
-    "lint": "deno run -P=lint stylelint src/**/*.css"
+    "lint": {
+      "dependencies": ["lint:css", "lint:deno"]
+    },
+    "lint:css": "deno run -P=lint stylelint src/**/*.css",
+    "lint:deno": "deno lint"
   },
   "nodeModulesDir": "auto",
   "permissions": {

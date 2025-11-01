@@ -1,0 +1,36 @@
+# InputChip
+
+Input chips represent discrete pieces of information entered by a user, such as
+Gmail contacts or filter options within a search field.
+
+## Example
+
+```tsx
+import { InputChip } from "@miyauci/material-react";
+
+<InputChip>
+  Label
+</InputChip>;
+```
+
+## Props
+
+| Name       | Type        |
+| ---------- | ----------- |
+| `selected` | `boolean`   |
+| `disabled` | `boolean`   |
+| `leading`  | `ReactNode` |
+| `trailing` | `ReactNode` |
+| `children` | `ReactNode` |
+
+And `HTMLSpanElement` arrtibutes.
+
+## Tokens
+
+Depends on the following CSS variables.
+
+<!-- deno-fmt-ignore-start -->
+{{#tokens}}
+- {{.}}
+{{/tokens}}
+<!-- deno-fmt-ignore-end -->

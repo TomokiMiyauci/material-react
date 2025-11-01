@@ -32,7 +32,7 @@ type HexString = `#${string}`;
 
 type ColorSpace = "srgb";
 
-function validateColorValue(value: object): value is ColorValue {
+function validateColorValue(_: object): _ is ColorValue {
   return true;
 }
 
@@ -41,7 +41,7 @@ function isObject(value: unknown): value is object {
 }
 
 function stringifyColorValue(value: ColorValue): string {
-  const { colorSpace, components, alpha, hex } = value;
+  const { colorSpace, components } = value;
   const [first, second, third] = components;
 
   switch (colorSpace) {

@@ -1,0 +1,97 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+/* @embed */
+:root {
+  --container-dragged-elevation: var(--md-sys-elevation-level4); /** Filter chip dragged container elevation */
+  --container-elevated-disabled-color: var(--md-sys-color-on-surface); /** Filter chip elevated disabled container color */
+  --container-elevated-disabled-elevation: var(--md-sys-elevation-level0); /** Filter chip elevated disabled container elevation */
+  --container-elevated-disabled-opacity: 12%; /** Filter chip elevated disabled container opacity */
+  --container-elevated-elevation: var(--md-sys-elevation-level1); /** Filter chip elevated container elevation */
+  --container-elevated-focus-elevation: var(--md-sys-elevation-level1); /** Filter chip elevated focus container elevation */
+  --container-elevated-hover-elevation: var(--md-sys-elevation-level2); /** Filter chip elevated hover container elevation */
+  --container-elevated-pressed-elevation: var(--md-sys-elevation-level1); /** Filter chip (Elevated style) pressed container elevation */
+  --container-elevated-shadow-color: var(--md-sys-color-shadow); /** Filter chip elevated container shadow color */
+  --container-elevation: var(--md-sys-elevation-level0); /** Filter chip container elevation */
+  --container-height: 32px; /** Filter chip container height */
+  --container-selected-disabled-color: var(--md-sys-color-on-surface); /** Filter chip disabled (selected) container color */
+  --container-selected-disabled-opacity: 12%; /** Filter chip disabled (selected) container opacity */
+  --container-selected-elevated-color: var(--md-sys-color-secondary-container); /** Filter chip elevated (selected) container color */
+  --container-selected-focus-elevation: var(--md-sys-elevation-level0); /** Filter chip (selected) focus container elevation */
+  --container-selected-hover-elevation: var(--md-sys-elevation-level1); /** Filter chip (selected) hover container elevation */
+  --container-selected-pressed-elevation: var(--md-sys-elevation-level0); /** Filter chip (selected) pressed container elevation */
+  --container-shape: var(--md-sys-shape-corner-small); /** Filter chip container shape */
+  --container-unselected-elevated-color: var(--md-sys-color-surface-container-low); /** Filter chip elevated (unselected) container color */
+  --container-unselected-focus-elevation: var(--md-sys-elevation-level0); /** Filter chip (unselected) focus container elevation */
+  --container-unselected-hover-elevation: var(--md-sys-elevation-level0); /** Filter chip (unselected) hover container elevation */
+  --container-unselected-pressed-elevation: var(--md-sys-elevation-level0); /** Filter chip (unselected) pressed container elevation */
+  --focus-indicator-color: var(--md-sys-color-secondary); /** Filter chip focus indicator color */
+  --focus-indicator-offset: var(--md-sys-state-focus-indicator-outer-offset); /** Filter chip focus indicator offset */
+  --focus-indicator-thickness: var(--md-sys-state-focus-indicator-thickness); /** Filter chip focus indicator thickness */
+  --icon-size: 18px; /** Filter chip with icon icon size */
+  --label-text-disabled-color: var(--md-sys-color-on-surface); /** Filter chip disabled label text color */
+  --label-text-disabled-opacity: 38%; /** Filter chip disabled label text opacity */
+  --label-text-font: var(--md-sys-typescale-label-large-font); /** Filter chip label text font */
+  --label-text-line-height: var(--md-sys-typescale-label-large-line-height); /** Filter chip label text line height */
+  --label-text-selected-color: var(--md-sys-color-on-secondary-container); /** Filter chip (selected) label text color */
+  --label-text-selected-dragged-color: var(--md-sys-color-on-secondary-container); /** Filter chip (selected) dragged label text color */
+  --label-text-selected-focus-color: var(--md-sys-color-on-secondary-container); /** Filter chip (selected) focus label text color */
+  --label-text-selected-hover-color: var(--md-sys-color-on-secondary-container); /** Filter chip (selected) hover label text color */
+  --label-text-selected-pressed-color: var(--md-sys-color-on-secondary-container); /** Filter chip (selected) pressed label text color */
+  --label-text-size: var(--md-sys-typescale-label-large-size); /** Filter chip label text size */
+  --label-text-tracking: var(--md-sys-typescale-label-large-tracking); /** Filter chip label text tracking */
+  --label-text-unselected-color: var(--md-sys-color-on-surface-variant); /** Filter chip (unselected) label text color */
+  --label-text-unselected-dragged-color: var(--md-sys-color-on-surface-variant); /** Filter chip (unselected) dragged label text color */
+  --label-text-unselected-focus-color: var(--md-sys-color-on-surface-variant); /** Filter chip (unselected) focus label text color */
+  --label-text-unselected-hover-color: var(--md-sys-color-on-surface-variant); /** Filter chip (unselected) hover label text color */
+  --label-text-unselected-pressed-color: var(--md-sys-color-on-surface-variant); /** Filter chip (unselected) pressed label text color */
+  --label-text-weight: var(--md-sys-typescale-label-large-weight); /** Filter chip label text weight */
+  --leading-icon-disabled-color: var(--md-sys-color-on-surface); /** Filter chip with leading icon disabled icon color */
+  --leading-icon-disabled-opacity: 38%; /** Filter chip with leading icon disabled leading icon opacity */
+  --leading-icon-selected-color: var(--md-sys-color-on-secondary-container); /** Filter chip with leading icon selected leading icon color */
+  --leading-icon-selected-dragged-color: var(--md-sys-color-on-secondary-container); /** Filter chip with leading icon (selected) dragged icon color */
+  --leading-icon-selected-focus-color: var(--md-sys-color-on-secondary-container); /** Filter chip with leading icon (selected) focus icon color */
+  --leading-icon-selected-hover-color: var(--md-sys-color-on-secondary-container); /** Filter chip with leading icon (selected) hover icon color */
+  --leading-icon-selected-pressed-color: var(--md-sys-color-on-secondary-container); /** Filter chip with leading icon (selected) pressed icon color */
+  --leading-icon-unselected-color: var(--md-sys-color-primary); /** Filter chip with leading icon unselected leading icon color */
+  --leading-icon-unselected-dragged-color: var(--md-sys-color-primary); /** Filter chip with leading icon (unselected) dragged icon color */
+  --leading-icon-unselected-focus-color: var(--md-sys-color-primary); /** Filter chip with leading icon (unselected) focus icon color */
+  --leading-icon-unselected-hover-color: var(--md-sys-color-primary); /** Filter chip with leading icon (unselected) hover icon color */
+  --leading-icon-unselected-pressed-color: var(--md-sys-color-primary); /** Filter chip with leading icon (unselected) pressed icon color */
+  --selected-outline-color: var(--md-sys-color-secondary-container); /** Filter chip (selected) outline color */
+  --selected-outline-width: 0; /** Filter chip (selected) outline width */
+  --state-layer-selected-dragged-color: var(--md-sys-color-on-secondary-container); /** Filter chip (selected) dragged state layer color */
+  --state-layer-selected-dragged-opacity: var(--md-sys-state-dragged-state-layer-opacity); /** Filter chip (selected) dragged state layer opacity */
+  --state-layer-selected-focus-color: var(--md-sys-color-on-secondary-container); /** Filter chip (selected) focus state layer color */
+  --state-layer-selected-focus-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Filter chip (selected) focus state layer opacity */
+  --state-layer-selected-hover-color: var(--md-sys-color-on-secondary-container); /** Filter chip (selected) hover state layer color */
+  --state-layer-selected-hover-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Filter chip (selected) hover state layer opacity */
+  --state-layer-selected-pressed-color: var(--md-sys-color-on-surface-variant); /** Filter chip (selected) pressed state layer color */
+  --state-layer-selected-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Filter chip (selected) pressed state layer opacity */
+  --state-layer-unselected-dragged-color: var(--md-sys-color-on-surface-variant); /** Filter chip (unselected) dragged state layer color */
+  --state-layer-unselected-dragged-opacity: var(--md-sys-state-dragged-state-layer-opacity); /** Filter chip (unselected) dragged state layer opacity */
+  --state-layer-unselected-focus-color: var(--md-sys-color-on-surface-variant); /** Filter chip (unselected) focus state layer color */
+  --state-layer-unselected-focus-opacity: var(--md-sys-state-focus-state-layer-opacity); /** Filter chip (unselected) focus state layer opacity */
+  --state-layer-unselected-hover-color: var(--md-sys-color-on-surface-variant); /** Filter chip (unselected) hover state layer color */
+  --state-layer-unselected-hover-opacity: var(--md-sys-state-hover-state-layer-opacity); /** Filter chip (unselected) hover state layer opacity */
+  --state-layer-unselected-pressed-color: var(--md-sys-color-on-secondary-container); /** Filter chip (unselected) pressed state layer color */
+  --state-layer-unselected-pressed-opacity: var(--md-sys-state-pressed-state-layer-opacity); /** Filter chip (unselected) pressed state layer opacity */
+  --trailing-icon-disabled-color: var(--md-sys-color-on-surface); /** Filter chip with trailing icon disabled icon color */
+  --trailing-icon-disabled-opacity: 38%; /** Filter chip with trailing icon disabled trailing icon opacity */
+  --trailing-icon-selected-color: var(--md-sys-color-on-secondary-container); /** Filter chip with trailing icon selected trailing icon color */
+  --trailing-icon-selected-dragged-color: var(--md-sys-color-on-secondary-container); /** Filter chip with trailing icon (selected) dragged icon color */
+  --trailing-icon-selected-focus-color: var(--md-sys-color-on-secondary-container); /** Filter chip with trailing icon (selected) focus icon color */
+  --trailing-icon-selected-hover-color: var(--md-sys-color-on-secondary-container); /** Filter chip with trailing icon (selected) hover icon color */
+  --trailing-icon-selected-pressed-color: var(--md-sys-color-on-secondary-container); /** Filter chip with trailing icon (selected) pressed icon color */
+  --trailing-icon-unselected-color: var(--md-sys-color-on-surface-variant); /** Filter chip with trailing icon unselected trailing icon color */
+  --trailing-icon-unselected-dragged-color: var(--md-sys-color-on-surface-variant); /** Filter chip with trailing icon (unselected) dragged icon color */
+  --trailing-icon-unselected-focus-color: var(--md-sys-color-on-surface-variant); /** Filter chip with trailing icon (unselected) focus icon color */
+  --trailing-icon-unselected-hover-color: var(--md-sys-color-on-surface-variant); /** Filter chip with trailing icon (unselected) hover icon color */
+  --trailing-icon-unselected-pressed-color: var(--md-sys-color-on-surface-variant); /** Filter chip with trailing icon (unselected) pressed icon color */
+  --unselected-disabled-outline-color: var(--md-sys-color-on-surface); /** Filter chip disabled (unselected) outline color */
+  --unselected-disabled-outline-opacity: 12%; /** Filter chip disabled (unselected) outline opacity */
+  --unselected-focus-outline-color: var(--md-sys-color-on-surface-variant); /** Filter chip (unselected) focus outline color */
+  --unselected-outline-color: var(--md-sys-color-outline-variant); /** Filter chip (unselected) outline color */
+  --unselected-outline-width: 1px; /** Filter chip (unselected) outline width */
+}

@@ -1,0 +1,10 @@
+{
+  "steps": [
+    {
+      "use": "spec2tokens",
+      "input": "https://m3.material.io/components/navigation-rail/specs",
+      "output": "./_generated/items.json",
+      "run": { "skipIfExists": true }
+    }
+  ]
+}
