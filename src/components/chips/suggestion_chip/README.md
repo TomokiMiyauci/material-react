@@ -25,12 +25,12 @@ import { SuggestionChip } from "@miyauci/material-react";
 
 ## Props
 
-| Name       | Type        |
-| ---------- | ----------- |
-| `elevated` | `boolean`   |
-| `disabled` | `boolean`   |
-| `icon`     | `ReactNode` |
-| `children` | `ReactNode` |
+| Name       | Type         |
+| ---------- | ------------ |
+| `elevated` | `boolean`    |
+| `state`    | `"disabled"` |
+| `icon`     | `ReactNode`  |
+| `children` | `ReactNode`  |
 
 And `HTMLSpanElement` arrtibutes.
 
