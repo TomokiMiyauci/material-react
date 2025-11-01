@@ -27,7 +27,7 @@ import { Button } from "@miyauci/material-react";
 | `size`     | `xsmall`, `small`, `medium`, `large`, `xlarge`        | `small`  |
 | `shape`    | `round`, `square`                                     | `round`  |
 | `color`    | `filled`, `elevated`, `tonal`, `outlined`, `standard` | `filled` |
-| `disabled` | `boolean`                                             |    -     |
+| `state`    | `disabled`                                            |    -     |
 | `icon`     | `ReactNode`                                           |          |
 | `children` | `ReactNode`                                           |          |
 
