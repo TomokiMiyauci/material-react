@@ -3,8 +3,9 @@ import style from "./_generated/style.ts";
 import Style from "@internal/Style.tsx";
 import { Divider } from "@/components/divider/mod.ts";
 import { bool } from "@/utils/convert.ts";
+import type { StateDisabledProps } from "@/components/types.ts";
 
-export interface ListItemProps {
+export interface ListItemProps extends StateDisabledProps {
   leading?: ReactNode;
   headline?: ReactNode;
   supporingText?: ReactNode;
@@ -15,7 +16,6 @@ export interface ListItemProps {
    */
   size?: ListItemSize;
   selected?: boolean;
-  disabled?: boolean;
   divider?: boolean;
 }
 
@@ -31,7 +31,7 @@ export default function ListItem(
     trailing,
     size = "two-lines",
     selected,
-    disabled,
+    state,
     divider,
     ...rest
   } = props;
@@ -42,7 +42,7 @@ export default function ListItem(
         data-md="list-item"
         data-size={size}
         data-selected={bool(selected)}
-        data-disabled={bool(disabled)}
+        data-disabled={bool(state === "disabled")}
         {...rest}
       >
         <div data-container="">
