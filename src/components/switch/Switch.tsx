@@ -2,9 +2,9 @@ import type { JSX, ReactNode } from "react";
 import style from "./_generated/style.ts";
 import Style from "@internal/Style.tsx";
 import { bool } from "@/utils/convert.ts";
+import type { StateDisabledProps } from "@/components/types.ts";
 
-export interface SwitchProps {
-  disabled?: boolean;
+export interface SwitchProps extends StateDisabledProps {
   selected?: boolean;
   icon?: ReactNode;
 }
@@ -15,14 +15,14 @@ export interface SwitchProps {
 export default function Switch(
   props: SwitchProps & JSX.IntrinsicElements["button"],
 ): JSX.Element {
-  const { selected, disabled, icon, ...rest } = props;
+  const { selected, state, icon, ...rest } = props;
 
   return (
     <>
       <button
         data-md="switch"
         data-selected={bool(selected)}
-        data-disabled={bool(disabled)}
+        data-disabled={bool(state === "disabled")}
         role="switch"
         aria-checked={selected ?? false}
         {...rest}
