@@ -2,10 +2,10 @@ import type { JSX, ReactNode } from "react";
 import { bool } from "@/utils/convert.ts";
 import Style from "@internal/Style.tsx";
 import style from "./_generated/style.ts";
+import type { StateDisabledProps } from "@/components/types.ts";
 
-export interface InputChipProps {
+export interface InputChipProps extends StateDisabledProps {
   selected?: boolean;
-  disabled?: boolean;
   leading?: ReactNode;
   trailing?: ReactNode;
   children?: ReactNode;
@@ -19,7 +19,7 @@ export default function InputChip(
 ): JSX.Element {
   const {
     selected,
-    disabled,
+    state,
     leading,
     trailing,
     children,
@@ -31,7 +31,7 @@ export default function InputChip(
       <span
         data-md="input-chip"
         data-selected={bool(selected)}
-        data-disabled={bool(disabled)}
+        data-disabled={bool(state === "disabled")}
         {...rest}
       >
         {leading && <span data-leading="">{leading}</span>}
