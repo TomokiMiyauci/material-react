@@ -7,18 +7,20 @@ Icon buttons help people take minor actions with one tap.
 ```tsx
 import { IconButton } from "@miyauci/material-react";
 
-<IconButton icon={<span>Your icon</span>}>
+<IconButton>
+  <span className="my-icon" />
+</IconButton>;
 ```
 
 ## Props
 
-| Name    | Type                                           |  Default  |
-| ------- | ---------------------------------------------- | :-------: |
-| `size`  | `xsmall`, `small`, `medium`, `large`, `xlarge` |  `small`  |
-| `shape` | `round`, `square`                              |  `round`  |
-| `color` | `filled`, `tonal`, `outlined`, `standard`      | `filled`  |
-| `width` | `default`, `narrow`, `wide`                    | `default` |
-| `icon`  | `ReactNode`                                    |     -     |
+| Name       | Type                                           |  Default  |
+| ---------- | ---------------------------------------------- | :-------: |
+| `size`     | `xsmall`, `small`, `medium`, `large`, `xlarge` |  `small`  |
+| `shape`    | `round`, `square`                              |  `round`  |
+| `color`    | `filled`, `tonal`, `outlined`, `standard`      | `filled`  |
+| `width`    | `default`, `narrow`, `wide`                    | `default` |
+| `children` | `ReactNode`                                    |     -     |
 
 And `HTMLButtonElement` arrtibutes.
 

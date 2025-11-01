@@ -23,7 +23,10 @@ export interface IconButtonProps {
    */
   color?: IconButtonColor;
 
-  icon?: ReactNode;
+  /**
+   * Icon for button
+   */
+  children?: ReactNode;
 }
 
 export type IconButtonSize = "xsmall" | "small" | "medium" | "large" | "xlarge";
@@ -56,7 +59,7 @@ export default function IconButton(
     shape = DEFAULT_PROPS.shape,
     width = DEFAULT_PROPS.width,
     color = DEFAULT_PROPS.color,
-    icon,
+    children,
     ...rest
   } = props;
 
@@ -70,7 +73,7 @@ export default function IconButton(
         data-color={color}
         {...rest}
       >
-        <span data-icon="">{icon}</span>
+        {children && <span data-icon="">{children}</span>}
       </button>
 
       <Style href={NAME}>{style}</Style>

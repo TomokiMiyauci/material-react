@@ -16,7 +16,7 @@ const meta = {
   },
   tags: ["autodocs"],
   args: {
-    icon: <span className="material-symbols-outlined">settings</span>,
+    children: <span className="material-symbols-outlined">settings</span>,
   },
 } satisfies Meta<typeof IconButton>;
 
@@ -133,7 +133,7 @@ interface Item {
 
 function getProps(item: Item): IconButtonProps & DataStates {
   const base = {
-    icon: <span className="material-symbols-outlined">settings</span>,
+    children: <span className="material-symbols-outlined">settings</span>,
     size: item.size,
     shape: item.shape,
     width: item.width,
