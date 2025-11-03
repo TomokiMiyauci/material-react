@@ -1,3 +1,12 @@
+# [1.0.0-beta.24](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.23...1.0.0-beta.24) (2025-11-03)
+
+
+### Features
+
+* add css as JSX with style tag ([a45efa4](https://github.com/TomokiMiyauci/material-react/commit/a45efa4d988bd8580b2e61c9468d28e046e811a9))
+* export style components ([d9cf29d](https://github.com/TomokiMiyauci/material-react/commit/d9cf29d2cb9e38fa87ca329cc55ceb17090f9a14))
+* **tokens:** add design token css as components ([07a3908](https://github.com/TomokiMiyauci/material-react/commit/07a39086a09df9579a34bb3085445bd6987c1c0b))
+
 # [1.0.0-beta.23](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.22...1.0.0-beta.23) (2025-11-01)
 
 
