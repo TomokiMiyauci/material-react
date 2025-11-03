@@ -12,4 +12,5 @@ export * from "./components/buttons/button/mod.ts";
 export * from "./components/divider/mod.ts";
 export * from "./components/lists/mod.ts";
 export * from "./components/fab/mod.ts";
+export * from "./components/tokens/mod.ts";
 export * from "./components/types.ts";

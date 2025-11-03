@@ -34,6 +34,23 @@ import { Badge } from "@miyauci/material-react";
 
 See [Component](/src/components/README.md).
 
+### Design Tokens
+
+Each component relies on design tokens.
+
+Due to [current JSR constraints](https://github.com/jsr-io/jsr/issues/293), CSS
+is not provided. Therefore, please either use the design tokens component or add
+CSS to your project by referencing [styles](./src/styles/style_light.css).
+
+```tsx
+import type { JSX } from "react";
+import { DesignTokens } from "@miyauci/material-react";
+declare function Page(): JSX.Element;
+
+<DesignTokens />
+<Page />;
+```
+
 <!-- ## Contributing -->
 
 ## License
