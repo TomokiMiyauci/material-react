@@ -1,3 +1,17 @@
+# [1.0.0-beta.23](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.22...1.0.0-beta.23) (2025-11-01)
+
+
+### Features
+
+* **assist-chip:** rename disabled props to state ([8fca029](https://github.com/TomokiMiyauci/material-react/commit/8fca02989a5dd7dad77cdffdb364f3d4e5783b67))
+* **button:** rename disabled props to state ([261d0ba](https://github.com/TomokiMiyauci/material-react/commit/261d0baa1e1ead688777fe1a4157305cb7723809))
+* export shared component types ([c2e473e](https://github.com/TomokiMiyauci/material-react/commit/c2e473eaa8f605be34992db5666055d8b7dd66f1))
+* **filter-chip:** rename disabled props to state ([3617f19](https://github.com/TomokiMiyauci/material-react/commit/3617f19878d5a5749ad7fd5c361a619985b358ea))
+* **input-chip:** rename disabled props to state ([01b8ea1](https://github.com/TomokiMiyauci/material-react/commit/01b8ea13471c3f94f966ed4b7ae15c6f06e17eb6))
+* **list-item:** rename disabled props to state ([9b9291c](https://github.com/TomokiMiyauci/material-react/commit/9b9291c370e4a3ce883cfc20624cbece3717aa63))
+* **suggestion-chip:** rename disabled props to state ([b501e03](https://github.com/TomokiMiyauci/material-react/commit/b501e038162ede73962ba7d845466c7af55543ef))
+* **switch:** rename disabled props to state ([4b4646d](https://github.com/TomokiMiyauci/material-react/commit/4b4646d256541e9c57ea1b6e22827459a010d49f))
+
 # [1.0.0-beta.22](https://github.com/TomokiMiyauci/material-react/compare/1.0.0-beta.21...1.0.0-beta.22) (2025-11-01)
 
 

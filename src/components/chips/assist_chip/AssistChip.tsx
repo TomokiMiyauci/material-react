@@ -2,10 +2,10 @@ import type { JSX, ReactNode } from "react";
 import { bool } from "@/utils/convert.ts";
 import Style from "@internal/Style.tsx";
 import style from "./_generated/style.ts";
+import type { StateDisabledProps } from "@/components/types.ts";
 
-export interface AssitChipProps {
+export interface AssitChipProps extends StateDisabledProps {
   elevated?: boolean;
-  disabled?: boolean;
   icon?: ReactNode;
   children?: ReactNode;
 }
@@ -35,13 +35,13 @@ export interface AssitChipProps {
 export default function AssistChip(
   props: AssitChipProps & JSX.IntrinsicElements["span"],
 ): JSX.Element {
-  const { elevated, disabled, children, icon, ...rest } = props;
+  const { elevated, state, children, icon, ...rest } = props;
   return (
     <>
       <span
         data-md="assist-chip"
         data-elevated={bool(elevated)}
-        data-disabled={bool(disabled)}
+        data-disabled={bool(state === "disabled")}
         {...rest}
       >
         {icon && <span data-icon="">{icon}</span>}

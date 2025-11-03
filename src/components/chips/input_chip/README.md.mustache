@@ -15,13 +15,13 @@ import { InputChip } from "@miyauci/material-react";
 
 ## Props
 
-| Name       | Type        |
-| ---------- | ----------- |
-| `selected` | `boolean`   |
-| `disabled` | `boolean`   |
-| `leading`  | `ReactNode` |
-| `trailing` | `ReactNode` |
-| `children` | `ReactNode` |
+| Name       | Type         |
+| ---------- | ------------ |
+| `selected` | `boolean`    |
+| `state`    | `"disabled"` |
+| `leading`  | `ReactNode`  |
+| `trailing` | `ReactNode`  |
+| `children` | `ReactNode`  |
 
 And `HTMLSpanElement` arrtibutes.
 

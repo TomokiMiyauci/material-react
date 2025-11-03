@@ -129,7 +129,7 @@ function getProps(item: Item): ButtonProps & PseudoData {
     case "enabled":
       return base;
     case "disabled":
-      return { ...base, disabled: true };
+      return { ...base, state: "disabled" };
     case "hovered":
       return { ...base, "data-hover": "" };
     case "focused":

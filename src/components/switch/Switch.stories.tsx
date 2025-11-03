@@ -82,7 +82,7 @@ function getProps(item: Item): SwitchProps & DataStates {
 
   switch (item.state) {
     case "disabled":
-      return { disabled: true, ...base };
+      return { state: "disabled", ...base };
 
     case "hovered":
       return { "data-hover": "", ...base };

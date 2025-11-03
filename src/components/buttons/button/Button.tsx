@@ -2,16 +2,23 @@ import type { JSX, ReactNode } from "react";
 import Style from "@internal/Style.tsx";
 import style from "./_generated/style.ts";
 import { bool } from "@/utils/convert.ts";
+import type { StateDisabledProps } from "@/components/types.ts";
 
-export interface ButtonProps {
+export interface ButtonProps extends StateDisabledProps {
   /**
    * @default "small"
    */
   size?: ButtonSize;
 
+  /**
+   * @default "round"
+   */
   shape?: ButtonShape;
+
+  /**
+   * @default "filled"
+   */
   color?: ButtonColor;
-  disabled?: boolean;
 
   /**
    * Icon for button
@@ -38,7 +45,7 @@ export default function Button(
     size = "small",
     shape = "round",
     color = "filled",
-    disabled,
+    state,
     icon,
     children,
     ...rest
@@ -51,7 +58,7 @@ export default function Button(
         data-size={size}
         data-shape={shape}
         data-color={color}
-        data-disabled={bool(disabled)}
+        data-disabled={bool(state === "disabled")}
         {...rest}
       >
         {icon && <span data-icon="">{icon}</span>}
